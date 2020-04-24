@@ -1,0 +1,13 @@
+#+TITLE: Menu
+
+#+SETUPFILE: ../_config.org
+#+HUGO_HEADLESS: t
+
+#+HUGO_TYPE: menu
+#+HUGO_SECTION: menu
+#+EXPORT_FILE_NAME: _index
+
+- [[/posts][Blog]]
+- *Social*
+  - [[https://github.com/benmezger/][Github]]
+  - [[https://twitter.com/sys_reboot][Twitter]]

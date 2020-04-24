@@ -1,0 +1,4 @@
+#+AUTHOR: Ben Mezger
+
+#+HUGO_BASE_DIR: ~/blog
+#+HUGO_AUTO_SET_LASTMOD: t

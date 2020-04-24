@@ -1,0 +1,26 @@
+baseURL: https://seds.nl/
+languageCode: en-us
+title: Ben Mezger
+theme: book
+
+enableGitInfo: 1
+
+languages:
+  en:
+    languageName: English
+    contentDir: content
+    weight: 1
+  pt:
+    languageName: Portuguese
+    contentDir: content.pt
+    weight: 1
+
+params:
+  BookToC: true
+  BookMenuBundle: /menu
+  BookSection: blog
+  BookSearch: true
+
+  BookRepo: https://github.com/benmezger/benmezger.github.io
+  BookEditPath: edit/master/content-org
+
