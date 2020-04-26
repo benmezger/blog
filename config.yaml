@@ -6,6 +6,15 @@ theme: book
 enableGitInfo: 1
 enableEmoji: true
 
+# Needed for mermaid/katex shortcodes
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  tableOfContents:
+    startLevel: 1
+
+
 languages:
   en:
     languageName: English
