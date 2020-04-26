@@ -4,6 +4,7 @@ title: Ben Mezger
 theme: book
 
 enableGitInfo: 1
+enableEmoji: true
 
 languages:
   en:

@@ -1,0 +1,583 @@
+#+TITLE: Notes
+#+SUBTITLE: Personal notes
+#+DATE: <2020-04-23 Thu>
+
+#+OPTIONS: ':t *:t -:t ::t <:t H:3 \n:nil ^:nil arch:headline author:t c:nil html5-fancy
+#+STARTUP: overview
+
+#+HTML_DOCTYPE: xhtml5
+#+HTML_HTML5_FANCY:
+
+# Hugo config
+#+DRAFT: false
+
+# +SETUPFILE: ./notes.setup
+# +SETUPFILE: ./org-notes-style.setup
+#+SETUPFILE: _config.org
+
+#+HUGO_AUTO_SET_LASTMOD: t
+
+* Menu
+:PROPERTIES:
+:EXPORT_HUGO_HEADLESS: t
+:EXPORT_HUGO_TYPE: menu
+:EXPORT_HUGO_SECTION: menu
+:EXPORT_FILE_NAME: _index
+:END:
+- [[/posts][Blog]]
+- *Social*
+  - [[https://github.com/benmezger/][Github]]
+  - [[https://twitter.com/sys_reboot][Twitter]]
+* Hi, there :@about:
+:PROPERTIES:
+:EXPORT_HUGO_TITLE: Hi, there
+:EXPORT_HUGO_TYPE: post
+:EXPORT_HUGO_SECTION:
+:EXPORT_FILE_NAME: _index
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :bookToc false
+:END:
+My name is Benjamin Mezger[fn:1] and I am one of many software
+engineers lost in a world of code and numbers.
+In my job, I work on a large Python code-base using Django[fn:3] and
+Wagtail[fn:4] developing internal components for an E-Commerce and data
+processing.
+
+I am interested in computer security[fn:5], operating systems and computer
+architecture. In fact, I enjoy this so much, I developed a Microkernel for the
+RISC-V ISA for my Bachelor thesis.
+
+Though I have triple nationality[fn:6], I grew up in Amsterdam, but I am
+currently an exchange student in Brazil.
+
+[fn:1] Friends normally call me Ben Mezger instead
+[fn:2] Software Engineer at [[https://ckl.io][Cheesecake Labs]]
+[fn:3] [[https://www.djangoproject.com/][Django web framework]]
+[fn:4] [[https://wagtail.io/][Wagtail, a CMS for Django]]
+[fn:5] OPSEC, COMSEC, Reverse engineering and OS security
+[fn:6] German, Dutch and Brazilian
+* Blog :@blog:
+** Hello, org-mode and hugo :emacs:orgmode:@web:
+:PROPERTIES:
+:EXPORT_HUGO_TYPE: post
+:EXPORT_HUGO_SECTION: posts
+:EXPORT_FILE_NAME: hello-orgmode
+:EXPORT_HUGO_PUBLISHDATE: <2020-04-25 Sat>
+:END:
+Hello, world! This is my first post here. This blog is created using [[https://gohugo.io][Hugo]] and Emacs
+[[https://orgmode.org][org-mode]]. I am still busy migrating my posts from Asciidoc to org-mode, so this
+should take a bit of time.
+* Notes :@notes:
+:PROPERTIES:
+:EXPORT_HUGO_TYPE: docs
+:EXPORT_HUGO_SECTION: notes
+:EXPORT_FILE_NAME: index
+:EXPORT_HUGO_PUBLISHDATE: <2020-04-25 Sat>
+:EXPORT_HUGO_MENU: :title notes :menu "before" :name "notes" :weight 5
+:END:
+{{< hint warning >}}
+:warning: Some notes I wrote and some of them are snippets I copied around the
+Internet. Unfortunately I don't have the source for all of them, but I will try
+to keep this updated.
+
+Notes that are tagged or start with =TODO= are notes that or I am still working
+on or that are simply incomplete :pensive:
+{{< /hint >}}
+#+BEGIN_QUOTE
+I have discovered the reason for this code and it's really
+quite necessary. Unfortunately this comment block is too short to
+contain it -- Fermat
+#+END_QUOTE
+** Compilers :@compilers:classes:notes:univali:
+*** Syntax Analysis
+Syntax analysis happens after the Lexical phase, and it is responsible for detecting
+syntax errors.
+*** Grammar
+Be design, computer languages have defined structure of what constitutes a
+valid program. in Python, a program is made up of functions/classes/imports, a
+function requires declarations and/or statements and so on. In C, a valid
+program needs to have a least a function called main, otherwise the GNU's linker is
+unable to link the program.
+
+Programmers may define language grammars using the Backus-Naur Form (BNF)
+notation. Defining grammars offer a lot of benefits for the language designer.
+Like code, language grammars may change overtime. For example, one of Python's
+3.5 new feature was the [[https://bugs.python.org/issue24017][support]] to coroutines with ~async~ and ~await~ syntax.
+
+The following [[https://github.com/python/cpython/commit/7544508f0245173bff5866aa1598c8f6cce1fc5f#diff-cb0b9d6312c0d67f6d4aa1966766cedd][diff]] shows some of the changes the developer needed to add
+support for the ~async~ before the function definition or allow an ~async~
+function definition to be used as a decorator.
+
+#+BEGIN_SRC diff
+diff -r ccac513ee610 Grammar/Grammar
+--- a/Grammar/Grammar	Mon Apr 20 21:05:23 2015 +0200
++++ b/Grammar/Grammar	Mon Apr 20 15:54:06 2015 -0400
+@@ -21,8 +21,11 @@
+
+ decorator: '@' dotted_name [ '(' [arglist] ')' ] NEWLINE
+ decorators: decorator+
+-decorated: decorators (classdef | funcdef)
+-funcdef: 'def' NAME parameters ['->' test] ':' suite
++decorated: decorators (classdef | funcdef | async_funcdef)
++
++async_funcdef: ASYNC funcdef
++funcdef: ('def' NAME parameters ['->' test] ':' suite)
++
+ parameters: '(' [typedargslist] ')'
+ typedargslist: (tfpdef ['=' test] (',' tfpdef ['=' test])* [','
+        ['*' [tfpdef] (',' tfpdef ['=' test])* [',' '**' tfpdef] | '**' tfpdef]]
+@@ -37,18 +40,19 @@
+ simple_stmt: small_stmt (';' small_stmt)* [';'] NEWLINE
+ small_stmt: (expr_stmt | del_stmt | pass_stmt | flow_stmt |
+              import_stmt | global_stmt | nonlocal_stmt | assert_stmt)
+#+END_SRC
+
+Other than making it easier for the language designer to design the language, it
+allows the grammar to be easily documented and maintained by other language
+designers.
+
+Some grammars allow parsers (syntax analyzers) to be constructed to determine
+the syntactic structure of the program. By relying on the structured grammar, it
+allows the parsers to be developed more easily and testable.
+
+*** Types of parsers
+:PROPERTIES:
+:COMPLETE: false
+:END:
+
+There are 3 types of parsers we can use to write a syntax parser.
+1. Universal: this method can parse any grammar
+2. Top-down: this method builds parse trees from the top (root) to the button (leaves)
+3. Bottom-up: this method builds parse trees from the button (leaves) to the top (root)
+
+The last two methods reads the input from left to right and one symbol at a time.
+
+The top-down and bottom-up are known to be more efficient in production use[fn:1].
+
+[fn:1] I am not really sure why this is, as I haven't studied Universal methods]
+** TODO Math :@math:
+*** Integral Calculus
+**** Why Integral Calculus
+Figure [[fig:cos-graph]] represents 2 graphs of =y = cos(x)=. Let's say we would
+like to calculate the area of {{<katex>}} x_1 {{</katex>}}. We could calculate
+the area by aproximation, for example, Graph B is filled with the area we would
+like to calculate, so we could divide this area by equal sections of
+\(\Delta x_n\) from =a= to =b= rectangles, then we could calculate the area of
+these rectangles by \(f(x_i) * \Delta x_n\) where \(f\) is the area of each of
+the rectangles. We do this for each rectangle then sum them up: \(\sum_{i=1}^n f(x_i) *
+\Delta x_n\). This will give us an approximation of our area, we could have a
+better approximation by having our \(\Delta x_n\) smaller, but this implies that
+our =n= becomes bigger and bigger. The smaller \(\Delta x_n\) gets, the more =n=
+approaches infinity.
+
+We could use \(\liminf\) of =n= as =n= approaches \infty or \(\Delta x_n\) as it
+gets very small.
+
+#+BEGIN_SRC gnuplot :results output :file ../static/assets/imgs/graph-example.png :exports both :session :cache yes
+set multiplot layout 1, 2 title "f(x) = -x ** 2 + 4"
+
+set terminal pngcairo enhanced color size 350,262 font "Verdana,10" persist
+set linetype 1 lc rgb '#A3001E'
+set style fill transparent solid 0.35 noborder
+
+f(x) = -x ** 2 + 4
+
+set title "A"
+plot f(x) with lines linestyle 1
+
+set title "B"
+set style fill transparent solid 0.50 noborder
+plot f(x) fs solid 0.3 lc rgb '#A3001E'
+
+unset multiplot
+#+END_SRC
+
+#+NAME: fig:cos-graph
+#+RESULTS:
+[[file:../static/assets/imgs/graph-example.png]]
+
+
+The idea of getting better and better approximations is the what constitutes
+Integral Calculus.
+
+** Programming notes :@programming:
+*** C programming :C:
+**** C project architecture guidelines :design:patters:programming:c:
+:PROPERTIES:
+:SOURCE:   https://stackoverflow.com/a/2792470/6744969
+:END:
+***** Functions exposed in the header are like public methods
+Think of each module like a class. The functions you expose in the
+header are like public methods. Only put a function in the header if it
+part of the module's needed interface.
+***** Avoiding circular module dependencies
+Avoid circular module dependencies. Module A and module B should
+not call each other. You can refactor something into a module C to avoid
+that.
+***** Operatins within the same module should have a ~create~ and ~delete~ function interface
+Again, following the C++ pattern, if you have a module that can
+perform the same operations on different instances of data, have a
+create and delete function in your interface that will return a pointer
+to struct that is passed back to other functions. But for the sake of
+encapsulation, return a void pointer in the public interface and cast to
+your struct inside of the module.
+***** Avoid module scope variables
+Avoid module-scope variables -- the previously described pattern
+will usually do what you need. But if you really need module-scope
+variables, group them under a struct stored in a single module-scope
+variable called "m" or something consistent. Then in your code whenever
+you see "m.variable" you will know at a glance it is one of the
+module-scope structs.
+***** Define HEADER name to avoid double including and/or header problems
+To avoid header trouble, put ~#ifndef MY_HEADER_H~ ~#define MY_HEADER_H~
+declaration that protects against double including. The header .h file for your
+module, should only contain ~#includes~ needed FOR THAT HEADER FILE. The module
+~.c~ file can have more includes needed for the compiling the module, but don't
+add those includes into the module header file. This will save you from a lot of
+namespace conflicts and order-of-include problems.
+*** Go programming :Go:
+**** Packages
+In Go, programs start running in package =main=. Package names are defined by
+the last element of the import path: =import math/rand= has files which begin
+with the =package rand=. Packages consists of a bunch of =.go= files.
+
+Package identifiers (functions, variables, struct and other data), may be used
+in other packages, with a few exceptions. Go allows only exported identifiers to
+be called after the package import. An exported identifier is any identifier
+which the first character starts in ~UPPER CASE~. Any identifier which starts
+with a ~lower case~ letter is not exported.
+
+Exported identifiers can be thought of =public= and =private= we see in other
+languages. This approach allows us to separate public API by using upper case
+character from private logic.
+
+Private identifier within a package may be referenced within its package.
+**** Functions
+A function can have 0 or more arguments. All arguments must be typed: =x int, y
+int=, when 2 or consecutives arguments share the same type, arguments may be
+defined as so: =x, y int=.
+
+Functions can return 0 or more number of results: =return x, y=. Function return
+values may be named, and must be defined after the function declaraction and
+before the beginning ={=
+
+#+BEGIN_SRC go
+func foobar(x, y int) (z int){
+	z = x * y
+	return
+}
+#+END_SRC
+
+The empty return will return the z value. Named return values should be used to
+document the meaning of the return values. Named return values should be used on
+short functions, as named values in large functions may become confusing.
+**** Defer
+
+** Code snippets :@code:snippets:
+*** Python run HTTP server locally :python:
+#+BEGIN_SRC sh -n
+python -m http.server 8000 --bind 127.0.0.1
+#+END_SRC
+** Thesis :@thesis:
+*** OS Kit
+The OSKit is a framework and a set of [[https://www.cs.utah.edu/flux/oskit/html/oskit-wwwch1.html][34 component libraries]]
+oriented to operating systems, together with extensive documentation. By
+providing in a modular way not only most of the infrastructure "grunge"
+needed by an OS, but also many higher-level components, the OSKit's goal
+is to lower the barrier to entry to OS R&D and to lower its costs. The
+OSKit makes it vastly easier to create a new OS, port an existing OS to
+the x86 (or in the future, to other architectures supported by the
+OSkit), or enhance an OS to support a wider range of devices, file
+system formats, executable formats, or network services. The OSKit also
+works well for constructing OS-related programs, such as boot loaders or
+OS-level servers atop a microkernel
+*** Memory management :memory:osdev:architecture:
+**** Parkinson's law
+Programs and their data expand to fill the memory available to hold them
+**** Memory hierarchy
+***** Small fast and expensive memory up to a very slow and cheap memory
+****** Processor registers
+****** Processor cache
+****** Random access memory (RAM)
+****** Flash/USB memory
+****** Hard drive
+****** Tape backups
+***** The part that handles memory in the operating system is called memory manager
+****** The manager should be capable of allocating/deallocating memory for processes
+****** Keep track of which location in memory is in use
+***** Lowest cache level is /generally/ handled by the hardware
+***** Not having any memory abstraction at all is the simplest abstraction
+The simplest memory abstraction is to have no abstraction at all,
+that being said, the programmer sees all the memory and may read/write
+from anywhere, however, this implies one program is running, otherwise
+one program may interfere with the other
+****** One solution for allowing two or more programs running
+simultaneously is if one program knows about the existence of the other.
+With this approach, the programmer requires to divide memory into 2
+"blocks", and allocate each block to the corresponding program, for
+example, the kernel may be at the button of memory and the program on
+top of it. It's worth noting this implies the program may wipe (or
+read/write) the kernel address
+****** Another solution is to store the kernel in ROM, and keep the program in RAM
+
+****** When the kernel needs to switch process, it will load the the
+program from disk and overwrite the current running program
+
+****** All the kernel needs to do is save the memory context to disk and
+load the new program
+
+****** With the help of extra hardware, it is possible to divide memory
+into blocks and protect other programs from accessing blocks of other
+programs loaded in memory
+
+******* This brings a problem since programs may move data from physical
+memory, say program A jumps to address `0x12` and program b copies data
+from in memory address `0x12`. When program A jumps to address `0x12` it
+would instead crash, since that was not the expected address. The
+problem is that both programs reference physical memory and this is
+**totally undesirable**, what is desirable is that programs reference a
+private set of local address to it
+
+See: https://imgur.com/a/5FlWN4A
+
+******* **Static relocation**: modify the second program on the fly as
+it loaded into memory (IBM 360 did this)
+
+***** The operating system should coordinate on how these memories are handled
+****** It should handle:
+******* Keep track which parts of memory are in used and which aren't
+******* Allocate and deallocate memory
+******* Swapping between main memory to disk when main memory is too small to hold the process
+***** Memory abstractions
+****** Address spaces
+******* Allows multiple applications to be in memory at the same time
+******* Prevents applications from interfering with each other
+******* Abstract memory for programs to be stored in
+******* Works like a telephone number
+in Brazil, it is common for local cities to have a 8-digit phone number, so the
+address space for the telephone number starts in 0000,0000 up to 9999,9999.
+****** Stack pointer
+******* RISC-V ABI's stack pointer
+The stack pointer points to the next available memory location on the stack, and
+the frame pointer points to the base of the __stack frame__.
+**** Physical Memory management
+***** Direct memory address to access a real location in RAM
+*** Understanding RISC-V stack pointer :riscv:
+**** [[https://dynalist.io/u/5cYI9hHNgUYs0U47UXe0RZ6U][L06 RISCV Functions(6up).pdf]]
+*** Code :snippets:
+**** Linux trap handler
+:PROPERTIES:
+:SOURCE:   https://github.com/torvalds/linux/blob/95f1fa9e3418d50ce099e67280b5497b9c93843b/arch/riscv/kernel/traps.c#L150
+:END:
+#+BEGIN_SRC C
+void __init trap_init(void)
+{
+    /*
+    * Set sup0 scratch register to 0, indicating to exception vector
+    * that we are presently executing in the kernel
+    */
+    csr_write(CSR_SCRATCH, 0);
+    /* Set the exception vector address */
+    csr_write(CSR_TVEC, &handle_exception);
+    /* Enable all interrupts */
+    csr_write(CSR_IE, -1);
+}
+#+END_SRC
+**** Send S-mode interrupts and most exceptions to S-mode
+:PROPERTIES:
+:SOURCE:   https://github.com/riscv/riscv-pk/blob/6fa3555cc501ab1dfb034061e991e065e2e54253/machine/minit.c
+:END:
+#+BEGIN_SRC C
+// send S-mode interrupts and most exceptions straight to S-mode
+static void delegate_traps() {
+  if (!supports_extension('S'))
+    return;
+
+  uintptr_t interrupts = MIP_SSIP | MIP_STIP | MIP_SEIP;
+  uintptr_t exceptions =
+      (1U << CAUSE_MISALIGNED_FETCH) | (1U << CAUSE_FETCH_PAGE_FAULT) |
+      (1U << CAUSE_BREAKPOINT) | (1U << CAUSE_LOAD_PAGE_FAULT) |
+      (1U << CAUSE_STORE_PAGE_FAULT) | (1U << CAUSE_USER_ECALL);
+
+  write_csr(mideleg, interrupts);
+  write_csr(medeleg, exceptions);
+  assert(read_csr(mideleg) == interrupts);
+  assert(read_csr(medeleg) == exceptions);
+}
+#+END_SRC
+**** Timer interrupt in assembly
+***** https://forums.sifive.com/t/beginner-trying-to-set-up-timer-irq-in-assembler-how-to-print-csrs-in-gdb/2764
+**** Freedom metal Interrupt
+***** Initialize CPU interrupt controller
+#+BEGIN_SRC C
+void __metal_driver_riscv_cpu_controller_interrupt_init(
+    struct metal_interrupt *controller) {
+  struct __metal_driver_riscv_cpu_intc *intc = (void *)(controller);
+  uintptr_t val;
+
+  if (!intc->init_done) {
+    /* Disable and clear all interrupt sources */
+    asm volatile("csrc mie, %0" ::"r"(-1));
+    asm volatile("csrc mip, %0" ::"r"(-1));
+
+    /* Read the misa CSR to determine if the delegation registers exist */
+    uintptr_t misa;
+    asm volatile("csrr %0, misa" : "=r"(misa));
+
+    /* The delegation CSRs exist if user mode interrupts (N extension) or
+     ,* supervisor mode (S extension) are supported */
+    if ((misa & METAL_ISA_N_EXTENSIONS) || (misa & METAL_ISA_S_EXTENSIONS)) {
+      /* Disable interrupt and exception delegation */
+      asm volatile("csrc mideleg, %0" ::"r"(-1));
+      asm volatile("csrc medeleg, %0" ::"r"(-1));
+    }
+
+    /* The satp CSR exists if supervisor mode (S extension) is supported */
+    if (misa & METAL_ISA_S_EXTENSIONS) {
+      /* Clear the entire CSR to make sure that satp.MODE = 0 */
+      asm volatile("csrc satp, %0" ::"r"(-1));
+    }
+
+    /* Default to use direct interrupt, setup sw cb table*/
+    for (int i = 0; i < METAL_MAX_MI; i++) {
+      intc->metal_int_table[i].handler = NULL;
+      intc->metal_int_table[i].sub_int = NULL;
+      intc->metal_int_table[i].exint_data = NULL;
+    }
+    for (int i = 0; i < METAL_MAX_ME; i++) {
+      intc->metal_exception_table[i] = __metal_default_exception_handler;
+    }
+    __metal_controller_interrupt_vector(METAL_DIRECT_MODE,
+                                        &__metal_exception_handler);
+    asm volatile("csrr %0, misa" : "=r"(val));
+    if (val & (METAL_ISA_D_EXTENSIONS | METAL_ISA_F_EXTENSIONS |
+               METAL_ISA_Q_EXTENSIONS)) {
+      /* Floating point architecture, so turn on FP register saving*/
+      asm volatile("csrr %0, mstatus" : "=r"(val));
+      asm volatile("csrw mstatus, %0" ::"r"(val | METAL_MSTATUS_FS_INIT));
+    }
+    intc->init_done = 1;
+  }
+}
+#+END_SRC
+***** Set trap vector configuration
+#+BEGIN_SRC C
+void __metal_controller_interrupt_vector(metal_vector_mode mode,
+                                         void *vec_table) {
+  uintptr_t trap_entry, val;
+
+  asm volatile("csrr %0, mtvec" : "=r"(val));
+  val &= ~(METAL_MTVEC_CLIC_VECTORED | METAL_MTVEC_CLIC_RESERVED);
+  trap_entry = (uintptr_t)vec_table;
+
+  switch (mode) {
+  case METAL_SELECTIVE_VECTOR_MODE:
+    asm volatile("csrw mtvt, %0" ::"r"(trap_entry | METAL_MTVEC_CLIC));
+    asm volatile("csrw mtvec, %0" ::"r"(val | METAL_MTVEC_CLIC));
+    break;
+  case METAL_HARDWARE_VECTOR_MODE:
+    asm volatile("csrw mtvt, %0" ::"r"(trap_entry | METAL_MTVEC_CLIC_VECTORED));
+    asm volatile("csrw mtvec, %0" ::"r"(val | METAL_MTVEC_CLIC_VECTORED));
+    break;
+  case METAL_VECTOR_MODE:
+    asm volatile("csrw mtvec, %0" ::"r"(trap_entry | METAL_MTVEC_VECTORED));
+    break;
+  case METAL_DIRECT_MODE:
+    asm volatile(
+        "csrw mtvec, %0" ::"r"(trap_entry & ~METAL_MTVEC_CLIC_VECTORED));
+    break;
+  }
+}
+#+END_SRC
+**** For ~DIRECT_ACCESS~ interrupt vector configuration
+*** IRC
+**** [[https://dynalist.io/u/33rH8mexp0c1_S2JNvLTcwEJ][Switching from machine-mode to supervisor-mode!]]
+*** Privilege modes :os:kernel:
+:PROPERTIES:
+:SOURCE:   https://content.riscv.org/wp-content/uploads/2017/05/riscv-privileged-v1.10.pdf
+:SECTION: 1.3
+:END:
+|-------+----------+------------------+--------------|
+| Level | Encoding | Name             | Abbreviation |
+|-------+----------+------------------+--------------|
+|     0 |       00 | User/Application | U            |
+|     1 |       01 | Supervisor       | S            |
+|     2 |       10 | Reserved         |              |
+|     3 |       11 | Machine          | M            |
+|-------+----------+------------------+--------------|
+**** Provides protection between different components of the software stack
+**** Any attempts to perform an operation not allowed by the current mode will cause an exception to be raised
+**** These exceptions will normally cause traps into the underlying execution environment
+**** Machine mode
+***** Highest privilege
+***** **Mandatory** privilege level for RISC-V hardware platform
+***** Trusted code environment
+***** Low level access to the machine implementation
+***** Manage secure execution environments
+**** User mode and supervisor mode are indented for conventional application and operating systems
+|------------------+-----------------+-----------------------------|
+| Number of levels | Supported modes | Indented Usage              |
+|------------------+-----------------+-----------------------------|
+|                1 | M               | Simple embedded systems     |
+|                2 | M, U            | Secure embedded systems     |
+|                3 | M, S U          | Unix-like operating systems |
+|------------------+-----------------+-----------------------------|
+**** Exceptions
+***** Any attempts to access non-existent CSR, read or write a read-only register raises an **illegal instruction**
+***** A read/write register might also contain bits that are read-only, in which writes to read-only bits **are ignored**
+**** Supervisor mode
+http://www-inst.eecs.berkeley.edu/~cs152/sp12/handouts/riscv-supervisor.pdf
+**** **Steps to reproduce the behavior**
+***** Switch to machine mode (if not already by default)
+** Books :@books:
+*** **Mídia** - Noam Chomsky :politics:
+**** Duas concepções diferentes de democracia
+1. Uma sociedade democrática é aquela em que o povo dispõe de
+condições de participar de maneira significativa na condução de seus
+assuntos pessoais e na qual os canais de informação são acessíveis e
+livres
+2. O povo deve ser impedido de conduzir seus assuntos pessoais e os
+canais de informação devem ser estreita e rigidamente controlados
+  - Essa é a concepção predominante
+  - Primeiras revoluções democráticas na Inglaterra do século XVII
+    (17) expressam em grande medida esse ponto de vista
+**** Primeira operação de propaganda governamental
+***** Governo de [[https://en.wikipedia.org/wiki/Woodrow_Wilson][Woodrow Wilson]]
+#+CAPTION: Pasted image
+[[[[https://dynalist.io/u/ZQA1dAc7Eut0bwSRwZeMRqQ0]]]]
+***** Presidente dos Estados Unidos em 1916
+****** Plataforma "Paz sem Vitória"
+******* Metade da Primeira Guerra Mundial
+**** População bastante pacifista e sem motivo algum que justificasse envolvimento em guerra Europeia
+**** Constituída uma comissão de propaganda governamental
+***** [[https://en.wikipedia.org/wiki/Committee_on_Public_Information][ComissãoCreel]]
+#+CAPTION: Pasted image
+[[https://dynalist.io/u/7sEyNdz3VqlLWY9GpIypishZ]]
+****** Committee on Public Information
+****** 1917 - 1919
+****** Transformou uma população dentro de 6 meses
+Conseguiua dentro de 6 meses transformar uma população pacifista
+em uma população histérica e belicosa que queria destruir tudo que fosse
+alemão
+******* Efeito importante que levou a outros efeitos
+**** Após a guerra, forma utilizadas as mesmas técnicas para gerar um Pânico Vermelho
+***** Obteve êxito considerável na destruição de sindicatos e na eliminação de problemas perigosos como
+****** Liberdade de imprensa
+****** Liberdade de pensamento político
+***** Grande apoio dos lideres empresariais e da mídia
+****** Ambos organizaram e investiram muito na iniciativa
+**** Intelectuais progressistas participaram ativamente
+***** Pessoas do circulo de [JohnDewey](https://en.wikipedia.org/wiki/John_Dewey)
+#+CAPTION: Pasted image
+[[https://dynalist.io/u/4O4qv1_wmp2T5nHYLMIiMcDD]]
+** Political thoughts :@politics:@thoughts:
+*** Abortion should be legal, safe and rare
+
+* COMMENT Emacs local startup variables :noexport:
+:PROPERTIES:
+:DESCRIPTION: Emacs buffer local configuration
+:END:
+
+# Local variables:
+# eval: (add-hook 'after-save-hook 'org-hugo-auto-export-mode t t)
+# end:
+
