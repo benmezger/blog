@@ -33,4 +33,5 @@ params:
 
   BookRepo: https://github.com/benmezger/benmezger.github.io
   BookEditPath: edit/master/content-org
-
+  customCss:
+    - "assets/css/orgmode.css"
