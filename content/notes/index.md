@@ -1,9 +1,8 @@
 +++
 title = "Notes"
 author = ["Ben Mezger"]
-date = 2020-04-23T00:00:00-03:00
 publishDate = 2020-04-25T00:00:00-03:00
-lastmod = 2020-04-26T02:20:09-03:00
+lastmod = 2020-04-27T22:44:20-03:00
 categories = ["notes"]
 type = "docs"
 draft = false
@@ -99,9 +98,13 @@ The top-down and bottom-up are known to be more efficient in production use[^fn:
 
 ### Integral Calculus {#integral-calculus}
 
+> These are the two ways we commonly think about definite integrals: they describe
+> an accumulation of a quantity, so the entire definite integral gives us the net
+> change in that quantity.[^fn:1]
+
 #### Why Integral Calculus {#why-integral-calculus}
 
-Figure [1](#orge4047aa) represents 2 graphs of `y = cos(x)`. Let&rsquo;s say we would
+Figure [1](#org585e196) represents 2 graphs of `y = cos(x)`. Let&rsquo;s say we would
 like to calculate the area of {{<katex>}} x_1 {{</katex>}}. We could calculate
 the area by aproximation, for example, Graph B is filled with the area we would
 like to calculate, so we could divide this area by equal sections of
@@ -135,7 +138,7 @@ plot f(x) fs solid 0.3 lc rgb '#A3001E'
 unset multiplot
 ```
 
-<a id="orge4047aa"></a>
+<a id="org585e196"></a>
 
 {{< figure src="/assets/imgs/graph-example.png" >}}
 
