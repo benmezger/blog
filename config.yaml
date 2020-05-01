@@ -2,6 +2,7 @@ baseURL: https://seds.nl/
 languageCode: en-us
 title: Ben Mezger
 theme: book
+enableRobotsTXT: true
 
 enableGitInfo: 1
 enableEmoji: true
