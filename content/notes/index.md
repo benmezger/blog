@@ -2,7 +2,7 @@
 title = "Notes"
 author = ["Ben Mezger"]
 publishDate = 2020-04-25T00:00:00-03:00
-lastmod = 2020-04-27T22:44:20-03:00
+lastmod = 2020-04-30T23:17:05-03:00
 categories = ["notes"]
 type = "docs"
 draft = false
@@ -104,7 +104,7 @@ The top-down and bottom-up are known to be more efficient in production use[^fn:
 
 #### Why Integral Calculus {#why-integral-calculus}
 
-Figure [1](#org585e196) represents 2 graphs of `y = cos(x)`. Let&rsquo;s say we would
+Figure [1](#org24b7869) represents 2 graphs of `y = cos(x)`. Let&rsquo;s say we would
 like to calculate the area of {{<katex>}} x_1 {{</katex>}}. We could calculate
 the area by aproximation, for example, Graph B is filled with the area we would
 like to calculate, so we could divide this area by equal sections of
@@ -138,9 +138,9 @@ plot f(x) fs solid 0.3 lc rgb '#A3001E'
 unset multiplot
 ```
 
-<a id="org585e196"></a>
+<a id="org24b7869"></a>
 
-{{< figure src="/assets/imgs/graph-example.png" >}}
+{{< figure src="../static/assets/imgs/graph-example.png" >}}
 
 The idea of getting better and better approximations is the what constitutes
 Integral Calculus.
@@ -656,6 +656,25 @@ static void delegate_traps() {
 - Switch to machine mode (if not already by default)
 
 ## Books {#books}
+
+### List {#list}
+
+<div class="table-caption">
+  <span class="table-number">Table 1</span>:
+  Clock summary at <span class="timestamp-wrapper"><span class="timestamp">[2020-04-30 Thu 23:17]</span></span>
+</div>
+
+| Headline                                                                         | Time     |     |      |      |
+| -------------------------------------------------------------------------------- | -------- | --- | ---- | ---- |
+| **Total time**                                                                   | **3:10** |     |      |      |
+| &ensp;&ensp;&ensp;&ensp;List                                                     |          |     | 3:10 |      |
+| &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Nonviolent Communication: A language&#x2026; |          |     |      | 3:10 |
+
+#### <span class="org-todo todo READING">READING</span> Nonviolent Communication: A language for life {#nonviolent-communication-a-language-for-life}
+
+- State &ldquo;READING&rdquo; from &ldquo;TODO&rdquo; <span class="timestamp-wrapper"><span class="timestamp">[2020-04-29 Wed 17:50]</span></span>
+
+#### <span class="org-todo todo NEXT">NEXT</span> Clean Code {#clean-code}
 
 ### \***\*Mídia\*\*** - Noam Chomsky {#mídia-noam-chomsky}
 
