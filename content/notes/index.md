@@ -2,7 +2,7 @@
 title = "Notes"
 author = ["Ben Mezger"]
 publishDate = 2020-04-25T00:00:00-03:00
-lastmod = 2020-04-30T23:17:05-03:00
+lastmod = 2020-05-01T01:37:53-03:00
 categories = ["notes"]
 type = "docs"
 draft = false
@@ -104,7 +104,7 @@ The top-down and bottom-up are known to be more efficient in production use[^fn:
 
 #### Why Integral Calculus {#why-integral-calculus}
 
-Figure [1](#org24b7869) represents 2 graphs of `y = cos(x)`. Let&rsquo;s say we would
+Figure [1](#org03c041d) represents 2 graphs of `y = cos(x)`. Let&rsquo;s say we would
 like to calculate the area of {{<katex>}} x_1 {{</katex>}}. We could calculate
 the area by aproximation, for example, Graph B is filled with the area we would
 like to calculate, so we could divide this area by equal sections of
@@ -138,9 +138,9 @@ plot f(x) fs solid 0.3 lc rgb '#A3001E'
 unset multiplot
 ```
 
-<a id="org24b7869"></a>
+<a id="org03c041d"></a>
 
-{{< figure src="../static/assets/imgs/graph-example.png" >}}
+{{< figure src="/assets/imgs/graph-example.png" >}}
 
 The idea of getting better and better approximations is the what constitutes
 Integral Calculus.
