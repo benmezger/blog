@@ -2,7 +2,7 @@
 title = "Notes"
 author = ["Ben Mezger"]
 publishDate = 2020-04-25T00:00:00-03:00
-lastmod = 2020-05-01T01:37:53-03:00
+lastmod = 2020-05-01T01:40:01-03:00
 categories = ["notes"]
 type = "docs"
 draft = false
@@ -18,7 +18,7 @@ draft = false
 Internet. Unfortunately I don&rsquo;t have the source for all of them, but I will try
 to keep this updated.
 
-Notes that are tagged or start with `TODO` are notes that or I am still working
+Notes that tagged or start with `TODO` are notes that or I am still working
 on or that are simply incomplete :pensive:
 {{< /hint >}}
 
@@ -104,7 +104,7 @@ The top-down and bottom-up are known to be more efficient in production use[^fn:
 
 #### Why Integral Calculus {#why-integral-calculus}
 
-Figure [1](#org03c041d) represents 2 graphs of `y = cos(x)`. Let&rsquo;s say we would
+Figure [1](#org6fb1e10) represents 2 graphs of `y = cos(x)`. Let&rsquo;s say we would
 like to calculate the area of {{<katex>}} x_1 {{</katex>}}. We could calculate
 the area by aproximation, for example, Graph B is filled with the area we would
 like to calculate, so we could divide this area by equal sections of
@@ -138,7 +138,7 @@ plot f(x) fs solid 0.3 lc rgb '#A3001E'
 unset multiplot
 ```
 
-<a id="org03c041d"></a>
+<a id="org6fb1e10"></a>
 
 {{< figure src="/assets/imgs/graph-example.png" >}}
 
