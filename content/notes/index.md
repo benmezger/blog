@@ -1,8 +1,9 @@
 +++
 title = "Notes"
 author = ["Ben Mezger"]
+date = 2020-04-23T00:00:00-03:00
 publishDate = 2020-04-25T00:00:00-03:00
-lastmod = 2020-05-01T01:40:01-03:00
+lastmod = 2020-05-02T02:46:23-03:00
 categories = ["notes"]
 type = "docs"
 draft = false
@@ -104,7 +105,7 @@ The top-down and bottom-up are known to be more efficient in production use[^fn:
 
 #### Why Integral Calculus {#why-integral-calculus}
 
-Figure [1](#org6fb1e10) represents 2 graphs of `y = cos(x)`. Let&rsquo;s say we would
+Figure [1](#org7f4a10d) represents 2 graphs of `y = cos(x)`. Let&rsquo;s say we would
 like to calculate the area of {{<katex>}} x_1 {{</katex>}}. We could calculate
 the area by aproximation, for example, Graph B is filled with the area we would
 like to calculate, so we could divide this area by equal sections of
@@ -138,7 +139,7 @@ plot f(x) fs solid 0.3 lc rgb '#A3001E'
 unset multiplot
 ```
 
-<a id="org6fb1e10"></a>
+<a id="org7f4a10d"></a>
 
 {{< figure src="/assets/imgs/graph-example.png" >}}
 
@@ -661,14 +662,14 @@ static void delegate_traps() {
 
 <div class="table-caption">
   <span class="table-number">Table 1</span>:
-  Clock summary at <span class="timestamp-wrapper"><span class="timestamp">[2020-04-30 Thu 23:17]</span></span>
+  Clock summary at <span class="timestamp-wrapper"><span class="timestamp">[2020-05-01 Fri 15:13]</span></span>
 </div>
 
 | Headline                                                                         | Time     |     |      |      |
 | -------------------------------------------------------------------------------- | -------- | --- | ---- | ---- |
-| **Total time**                                                                   | **3:10** |     |      |      |
-| &ensp;&ensp;&ensp;&ensp;List                                                     |          |     | 3:10 |      |
-| &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Nonviolent Communication: A language&#x2026; |          |     |      | 3:10 |
+| **Total time**                                                                   | **3:49** |     |      |      |
+| &ensp;&ensp;&ensp;&ensp;List                                                     |          |     | 3:49 |      |
+| &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Nonviolent Communication: A language&#x2026; |          |     |      | 3:49 |
 
 #### <span class="org-todo todo READING">READING</span> Nonviolent Communication: A language for life {#nonviolent-communication-a-language-for-life}
 
