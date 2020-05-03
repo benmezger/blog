@@ -4,6 +4,8 @@ title: Ben Mezger
 theme: book
 enableRobotsTXT: true
 disqusShortname: benmezger
+googleAnalytics: UA-138318350-1
+
 
 enableGitInfo: 1
 enableEmoji: true
