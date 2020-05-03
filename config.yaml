@@ -39,3 +39,4 @@ params:
   BookEditPath: edit/master
   customCss:
     - "assets/css/orgmode.css"
+    - "assets/css/custom.css"
