@@ -12,12 +12,21 @@ hugo --gc --minify
 cd public
 
 ## Commit and push
-git add .
-git commit -F- <<EOF
-Automatic site rebuild of $(date)
+if [[ `git status --porcelain` ]]; then
+  git add .
 
-This is a rebuild of commit '$blog_head'
-Respository: github.com/benmezger/blog
-EOF
+  git commit -m "Automatic site rebuild of $(date)
 
-#git push origin master
+  
+  This is a rebuild of commit '$blog_head'
+  Respository: github.com/benmezger/blog"
+else
+  printf "No changes detected.\n"
+fi
+
+git push origin master
+
+# Move back to blog/
+cd ..
+
+rsync -v -rz --checksum --delete public/ root@seds.nl:/var/www/seds
