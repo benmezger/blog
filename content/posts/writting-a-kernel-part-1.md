@@ -3,7 +3,6 @@ title = "Understanding key concepts before writing a Kernel"
 author = ["Ben Mezger"]
 date = 2020-05-03T12:42:00-03:00
 publishDate = 2020-05-03
-lastmod = 2020-05-03T12:42:53-03:00
 tags = ["c", "riscv"]
 categories = ["blog", "kernel"]
 draft = false
@@ -46,13 +45,13 @@ set, which serves as an interface between the hardware and software.
 Application developers need to communicate with these types of hardware, and by
 having to learn each computer specification is difficult and time-consuming. The
 kernel is the middle section of the abstraction between hardware and user
-software (Figure [1](#org3cd2949)). It manages computer resources to
+software (Figure [1](#org8a94f0d)). It manages computer resources to
 allow application programmers to communicate with them.
 
 By having a simpler model of the computer, application programmers can write
 less error-prone software by leaving the hardware complexity to the kernel.
 
-<a id="org3cd2949"></a>
+<a id="org8a94f0d"></a>
 
 {{< figure src="/assets/imgs/os-hw-flow.png" >}}
 

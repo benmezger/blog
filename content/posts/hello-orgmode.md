@@ -3,7 +3,6 @@ title = "Hello, org-mode and hugo"
 author = ["Ben Mezger"]
 date = 2020-04-23T00:00:00-03:00
 publishDate = 2020-04-25T00:00:00-03:00
-lastmod = 2020-04-26T02:20:07-03:00
 tags = ["emacs", "orgmode"]
 categories = ["blog", "web"]
 type = "post"
