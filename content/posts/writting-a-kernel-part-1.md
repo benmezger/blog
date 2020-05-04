@@ -48,7 +48,7 @@ serves as an interface between the hardware and software.
 Application developers need to communicate with these types of hardware,
 and by having to learn each computer specification is difficult and
 time-consuming. The kernel is the middle section of the abstraction
-between hardware and user software (Figure [1](#org6623b5b)). It manages
+between hardware and user software (Figure [1](#org123d1cb)). It manages
 computer resources to allow application programmers to communicate with
 them.
 
@@ -56,7 +56,7 @@ By having a simpler model of the computer, application programmers can
 write less error-prone software by leaving the hardware complexity to
 the kernel.
 
-<a id="org6623b5b"></a>
+<a id="org123d1cb"></a>
 
 {{< figure src="/assets/imgs/os-hw-flow.png" >}}
 
@@ -94,37 +94,6 @@ The processor needs extra hardware in order to do its job, RAM to store
 program and data, support for logic and at least one I/O device to
 transfer data between the computer and the outside world (Catsoulis
 2005)
-
-There is numerous computer architecture available, and the most common
-one is Intel's x86, which is based on the Von Neumann architecture. Von
-Neumann architecture suggests that data and instructions should be
-stored together in memory. Programs should be fetched from memory for
-execution by the CPU, where both data and programs are stored in memory
-the same way. With that said, there is no physical separation between
-data and program in modern CPUs. A Von Neumann microprocessor follows
-the corresponding pattern:
-
-1.  **Fetch**: fetch the instruction and necessary data from memory.
-2.  **Decode**: the instruction and data are separated, and the
-    components and pathways required to execute the instructions are
-    activated.
-3.  **Execute**: the instruction is executed, the data is manipulate and
-    the results are stored back in memory.
-
-{{< figure src="/assets/imgs/computer-architeture-pipeline.png" caption="Figure 1: Von Neumann architecture" >}}
-
-Other than Von Neumann's architecture, there is Harvard's architecture,
-which the computer system memory is separated into two discrete parts:
-data and instructions. In pure architecture, the two different memories
-use separate memory modules, and instructions can only be executed from
-the instruction memory.
-
-While modern computers are based on Von Neumann's architecture, there
-are newer variants that have features that are Harvard-like. While all
-program instructions and data are stored in the same memory area.
-However, by using a feature called paging, it allows physical memory to
-be segmented into large blocks of memory called pages, and each page of
-memory can either be an instruction or data.
 
 Processors should be designed to *process*, *store* and *retrieve* data,
 but for that to happen, the processor has to go through several stages,
