@@ -126,7 +126,7 @@ def delete_external_services():
     response = requests.post("..", hooks={"response": log_hook})
 ```
 
-I am still not entirely convinced is using a decorator for patching the hook is
+I am still not entirely convinced if using a decorator for patching the hook is
 the cleanest way, however, it allows us to modify the logging messages for all
 requests in one place without having to duplicate code or easily add custom
 logic to all requests.
