@@ -29,4 +29,4 @@ git push origin master
 # Move back to blog/
 cd ..
 
-rsync -v -rz --checksum --delete public/ root@seds.nl:/var/www/seds
+rsync -v -rz --checksum --delete public/ root@51.15.86.153:/var/www/seds
