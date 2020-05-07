@@ -136,19 +136,19 @@ code gets returned in `create_external_services`. We could modify our decorator
 to create an `expected_statuses` and check the response status code in
 `log_hook` before logging.
 
-{{< highlight python "linenos=table, linenostart=1" >}}
+```python
 from typing import Callable, Tuple
 import functools
 import logging
 
 def patch_http(
-logger: logging.Logger = None,
-level: int = logging.INFO,
-log_hook: Callable = log_hook,
-expected_statuses: Tuple[int] = (200, 201)
+    logger: logging.Logger = None,
+    level: int = logging.INFO,
+    log_hook: Callable = log_hook,
+    expected_statuses: Tuple[int] = (200, 201)
 ) -> Callable:
-if logger is None:
-logger = logging.getLogger("http.client")
+    if logger is None:
+        logger = logging.getLogger("http.client")
 
     def decorate_http(func):
         @functools.wraps(func)
@@ -163,10 +163,10 @@ logger = logging.getLogger("http.client")
 
     return decorate_http
 
-def log_hook(req, \*args, \*\*kwargs):
-...
-if not hasattr(log_hook, "expected_statuses"):
-setattr(log_hook, "expected_statuses", (200,))
+def log_hook(req, *args, **kwargs):
+    ...
+    if not hasattr(log_hook, "expected_statuses"):
+        setattr(log_hook, "expected_statuses", (200,))
 
     if req.status_code in log_hook.expected_statuses:
         log_hook.logger.log(
@@ -178,5 +178,4 @@ setattr(log_hook, "expected_statuses", (200,))
         )
         ....
     return req
-
-{{< /highlight >}}
+```
