@@ -30,6 +30,7 @@ languages:
     weight: 1
 
 params:
+  BookServiceWorker: true
   BookToC: true
   BookMenuBundle: /menu
   BookSection: blog
