@@ -18,6 +18,9 @@ markup:
   tableOfContents:
     startLevel: 1
 
+taxonomies:
+  note: notes
+
 
 languages:
   en:

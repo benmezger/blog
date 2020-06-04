@@ -1,0 +1,15 @@
+{{ define "main" }}
+  {{ range sort .Paginator.Pages }}
+    <li>
+      <a data-toggle={{ partial "docs/post-meta" . }} href="{{ .RelPermalink }}">{{ .Title }}</a>
+    </li>
+    <p>
+    </p>
+  {{ end }}
+
+  {{ template "_internal/pagination.html" . }}
+{{ end }}
+
+{{ define "toc" }}
+  {{ partial "docs/taxonomy" . }}
+{{ end }}
