@@ -2,7 +2,6 @@
 title = "List of Spotify artists"
 author = ["Ben Mezger"]
 date = 2020-05-30T18:56:00-03:00
-lastmod = 2020-06-04T00:47:29-03:00
 slug = "list-of-spotify-artists"
 type = "posts"
 draft = false

@@ -2,7 +2,6 @@
 title = "Binary calculation"
 author = ["Ben Mezger"]
 date = 2020-05-31T13:06:00-03:00
-lastmod = 2020-06-04T00:45:16-03:00
 slug = "binary-calculation"
 type = "posts"
 draft = false

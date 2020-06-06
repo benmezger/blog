@@ -2,7 +2,6 @@
 title = "Clean architecture"
 author = ["Ben Mezger"]
 date = 2020-05-30T20:00:00-03:00
-lastmod = 2020-06-04T00:47:22-03:00
 slug = "clean-architecture"
 type = "posts"
 draft = false

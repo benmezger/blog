@@ -2,7 +2,6 @@
 title = "Thinking methods"
 author = ["Ben Mezger"]
 date = 2020-05-31T01:19:00-03:00
-lastmod = 2020-06-04T00:47:42-03:00
 slug = "thinking-methods"
 type = "posts"
 draft = false
@@ -26,7 +25,7 @@ problems into sub-problems so we can better view reality.
 
 **Prevents failure from interacting with reality**
 
-<a id="org93254e4"></a>
+<a id="org83d475a"></a>
 
 {{< figure src="/assets/imgs/thinking-methods.jpg" caption="Figure 1: Mindmap of thinking methods" >}}
 

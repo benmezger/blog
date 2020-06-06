@@ -1,4 +1,9 @@
 {{ define "main" }}
+  <h1>Personal roam notes</h1>
+  <p>These are personal <i>org-roam</i> notes. I tend to make notes during the
+    day, and the ones I feel that are interesting I publish them here.
+  </p>
+  </br>
   {{ range sort (.Paginator 50).Pages }}
     <li>
       <a data-toggle={{ partial "docs/post-meta" . }} href="{{ .RelPermalink }}">{{ .Title }}</a>

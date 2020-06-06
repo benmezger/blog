@@ -2,7 +2,6 @@
 title = "The Communist Manifesto"
 author = ["Ben Mezger"]
 date = 2020-05-30T19:53:00-03:00
-lastmod = 2020-06-04T00:45:30-03:00
 slug = "communist-manifesto"
 type = "posts"
 draft = false

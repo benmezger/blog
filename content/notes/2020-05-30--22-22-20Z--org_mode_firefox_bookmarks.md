@@ -2,7 +2,6 @@
 title = "Org-mode Firefox bookmarks"
 author = ["Ben Mezger"]
 date = 2020-05-30T19:22:00-03:00
-lastmod = 2020-06-04T00:44:46-03:00
 slug = "orgmode-firefox-bookmark"
 type = "posts"
 draft = false
@@ -11,7 +10,10 @@ bookCollapseSection = true
 
 ### Backlinks {#backlinks}
 
-- [Org-roam firefox bookmark]({{< relref "2020-05-30--22-30-53Z--org_roam_firefox_bookmark" >}})
+- [Org-roam Firefox bookmark]({{< relref "2020-05-30--22-30-53Z--org_roam_firefox_bookmark" >}})
+
+tags
+: [Org-mode]({{< relref "2020-06-04--11-35-15Z--org_mode" >}}) [Emacs]({{< relref "2020-06-04--11-36-43Z--emacs" >}})
 
 Add the following scripts to call org-capture from Firefox
 

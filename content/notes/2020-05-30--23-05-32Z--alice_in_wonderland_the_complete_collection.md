@@ -2,7 +2,6 @@
 title = "Alice in wonderland: The complete collection"
 author = ["Ben Mezger"]
 date = 2020-05-30T20:05:00-03:00
-lastmod = 2020-06-04T00:46:47-03:00
 slug = "alice-in-wonderland"
 type = "posts"
 draft = false

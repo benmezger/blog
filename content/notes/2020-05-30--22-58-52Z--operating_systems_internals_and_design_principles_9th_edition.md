@@ -2,7 +2,6 @@
 title = "Operating systems: Internals and design principles (9th edition)"
 author = ["Ben Mezger"]
 date = 2020-05-30T19:58:00-03:00
-lastmod = 2020-06-04T00:47:04-03:00
 slug = "operating-systems"
 type = "posts"
 draft = false

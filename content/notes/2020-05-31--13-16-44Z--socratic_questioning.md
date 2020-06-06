@@ -2,7 +2,6 @@
 title = "Socratic questioning"
 author = ["Ben Mezger"]
 date = 2020-05-31T10:16:00-03:00
-lastmod = 2020-06-04T00:47:56-03:00
 slug = "socratic-questioning"
 type = "posts"
 draft = false

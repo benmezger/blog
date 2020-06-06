@@ -2,7 +2,6 @@
 title = "Information Theory"
 author = ["Ben Mezger"]
 date = 2020-05-30T16:14:00-03:00
-lastmod = 2020-06-04T00:47:00-03:00
 slug = "information_theory"
 type = "posts"
 draft = false

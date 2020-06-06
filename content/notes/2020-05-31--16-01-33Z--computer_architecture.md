@@ -2,7 +2,6 @@
 title = "Computer Architecture"
 author = ["Ben Mezger"]
 date = 2020-05-31T13:01:00-03:00
-lastmod = 2020-06-04T00:45:25-03:00
 slug = "computer-architecture"
 type = "posts"
 draft = false

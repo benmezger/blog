@@ -2,7 +2,6 @@
 title = "Computer Science"
 author = ["Ben Mezger"]
 date = 2020-05-31T12:29:00-03:00
-lastmod = 2020-06-04T00:46:56-03:00
 slug = "computer-science"
 type = "posts"
 draft = false

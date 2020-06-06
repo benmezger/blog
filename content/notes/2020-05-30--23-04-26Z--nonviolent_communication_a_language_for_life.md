@@ -2,7 +2,6 @@
 title = "Nonviolent communication: A language for life"
 author = ["Ben Mezger"]
 date = 2020-05-30T20:04:00-03:00
-lastmod = 2020-06-04T00:45:55-03:00
 slug = "non-violent-communication"
 type = "posts"
 draft = false

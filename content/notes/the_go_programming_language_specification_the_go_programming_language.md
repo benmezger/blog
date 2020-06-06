@@ -1,7 +1,6 @@
 +++
 title = "The Go Programming Language Specification - The Go Programming Language"
 author = ["Ben Mezger"]
-lastmod = 2020-06-04T00:45:02-03:00
 slug = "the-go-programming-language-spec"
 type = "posts"
 draft = false
