@@ -17,6 +17,16 @@ tags
 
 ## <span class="org-todo todo READING">READING</span> Operating Systems: Internals and Design Principles (9th Edition) {#operating-systems-internals-and-design-principles--9th-edition}
 
+<div class="table-caption">
+  <span class="table-number">Table 1</span>:
+  Clock summary at <span class="timestamp-wrapper"><span class="timestamp">[2020-06-06 Sat 03:47]</span></span>
+</div>
+
+| Headline                            | Time     |
+| ----------------------------------- | -------- |
+| **Total time**                      | **3:24** |
+| Operating Systems: Internals and... | 3:24     |
+
 ### Exercises {#exercises}
 
 1.1. CPU: Takes care of processing data
