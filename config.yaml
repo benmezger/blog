@@ -27,10 +27,10 @@ languages:
     languageName: English
     contentDir: content
     weight: 1
-  pt:
-    languageName: Portuguese
-    contentDir: content.pt
-    weight: 1
+#  pt:
+#    languageName: Portuguese
+#    contentDir: content.pt
+#    weight: 1
 
 params:
   BookServiceWorker: true
