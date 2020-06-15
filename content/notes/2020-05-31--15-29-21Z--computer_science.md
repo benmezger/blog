@@ -20,6 +20,6 @@ bookCollapseSection = true
 - [Coding Theory]({{< relref "2020-05-31--19-10-00Z--coding_theory" >}})
 - [Go Programming]({{< relref "2020-05-31--15-31-36Z--go_programming" >}})
 - [C programming]({{< relref "2020-05-31--15-33-53Z--c_programming" >}})
-- [The Pragmatic programmer: from journeyman to master]({{< relref "2020-05-30--22-57-32Z--the_pragmatic_programmer_from_journeyman_to_master" >}})
 - [Operating systems: Internals and design principles (9th edition)]({{< relref "2020-05-30--22-58-52Z--operating_systems_internals_and_design_principles_9th_edition" >}})
 - [Clean architecture]({{< relref "2020-05-30--23-00-17Z--clean_architecture" >}})
+- [The Pragmatic programmer: from journeyman to master]({{< relref "2020-05-30--22-57-32Z--the_pragmatic_programmer_from_journeyman_to_master" >}})

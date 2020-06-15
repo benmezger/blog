@@ -19,13 +19,13 @@ tags
 
 <div class="table-caption">
   <span class="table-number">Table 1</span>:
-  Clock summary at <span class="timestamp-wrapper"><span class="timestamp">[2020-06-06 Sat 03:47]</span></span>
+  Clock summary at <span class="timestamp-wrapper"><span class="timestamp">[2020-06-15 Mon 09:07]</span></span>
 </div>
 
 | Headline                | Time     |
 | ----------------------- | -------- |
-| **Total time**          | **1:40** |
-| The Communist Manifesto | 1:40     |
+| **Total time**          | **2:36** |
+| The Communist Manifesto | 2:36     |
 
 :BOOK_CATEGORY: politics
 :BOOK_AUTHORS: Karl Marx, Friedrich Engels

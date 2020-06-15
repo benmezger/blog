@@ -19,13 +19,13 @@ tags
 
 <div class="table-caption">
   <span class="table-number">Table 1</span>:
-  Clock summary at <span class="timestamp-wrapper"><span class="timestamp">[2020-06-06 Sat 03:47]</span></span>
+  Clock summary at <span class="timestamp-wrapper"><span class="timestamp">[2020-06-14 Sun 11:43]</span></span>
 </div>
 
 | Headline                          | Time     |
 | --------------------------------- | -------- |
-| **Total time**                    | **3:42** |
-| The Pragmatic Programmer: From... | 3:42     |
+| **Total time**                    | **6:43** |
+| The Pragmatic Programmer: From... | 6:43     |
 
 :BOOK_CATEGORY: Computer science, software architecture, software engineering
 :BOOK_AUTHORS: Andy Hunt, David Thomas
