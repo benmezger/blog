@@ -3,6 +3,7 @@ title = "Interesting Golang libraries"
 author = ["Ben Mezger"]
 date = 2020-05-30T20:33:00-03:00
 slug = "interesting-golang-libraries"
+tags = ["go", "programming"]
 type = "posts"
 draft = false
 bookCollapseSection = true

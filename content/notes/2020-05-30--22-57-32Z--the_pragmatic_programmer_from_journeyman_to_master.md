@@ -3,6 +3,7 @@ title = "The Pragmatic programmer: from journeyman to master"
 author = ["Ben Mezger"]
 date = 2020-05-30T19:57:00-03:00
 slug = "the-pragmatic-programmer"
+tags = ["reading", "books"]
 type = "posts"
 draft = false
 bookCollapseSection = true

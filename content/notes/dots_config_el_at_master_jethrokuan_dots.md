@@ -1,6 +1,7 @@
 +++
 title = "dots/config.el at master · jethrokuan/dots"
 author = ["Ben Mezger"]
+tags = ["emacs", "roam", "lisp"]
 type = "posts"
 draft = false
 bookCollapseSection = true

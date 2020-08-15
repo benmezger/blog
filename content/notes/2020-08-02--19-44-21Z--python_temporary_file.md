@@ -3,6 +3,7 @@ title = "Python temporary file"
 author = ["Ben Mezger"]
 date = 2020-08-02T16:44:00-03:00
 slug = "python_temporary_file"
+tags = ["python", "programming", "libs"]
 type = "posts"
 draft = false
 bookCollapseSection = true
@@ -46,10 +47,10 @@ print(create_file().name)
 ```
 
 ```text
-<tempfile._TemporaryFileWrapper object at 0x7f45938c1898>
-/tmp/tmp6haif6if
-<tempfile._TemporaryFileWrapper object at 0x7f45938c1898>
-/tmp/tmprbuekm0a
+<tempfile._TemporaryFileWrapper object at 0x7f46864bb898>
+/tmp/tmpheedprs9
+<tempfile._TemporaryFileWrapper object at 0x7f46864bb898>
+/tmp/tmp7nol8aa4
 ```
 
 [NamedTemporaryFile](https://docs.python.org/3/library/tempfile.html#tempfile.NamedTemporaryFile) returns a file-like object that can be used as a temporary
@@ -79,9 +80,9 @@ print(create_file(suffix=".csv", prefix="hello-world").name)
 ```
 
 ```text
-<tempfile._TemporaryFileWrapper object at 0x7fc4586b09e8>
-/tmp/tmpfilel1fksfl2.csv
-/tmp/hello-worldnpsxgzz2.csv
+<tempfile._TemporaryFileWrapper object at 0x7f1195ab69e8>
+/tmp/tmpfileuzad3kkp.csv
+/tmp/hello-world4ahj1984.csv
 ```
 
 With `TemporaryFile` it returns a `TextIOWrapper`:

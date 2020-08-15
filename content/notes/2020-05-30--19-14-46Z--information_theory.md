@@ -3,6 +3,7 @@ title = "Information Theory"
 author = ["Ben Mezger"]
 date = 2020-05-30T16:14:00-03:00
 slug = "information_theory"
+tags = ["computing", "theory", "information", "studies"]
 type = "posts"
 draft = false
 bookCollapseSection = true

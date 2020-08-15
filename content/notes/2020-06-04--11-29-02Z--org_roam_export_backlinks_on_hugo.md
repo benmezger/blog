@@ -3,6 +3,7 @@ title = "Org-roam export backlinks on Hugo"
 author = ["Ben Mezger"]
 date = 2020-06-04T08:29:00-03:00
 slug = "org_roam_export_backlinks_on_hugo"
+tags = ["orgmode", "emacs"]
 type = "posts"
 draft = false
 bookCollapseSection = true

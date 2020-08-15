@@ -3,6 +3,7 @@ title = "List Foreign key constrants defined in a database"
 author = ["Ben Mezger"]
 date = 2020-06-21T03:20:00-03:00
 slug = "list_foreign_key_constrants_defined_in_a_database"
+tags = ["sql", "programming", "database"]
 type = "posts"
 draft = false
 bookCollapseSection = true

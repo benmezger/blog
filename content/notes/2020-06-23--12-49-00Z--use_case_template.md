@@ -3,6 +3,7 @@ title = "Use case template"
 author = ["Ben Mezger"]
 date = 2020-06-23T09:49:00-03:00
 slug = "use_case_template"
+tags = ["programming", "methodology", "cs"]
 type = "posts"
 draft = false
 bookCollapseSection = true

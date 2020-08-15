@@ -3,6 +3,7 @@ title = "The great mental models: General thinking concepts"
 author = ["Ben Mezger"]
 date = 2020-05-30T20:03:00-03:00
 slug = "the-great-mental-models"
+tags = ["read", "books", "mindset", "learning"]
 type = "posts"
 draft = false
 bookCollapseSection = true

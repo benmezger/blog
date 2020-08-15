@@ -3,6 +3,7 @@ title = "Go reading struct tag"
 author = ["Ben Mezger"]
 date = 2020-06-21T03:02:00-03:00
 slug = "go_reading_struct_tag"
+tags = ["go", "programming"]
 type = "posts"
 draft = false
 bookCollapseSection = true
@@ -49,11 +50,11 @@ func main() {
 ```
 
 ```text
+sex [required]
+maritalstatus [required]
 children [numeric]
 id [numeric]
 first [required]
 last [required]
 birth [required]
-sex [required]
-maritalstatus [required]
 ```

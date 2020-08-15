@@ -3,6 +3,7 @@ title = "Socratic questioning"
 author = ["Ben Mezger"]
 date = 2020-05-31T10:16:00-03:00
 slug = "socratic-questioning"
+tags = ["socratic", "mindset", "models"]
 type = "posts"
 draft = false
 bookCollapseSection = true

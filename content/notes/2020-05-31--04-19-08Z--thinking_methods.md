@@ -3,6 +3,7 @@ title = "Thinking methods"
 author = ["Ben Mezger"]
 date = 2020-05-31T01:19:00-03:00
 slug = "thinking-methods"
+tags = ["mindset"]
 type = "posts"
 draft = false
 bookCollapseSection = true
@@ -10,8 +11,8 @@ bookCollapseSection = true
 
 ## Backlinks {#backlinks}
 
--   [The great mental models: General thinking concepts]({{< relref "2020-05-30--23-03-02Z--the_great_mental_models_general_thinking_concepts" >}})
 -   [Mental models]({{< relref "2020-05-31--04-30-47Z--mental_models" >}})
+-   [The great mental models: General thinking concepts]({{< relref "2020-05-30--23-03-02Z--the_great_mental_models_general_thinking_concepts" >}})
 -   [Socratic questioning]({{< relref "2020-05-31--13-16-44Z--socratic_questioning" >}})
 
 tags
@@ -25,7 +26,7 @@ problems into sub-problems so we can better view reality.
 
 **Prevents failure from interacting with reality**
 
-<a id="org4422d80"></a>
+<a id="org185b09e"></a>
 
 {{< figure src="/assets/imgs/thinking-methods.jpg" caption="Figure 1: Mindmap of thinking methods" >}}
 

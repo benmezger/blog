@@ -3,6 +3,7 @@ title = "Personal git workflow"
 author = ["Ben Mezger"]
 date = 2020-08-04T11:06:00-03:00
 slug = "personal_git_workflow"
+tags = ["git", "workflow"]
 type = "posts"
 draft = false
 bookCollapseSection = true

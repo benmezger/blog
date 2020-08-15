@@ -3,6 +3,7 @@ title = "Ox-hugo export all roam to Hugo"
 author = ["Ben Mezger"]
 date = 2020-06-04T08:39:00-03:00
 slug = "ox_hugo_export_all_roam_to_hugo"
+tags = ["emacs", "orgmode", "hugo", "orgroam", "roam"]
 type = "posts"
 draft = false
 bookCollapseSection = true

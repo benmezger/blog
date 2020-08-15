@@ -3,6 +3,7 @@ title = "Alice in wonderland: The complete collection"
 author = ["Ben Mezger"]
 date = 2020-05-30T20:05:00-03:00
 slug = "alice-in-wonderland"
+tags = ["books", "read"]
 type = "posts"
 draft = false
 bookCollapseSection = true

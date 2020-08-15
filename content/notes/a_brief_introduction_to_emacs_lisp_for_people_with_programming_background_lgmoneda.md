@@ -1,6 +1,7 @@
 +++
 title = "A brief introduction to Emacs Lisp for people with programming background | lgmoneda"
 author = ["Ben Mezger"]
+tags = ["emacs", "lisp"]
 type = "posts"
 draft = false
 bookCollapseSection = true

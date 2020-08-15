@@ -3,6 +3,7 @@ title = "Nonviolent communication: A language for life"
 author = ["Ben Mezger"]
 date = 2020-05-30T20:04:00-03:00
 slug = "non-violent-communication"
+tags = ["read", "books"]
 type = "posts"
 draft = false
 bookCollapseSection = true
