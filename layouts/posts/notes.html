@@ -6,7 +6,7 @@
   </br>
   {{ range sort (.Paginator 50).Pages }}
     <li>
-      <a data-toggle={{ partial "docs/post-meta" . }} href="{{ .RelPermalink }}">{{ .Title }}</a>
+      <a data-toggle={{ partialCached "docs/post-meta" . }} href="{{ .RelPermalink }}">{{ .Title }}</a>
     </li>
     <p>
     </p>
@@ -16,5 +16,5 @@
 {{ end }}
 
 {{ define "toc" }}
-  {{ partial "docs/taxonomy" . }}
+  {{ partialCached "docs/taxonomy" . }}
 {{ end }}
