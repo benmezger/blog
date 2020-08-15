@@ -10,8 +10,8 @@ bookCollapseSection = true
 
 ## Backlinks {#backlinks}
 
-- [Methodologies]({{< relref "2020-06-23--12-50-09Z--methodologies" >}})
-- [Use case template]({{< relref "2020-06-23--12-49-00Z--use_case_template" >}})
+-   [Use case template]({{< relref "2020-06-23--12-49-00Z--use_case_template" >}})
+-   [Methodologies]({{< relref "2020-06-23--12-50-09Z--methodologies" >}})
 
 tags
 : [Programming]({{< relref "2020-05-31--15-33-23Z--programming" >}}) [Computer Science]({{< relref "2020-05-31--15-29-21Z--computer_science" >}})

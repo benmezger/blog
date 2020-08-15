@@ -9,7 +9,7 @@ bookCollapseSection = true
 +++
 
 | Artists                            |
-| ---------------------------------- |
+|------------------------------------|
 | Lana Del Rey                       |
 | Slipknot                           |
 | CocoRosie                          |
@@ -69,7 +69,7 @@ bookCollapseSection = true
 | Buena Vista Social Club            |
 | Muse                               |
 | Weval                              |
-| A\$AP Rocky                        |
+| A$AP Rocky                         |
 | Zero 7                             |
 | Parkway Drive                      |
 | XXXTENTACION                       |

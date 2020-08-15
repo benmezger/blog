@@ -10,11 +10,11 @@ bookCollapseSection = true
 
 ### Backlinks {#backlinks}
 
-- [Mental models]({{< relref "2020-05-31--04-30-47Z--mental_models" >}})
-- [Book progress]({{< relref "2020-05-30--23-10-29Z--book_progress" >}})
+-   [Mental models]({{< relref "2020-05-31--04-30-47Z--mental_models" >}})
 
 tags
 : [Mindset]({{< relref "2020-05-31--04-24-34Z--mindset" >}}) [Learning]({{< relref "2020-05-31--04-23-42Z--learning" >}}) [Communication]({{< relref "2020-06-02--11-55-00Z--communication" >}})
+
 
 ## <span class="org-todo done READ">READ</span> Nonviolent Communication: A language for life {#nonviolent-communication-a-language-for-life}
 
@@ -24,7 +24,7 @@ tags
 </div>
 
 | Headline                                | Time     |
-| --------------------------------------- | -------- |
+|-----------------------------------------|----------|
 | **Total time**                          | **8:12** |
 | Nonviolent Communication: A language... | 8:12     |
 

@@ -10,27 +10,22 @@ bookCollapseSection = true
 
 ### Backlinks {#backlinks}
 
-- [Org-roam Firefox bookmark]({{< relref "2020-05-30--22-30-53Z--org_roam_firefox_bookmark" >}})
+-   [Org-roam Firefox bookmark]({{< relref "2020-05-30--22-30-53Z--org_roam_firefox_bookmark" >}})
 
 tags
 : [Org-mode]({{< relref "2020-06-04--11-35-15Z--org_mode" >}}) [Emacs]({{< relref "2020-06-04--11-36-43Z--emacs" >}})
 
 Add the following scripts to call org-capture from Firefox
 
+
 ## Call capture template {#call-capture-template}
 
 The following calls capture template key `n`
 
 ```js
-javascript: location.href =
-  "org-protocol://capture?template=n" +
-  "&url=" +
-  encodeURIComponent(window.location.href) +
-  "&title=" +
-  encodeURIComponent(document.title) +
-  "&body=" +
-  encodeURIComponent(window.getSelection());
+javascript:location.href='org-protocol://capture?template=n'+'&url='+encodeURIComponent(window.location.href)+'&title='+encodeURIComponent(document.title)+'&body='+encodeURIComponent(window.getSelection());
 ```
+
 
 ## Without a capture template {#without-a-capture-template}
 

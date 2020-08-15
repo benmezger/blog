@@ -20,16 +20,17 @@ More documentation on the templating system can be found here.
 
 These templates should contain a `#+ROAM_KEY: ${ref}` in it.
 
+
 ## `Roam-ref` protocol {#roam-ref-protocol}
 
-Find and creates from with a specific ROAM_KEY
+Find and creates from with a specific ROAM\_KEY
 
 ```js
-javascript: location.href =
-  "org-protocol://roam-ref?template=r&ref=" +
-  encodeURIComponent(location.href) +
-  "&title=" +
-  encodeURIComponent(document.title);
+javascript:location.href =
+'org-protocol://roam-ref?template=r&ref='
++ encodeURIComponent(location.href)
++ '&title='
++ encodeURIComponent(document.title)
 ```
 
 Related link: <https://org-roam.readthedocs.io/en/master/roam%5Fprotocol/>

@@ -13,37 +13,43 @@ tags
 
 The `b` before the code blocks mean binary number, to avoid confusion
 
+
 ## Binary Addition {#binary-addition}
+
 
 ### Possibilities {#possibilities}
 
-| A   | OP  | B   | \\= |
-| --- | --- | --- | --- |
-| 1   | +   | 1   | 10  |
-| 1   | +   | 0   | 1   |
-| 0   | +   | 1   | 1   |
-| 0   | +   | 0   | 0   |
-| 1   | +   | 1+1 | 11  |
+| A | OP | B   | \\= |
+|---|----|-----|-----|
+| 1 | +  | 1   | 10  |
+| 1 | +  | 0   | 1   |
+| 0 | +  | 1   | 1   |
+| 0 | +  | 0   | 0   |
+| 1 | +  | 1+1 | 11  |
 
 Carry is involved whenever we have a result larger than `bin 1`
 
+
 ## Binary multiplication {#binary-multiplication}
+
 
 ### Possibilities {#possibilities}
 
-| A   | OP   | B   | \\= |
-| --- | ---- | --- | --- |
-| 0   | \*   | 0   | 0   |
-| 1   | \*   | 0   | 0   |
-| 1   | \*\* | 1   | 1   |
+| A | OP   | B | \\= |
+|---|------|---|-----|
+| 0 | \*   | 0 | 0   |
+| 1 | \*   | 0 | 0   |
+| 1 | \*\* | 1 | 1   |
+
 
 ## Binary subtraction {#binary-subtraction}
 
+
 ### Possibilities {#possibilities}
 
-| A   | OP  | B   | \\=                                         |
-| --- | --- | --- | ------------------------------------------- |
-| 0   | -   | 0   | 0                                           |
-| 1   | -   | 0   | 1                                           |
-| 1   | -   | 1   | 0                                           |
-| 0   | -   | 1   | (borrow 1 from the next column 10 - 1) = 1) |
+| A | OP | B | \\=                                         |
+|---|----|---|---------------------------------------------|
+| 0 | -  | 0 | 0                                           |
+| 1 | -  | 0 | 1                                           |
+| 1 | -  | 1 | 0                                           |
+| 0 | -  | 1 | (borrow 1 from the next column 10 - 1) = 1) |
