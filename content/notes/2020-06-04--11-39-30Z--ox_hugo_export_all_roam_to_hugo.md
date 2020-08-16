@@ -25,3 +25,6 @@ From: [jethrokuan/dots](https://github.com/jethrokuan/dots/blob/0064ea2aab667f11
       (when (s-contains? "SETUPFILE" (buffer-string))
         (org-hugo-export-wim-to-md)))))
 ```
+
+Adding an empty `#+SETUPFILE:` forces `benmezger/org-roam-export-all` to export
+the file.
