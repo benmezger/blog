@@ -54,4 +54,3 @@ keyboard macro to each of the lines of a region
 -   [EmacsWiki - Keyboard macros](https://www.emacswiki.org/emacs/KeyboardMacros)
 -   [elmacro - Shows keyboard macros or latest interactive commands as emacs lisp](https://github.com/Silex/elmacro)
 -   [GNU Emacs - Keyboard Macros](https://www.gnu.org/software/emacs/manual/html%5Fnode/emacs/Keyboard-Macros.html)
--   [Emacs keyboard macros (info)](<(info "(emacs) Keyboard macros")>)
