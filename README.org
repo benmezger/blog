@@ -1,0 +1,26 @@
+#+TITLE: README
+#+OPTIONS: toc:2
+
+This is my personal blog.
+
+* Requirements
+- Hugo >= =v0.74.3=
+- Git
+- Orgmode (non-required)
+
+* Running
+1. Run =git submodule update --init= to clone the theme.
+2. Run =hugo serve= and go to =http://localhost:1313=
+
+* Writing posts
+I use orgmode to write my posts and export it to Hugo's Markdown format
+
+* Deploying
+** Github.io
+Run =hugo --config gh_config.yaml=, this will generate a =public/= with the
+generated HTML content. Move this to your github.io repository and push.
+** Netlify
+Connect Netlify to your Github repository and push this repository.
+
+* Overwriting templates
+Overwrite your template in [[file:layouts/][layouts]] directory, which is organized per section and taxonomy.
