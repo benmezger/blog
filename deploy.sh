@@ -1,12 +1,19 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+# build netlify public pages
+hugo --destination generated_public/ --gc --minify
+
 blog_head=$(git rev-parse HEAD)
 
 printf "\033[0;32mDeploying updates to GitHub...\033[0m\n"
 printf "\033[1;31mDeploying commit $blog_head of 'blog' \n\033[1;0m"
 
-hugo --gc --minify
+echo "Removing public/"
+rm -rf public/
+
+git clone https://github.com/benmezger/benmezger.github.io.git public
+hugo --gc --minify -c gh_config.yaml 
 
 # Add newly created/updated files
 cd public
@@ -24,9 +31,5 @@ else
   printf "No changes detected.\n"
 fi
 
-git push origin master
+git push -f -q https://$GITHUB_TOKEN@github.com/benmezger/benmezger.github.io.git master
 
-# Move back to blog/
-cd ..
-
-rsync -v -rz --checksum --delete public/ root@51.15.86.153:/var/www/seds
