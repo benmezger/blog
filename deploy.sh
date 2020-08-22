@@ -18,12 +18,14 @@ hugo --gc --minify -c gh_config.yaml
 # Add newly created/updated files
 cd public
 
+git config user.email "me@benmezger.nl"
+git config user.name "Ben Mezger" 
+
 ## Commit and push
 if [[ `git status --porcelain` ]]; then
   git add .
 
   git commit -m "Automatic site rebuild of $(date)
-
   
   This is a rebuild of commit '$blog_head'
   Respository: github.com/benmezger/blog"
