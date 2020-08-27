@@ -36,7 +36,7 @@ params:
   BookSearch: true
 
   BookRepo: https://github.com/benmezger/blog
-  BookEditPath: edit/master
+  BookEditPath: edit/main
   customCss:
     - "assets/css/orgmode.css"
     - "assets/css/custom.css"
