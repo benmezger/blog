@@ -6,7 +6,6 @@ enableRobotsTXT: true
 disqusShortname: benmezger
 googleAnalytics: UA-138318350-1
 
-
 enableGitInfo: 1
 enableEmoji: true
 
@@ -37,6 +36,7 @@ params:
 
   BookRepo: https://github.com/benmezger/blog
   BookEditPath: edit/main
+  BookTheme: auto
   customCss:
     - "assets/css/orgmode.css"
     - "assets/css/custom.css"

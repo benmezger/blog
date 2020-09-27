@@ -1,3 +1,17 @@
-@import "plugins/_dark.scss";
+@mixin theme-dark {
+  --gray-100: rgba(255, 255, 255, 0.1);
+  --gray-200: rgba(255, 255, 255, 0.2);
+  --gray-500: rgba(255, 255, 255, 0.5);
 
-$body-background: #121212;
+  --color-link: #84b2ff;
+  --color-visited-link: #b88dff;
+
+  --body-background: #121212;
+  --body-font-color: #e9ecef;
+
+  --icon-filter: brightness(0) invert(1);
+
+  --hint-color-info: #6bf;
+  --hint-color-warning: #fd6;
+  --hint-color-danger: #f66;
+}
