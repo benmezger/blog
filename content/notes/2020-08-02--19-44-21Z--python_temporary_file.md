@@ -20,11 +20,11 @@ import pathlib
 
 def create_file(filename):
     if pathlib.Path(filename).exists():
-        # handle path removal/rewrite/backup
-        pass
+	# handle path removal/rewrite/backup
+	pass
     with open(filename, "w") as f:
-        # write to file
-        pass
+	# write to file
+	pass
 
 ```
 
@@ -47,10 +47,10 @@ print(create_file().name)
 ```
 
 ```text
-<tempfile._TemporaryFileWrapper object at 0x7f46864bb898>
-/tmp/tmpheedprs9
-<tempfile._TemporaryFileWrapper object at 0x7f46864bb898>
-/tmp/tmp7nol8aa4
+<tempfile._TemporaryFileWrapper object at 0x1100b0a00>
+/var/folders/25/cy4pgsqn2393lvfmh420gf7h0000gn/T/tmphgwptjp1
+<tempfile._TemporaryFileWrapper object at 0x110124100>
+/var/folders/25/cy4pgsqn2393lvfmh420gf7h0000gn/T/tmpzpczhxsc
 ```
 
 [NamedTemporaryFile](https://docs.python.org/3/library/tempfile.html#tempfile.NamedTemporaryFile) returns a file-like object that can be used as a temporary
@@ -66,10 +66,10 @@ import tempfile
 
 def create_file(suffix=".json", prefix="tmpfile"):
     return tempfile.NamedTemporaryFile(
-        mode="w",
-        encoding="utf-8",
-        suffix=suffix,
-        prefix=prefix,
+	mode="w",
+	encoding="utf-8",
+	suffix=suffix,
+	prefix=prefix,
     )
 
 # file one
@@ -80,9 +80,9 @@ print(create_file(suffix=".csv", prefix="hello-world").name)
 ```
 
 ```text
-<tempfile._TemporaryFileWrapper object at 0x7f1195ab69e8>
-/tmp/tmpfileuzad3kkp.csv
-/tmp/hello-world4ahj1984.csv
+<tempfile._TemporaryFileWrapper object at 0x10638aa00>
+/var/folders/25/cy4pgsqn2393lvfmh420gf7h0000gn/T/tmpfileopnp8xhs.csv
+/var/folders/25/cy4pgsqn2393lvfmh420gf7h0000gn/T/hello-worldftaf0luh.csv
 ```
 
 With `TemporaryFile` it returns a `TextIOWrapper`:
@@ -92,10 +92,10 @@ import tempfile
 
 def create_file(suffix=".json", prefix="tmpfile"):
     return tempfile.TemporaryFile(
-        mode="w",
-        encoding="utf-8",
-        suffix=suffix,
-        prefix=prefix,
+	mode="w",
+	encoding="utf-8",
+	suffix=suffix,
+	prefix=prefix,
     )
 
 # file one

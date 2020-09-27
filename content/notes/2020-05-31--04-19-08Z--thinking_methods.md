@@ -9,12 +9,6 @@ draft = false
 bookCollapseSection = true
 +++
 
-## Backlinks {#backlinks}
-
--   [Mental models]({{< relref "2020-05-31--04-30-47Z--mental_models" >}})
--   [The great mental models: General thinking concepts]({{< relref "2020-05-30--23-03-02Z--the_great_mental_models_general_thinking_concepts" >}})
--   [Socratic questioning]({{< relref "2020-05-31--13-16-44Z--socratic_questioning" >}})
-
 tags
 : [Learning]({{< relref "2020-05-31--04-23-42Z--learning" >}}) [Mindset]({{< relref "2020-05-31--04-24-34Z--mindset" >}}) [Mental models]({{< relref "2020-05-31--04-30-47Z--mental_models" >}})
 
@@ -26,7 +20,7 @@ problems into sub-problems so we can better view reality.
 
 **Prevents failure from interacting with reality**
 
-<a id="org185b09e"></a>
+<a id="orgbf4e96f"></a>
 
 {{< figure src="/assets/imgs/thinking-methods.jpg" caption="Figure 1: Mindmap of thinking methods" >}}
 

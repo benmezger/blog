@@ -9,11 +9,6 @@ draft = false
 bookCollapseSection = true
 +++
 
-### Backlinks {#backlinks}
-
--   [Operating systems: Internals and design principles (9th edition)]({{< relref "2020-05-30--22-58-52Z--operating_systems_internals_and_design_principles_9th_edition" >}})
--   [RISCV]({{< relref "2020-05-31--15-37-29Z--riscv" >}})
-
 tags
 : [Thesis]({{< relref "2020-05-31--15-35-57Z--thesis" >}}) [Computer Science]({{< relref "2020-05-31--15-29-21Z--computer_science" >}})
 
@@ -301,10 +296,10 @@ void __metal_driver_riscv_cpu_controller_interrupt_init(
       intc->metal_exception_table[i] = __metal_default_exception_handler;
     }
     __metal_controller_interrupt_vector(METAL_DIRECT_MODE,
-                                        &__metal_exception_handler);
+					&__metal_exception_handler);
     asm volatile("csrr %0, misa" : "=r"(val));
     if (val & (METAL_ISA_D_EXTENSIONS | METAL_ISA_F_EXTENSIONS |
-               METAL_ISA_Q_EXTENSIONS)) {
+	       METAL_ISA_Q_EXTENSIONS)) {
       /* Floating point architecture, so turn on FP register saving*/
       asm volatile("csrr %0, mstatus" : "=r"(val));
       asm volatile("csrw mstatus, %0" ::"r"(val | METAL_MSTATUS_FS_INIT));
@@ -319,7 +314,7 @@ void __metal_driver_riscv_cpu_controller_interrupt_init(
 
 ```C
 void __metal_controller_interrupt_vector(metal_vector_mode mode,
-                                         void *vec_table) {
+					 void *vec_table) {
   uintptr_t trap_entry, val;
 
   asm volatile("csrr %0, mtvec" : "=r"(val));
@@ -340,7 +335,7 @@ void __metal_controller_interrupt_vector(metal_vector_mode mode,
     break;
   case METAL_DIRECT_MODE:
     asm volatile(
-        "csrw mtvec, %0" ::"r"(trap_entry & ~METAL_MTVEC_CLIC_VECTORED));
+	"csrw mtvec, %0" ::"r"(trap_entry & ~METAL_MTVEC_CLIC_VECTORED));
     break;
   }
 }

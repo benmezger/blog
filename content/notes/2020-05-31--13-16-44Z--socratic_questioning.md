@@ -9,10 +9,6 @@ draft = false
 bookCollapseSection = true
 +++
 
-### Backlinks {#backlinks}
-
--   [Thinking methods]({{< relref "2020-05-31--04-19-08Z--thinking_methods" >}})
-
 tags
 : [Thinking methods]({{< relref "2020-05-31--04-19-08Z--thinking_methods" >}}) [Mindset]({{< relref "2020-05-31--04-24-34Z--mindset" >}}) [Mental models]({{< relref "2020-05-31--04-30-47Z--mental_models" >}}) [Learning]({{< relref "2020-05-31--04-23-42Z--learning" >}})
 

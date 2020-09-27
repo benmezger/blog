@@ -15,7 +15,7 @@ tags
 KPD election poster, 1932. The caption at the bottom reads _'An end to this
 system!'_.
 
-<a id="orgbcca28a"></a>
+<a id="orgb69c711"></a>
 
 {{< figure src="/assets/imgs/1932-kpd.jpg" caption="Figure 1: KPD election poster, 1932. The caption at the bottom reads 'An end to this system!'." >}}
 

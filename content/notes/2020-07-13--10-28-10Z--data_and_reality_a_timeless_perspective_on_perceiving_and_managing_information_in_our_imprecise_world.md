@@ -9,10 +9,6 @@ draft = false
 bookCollapseSection = true
 +++
 
-### Backlinks {#backlinks}
-
--   [Database]({{< relref "2020-06-21--06-24-39Z--database" >}})
-
 tags
 : [Database]({{< relref "2020-06-21--06-24-39Z--database" >}}) [Computer Science]({{< relref "2020-05-31--15-29-21Z--computer_science" >}})
 

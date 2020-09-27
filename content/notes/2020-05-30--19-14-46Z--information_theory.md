@@ -9,10 +9,6 @@ draft = false
 bookCollapseSection = true
 +++
 
-### Backlinks {#backlinks}
-
--   [Coding Theory]({{< relref "2020-05-31--19-10-00Z--coding_theory" >}})
-
 tags
 : [Computer Science]({{< relref "2020-05-31--15-29-21Z--computer_science" >}})
 
@@ -67,7 +63,7 @@ So, by this rough calculation the bit density of a microSD card is about
 24,250,000 times greater than that of a sheet of paper.
 
 
-## <span class="org-todo todo CURRENT">CURRENT</span> Measuring information {#measuring-information}
+## CURRENT Measuring information {#current-measuring-information}
 
 How can we quantify/measure an information source? Let's say Alice and Bob live
 on the opposite road of each other and they want to communicate during the

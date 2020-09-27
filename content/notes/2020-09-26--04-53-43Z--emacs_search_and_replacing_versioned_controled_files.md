@@ -18,7 +18,8 @@ I had to search and replace many files in a git repository, for some reason
 
 1.  `M-x counsel-git-grep`
     Search for the string
-2.  Press `ivy-occur` key on `ivy`'s search prompt result, which is set to `C-c C-o` by default. This will open the search results in a new buffer
+2.  Press `ivy-occur` key on `ivy`'s search prompt result, which is set to `C-c
+       C-o` by default. This will open the search results in a new buffer
 3.  On your new buffer, run `wgrep-change-to-wgrep-mode` (`C-c C-p`) and do your
     editing.
 4.  `C-c C-c` to apply your changes
