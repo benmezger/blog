@@ -19,7 +19,7 @@ tags
 
 ## Why Integral Calculus {#why-integral-calculus}
 
-Figure [1](#orgb7ebd5a) represents 2 graphs of `y = cos(x)`. Let's say we would
+Figure [1](#org85b7e9c) represents 2 graphs of `y = cos(x)`. Let's say we would
 like to calculate the area of {{<katex>}} x\_1 {{</katex>}}. We could calculate
 the area by aproximation, for example, Graph B is filled with the area we would
 like to calculate, so we could divide this area by equal sections of
@@ -53,7 +53,7 @@ plot f(x) fs solid 0.3 lc rgb '#A3001E'
 unset multiplot
 ```
 
-<a id="orgb7ebd5a"></a>
+<a id="org85b7e9c"></a>
 
 {{< figure src="/assets/imgs/graph-example.png" >}}
 
