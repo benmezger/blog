@@ -9,11 +9,16 @@ draft = false
 bookCollapseSection = true
 +++
 
+Some of these bibliographies I've been reading for my research and some I find it
+interesting to keep around my library.
+
 ## Operating Systems {#operating-systems}
 
 ### Introductory {#introductory}
 
 #### Modern Operating Systems {#modern-operating-systems}
+
+{{< details "Bibtex" >}}
 
 ```bibtex
 @book{tanenbaum2014ModenOS,
@@ -50,10 +55,14 @@ bookCollapseSection = true
 }
 ```
 
+{{< /details >}}
+
 #### Operating Systems: Internals and Design Principle {#operating-systems-internals-and-design-principle}
 
+{{< details "Bibtex" >}}
+
 ```bibtex
-@BOOK{stallings2018OperatingSysInternalAndDesign,
+@book{stallings2018OperatingSysInternalAndDesign,
   author          = {Stallings, William},
   title           = {Operating Systems: Internals and Design Principles, 9/e},
   year            = 2018,
@@ -69,10 +78,14 @@ bookCollapseSection = true
 }
 ```
 
+{{< /details >}}
+
 #### Operating Systems Design and Implementation (3rd Edition) {#operating-systems-design-and-implementation--3rd-edition}
 
+{{< details "Bibtex" >}}
+
 ```bibtex
-@BOOK{tanenbaum2005OperatingSysImplementation,
+@book{tanenbaum2005OperatingSysImplementation,
   author          = {Tanenbaum, Andrew S and Woodhull, Albert S},
   title           = {Operating Systems Design and Implementation (3rd Edition)},
   year            = 2005,
@@ -82,14 +95,18 @@ bookCollapseSection = true
 }
 ```
 
+{{< /details >}}
+
 ## Computer Architecture {#computer-architecture}
 
 ### Introductory {#introductory}
 
 #### Structured Computer Organization (5th Edition) {#structured-computer-organization--5th-edition}
 
+{{< details "Bibtex" >}}
+
 ```bibtex
-@BOOK{tanenbaum2005structuredorg,
+@book{tanenbaum2005structuredorg,
   author          = {Tanenbaum, Andrew S.},
   title           = {Structured Computer Organization (5th Edition)},
   year            = 2005,
@@ -99,10 +116,14 @@ bookCollapseSection = true
 }
 ```
 
+{{< /details >}}
+
 #### Computer Organization and Design, Fifth Edition: The Hardware/Software Interface {#computer-organization-and-design-fifth-edition-the-hardware-software-interface}
 
+{{< details "Bibtex" >}}
+
 ```bibtex
-@BOOK{patterson2013ComputerOrg,
+@book{patterson2013ComputerOrg,
   author          = {Patterson, David A. and Hennessy, John L.},
   title           = {Computer Organization and Design, Fifth Edition: The
                   Hardware/Software Interface},
@@ -146,10 +167,14 @@ bookCollapseSection = true
 }
 ```
 
+{{< /details >}}
+
 #### Computer Organization and Architecture: Designing for Performance {#computer-organization-and-architecture-designing-for-performance}
 
+{{< details "Bibtex" >}}
+
 ```bibtex
-@BOOK{stallings2009ComputerOrgPerf,
+@book{stallings2009ComputerOrgPerf,
   author          = {Stallings, William},
   title           = {Computer Organization and Architecture: Designing for
                   Performance},
@@ -176,12 +201,16 @@ bookCollapseSection = true
 }
 ```
 
+{{< /details >}}
+
 ### RISC-V {#risc-v}
 
 #### The RISC-V Reader: An Open Architecture Atlas {#the-risc-v-reader-an-open-architecture-atlas}
 
+{{< details "Bibtex" >}}
+
 ```bibtex
-@BOOK{patterson2017RiscvAtlas,
+@book{patterson2017RiscvAtlas,
   author          = {Patterson, David and Waterman, Andrew},
   title           = {The RISC-V Reader: An Open Architecture Atlas},
   year            = 2017,
@@ -232,10 +261,14 @@ bookCollapseSection = true
 }
 ```
 
+{{< /details >}}
+
 #### The RISC-V Instruction Set Manual (2014) {#the-risc-v-instruction-set-manual--2014}
 
+{{< details "Bibtex" >}}
+
 ```bibtex
-@MISC{Waterman14therisc-v,
+@misc{Waterman14therisc-v,
   author          = {Andrew Waterman and Yunsup Lee and David A. Patterson and
                   Krste Asanovic and Volume I User-level Isa and Andrew Waterman
                   and Yunsup Lee and David Patterson},
@@ -244,7 +277,11 @@ bookCollapseSection = true
 }
 ```
 
+{{< /details >}}
+
 #### Computer Organization and Design RISC-V Edition: The Hardware Software Interface {#computer-organization-and-design-risc-v-edition-the-hardware-software-interface}
+
+{{< details "Bibtex" >}}
 
 ```bibtex
 @book{patterson2017ComputerOrgRiscvEdition,
@@ -277,14 +314,18 @@ bookCollapseSection = true
 }
 ```
 
+{{< /details >}}
+
 ## Software Engineering {#software-engineering}
 
 ### Embedded systems {#embedded-systems}
 
 #### Modeling C-based embedded system using UML design {#modeling-c-based-embedded-system-using-uml-design}
 
+{{< details "Bibtex" >}}
+
 ```bibtex
-@INPROCEEDINGS{wang2009modeling,
+@inproceedings{wang2009modeling,
   author          = { {Guoping Wang}},
   booktitle       = {2009 International Conference on Mechatronics and
                   Automation},
@@ -317,3 +358,5 @@ bookCollapseSection = true
   month           = {Aug},
 }
 ```
+
+{{< /details >}}
