@@ -205,6 +205,48 @@ interesting to keep around my library.
 
 ### RISC-V {#risc-v}
 
+#### The Case for RISC-V in Space {#the-case-for-risc-v-in-space}
+
+{{< details "Bibtex" >}}
+
+```bibtex
+@inproceedings{ottavi2019TheCaseForRiscvInSpace,
+  author          = "Di Mascio, Stefano and Menicucci, Alessandra and Furano,
+                  Gianluca and Monteleone, Claudio and Ottavi, Marco",
+  editor          = "Saponara, Sergio and De Gloria, Alessandro",
+  title           = "The Case for RISC-V in Space",
+  booktitle       = "Applications in Electronics Pervading Industry, Environment
+                  and Society",
+  year            = 2019,
+  publisher       = "Springer International Publishing",
+  address         = "Cham",
+  pages           = "319--325",
+  abstract        = "This paper presentsDi Mascio, Stefano preliminary position
+                  on theMenicucci, Alessandra use of the novel, free and open
+                  RISC-V Instruction Set Architecture (ISA) for on-boardFurano,
+                  Gianluca electronics in space. The modular nature of this ISA,
+                  the availability of a rich software ecosystem, a rapidly
+                  growing communityMonteleone, Claudio and a pool of open-source
+                  IP cores will allow Space Industry to spin-in developments
+                  from terrestrial fields (in terms of security, artificial
+                  intelligence, support forOttavi, Marco operating systems,
+                  hardware acceleration etc.) while focusing its efforts mainly
+                  on aspects related to the specific needs of on-board
+                  electronics for space applications (e.g. fault tolerance,
+                  observability, error signaling, etc.). This will improve reuse
+                  and avoid the necessity of developments from scratch when not
+                  strategically needed, eventually increasing productivity and
+                  reducing costs. The use of an open, non proprietary ISA will
+                  allow ad-hoc design of microarchitecture-level soft error
+                  countermeasures that can greatly increase the robustness of
+                  Application Specific Standard Products (ASSP) and FPGA
+                  implementations.",
+  isbn            = "978-3-030-11973-7"
+}
+```
+
+{{< /details >}}
+
 #### The RISC-V Reader: An Open Architecture Atlas {#the-risc-v-reader-an-open-architecture-atlas}
 
 {{< details "Bibtex" >}}
@@ -356,6 +398,60 @@ interesting to keep around my library.
   doi             = {10.1109/ICMA.2009.5246023},
   ISSN            = {2152-744X},
   month           = {Aug},
+}
+```
+
+{{< /details >}}
+
+### Fault tolerant {#fault-tolerant}
+
+#### Basic concepts and taxonomy of dependable and secure computing {#basic-concepts-and-taxonomy-of-dependable-and-secure-computing}
+
+{{< details "Bibtex" >}}
+
+```bibtex
+@article{avizienis2004ConceptsOfSecureComputing,
+  author          = {A. {Avizienis} and J. -. {Laprie} and B. {Randell} and C.
+                  {Landwehr}},
+  journal         = {IEEE Transactions on Dependable and Secure Computing},
+  title           = {Basic concepts and taxonomy of dependable and secure
+                  computing},
+  year            = 2004,
+  volume          = 1,
+  number          = 1,
+  pages           = {11-33},
+  abstract        = {This paper gives the main definitions relating to
+                  dependability, a generic concept including a special case of
+                  such attributes as reliability, availability, safety,
+                  integrity, maintainability, etc. Security brings in concerns
+                  for confidentiality, in addition to availability and
+                  integrity. Basic definitions are given first. They are then
+                  commented upon, and supplemented by additional definitions,
+                  which address the threats to dependability and security
+                  (faults, errors, failures), their attributes, and the means
+                  for their achievement (fault prevention, fault tolerance,
+                  fault removal, fault forecasting). The aim is to explicate a
+                  set of general concepts, of relevance across a wide range of
+                  situations and, therefore, helping communication and
+                  cooperation among a number of scientific and technical
+                  communities, including ones that are concentrating on
+                  particular types of system, of system failures, or of causes
+                  of system failures.},
+  keywords        = {fault tolerant computing;data privacy;security of
+                  data;system recovery;software reliability;taxonomy;dependable
+                  computing;secure computing;system reliability;system
+                  availability;system safety;system integrity;system
+                  maintainability;fault prevention;fault tolerance;fault
+                  removal;fault forecasting;system security;system
+                  failures;system vulnerabilities;system
+                  attacks;Taxonomy;Availability;Fault
+                  tolerance;Safety;Maintenance;Communication system
+                  security;Uncertainty;Standardization;Books;Index Terms-
+                  Dependability;security;trust;faults;errors;failures;vulnerabilities;attacks;fault
+                  tolerance;fault removal;fault forecasting.},
+  doi             = {10.1109/TDSC.2004.2},
+  ISSN            = {1941-0018},
+  month           = {Jan},
 }
 ```
 
