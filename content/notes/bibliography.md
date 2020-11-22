@@ -456,3 +456,45 @@ interesting to keep around my library.
 ```
 
 {{< /details >}}
+
+## Mathematics {#mathematics}
+
+### Binary {#binary}
+
+#### Bit Twiddling Hacks {#bit-twiddling-hacks}
+
+```bibtex
+@misc{sean2005BitTwiddlingHacks,
+  title           = { Bit Twiddling Hacks },
+  url             = {https://graphics.stanford.edu/~seander/bithacks.html},
+  journal         = {Bit Twiddling Hacks},
+  author          = {Sean Eron Anderson}
+}
+```
+
+#### Binary number representation {#binary-number-representation}
+
+```bibtex
+@misc{binaryNumberRepresentation,
+  title           = {Unsigned Binary Integer},
+  url             =
+                  {https://www.mathcs.emory.edu/~cheung/Courses/255/others/BinNumReps.html},
+  journal         = {Binary Number Representations}
+}
+```
+
+#### What are bitwise shift (bit-shift) operators and how do they work? {#what-are-bitwise-shift--bit-shift--operators-and-how-do-they-work}
+
+```bibtex
+@misc{derekpark2008WhatAreBitwiseShift,
+  title           = {What are bitwise shift (bit-shift) operators and how do
+                  they work?},
+  url             = {https://stackoverflow.com/a/141873},
+  journal         = {What are bitwise shift (bit-shift) operators and how do
+                  they work},
+  publisher       = {Stackoverflow},
+  author          = {Derek Park},
+  year            = 2008,
+  month           = {Sep}
+}
+```
