@@ -221,6 +221,8 @@ interesting to keep around my library.
 }
 ```
 
+{{< /details >}}
+
 #### The Case for RISC-V in Space {#the-case-for-risc-v-in-space}
 
 {{< details "Bibtex" >}}
