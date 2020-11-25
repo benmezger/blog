@@ -205,6 +205,22 @@ interesting to keep around my library.
 
 ### RISC-V {#risc-v}
 
+#### The RISC-V Instruction Set Manual Volume II: Privileged Architecture Version v.20190608 {#the-risc-v-instruction-set-manual-volume-ii-privileged-architecture-version-v-dot-20190608}
+
+{{< details "Bibtex" >}}
+
+```bibtex
+@techreport{riscv2019PrivilegeArchitecture,
+    Author = {Waterman, Andrew and Lee, Yunsup and Avizienis, Rimas and Patterson, David A. and Asanović, Krste},
+    Title = {The RISC-V Instruction Set Manual Volume II: Privileged Architecture Ratified Version 1.11},
+    Institution = {EECS Department, University of California, Berkeley},
+    Year = {2019},
+    Month = {Jun},
+    URL = {https://github.com/riscv/riscv-isa-manual/releases/download/Ratified-IMFDQC-and-Priv-v1.11/riscv-privileged-20190608.pdf},
+    Number = {v.20190608}
+}
+```
+
 #### The Case for RISC-V in Space {#the-case-for-risc-v-in-space}
 
 {{< details "Bibtex" >}}
