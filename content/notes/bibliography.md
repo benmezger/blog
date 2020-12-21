@@ -527,6 +527,8 @@ interesting to keep around my library.
 
 #### Bit Twiddling Hacks {#bit-twiddling-hacks}
 
+{{< details "Bibtex" >}}
+
 ```bibtex
 @misc{sean2005BitTwiddlingHacks,
   title           = { Bit Twiddling Hacks },
@@ -536,7 +538,11 @@ interesting to keep around my library.
 }
 ```
 
+{{< /details >}}
+
 #### Binary number representation {#binary-number-representation}
+
+{{< details "Bibtex" >}}
 
 ```bibtex
 @misc{binaryNumberRepresentation,
@@ -547,7 +553,11 @@ interesting to keep around my library.
 }
 ```
 
+{{< /details >}}
+
 #### What are bitwise shift (bit-shift) operators and how do they work? {#what-are-bitwise-shift--bit-shift--operators-and-how-do-they-work}
+
+{{< details "Bibtex" >}}
 
 ```bibtex
 @misc{derekpark2008WhatAreBitwiseShift,
@@ -562,3 +572,5 @@ interesting to keep around my library.
   month           = {Sep}
 }
 ```
+
+{{< /details >}}
