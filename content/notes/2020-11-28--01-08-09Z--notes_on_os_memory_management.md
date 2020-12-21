@@ -7,7 +7,6 @@ tags = ["os", "mmu"]
 type = "posts"
 draft = false
 bookCollapseSection = true
-bookCollapseSection = true
 +++
 
 tags
