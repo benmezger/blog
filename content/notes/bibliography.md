@@ -97,6 +97,52 @@ interesting to keep around my library.
 
 {{< /details >}}
 
+### RTOS {#rtos}
+
+#### Operating Systems for Low-End Devices in the Internet of Things: A Survey {#operating-systems-for-low-end-devices-in-the-internet-of-things-a-survey}
+
+{{< details "Bibtex" >}}
+
+```bibtex
+@article{Hahm2015OSForLowEndDevice,
+  author          = {O. {Hahm} and E. {Baccelli} and H. {Petersen} and N.
+                  {Tsiftes}},
+  journal         = {IEEE Internet of Things Journal},
+  title           = {Operating Systems for Low-End Devices in the Internet of
+                  Things: A Survey},
+  year            = 2016,
+  volume          = 3,
+  number          = 5,
+  pages           = {720-734},
+  abstract        = {The Internet of Things (IoT) is projected to soon
+                  interconnect tens of billions of new devices, in large part
+                  also connected to the Internet. IoT devices include both
+                  high-end devices which can use traditional go-to operating
+                  systems (OSs) such as Linux, and low-end devices which cannot,
+                  due to stringent resource constraints, e.g., very limited
+                  memory, computational power, and power supply. However,
+                  large-scale IoT software development, deployment, and
+                  maintenance requires an appropriate OS to build upon. In this
+                  paper, we thus analyze in detail the specific requirements
+                  that an OS should satisfy to run on low-end IoT devices, and
+                  we survey applicable OSs, focusing on candidates that could
+                  become an equivalent of Linux for such devices, i.e., a
+                  one-size-fits-most, open source OS for low-end IoT devices.},
+  keywords        = {Internet of Things;mobile computing;operating systems
+                  (computers);software maintenance;software maintenance;software
+                  deployment;software development;IoT;Internet of Things;low-end
+                  device;OS;operating system;Random access
+                  memory;Hardware;Internet of things;Operating
+                  systems;Standards;Embedded software;Internet of Things
+                  (IoT);low-power electronics;operating system (OS)},
+  doi             = {10.1109/JIOT.2015.2505901},
+  ISSN            = {2327-4662},
+  month           = {Oct},
+}
+```
+
+{{< /details >}}
+
 ## Computer Architecture {#computer-architecture}
 
 ### Introductory {#introductory}
