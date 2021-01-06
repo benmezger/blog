@@ -23,6 +23,9 @@
 (mapc 'load (file-expand-wildcards "~/.emacs.d/.local/straight/repos/dash.el/dash.el"))
 (mapc 'load (file-expand-wildcards "~/.emacs.d/.local/straight/repos/s.el/s.el"))
 (mapc 'load (file-expand-wildcards "~/.emacs.d/.local/straight/repos/f.el/f.el"))
+
+(add-to-list 'load-path "~/.emacs.d/.local/straight/repos/helm/")
+(add-to-list 'load-path "~/.emacs.d/.local/straight/repos/emacs-async/")
 (add-to-list 'load-path "~/.emacs.d/.local/straight/repos/emacsql-sqlite3/")
 (add-to-list 'load-path "~/.emacs.d/.local/straight/repos/emacsql/")
 (add-to-list 'load-path "~/.emacs.d/.local/straight/repos/org-roam/")
@@ -30,16 +33,35 @@
 (add-to-list 'load-path "~/.emacs.d/.local/straight/repos/ox-hugo/")
 (add-to-list 'load-path "~/.emacs.d/.local/straight/repos/org/")
 
+(add-to-list 'load-path "~/.emacs.d/.local/straight/repos/biblio.el/")
+(add-to-list 'load-path "~/.emacs.d/.local/straight/repos/queue/")
+(add-to-list 'load-path "~/.emacs.d/.local/straight/repos/org-ref/")
+(add-to-list 'load-path "~/.emacs.d/.local/straight/repos/helm/")
+(add-to-list 'load-path "~/.emacs.d/.local/straight/repos/citeproc-el/")
+(add-to-list 'load-path "~/.emacs.d/.local/straight/repos/citeproc-org/")
+(add-to-list 'load-path "~/.emacs.d/.local/straight/repos/emacs-htmlize/")
+(add-to-list 'load-path "~/.emacs.d/.local/straight/repos/hydra/")
+(add-to-list 'load-path "~/.emacs.d/.local/straight/repos/parsebib/")
+(add-to-list 'load-path "~/.emacs.d/.local/straight/repos/helm-bibtex/")
+
+
 (require 'org)
 (require 'ox)
 (require 'org-roam)
 (require 'org-protocol)
 (require 'ox-hugo)
-
+(require 'org-ref)
+(require 'citeproc-org-setup)
 
 ;; dont backup on exporting
 (setq make-backup-files nil)
+(setq org-directory "~/workspace/org/")
 (setq org-roam-directory "~/workspace/org/roam")
+
+(setq org-ref-default-bibliography `,(list (concat org-directory "/bibliography.bib")))
+(setq reftex-default-bibliography org-ref-default-bibliography)
+
+(citeproc-org-setup)
 
 (defun benmezger/org-roam-export-all ()
   "Re-exports all Org-roam files to Hugo markdown."
