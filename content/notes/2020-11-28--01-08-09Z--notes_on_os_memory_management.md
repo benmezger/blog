@@ -12,7 +12,6 @@ bookCollapseSection = true
 tags
 : [Operating Systems]({{< relref "2020-05-31--15-29-38Z--operating_systems" >}})
 
-
 ## Memory management requirements {#memory-management-requirements}
 
 Some the requirements that memory management is intended to satisfy are:
