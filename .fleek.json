@@ -3,5 +3,8 @@
     "image": "jguyomard/hugo-builder",
     "command": "hugo --gc --minify -c ipfs_config.yaml",
     "publicDir": "public"
+    "environment": {
+      "VERSION": "0.80.0"
+    }
   }
 }
