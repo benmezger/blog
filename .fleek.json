@@ -1,7 +1,7 @@
 {
   "build": {
     "image": "klakegg/hugo",
-    "command": "git submodule update --init && hugo --gc --minify -c ipfs_config.yaml",
+    "command": "hugo --gc --minify -c ipfs_config.yaml",
     "publicDir": "public"
   }
 }
