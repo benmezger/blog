@@ -2,7 +2,7 @@
 title = "Hi, there"
 author = ["Ben Mezger"]
 date = 2020-04-23T00:00:00-03:00
-lastmod = 2020-11-25T23:59:34-03:00
+lastmod = 2021-02-08T13:28:09-03:00
 draft = false
 bookToc = false
 bookComments = false
@@ -40,16 +40,17 @@ where we lived for 3 years before my parents got divorced. My mother moved to
 Amsterdam, myself, my sister, stepmother, and father moved to [Sark](https://en.wikipedia.org/wiki/Sark). Two years
 later, we moved to Portugal and then back to England, but this time, London. I
 later moved in with my mother a year later to Amsterdam, where I lived most of
-my teenage years. I later moved to Brazil my Bachelor in Computer Science.
+my teenage years. I later moved to Brazil for studying my Bachelor in Computer
+Science.
 
-If you want to know more about my professional career, you can get my CV [here](/assets/files/Benjamin_Mezger_CV.pdf).
+If you want to know more about my professional career, you can get my CV [here](static/assets/files/Benjamin_Mezger_CV.pdf).
 
 <style>.org-center { margin-left: auto; margin-right: auto; text-align: center; }</style>
 
 <div class="org-center">
   <div></div>
 
-{{< figure src="/assets/imgs/me.jpg" caption="Figure 1: This is me on black and white" width="300px" >}}
+{{< figure src="./static/assets/imgs/me.jpg" caption="Figure 1: This is me on black and white" width="300px" >}}
 
 </div>
 
