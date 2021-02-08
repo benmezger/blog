@@ -2,7 +2,7 @@
 title = "Hi, there"
 author = ["Ben Mezger"]
 date = 2020-04-23T00:00:00-03:00
-lastmod = 2021-02-08T13:28:09-03:00
+lastmod = 2021-02-08T13:33:19-03:00
 draft = false
 bookToc = false
 bookComments = false
@@ -43,14 +43,14 @@ later moved in with my mother a year later to Amsterdam, where I lived most of
 my teenage years. I later moved to Brazil for studying my Bachelor in Computer
 Science.
 
-If you want to know more about my professional career, you can get my CV [here](static/assets/files/Benjamin_Mezger_CV.pdf).
+If you want to know more about my professional career, you can get my CV [here](/assets/files/Benjamin_Mezger_CV.pdf).
 
 <style>.org-center { margin-left: auto; margin-right: auto; text-align: center; }</style>
 
 <div class="org-center">
   <div></div>
 
-{{< figure src="./static/assets/imgs/me.jpg" caption="Figure 1: This is me on black and white" width="300px" >}}
+{{< figure src="./assets/imgs/me.jpg" caption="Figure 1: This is me in black and white" width="300px" >}}
 
 </div>
 
