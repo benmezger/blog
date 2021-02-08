@@ -1,6 +1,6 @@
 {
   "build": {
-    "image": "klakegg/hugo",
+    "image": "jguyomard/hugo-builder",
     "command": "hugo --gc --minify -c ipfs_config.yaml",
     "publicDir": "public"
   }
