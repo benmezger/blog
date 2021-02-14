@@ -1,10 +1,9 @@
 {
   "build": {
-    "image": "jguyomard/hugo-builder",
-    "command": "hugo --gc --minify -c ipfs_config.yaml",
-    "publicDir": "public"
+    "image": "benmezger/blog",
+    "publicDir": "public",
     "environment": {
-      "VERSION": "0.80.0"
+      "HUGO_CONF": "ipfs_config.yaml"
     }
   }
 }
