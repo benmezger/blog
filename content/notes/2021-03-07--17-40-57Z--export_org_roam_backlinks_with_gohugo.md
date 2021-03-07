@@ -17,43 +17,52 @@ to handle backlinks in Hugo itself.
 
 The following Hugo [partial template](https://gohugo.io/templates/partials/) will add backlinks to a note if any.
 
-```html
-{{ $re := $.File.BaseFileName }} {{ $backlinks := slice }} {{ range
-.Site.AllPages }} {{ if and (findRE $re .RawContent) (not (eq $re
-.File.BaseFileName)) }} {{ $backlinks = $backlinks | append . }} {{ end }} {{
-end }}
+```text
+{{ $re := $.File.BaseFileName }}
+{{ $backlinks := slice }}
+{{ range .Site.AllPages }}
+   {{ if and (findRE $re .RawContent) (not (eq $re .File.BaseFileName)) }}
+      {{ $backlinks = $backlinks | append . }}
+   {{ end }}
+{{ end }}
 
-<hr />
+<hr>
 {{ if gt (len $backlinks) 0 }}
-<div class="bl-section">
-  <h4>Links to this note</h4>
-  <div class="backlinks">
-    <ul>
-      {{ range $backlinks }}
-      <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
-      {{ end }}
-    </ul>
+  <div class="bl-section">
+    <h4>Links to this note</h4>
+    <div class="backlinks">
+      <ul>
+       {{ range $backlinks }}
+          <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+       {{ end }}
+     </ul>
+    </div>
   </div>
-</div>
-{{ else }}
-<div class="bl-section">
-  <h4>No notes link to this note</h4>
-</div>
+{{ else  }}
+  <div class="bl-section">
+    <h4>No notes link to this note</h4>
+  </div>
 {{ end }}
 ```
 
 Then, include the previous partial to your [`single.html`](https://gohugo.io/templates/single-page-templates/#postssinglehtml). For example, this page
 is created with a `single.html` template, with the following content:
 
-```html
+```text
 {{ define "main" }}
 <article class="markdown">
   <h1>
     <a href="{{ .RelPermalink }}">{{ .Title }}</a>
   </h1>
   {{ partial "docs/post-meta" . }}
-  <p>{{- .Content -}}</p>
+  <p>
+    {{- .Content -}}
+  </p>
   {{ partial "docs/backlinks" . }}
 </article>
-{{ end }} {{ define "toc" }} {{ partial "docs/toc" . }} {{ end }}
+{{ end }}
+
+{{ define "toc" }}
+  {{ partial "docs/toc" . }}
+{{ end }}
 ```
