@@ -4,13 +4,13 @@ author = ["Ben Mezger"]
 date = 2020-05-30T18:56:00-03:00
 slug = "list-of-spotify-artists"
 tags = ["music"]
-type = "posts"
+type = "notes"
 draft = false
 bookCollapseSection = true
 +++
 
 | Artists                            |
-|------------------------------------|
+| ---------------------------------- |
 | Lana Del Rey                       |
 | Slipknot                           |
 | CocoRosie                          |

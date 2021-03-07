@@ -4,7 +4,7 @@ author = ["Ben Mezger"]
 date = 2020-11-21T14:09:00-03:00
 slug = "translating_virtual_addresses"
 tags = ["os", "architecture"]
-type = "posts"
+type = "notes"
 draft = false
 bookCollapseSection = true
 +++
@@ -18,6 +18,6 @@ Virtual address: `0x7d_beef_cafe`
 Virtual address in binary: `0b0111_1101_1011_1110_1110_1111_1100_1010_1111_1110`
 
 | VPN[2]        | VPN[1]        | VPN[0]        | 12-bit offset    |
-|---------------|---------------|---------------|------------------|
+| ------------- | ------------- | ------------- | ---------------- |
 | `1_1111_0110` | `1_1111_0111` | `0_1111_1100` | `1010_1111_1110` |
 | 502           | 503           | 252           |                  |

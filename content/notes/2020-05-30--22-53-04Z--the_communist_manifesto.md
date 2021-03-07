@@ -4,14 +4,13 @@ author = ["Ben Mezger"]
 date = 2020-05-30T19:53:00-03:00
 slug = "communist-manifesto"
 tags = ["books", "reading"]
-type = "posts"
+type = "notes"
 draft = false
 bookCollapseSection = true
 +++
 
 tags
 : [Politics]({{< relref "2020-06-02--11-52-08Z--politics" >}})
-
 
 ## READING The Communist Manifesto {#reading-the-communist-manifesto}
 
@@ -21,7 +20,7 @@ tags
 </div>
 
 | Headline                | Time     |
-|-------------------------|----------|
+| ----------------------- | -------- |
 | **Total time**          | **2:36** |
 | The Communist Manifesto | 2:36     |
 

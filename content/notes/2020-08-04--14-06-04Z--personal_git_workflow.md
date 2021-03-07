@@ -4,7 +4,7 @@ author = ["Ben Mezger"]
 date = 2020-08-04T11:06:00-03:00
 slug = "personal_git_workflow"
 tags = ["git", "workflow"]
-type = "posts"
+type = "notes"
 draft = false
 bookCollapseSection = true
 +++
@@ -14,32 +14,29 @@ tags
 
 As of today, this is currently my git flow for most of my projects.
 
-
 ## Commit messages {#commit-messages}
 
 From: <https://chris.beams.io/posts/git-commit/>
 
--   `Feat`: Any code that contains **only** a new feature, whether a new model
-    field, a new API flag, etc
--   `Refactor`: Any general code refactoring that does not contain anything new
-    nor fixes anything.
--   `Chore`: Anything related to the build configuration, dependency updates
--   `Docs`: Anything related to documentation. This could be a function/class doc,
-    READMEs, etc.
--   `Fix`: Anything that fixes a bug or any bad business logic
+- `Feat`: Any code that contains **only** a new feature, whether a new model
+  field, a new API flag, etc
+- `Refactor`: Any general code refactoring that does not contain anything new
+  nor fixes anything.
+- `Chore`: Anything related to the build configuration, dependency updates
+- `Docs`: Anything related to documentation. This could be a function/class doc,
+  READMEs, etc.
+- `Fix`: Anything that fixes a bug or any bad business logic
 
 Don't commit unrelated code, it's easy for us to quickly change a function name
 and commit together with the new feature. Don't do that. Separate your commits
 nicely, it will be much easier to revert commits, view logs and understand the
 development flow of a project.
 
-
 ### Capital vs lower case {#capital-vs-lower-case}
 
 I like things in capital, both the type and the commit message, but that's just
 my preference. Follow the project best pratices, if they use lower, stick with
 that.
-
 
 ## Branches {#branches}
 
@@ -51,11 +48,10 @@ merge commit that some feature that does X was merged.
 
 Examples:
 
--   `feat/create-read-syscall`
--   `fix/remove-bad-create-user-flag`
--   `refactor/move-syscalls-to-syscallsdir`
--   `chore/update-external-dependencies`
-
+- `feat/create-read-syscall`
+- `fix/remove-bad-create-user-flag`
+- `refactor/move-syscalls-to-syscallsdir`
+- `chore/update-external-dependencies`
 
 ## Code tests {#code-tests}
 
@@ -108,13 +104,10 @@ cadf28c Feat: Add list_filter for user admin [Ben Mezger]
 bd12b9c Fix: Migrate question type to survey response [Ben Mezger]
 ```
 
-
 ## Merges {#merges}
 
-Merging outside a service like Github? Then make sure you use `git merge
---no-ff` instead of a `git merge`. This will prevent git from executing a
+Merging outside a service like Github? Then make sure you use `git merge --no-ff` instead of a `git merge`. This will prevent git from executing a
 fast-forward.
-
 
 ## Keep it clean, stupid {#keep-it-clean-stupid}
 

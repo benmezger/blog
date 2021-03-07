@@ -4,7 +4,7 @@ author = ["Ben Mezger"]
 date = 2020-05-31T13:05:00-03:00
 slug = "integral-calculus"
 tags = ["calculus", "math"]
-type = "posts"
+type = "notes"
 draft = false
 bookCollapseSection = true
 +++
@@ -18,7 +18,7 @@ tags
 
 ## Why Integral Calculus {#why-integral-calculus}
 
-Figure [1](#orgdc10d56) represents 2 graphs of `y = cos(x)`. Let's say we would
+Figure [1](#org6ded7a4) represents 2 graphs of `y = cos(x)`. Let's say we would
 like to calculate the area of {{<katex>}} x_1 {{</katex>}}. We could calculate
 the area by aproximation, for example, Graph B is filled with the area we would
 like to calculate, so we could divide this area by equal sections of
@@ -52,7 +52,7 @@ plot f(x) fs solid 0.3 lc rgb '#A3001E'
 unset multiplot
 ```
 
-<a id="orgdc10d56"></a>
+<a id="org6ded7a4"></a>
 
 {{< figure src="/imgs/graph-example.png" >}}
 

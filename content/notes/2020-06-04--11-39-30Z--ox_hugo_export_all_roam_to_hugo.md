@@ -4,7 +4,7 @@ author = ["Ben Mezger"]
 date = 2020-06-04T08:39:00-03:00
 slug = "ox_hugo_export_all_roam_to_hugo"
 tags = ["emacs", "orgmode", "hugo", "orgroam", "roam"]
-type = "posts"
+type = "notes"
 draft = false
 bookCollapseSection = true
 +++
@@ -23,7 +23,7 @@ From: [jethrokuan/dots](https://github.com/jethrokuan/dots/blob/0064ea2aab667f11
   (dolist (f (org-roam--list-all-files))
     (with-current-buffer (find-file f)
       (when (s-contains? "SETUPFILE" (buffer-string))
-	(org-hugo-export-wim-to-md)))))
+        (org-hugo-export-wim-to-md)))))
 ```
 
 Adding an empty `#+SETUPFILE:` forces `benmezger/org-roam-export-all` to export

@@ -4,7 +4,7 @@ author = ["Ben Mezger"]
 date = 2020-08-03T15:10:00-03:00
 slug = "kommunistische_partei_deutschlands"
 tags = ["history", "politics"]
-type = "posts"
+type = "notes"
 draft = false
 bookCollapseSection = true
 +++
@@ -15,7 +15,7 @@ tags
 KPD election poster, 1932. The caption at the bottom reads _'An end to this
 system!'_.
 
-<a id="orge358f53"></a>
+<a id="org805911b"></a>
 
 {{< figure src="/imgs/1932-kpd.jpg" caption="Figure 1: KPD election poster, 1932. The caption at the bottom reads 'An end to this system!'." >}}
 

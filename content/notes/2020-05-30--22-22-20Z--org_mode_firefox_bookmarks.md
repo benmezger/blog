@@ -4,7 +4,7 @@ author = ["Ben Mezger"]
 date = 2020-05-30T19:22:00-03:00
 slug = "orgmode-firefox-bookmark"
 tags = ["emacs", "orgmode", "firefox"]
-type = "posts"
+type = "notes"
 draft = false
 bookCollapseSection = true
 +++
@@ -14,15 +14,20 @@ tags
 
 Add the following scripts to call org-capture from Firefox
 
-
 ## Call capture template {#call-capture-template}
 
 The following calls capture template key `n`
 
 ```js
-javascript:location.href='org-protocol://capture?template=n'+'&url='+encodeURIComponent(window.location.href)+'&title='+encodeURIComponent(document.title)+'&body='+encodeURIComponent(window.getSelection());
+javascript: location.href =
+  "org-protocol://capture?template=n" +
+  "&url=" +
+  encodeURIComponent(window.location.href) +
+  "&title=" +
+  encodeURIComponent(document.title) +
+  "&body=" +
+  encodeURIComponent(window.getSelection());
 ```
-
 
 ## Without a capture template {#without-a-capture-template}
 

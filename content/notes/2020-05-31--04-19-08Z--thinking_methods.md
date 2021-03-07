@@ -4,7 +4,7 @@ author = ["Ben Mezger"]
 date = 2020-05-31T01:19:00-03:00
 slug = "thinking-methods"
 tags = ["mindset"]
-type = "posts"
+type = "notes"
 draft = false
 bookCollapseSection = true
 +++
@@ -20,7 +20,7 @@ problems into sub-problems so we can better view reality.
 
 **Prevents failure from interacting with reality**
 
-<a id="org880b0a8"></a>
+<a id="orgc671ca8"></a>
 
 {{< figure src="/imgs/thinking-methods.jpg" caption="Figure 1: Mindmap of thinking methods" >}}
 

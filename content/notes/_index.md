@@ -1,7 +1,7 @@
 +++
 title = "Index"
 author = ["Ben Mezger"]
-type = "posts"
+type = "notes"
 draft = false
 bookCollapseSection = true
 [taxonomies]

@@ -4,7 +4,7 @@ author = ["Ben Mezger"]
 date = 2020-08-22T14:09:00-03:00
 slug = "git_change_commit_author"
 tags = ["git"]
-type = "posts"
+type = "notes"
 draft = false
 bookCollapseSection = true
 +++

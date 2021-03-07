@@ -4,14 +4,13 @@ author = ["Ben Mezger"]
 date = 2020-07-13T07:28:00-03:00
 slug = "data_and_reality_a_timeless_perspective_on_perceiving_and_managing_information_in_our_imprecise_world"
 tags = ["reading", "books", "database"]
-type = "posts"
+type = "notes"
 draft = false
 bookCollapseSection = true
 +++
 
 tags
 : [Database]({{< relref "2020-06-21--06-24-39Z--database" >}}) [Computer Science]({{< relref "2020-05-31--15-29-21Z--computer_science" >}})
-
 
 ## READING Data and Reality: A Timeless Perspective on Perceiving and Managing Information in Our Imprecise World {#reading-data-and-reality-a-timeless-perspective-on-perceiving-and-managing-information-in-our-imprecise-world}
 
@@ -21,7 +20,7 @@ tags
 </div>
 
 | Headline                        | Time     |
-|---------------------------------|----------|
+| ------------------------------- | -------- |
 | **Total time**                  | **1:01** |
 | Data and Reality: A Timeless... | 1:01     |
 

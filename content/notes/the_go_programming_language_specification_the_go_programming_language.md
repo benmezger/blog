@@ -3,7 +3,7 @@ title = "The Go Programming Language Specification - The Go Programming Language
 author = ["Ben Mezger"]
 slug = "the-go-programming-language-spec"
 tags = ["go", "programming"]
-type = "posts"
+type = "notes"
 draft = false
 bookCollapseSection = true
 +++

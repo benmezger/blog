@@ -4,7 +4,7 @@ author = ["Ben Mezger"]
 date = 2020-05-30T20:04:00-03:00
 slug = "non-violent-communication"
 tags = ["read", "books"]
-type = "posts"
+type = "notes"
 draft = false
 bookCollapseSection = true
 +++
@@ -12,8 +12,7 @@ bookCollapseSection = true
 tags
 : [Mindset]({{< relref "2020-05-31--04-24-34Z--mindset" >}}) [Learning]({{< relref "2020-05-31--04-23-42Z--learning" >}}) [Communication]({{< relref "2020-06-02--11-55-00Z--communication" >}})
 
-
-## READ Nonviolent Communication: A language for life {#read-nonviolent-communication-a-language-for-life}
+## <span class="org-todo done READ">READ</span> Nonviolent Communication: A language for life {#nonviolent-communication-a-language-for-life}
 
 <div class="table-caption">
   <span class="table-number">Table 1</span>:
@@ -21,7 +20,7 @@ tags
 </div>
 
 | Headline                                | Time     |
-|-----------------------------------------|----------|
+| --------------------------------------- | -------- |
 | **Total time**                          | **8:12** |
 | Nonviolent Communication: A language... | 8:12     |
 

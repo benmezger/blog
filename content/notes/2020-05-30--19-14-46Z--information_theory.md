@@ -4,7 +4,7 @@ author = ["Ben Mezger"]
 date = 2020-05-30T16:14:00-03:00
 slug = "information_theory"
 tags = ["computing", "theory", "information", "studies"]
-type = "posts"
+type = "notes"
 draft = false
 bookCollapseSection = true
 +++
@@ -39,7 +39,6 @@ drawings, each would contain the same number of bits though in different
 
 `Key contents: entropy; density, information`
 
-
 ## What is the density of a bit? {#what-is-the-density-of-a-bit}
 
 Bit density measures how many bits can be stored in some area or volume. As far
@@ -62,8 +61,7 @@ about 1.65 cm^2 so its bit density is about 64 GB / 1.65 cm^2 = 38.8 GB / cm^2.
 So, by this rough calculation the bit density of a microSD card is about
 24,250,000 times greater than that of a sheet of paper.
 
-
-## CURRENT Measuring information {#current-measuring-information}
+## <span class="org-todo todo CURRENT">CURRENT</span> Measuring information {#measuring-information}
 
 How can we quantify/measure an information source? Let's say Alice and Bob live
 on the opposite road of each other and they want to communicate during the

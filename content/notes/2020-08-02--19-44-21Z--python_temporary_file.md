@@ -4,7 +4,7 @@ author = ["Ben Mezger"]
 date = 2020-08-02T16:44:00-03:00
 slug = "python_temporary_file"
 tags = ["python", "programming", "libs"]
-type = "posts"
+type = "notes"
 draft = false
 bookCollapseSection = true
 +++
@@ -20,11 +20,11 @@ import pathlib
 
 def create_file(filename):
     if pathlib.Path(filename).exists():
-	# handle path removal/rewrite/backup
-	pass
+        # handle path removal/rewrite/backup
+        pass
     with open(filename, "w") as f:
-	# write to file
-	pass
+        # write to file
+        pass
 
 ```
 
@@ -47,10 +47,10 @@ print(create_file().name)
 ```
 
 ```text
-<tempfile._TemporaryFileWrapper object at 0x1100b0a00>
-/var/folders/25/cy4pgsqn2393lvfmh420gf7h0000gn/T/tmphgwptjp1
-<tempfile._TemporaryFileWrapper object at 0x110124100>
-/var/folders/25/cy4pgsqn2393lvfmh420gf7h0000gn/T/tmpzpczhxsc
+<tempfile._TemporaryFileWrapper object at 0x105caefa0>
+/var/folders/gf/7vcrg3d57pn8j_30zvkz94x00000gn/T/tmpex0gb4iw
+<tempfile._TemporaryFileWrapper object at 0x105caeb20>
+/var/folders/gf/7vcrg3d57pn8j_30zvkz94x00000gn/T/tmpd3krl5ge
 ```
 
 [NamedTemporaryFile](https://docs.python.org/3/library/tempfile.html#tempfile.NamedTemporaryFile) returns a file-like object that can be used as a temporary
@@ -66,10 +66,10 @@ import tempfile
 
 def create_file(suffix=".json", prefix="tmpfile"):
     return tempfile.NamedTemporaryFile(
-	mode="w",
-	encoding="utf-8",
-	suffix=suffix,
-	prefix=prefix,
+        mode="w",
+        encoding="utf-8",
+        suffix=suffix,
+        prefix=prefix,
     )
 
 # file one
@@ -80,9 +80,9 @@ print(create_file(suffix=".csv", prefix="hello-world").name)
 ```
 
 ```text
-<tempfile._TemporaryFileWrapper object at 0x10638aa00>
-/var/folders/25/cy4pgsqn2393lvfmh420gf7h0000gn/T/tmpfileopnp8xhs.csv
-/var/folders/25/cy4pgsqn2393lvfmh420gf7h0000gn/T/hello-worldftaf0luh.csv
+<tempfile._TemporaryFileWrapper object at 0x10c5bcfa0>
+/var/folders/gf/7vcrg3d57pn8j_30zvkz94x00000gn/T/tmpfilek7_z0ngj.csv
+/var/folders/gf/7vcrg3d57pn8j_30zvkz94x00000gn/T/hello-worldg2zl445i.csv
 ```
 
 With `TemporaryFile` it returns a `TextIOWrapper`:
@@ -92,10 +92,10 @@ import tempfile
 
 def create_file(suffix=".json", prefix="tmpfile"):
     return tempfile.TemporaryFile(
-	mode="w",
-	encoding="utf-8",
-	suffix=suffix,
-	prefix=prefix,
+        mode="w",
+        encoding="utf-8",
+        suffix=suffix,
+        prefix=prefix,
     )
 
 # file one

@@ -4,7 +4,7 @@ author = ["Ben Mezger"]
 date = 2020-06-23T09:49:00-03:00
 slug = "use_case_template"
 tags = ["programming", "methodology", "cs"]
-type = "posts"
+type = "notes"
 draft = false
 bookCollapseSection = true
 +++
@@ -18,12 +18,12 @@ itself.
 
 Recommended reading:
 
--   [Basic Use Case Template](</ox-hugo/Use-Case-Template (Cockburn).pdf>)
+- [Basic Use Case Template](</ox-hugo/Use-Case-Template (Cockburn).pdf>)
 
 ---
 
 | USE CASE **#N**       | _<The name of the goal as a short active verb phrase>_                     |
-|-----------------------|----------------------------------------------------------------------------|
+| --------------------- | -------------------------------------------------------------------------- |
 | Goal in context       | _<A longer statement of the goal in context if needed>_                    |
 | Scope                 | _<What system is being considered back box under design>_                  |
 | Level                 | _<one of: Summary, Primary task, Subfunction>_                             |
@@ -37,11 +37,10 @@ Recommended reading:
 
 Usage example:
 
-
 ## User profile {#user-profile}
 
 | USE CASE **#1**       | Create user account                                                 |
-|-----------------------|---------------------------------------------------------------------|
+| --------------------- | ------------------------------------------------------------------- |
 | Goal in context       | Client expects to create and account                                |
 | Scope                 | User account system                                                 |
 | Level                 | Primary task                                                        |
