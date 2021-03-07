@@ -16,22 +16,21 @@ tags
 > an accumulation of a quantity, so the entire definite integral gives us the net
 > change in that quantity.[^fn:1]
 
-
 ## Why Integral Calculus {#why-integral-calculus}
 
-Figure [1](#org46d617e) represents 2 graphs of `y = cos(x)`. Let's say we would
-like to calculate the area of {{<katex>}} x\_1 {{</katex>}}. We could calculate
+Figure [1](#orgdc10d56) represents 2 graphs of `y = cos(x)`. Let's say we would
+like to calculate the area of {{<katex>}} x_1 {{</katex>}}. We could calculate
 the area by aproximation, for example, Graph B is filled with the area we would
 like to calculate, so we could divide this area by equal sections of
-\\(\Delta x\_n\\) from `a` to `b` rectangles, then we could calculate the area of
-these rectangles by \\(f(x\_i) \* \Delta x\_n\\) where \\(f\\) is the area of each of
-the rectangles. We do this for each rectangle then sum them up: \\(\sum\_{i=1}^n f(x\_i) \*
-\Delta x\_n\\). This will give us an approximation of our area, we could have a
-better approximation by having our \\(\Delta x\_n\\) smaller, but this implies that
-our `n` becomes bigger and bigger. The smaller \\(\Delta x\_n\\) gets, the more `n`
+\\(\Delta x_n\\) from `a` to `b` rectangles, then we could calculate the area of
+these rectangles by \\(f(x_i) \* \Delta x_n\\) where \\(f\\) is the area of each of
+the rectangles. We do this for each rectangle then sum them up: \\(\sum\_{i=1}^n f(x_i) \*
+\Delta x_n\\). This will give us an approximation of our area, we could have a
+better approximation by having our \\(\Delta x_n\\) smaller, but this implies that
+our `n` becomes bigger and bigger. The smaller \\(\Delta x_n\\) gets, the more `n`
 approaches infinity.
 
-We could use \\(\liminf\\) of `n` as `n` approaches &infin; or \\(\Delta x\_n\\) as it
+We could use \\(\liminf\\) of `n` as `n` approaches &infin; or \\(\Delta x_n\\) as it
 gets very small.
 
 ```gnuplot
@@ -53,9 +52,9 @@ plot f(x) fs solid 0.3 lc rgb '#A3001E'
 unset multiplot
 ```
 
-<a id="org46d617e"></a>
+<a id="orgdc10d56"></a>
 
-{{< figure src="/assets/imgs/graph-example.png" >}}
+{{< figure src="/imgs/graph-example.png" >}}
 
 The idea of getting better and better approximations is the what constitutes
 Integral Calculus.

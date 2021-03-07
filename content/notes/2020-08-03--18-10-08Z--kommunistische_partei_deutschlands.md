@@ -15,11 +15,10 @@ tags
 KPD election poster, 1932. The caption at the bottom reads _'An end to this
 system!'_.
 
-<a id="org414e479"></a>
+<a id="orge358f53"></a>
 
-{{< figure src="/assets/imgs/1932-kpd.jpg" caption="Figure 1: KPD election poster, 1932. The caption at the bottom reads 'An end to this system!'." >}}
-
+{{< figure src="/imgs/1932-kpd.jpg" caption="Figure 1: KPD election poster, 1932. The caption at the bottom reads 'An end to this system!'." >}}
 
 ## Related links {#related-links}
 
--   <https://en.wikipedia.org/wiki/Communist%5FParty%5Fof%5FGermany>
+- <https://en.wikipedia.org/wiki/Communist%5FParty%5Fof%5FGermany>
