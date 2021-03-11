@@ -31,8 +31,10 @@ What the hell. I immediately started to investigate what is going on, is it my
 build system? Is Rust compiling my binary in a wrong format (although it seems
 correct from the output)?
 
-It seems that I **did not** configure RISC-V's toolchain with `=--enable-multilib`
-flag. The following solved the issue:
+~~It seems that I **did not** configure RISC-V's toolchain with `=--enable-multilib`~~
+~~flag. The following solved the issue:~~
+
+{{< details "RISC-V toolchain compilation flags" >}}
 
 ```shell
 ./configure \
@@ -43,7 +45,13 @@ flag. The following solved the issue:
 make -j8
 ```
 
-One more hour wasted at compiling everything again.
+{{</details >}}
+
+~~One more hour wasted at compiling everything again.~~
+
+❗ **️Update:** This didn't work. I ended up downloading RISC-V's OSX pre-compiled
+toolchain from their [website](https://static.dev.sifive.com/dev-tools/riscv64-unknown-elf-gcc-8.3.0-2020.04.0-x86%5F64-apple-darwin.tar.gz). I need to find free time to figure out what flag I
+am missing.
 
 Fun fact: The error message `I'm sorry, Dave, I can't do that.`, comes from a
 scene of A Space Odyssey (1968). It seems to have been [committed](https://sourceware.org/git/?p=binutils-gdb.git;a=blob;f=gdb/symfile.c;h=31aa1e22fc7fc07764d41b5bf6a3638fb89f6f07;hb=bd5635a1e2b38ee8432fcdaa6456079191375277#l577) in 28 March
