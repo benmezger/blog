@@ -5,6 +5,10 @@ date = 2021-04-16T19:30:00-03:00
 publishDate = 2021-04-16T00:00:00-03:00
 tags = ["git"]
 draft = false
+summary = """
+Recently, it came to my attention that conventional commits don't fit all
+codebases; in fact, they can annoy more than they can help in some situations.
+"""
 +++
 
 If you are not familiar with Git&rsquo;s conventional commit approach, jump over [here](https://www.conventionalcommits.org/)

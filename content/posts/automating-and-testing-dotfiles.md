@@ -4,8 +4,11 @@ author = ["Ben Mezger"]
 date = 2020-08-09T13:06:00-03:00
 publishDate = 2020-08-09
 tags = ["dotfiles", "config", "testing", "ci"]
-categories = ["blog"]
 draft = false
+summary = """
+I run multiple Archlinux machines at home and an OSX machine for work, so I need
+to keep my system configuration in sync. This is how I do it. 
+"""
 +++
 
 I run multiple Archlinux machines at home and an OSX machine for work, so I need
@@ -88,12 +91,6 @@ def osx_verify_hostname(hostname):
 
 osx_verify_copied_files()
 osx_verify_hostname("benmezger-ckl.local")
-```
-
-```text
-Checking if /Users/benmezger/.zshrc exists
-Checking if /Users/benmezger/.zshenv exists
-Verifying if hostname 'benmezger-ckl.local' is set
 ```
 
 ## Emacs org mode {#emacs-org-mode}
