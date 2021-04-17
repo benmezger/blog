@@ -71,6 +71,8 @@ computing, personal area networks, smart buildings, and smart meters.
 
 ## Others {#others}
 
+- [CertiKOS](https://flint.cs.yale.edu/certikos/index.html): Clean-slate design with end-to-end guarantees on extensibility,
+  security, and resilience. Without Zero-Day Kernel vulnerabilities.
 - [OSBlog](https://osblog.stephenmarz.com/): This tutorial will progressively build an operating system from start
   to something that you can show your friends or parents.
 

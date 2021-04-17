@@ -47,10 +47,10 @@ print(create_file().name)
 ```
 
 ```text
-<tempfile._TemporaryFileWrapper object at 0x105caefa0>
-/var/folders/gf/7vcrg3d57pn8j_30zvkz94x00000gn/T/tmpex0gb4iw
-<tempfile._TemporaryFileWrapper object at 0x105caeb20>
-/var/folders/gf/7vcrg3d57pn8j_30zvkz94x00000gn/T/tmpd3krl5ge
+<tempfile._TemporaryFileWrapper object at 0x101e6f6d0>
+/var/folders/0r/yp7g7w9n4mxdyr2zfttl58_w0000gp/T/tmpqsuit8j1
+<tempfile._TemporaryFileWrapper object at 0x101e91880>
+/var/folders/0r/yp7g7w9n4mxdyr2zfttl58_w0000gp/T/tmpks2cpqsj
 ```
 
 [NamedTemporaryFile](https://docs.python.org/3/library/tempfile.html#tempfile.NamedTemporaryFile) returns a file-like object that can be used as a temporary
@@ -80,9 +80,9 @@ print(create_file(suffix=".csv", prefix="hello-world").name)
 ```
 
 ```text
-<tempfile._TemporaryFileWrapper object at 0x10c5bcfa0>
-/var/folders/gf/7vcrg3d57pn8j_30zvkz94x00000gn/T/tmpfilek7_z0ngj.csv
-/var/folders/gf/7vcrg3d57pn8j_30zvkz94x00000gn/T/hello-worldg2zl445i.csv
+<tempfile._TemporaryFileWrapper object at 0x10ce29f10>
+/var/folders/0r/yp7g7w9n4mxdyr2zfttl58_w0000gp/T/tmpfiledy39zlfu.csv
+/var/folders/0r/yp7g7w9n4mxdyr2zfttl58_w0000gp/T/hello-world8g3tjjat.csv
 ```
 
 With `TemporaryFile` it returns a `TextIOWrapper`:
@@ -104,6 +104,6 @@ print(create_file(suffix=".csv", prefix="hello-world").name)
 ```
 
 ```text
-<_io.TextIOWrapper name=3 mode='w' encoding='utf-8'>
-3
+<_io.TextIOWrapper name=6 mode='w' encoding='utf-8'>
+6
 ```

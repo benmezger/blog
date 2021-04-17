@@ -50,11 +50,11 @@ func main() {
 ```
 
 ```text
-first [required]
-last [required]
-birth [required]
 sex [required]
 maritalstatus [required]
 children [numeric]
 id [numeric]
+first [required]
+last [required]
+birth [required]
 ```
