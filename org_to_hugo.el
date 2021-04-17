@@ -5,6 +5,11 @@
 
 (remove-hook! 'find-file-hook #'+org-roam-open-buffer-maybe-h)
 
+(defadvice! +editorconfig--inhibit-in-org-exports-a (orig-fn &rest args)
+  :around '(org-export-to-file org-babel-tangle)
+  (let ((editorconfig-exclude-regexps '(".")))
+    (apply orig-fn args)))
+
 (defun benmezger/org-roam-export-all ()
   "Re-exports all Org-roam files to Hugo markdown."
   (interactive)
