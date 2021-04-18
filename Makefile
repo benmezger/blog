@@ -1,5 +1,5 @@
 CC = hugo
-PORT ?= 3131
+PORT ?= 1313
 ROOT_DIR := $(shell dirname $(realpath $(firstword $(MAKEFILE_LIST))))
 
 s: serve
