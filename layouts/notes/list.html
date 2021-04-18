@@ -5,11 +5,12 @@
   </p>
   </br>
   {{ range sort (.Paginator 50).Pages }}
-    <li>
-      <a data-toggle={{ partialCached "docs/post-meta" . }} href="{{ .RelPermalink }}">{{ .Title }}</a>
+    <li style="padding: 3px;">
+      <a
+        data-toggle={{ partialCached "docs/post-meta" . }}
+        href="{{ .RelPermalink }}">{{ .Title }}
+      </a> <i>(modified at {{ .Lastmod.Format "January 2, 2006" }})</i>
     </li>
-    <p>
-    </p>
   {{ end }}
 
   {{ template "_internal/pagination.html" . }}
