@@ -79,8 +79,8 @@ You could parse these messages and generate a changelog like so:
 
 The problem with this approach is that commits are generally too technical and
 software-development-focussed. Take the `fix` commit: &ldquo;_take entries&#x2026;_&rdquo; as an
-example. What does this tell you as a user of my software? Because in a user
-perspective, this means nothing.
+example. What does this tell you as a user of my software? Because from the
+user&rsquo;s perspective, this means nothing.
 
 Changelogs should be written by a human and not by software. Take a look at this
 alternative changelog:
@@ -126,8 +126,8 @@ necessarily to the end-user.
 ## Allow developers to understand code impact {#allow-developers-to-understand-code-impact}
 
 Another problem semantic commits try to solve is by warning the developer of the
-impact a commit might have. Specific words, such as feat, fix is written at the
-beginning of a commit message, for example:
+impact a commit might have. Specific words, such as `feat`, `fix` is written at
+the beginning of a commit message, for example:
 
 ```text
 c540107 * Fix: Bad memory reference on memor allocation
@@ -195,7 +195,7 @@ c540107 * Check if memory is reallocated before deleting.
 24694f8 * Add syscall to page documentation menu
 ```
 
-Straight to the point, readable and straightforward.
+Straightforward and readable.
 
 ## Conclusions {#conclusions}
 
