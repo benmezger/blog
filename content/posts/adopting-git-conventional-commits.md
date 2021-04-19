@@ -164,14 +164,8 @@ c540107 * feat(kernel/mem): Check if memory is deallocated before trashing
 This is interesting, as I now know which component was modified; however, I have
 a few questions regarding the first commit. It does mention it was a `feature`,
 but by reading the message, it does seem like a fix to me or a forgotten logic
-that just got added. It seems to me that `feat` and `before` words conflict. Let
-look at the following approach.
-
-This is interesting, as I now know which component was modified, however, I
-do have a few questions regarding the first commit. It does mention it was a
-`feature`, but by reading the message, it does seem like a fix to me or a
-forgotten logic that just got added. It seems to me that `feat` and `before`
-words conflict. Let look at the following approach.
+that just got added. It seems to me that `feat` and `before` words conflict.
+Lets look at the following approach:
 
 ```text
 c540107 * kernel/mem: Check if memory is reallocated before deleting
