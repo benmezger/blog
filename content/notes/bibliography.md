@@ -143,6 +143,26 @@ interesting to keep around my library.
 
 {{< /details >}}
 
+### Synchronization {#synchronization}
+
+#### Little book of semaphores {#little-book-of-semaphores}
+
+{{< details "Bibtex" >}}
+
+```bibtex
+@book{LittleBookOfSemaphores,
+  title           = {The little book of semaphores},
+  author          = {Downey, Allen},
+  volume          = 2,
+  number          = 2,
+  year            = 2008,
+  publisher       = {Green Tea Press},
+  url             = "https://github.com/AllenDowney/LittleBookOfSemaphores",
+}
+```
+
+{{< /details >}}
+
 ## Computer Architecture {#computer-architecture}
 
 ### Fault tolerance {#fault-tolerance}
@@ -727,6 +747,35 @@ interesting to keep around my library.
   doi             = {10.1109/TDSC.2004.2},
   ISSN            = {1941-0018},
   month           = {Jan},
+}
+```
+
+{{< /details >}}
+
+#### System structure for Software Fault Tolerance {#system-structure-for-software-fault-tolerance}
+
+{{< details "Bibtex" >}}
+
+```bibtex
+@ARTICLE{RandellSysStructureForSoftwareFaultTolerance,
+  author          = {Randell, Brian},
+  journal         = {IEEE Transactions on Software Engineering},
+  title           = {System structure for software fault tolerance},
+  year            = 1975,
+  volume          = {SE-1},
+  number          = 2,
+  pages           = {220-232},
+  abstract        = {Presents and discusses the rationale behind a method for
+                  structuring complex computing systems by the use of what is
+                  termed `recovery blocks,' `conversations,' and `fault-tolerant
+                  interfaces.' The aim is to facilitate the provision of
+                  dependable error detection and recovery facilities which can
+                  cope with errors caused by residual design inadequacies,
+                  particularly in the system software, rather than merely the
+                  occasional malfunctioning of hardware components.},
+  doi             = {10.1109/TSE.1975.6312842},
+  ISSN            = {1939-3520},
+  month           = {June},
 }
 ```
 
