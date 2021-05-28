@@ -2,7 +2,7 @@
 title = "Hi, there"
 author = ["Ben Mezger"]
 date = 2020-04-23T00:00:00-03:00
-lastmod = 2021-04-30T20:36:25-03:00
+lastmod = 2021-05-28T08:24:15-03:00
 draft = false
 bookToc = false
 bookComments = false
@@ -48,7 +48,7 @@ If you want to know more about my professional career, you can get my CV
 <div class="org-center">
   <div></div>
 
-{{< figure src="/imgs/me.jpg" caption="Figure 1: This is me in black and white" width="300px" >}}
+{{< figure src="/imgs/me.png" caption="Figure 1: This is me in black and white" width="400px" >}}
 
 </div>
 
