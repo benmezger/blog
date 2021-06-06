@@ -12,7 +12,8 @@ bookCollapseSection = true
 tags
 : [Operating Systems]({{< relref "2020-05-31--15-29-38Z--operating_systems" >}})
 
-Another awesome list of available Operating System.
+Another awesome list of available Operating System. This is an ongoing list and
+gets updated from time to time.
 
 ## Unix-like {#unix-like}
 
@@ -39,6 +40,13 @@ Another awesome list of available Operating System.
 - [SmartOS](https://docs.smartos.org/): SmartOS is a specialized Type 1 Hypervisor platform based on [illumos](https://illumos.org/).
 - [Xv6](https://pdos.csail.mit.edu/6.828/2020/xv6.html): Xv6 is a teaching operating system developed in the summer of 2006, which
   was ported to RISC-V for a new undergraduate class 6.S081.
+- [SerenityOS](https://www.serenityos.org/): The goal is a marriage between the aesthetic of late-1990s
+  productivity software and the power-user accessibility of late-2000s \*nix.
+- [XFree86](https://www.xfree86.org/): Provides a client/server interface between the display hardware (those
+  physical things like the mouse, keyboard, and video displays) and the desktop
+  environment, (this is typically called a window manager as it deals with how X
+  is displayed i.e. the overall appearance). Yet X it goes beyond that and also
+  gives the infrastructure and a standardized application interface (API).
 
 ## Embedded OS {#embedded-os}
 
