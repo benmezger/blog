@@ -33,6 +33,3 @@ params:
   BookRepo: https://github.com/benmezger/blog
   BookEditPath: edit/main
   BookTheme: auto
-  customCss:
-    - "assets/css/orgmode.css"
-    - "assets/css/custom.css"

@@ -1,0 +1,25 @@
+.org-todo,
+.todo,
+.done {
+  color: #fff;
+  padding: 0.1em 0.3em;
+  border-radius: 3px;
+  background-clip: padding-box;
+  font-size: 80%;
+  line-height: 1;
+}
+
+.TODO {
+  background-color: red;
+}
+
+.DONE {
+  background-color: green;
+}
+
+.markdown {
+  line-height: 1.6em;
+  padding: 24px;
+  background-color: rgba(255, 255, 255, 0.04);
+  border-radius: 5px;
+}
