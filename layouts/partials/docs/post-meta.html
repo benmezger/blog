@@ -1,14 +1,29 @@
-{{ with .Date}}
-  <h5>{{ partial "docs/date" (dict "Date" . "Format" $.Site.Params.BookDateFormat) }}</h5>
+{{ $datefmt := "" }}
+{{ $set := false }}
+
+{{ with .Date }}
+  {{ $datefmt = partial "docs/date" (dict "Date" . "Format" $.Site.Params.BookDateFormat) }}
 {{ end }}
 
-{{ range $taxonomy, $_ := .Site.Taxonomies }}
-  {{ with $terms := $.GetTerms $taxonomy }}
-  <div>
-    {{ range $n, $term := $terms }}{{ if $n }}, {{ end }}
-      <a href="{{ $term.RelPermalink }}">{{ $term.Title }}</a>
-    {{- end }}
-  </div>
-  {{ end }}
-{{ end }}
+<div>
+{{ $taxonomy := "tags" }} {{ with .Param $taxonomy }}
+  {{ range $index, $tag := . }}
+    {{- with $.Site.GetPage (printf "/%s/%s" $taxonomy $tag) -}}
+
+    {{- if not $set -}}
+      {{ $set = true }}
+      <b>{{- $datefmt }}</b>
+    {{- if $tag }} | {{ end }}
+
+    {{- end -}}
+
+    {{- if $index -}}, {{ end }}
+    <a href="{{ .Permalink }}">{{ $tag | urlize }}</a>
+
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+</div>
+
 <hr>
+
