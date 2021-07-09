@@ -64,6 +64,9 @@ gets updated from time to time.
   systems with a focus on low-power wireless Internet of Things devices.
 - [Mbed](https://os.mbed.com/): Mbed is a platform and operating system for internet-connected devices
   based on 32-bit ARM Cortex-M microcontrollers.
+- [μT-Kernel 3.0](https://github.com/tron-forum/mtkernel%5F3): Real-time OS for Small-scale Embedded Systems and IoT Edge
+  nodes. It is compliant with IEEE Standard 2050-2018 and has high compatibility
+  with [μT-Kernel 2.0](https://www.tron.org/download/index.php?route=product/category&path=50).
 
 ### Monolithic {#monolithic}
 
