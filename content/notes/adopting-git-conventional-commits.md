@@ -25,6 +25,7 @@ The main _benefit_ of using conventional commits that I see is that you can:
     by reading the commit message
 3.  Implement tools that can act upon a particular commit message
 
+
 ## Generating `CHANGELOGS` {#generating-changelogs}
 
 The idea of a changelog is to let anyone understand what has been
@@ -123,6 +124,7 @@ developer. A feature may not necessarily add anything to the end-user. The MMU
 might mean something to the developer, for which paging is dependent, but not
 necessarily to the end-user.
 
+
 ## Allow developers to understand code impact {#allow-developers-to-understand-code-impact}
 
 Another problem semantic commits try to solve is by warning the developer of the
@@ -149,6 +151,7 @@ messages can be 40 or 62 characters.
 
 I do, however, find the scope semantic desirable, even if we have to give
 up on a few characters.
+
 
 ## The scope approach of conventional commits {#the-scope-approach-of-conventional-commits}
 
@@ -178,6 +181,7 @@ The scope approach is interesting in large codebases, where two or more
 components exist within the system. I can easily give up a few characters for
 such benefit.
 
+
 ## Does conventional commits really make sense? {#does-conventional-commits-really-make-sense}
 
 It depends. A scope-based approach may make sense if you maintain a large
@@ -196,6 +200,7 @@ c540107 * Check if memory is reallocated before deleting.
 ```
 
 Straightforward and readable.
+
 
 ## Conclusions {#conclusions}
 

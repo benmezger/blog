@@ -3,7 +3,6 @@ title = "Notes on Linux's printk"
 author = ["Ben Mezger"]
 date = 2017-03-09T22:26:00-03:00
 publishDate = 2017-03-09
-categories = ["blog"]
 draft = false
 +++
 
@@ -15,6 +14,7 @@ nice for me to document my findings, so I can read it from time to time. I will
 be daily updating this post, as I am studying it everyday.
 
 Keep in mind that I am using the `x86` architecture.
+
 
 ## `printk(const char * fmt, ...)` {#printk--const-char-fmt-dot-dot-dot}
 
@@ -44,7 +44,8 @@ the severity of the error message. Those are:
 Comments are pretty clear what each one means. With all that, we can easily call
 `printk` like this: `printk(KERN_ERR "Something happend`). By default,
 `KERN_WARNING` is used when nothing is specified, though this can be changed by
-setting `CONFIG_DEFAULT_MESSAGE_LOGLEVEL` kernel option (`+make menuconfig -> Kernel Hacking -> Default message log level+`).
+setting `CONFIG_DEFAULT_MESSAGE_LOGLEVEL` kernel option (`+make menuconfig ->
+Kernel Hacking -> Default message log level+`).
 
 For convenience, Linux also provides [shorthand definition](https://github.com/torvalds/linux/blob/master/include/linux/printk.h#L294) to those calls:
 
@@ -119,6 +120,7 @@ Or by setting the log level through `dmesg` using the `-n` argument:
 ```text
 $ dmesg -n 8
 ```
+
 
 ## References {#references}
 

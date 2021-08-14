@@ -25,6 +25,7 @@ branch (Linux). Handling merge conflicts or cherry-picking commits was tiring.
 Eventually, after trying out `stow` for years and bash scripts, I came up with a
 neat workflow
 
+
 ## Chezmoi to the rescue {#chezmoi-to-the-rescue}
 
 [`Chezmoi`](https://www.chezmoi.io/) solved the branching issue as it allows me to handle multiple
@@ -33,6 +34,7 @@ configurations for inserting context before copying the file. This solves the
 headaches with merge conflicts and having to maintain multiple branches. I now
 need one branch for keeping my files and let Chezmoi handle the configuration
 context and changes when required.
+
 
 ## Handling installation with Ansible {#handling-installation-with-ansible}
 
@@ -51,6 +53,7 @@ etc).
 This allows me to easily install my configuration in a new machine and update
 any new dependency I added to my toolkit.
 
+
 ## Continuous Integration {#continuous-integration}
 
 I mentioned before that I am working more from OSX due to my job, so I tend to
@@ -64,6 +67,7 @@ dependencies, does some system checks, and finally caches the result.
 This allows me to keep up with Archlinux/OSX updates a bit faster and making
 sure my Ansible is fully functional — if one of the CI fail, something happened
 with the dependencies or my configuration.
+
 
 ## Going down the hole {#going-down-the-hole}
 
@@ -93,14 +97,17 @@ osx_verify_copied_files()
 osx_verify_hostname("benmezger-ckl.local")
 ```
 
+
 ## Emacs org mode {#emacs-org-mode}
 
 I live in Emacs, this blog is written in [Org mode](https://orgmode.org/) and [Hugo](https://gohugo.io/), my snippets are
 stored in an org file and my code is written in Emacs. To ease my life, I
 decided to keep a [COMMAND.org](https://github.com/benmezger/dotfiles/blob/main/COMMANDS.org) file with general commands I might need when
 tinkering with my dotfiles. Org mode supports literate programming, so keeping a
-`COMMAND.org` file allows me to execute the commands in-buffer. I simply `C-c C-c` in the snippet and let org mode make it happen. This is nice when I am
+`COMMAND.org` file allows me to execute the commands in-buffer. I simply `C-c
+C-c` in the snippet and let org mode make it happen. This is nice when I am
 tinkering my dotfiles and I need to apply changes with Chezmoi, for example.
+
 
 ## Conclusion {#conclusion}
 
