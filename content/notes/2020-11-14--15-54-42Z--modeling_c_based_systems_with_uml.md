@@ -10,7 +10,8 @@ bookCollapseSection = true
 +++
 
 tags
-: [Software Engineering]({{< relref "2020-06-23--12-50-55Z--software_engineering" >}}) [Methodologies]({{< relref "2020-06-23--12-50-09Z--methodologies" >}})
+: [Software Engineering]({{<relref "2020-06-23--12-50-55Z--software_engineering.md#" >}}) [Methodologies]({{<relref "2020-06-23--12-50-09Z--methodologies.md#" >}})
+
 
 ## Introduction {#introduction}
 
@@ -20,12 +21,13 @@ more complex, designers have been searching for new methodologies to manage
 these complexities and allowing higher productivity. Due to the exclusivity of
 UML for OOP, it makes it difficult for functional programmers to integrate UML
 concepts into the modeling because the transformation of many UML concepts to C
-is difficult and confusing ([Wang 2009](#orgbb89d86)).
+is difficult and confusing ([Wang 2009](#org2dc4562)).
 
 The problem when integrating UML tools into modeling a embedded system happens
 because programmers require to two different ways of thinking: (i) OO way and
-(ii) functional oriented way. ([Wang 2009](#orgbb89d86)) presents a set of mapping rules
+(ii) functional oriented way. ([Wang 2009](#org2dc4562)) presents a set of mapping rules
 on which allows UML to be applied in modeling embedded system.
+
 
 ### Unified Modeling Language (UML) {#unified-modeling-language--uml}
 
@@ -78,11 +80,12 @@ State-chart UML approaches.
     including the states they may enter over their lifetime, messages, events or
     operations on which causes the transition from state to state.
 
+
 ## <span class="org-todo todo TODO">TODO</span> UML To C {#uml-to-c}
 
 A C-language software is a function oriented design with header files, function
 files, local and global variables, flow charts, state diagram and etc. Due to
-UML having no direct support for C-language, ([Wang 2009](#orgbb89d86)) does not cover
+UML having no direct support for C-language, ([Wang 2009](#org2dc4562)) does not cover
 all the aspects of the code, but rather replaces or transforms some of the
 feature.
 
@@ -99,6 +102,7 @@ feature.
 > implemented by triggering the timers, the user inputs, and interrupts, etc
 > [@wang2009modeling].
 
+
 ## Bibliography {#bibliography}
 
-<a id="orgbb89d86"></a>Wang, Guoping. 2009. “Modeling C-Based Embedded System Using UML Design.” In _2009 International Conference on Mechatronics and Automation_, 2973–77.
+<a id="org2dc4562"></a>Wang, Guoping. 2009. “Modeling c-Based Embedded System Using UML Design.” In _2009 International Conference on Mechatronics and Automation_, 2973–77. <https://doi.org/10.1109/ICMA.2009.5246023>.

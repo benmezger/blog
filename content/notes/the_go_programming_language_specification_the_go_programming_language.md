@@ -9,7 +9,7 @@ bookCollapseSection = true
 +++
 
 tags
-: [Go Programming]({{< relref "2020-05-31--15-31-36Z--go_programming" >}}) [Programming]({{< relref "2020-05-31--15-33-23Z--programming" >}})
+: [Go Programming]({{<relref "2020-05-31--15-31-36Z--go_programming.md#" >}}) [Programming]({{<relref "2020-05-31--15-33-23Z--programming.md#" >}})
 
 For an operand x of type T, the address operation &x generates a pointer of
 type \*T to x. The operand must be addressable, that is, either a variable,

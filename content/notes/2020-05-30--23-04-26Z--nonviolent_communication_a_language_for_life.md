@@ -10,7 +10,8 @@ bookCollapseSection = true
 +++
 
 tags
-: [Mindset]({{< relref "2020-05-31--04-24-34Z--mindset" >}}) [Learning]({{< relref "2020-05-31--04-23-42Z--learning" >}}) [Communication]({{< relref "2020-06-02--11-55-00Z--communication" >}})
+: [Mindset]({{<relref "2020-05-31--04-24-34Z--mindset.md#" >}}) [Learning]({{<relref "2020-05-31--04-23-42Z--learning.md#" >}}) [Communication]({{<relref "2020-06-02--11-55-00Z--communication.md#" >}})
+
 
 ## <span class="org-todo done READ">READ</span> Nonviolent Communication: A language for life {#nonviolent-communication-a-language-for-life}
 
@@ -20,7 +21,7 @@ tags
 </div>
 
 | Headline                                | Time     |
-| --------------------------------------- | -------- |
+|-----------------------------------------|----------|
 | **Total time**                          | **8:12** |
 | Nonviolent Communication: A language... | 8:12     |
 

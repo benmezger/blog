@@ -10,7 +10,7 @@ bookCollapseSection = true
 +++
 
 tags
-: [Computer Science]({{< relref "2020-05-31--15-29-21Z--computer_science" >}}) [Programming]({{< relref "2020-05-31--15-33-23Z--programming" >}}) [Methodologies]({{< relref "2020-06-23--12-50-09Z--methodologies" >}}) [Software Engineering]({{< relref "2020-06-23--12-50-55Z--software_engineering" >}})
+: [Computer Science]({{<relref "2020-05-31--15-29-21Z--computer_science.md#" >}}) [Programming]({{<relref "2020-05-31--15-33-23Z--programming.md#" >}}) [Methodologies]({{<relref "2020-06-23--12-50-09Z--methodologies.md#" >}}) [Software Engineering]({{<relref "2020-06-23--12-50-55Z--software_engineering.md#" >}})
 
 The following is a requirements template developed by [Alistair Cockburn](https://heartofagile.com/alistair-cockburn/).
 This template may or may not have all or more fields related to the requirements
@@ -18,12 +18,12 @@ itself.
 
 Recommended reading:
 
-- [Basic Use Case Template](</ox-hugo/Use-Case-Template (Cockburn).pdf>)
+-   [Basic Use Case Template](</ox-hugo/Use-Case-Template (Cockburn).pdf>)
 
 ---
 
 | USE CASE **#N**       | _<The name of the goal as a short active verb phrase>_                     |
-| --------------------- | -------------------------------------------------------------------------- |
+|-----------------------|----------------------------------------------------------------------------|
 | Goal in context       | _<A longer statement of the goal in context if needed>_                    |
 | Scope                 | _<What system is being considered back box under design>_                  |
 | Level                 | _<one of: Summary, Primary task, Subfunction>_                             |
@@ -37,10 +37,11 @@ Recommended reading:
 
 Usage example:
 
+
 ## User profile {#user-profile}
 
 | USE CASE **#1**       | Create user account                                                 |
-| --------------------- | ------------------------------------------------------------------- |
+|-----------------------|---------------------------------------------------------------------|
 | Goal in context       | Client expects to create and account                                |
 | Scope                 | User account system                                                 |
 | Level                 | Primary task                                                        |

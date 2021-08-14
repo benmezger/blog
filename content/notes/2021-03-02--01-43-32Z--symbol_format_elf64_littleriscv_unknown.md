@@ -10,7 +10,7 @@ bookCollapseSection = true
 +++
 
 tags
-: [RISCV]({{< relref "2020-05-31--15-37-29Z--riscv" >}}) [Compiler]({{< relref "2020-05-31--16-03-15Z--compiler" >}})
+: [RISCV]({{<relref "2020-05-31--15-37-29Z--riscv.md#" >}}) [Compiler]({{<relref "2020-05-31--16-03-15Z--compiler.md#" >}})
 
 After an hour of compiling RISC-V's [toolchain](https://github.com/riscv/riscv-gnu-toolchain), I ran `riscv64-unknown-elf-gdb`
 remotely against my Rust kernel running in Qemu. This happened.

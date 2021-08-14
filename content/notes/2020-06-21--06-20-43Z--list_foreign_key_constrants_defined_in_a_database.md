@@ -10,7 +10,7 @@ bookCollapseSection = true
 +++
 
 tags
-: [Programming]({{< relref "2020-05-31--15-33-23Z--programming" >}}) [Code snippets]({{< relref "2020-05-31--17-28-55Z--code_snippets" >}}) [Postgres]({{< relref "2020-06-21--06-22-46Z--postgres" >}}) [Postgres]({{< relref "2020-06-21--06-22-46Z--postgres" >}})
+: [Programming]({{<relref "2020-05-31--15-33-23Z--programming.md#" >}}) [Code snippets]({{<relref "2020-05-31--17-28-55Z--code_snippets.md#" >}}) [Postgres]({{<relref "2020-06-21--06-22-46Z--postgres.md#" >}}) [Postgres]({{<relref "2020-06-21--06-22-46Z--postgres.md#" >}})
 
 View foreign key constrants defined in all databases
 

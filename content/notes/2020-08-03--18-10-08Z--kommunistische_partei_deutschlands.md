@@ -10,15 +10,16 @@ bookCollapseSection = true
 +++
 
 tags
-: History [Politics]({{< relref "2020-06-02--11-52-08Z--politics" >}})
+: History [Politics]({{<relref "2020-06-02--11-52-08Z--politics.md#" >}})
 
 KPD election poster, 1932. The caption at the bottom reads _'An end to this
 system!'_.
 
-<a id="org985d322"></a>
+<a id="org939676a"></a>
 
 {{< figure src="/imgs/1932-kpd.jpg" caption="Figure 1: KPD election poster, 1932. The caption at the bottom reads 'An end to this system!'." >}}
 
+
 ## Related links {#related-links}
 
-- <https://en.wikipedia.org/wiki/Communist%5FParty%5Fof%5FGermany>
+-   <https://en.wikipedia.org/wiki/Communist%5FParty%5Fof%5FGermany>

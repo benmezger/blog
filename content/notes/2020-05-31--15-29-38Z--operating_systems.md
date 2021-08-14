@@ -10,7 +10,8 @@ bookCollapseSection = true
 +++
 
 tags
-: [Thesis]({{< relref "2020-05-31--15-35-57Z--thesis" >}}) [Computer Science]({{< relref "2020-05-31--15-29-21Z--computer_science" >}})
+: [Thesis]({{<relref "2020-05-31--15-35-57Z--thesis.md#" >}}) [Computer Science]({{<relref "2020-05-31--15-29-21Z--computer_science.md#" >}})
+
 
 ## OS Kit {#os-kit}
 
@@ -26,51 +27,58 @@ system formats, executable formats, or network services. The OSKit also
 works well for constructing OS-related programs, such as boot loaders or
 OS-level servers atop a microkernel
 
+
 ## Memory management {#memory-management}
+
 
 ### Parkinson's law {#parkinson-s-law}
 
 Programs and their data expand to fill the memory available to hold them
 
+
 ### Memory hierarchy {#memory-hierarchy}
+
 
 #### Small fast and expensive memory up to a very slow and cheap memory {#small-fast-and-expensive-memory-up-to-a-very-slow-and-cheap-memory}
 
 <!--list-separator-->
 
-- Processor registers
+-  Processor registers
 
 <!--list-separator-->
 
-- Processor cache
+-  Processor cache
 
 <!--list-separator-->
 
-- Random access memory (RAM)
+-  Random access memory (RAM)
 
 <!--list-separator-->
 
-- Flash/USB memory
+-  Flash/USB memory
 
 <!--list-separator-->
 
-- Hard drive
+-  Hard drive
 
 <!--list-separator-->
 
-- Tape backups
+-  Tape backups
+
 
 #### The part that handles memory in the operating system is called memory manager {#the-part-that-handles-memory-in-the-operating-system-is-called-memory-manager}
 
 <!--list-separator-->
 
-- The manager should be capable of allocating/deallocating memory for processes
+-  The manager should be capable of allocating/deallocating memory for processes
 
 <!--list-separator-->
 
-- Keep track of which location in memory is in use
+-  Keep track of which location in memory is in use
+
 
 #### Lowest cache level is _generally_ handled by the hardware {#lowest-cache-level-is-generally-handled-by-the-hardware}
+
 
 #### Not having any memory abstraction at all is the simplest abstraction {#not-having-any-memory-abstraction-at-all-is-the-simplest-abstraction}
 
@@ -81,115 +89,122 @@ one program may interfere with the other
 
 <!--list-separator-->
 
-- One solution for allowing two or more programs running
+-  One solution for allowing two or more programs running
 
-  simultaneously is if one program knows about the existence of the other.
-  With this approach, the programmer requires to divide memory into 2
-  "blocks", and allocate each block to the corresponding program, for
-  example, the kernel may be at the button of memory and the program on
-  top of it. It's worth noting this implies the program may wipe (or
-  read/write) the kernel address
-
-<!--list-separator-->
-
-- Another solution is to store the kernel in ROM, and keep the program in RAM
+    simultaneously is if one program knows about the existence of the other.
+    With this approach, the programmer requires to divide memory into 2
+    "blocks", and allocate each block to the corresponding program, for
+    example, the kernel may be at the button of memory and the program on
+    top of it. It's worth noting this implies the program may wipe (or
+    read/write) the kernel address
 
 <!--list-separator-->
 
-- When the kernel needs to switch process, it will load the the
-
-  program from disk and overwrite the current running program
+-  Another solution is to store the kernel in ROM, and keep the program in RAM
 
 <!--list-separator-->
 
-- All the kernel needs to do is save the memory context to disk and
+-  When the kernel needs to switch process, it will load the the
 
-  load the new program
+    program from disk and overwrite the current running program
 
 <!--list-separator-->
 
-- With the help of extra hardware, it is possible to divide memory
+-  All the kernel needs to do is save the memory context to disk and
 
-  into blocks and protect other programs from accessing blocks of other
-  programs loaded in memory
+    load the new program
 
-   <!--list-separator-->
+<!--list-separator-->
 
-  - This brings a problem since programs may move data from physical
+-  With the help of extra hardware, it is possible to divide memory
 
-    memory, say program A jumps to address \`0x12\` and program b copies data
-    from in memory address \`0x12\`. When program A jumps to address \`0x12\` it
-    would instead crash, since that was not the expected address. The
-    problem is that both programs reference physical memory and this is \***\*totally undesirable\*\***, what is desirable is that programs reference a
-    private set of local address to it
+    into blocks and protect other programs from accessing blocks of other
+    programs loaded in memory
 
-    See: <https://imgur.com/a/5FlWN4A>
+    <!--list-separator-->
 
-   <!--list-separator-->
+    -  This brings a problem since programs may move data from physical
 
-  - \***\*Static relocation\*\***: modify the second program on the fly as
+        memory, say program A jumps to address \`0x12\` and program b copies data
+        from in memory address \`0x12\`. When program A jumps to address \`0x12\` it
+        would instead crash, since that was not the expected address. The
+        problem is that both programs reference physical memory and this is
+        ****totally undesirable****, what is desirable is that programs reference a
+        private set of local address to it
 
-    it loaded into memory (IBM 360 did this)
+        See: <https://imgur.com/a/5FlWN4A>
+
+    <!--list-separator-->
+
+    -  ****Static relocation****: modify the second program on the fly as
+
+        it loaded into memory (IBM 360 did this)
+
 
 #### The operating system should coordinate on how these memories are handled {#the-operating-system-should-coordinate-on-how-these-memories-are-handled}
 
 <!--list-separator-->
 
-- It should handle:
+-  It should handle:
 
-   <!--list-separator-->
+    <!--list-separator-->
 
-  - Keep track which parts of memory are in used and which aren't
+    -  Keep track which parts of memory are in used and which aren't
 
-   <!--list-separator-->
+    <!--list-separator-->
 
-  - Allocate and deallocate memory
+    -  Allocate and deallocate memory
 
-   <!--list-separator-->
+    <!--list-separator-->
 
-  - Swapping between main memory to disk when main memory is too small to hold the process
+    -  Swapping between main memory to disk when main memory is too small to hold the process
+
 
 #### Memory abstractions {#memory-abstractions}
 
 <!--list-separator-->
 
-- Address spaces
+-  Address spaces
 
-   <!--list-separator-->
+    <!--list-separator-->
 
-  - Allows multiple applications to be in memory at the same time
+    -  Allows multiple applications to be in memory at the same time
 
-   <!--list-separator-->
+    <!--list-separator-->
 
-  - Prevents applications from interfering with each other
+    -  Prevents applications from interfering with each other
 
-   <!--list-separator-->
+    <!--list-separator-->
 
-  - Abstract memory for programs to be stored in
+    -  Abstract memory for programs to be stored in
 
-   <!--list-separator-->
+    <!--list-separator-->
 
-  - Works like a telephone number
+    -  Works like a telephone number
 
-    in Brazil, it is common for local cities to have a 8-digit phone number, so the
-    address space for the telephone number starts in 0000,0000 up to 9999,9999.
+        in Brazil, it is common for local cities to have a 8-digit phone number, so the
+        address space for the telephone number starts in 0000,0000 up to 9999,9999.
 
 <!--list-separator-->
 
-- Stack pointer
+-  Stack pointer
 
-   <!--list-separator-->
+    <!--list-separator-->
 
-  - RISC-V ABI's stack pointer
+    -  RISC-V ABI's stack pointer
 
-    The stack pointer points to the next available memory location on the stack, and
-    the frame pointer points to the base of the <span class="underline"><span class="underline">stack frame</span></span>.
+        The stack pointer points to the next available memory location on the stack, and
+        the frame pointer points to the base of the <span class="underline"><span class="underline">stack frame</span></span>.
+
 
 ### Physical Memory management {#physical-memory-management}
 
+
 #### Direct memory address to access a real location in RAM {#direct-memory-address-to-access-a-real-location-in-ram}
 
+
 ## Code {#code}
+
 
 ### Linux trap handler {#linux-trap-handler}
 
@@ -207,6 +222,7 @@ void __init trap_init(void)
     csr_write(CSR_IE, -1);
 }
 ```
+
 
 ### Send S-mode interrupts and most exceptions to S-mode {#send-s-mode-interrupts-and-most-exceptions-to-s-mode}
 
@@ -229,11 +245,15 @@ static void delegate_traps() {
 }
 ```
 
+
 ### Timer interrupt in assembly {#timer-interrupt-in-assembly}
+
 
 #### <https://forums.sifive.com/t/beginner-trying-to-set-up-timer-irq-in-assembler-how-to-print-csrs-in-gdb/2764> {#https-forums-dot-sifive-dot-com-t-beginner-trying-to-set-up-timer-irq-in-assembler-how-to-print-csrs-in-gdb-2764}
 
+
 ### Freedom metal Interrupt {#freedom-metal-interrupt}
+
 
 #### Initialize CPU interrupt controller {#initialize-cpu-interrupt-controller}
 
@@ -289,6 +309,7 @@ void __metal_driver_riscv_cpu_controller_interrupt_init(
 }
 ```
 
+
 #### Set trap vector configuration {#set-trap-vector-configuration}
 
 ```C
@@ -319,5 +340,6 @@ void __metal_controller_interrupt_vector(metal_vector_mode mode,
   }
 }
 ```
+
 
 ### For `DIRECT_ACCESS` interrupt vector configuration {#for-direct-access-interrupt-vector-configuration}

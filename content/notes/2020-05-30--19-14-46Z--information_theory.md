@@ -10,7 +10,7 @@ bookCollapseSection = true
 +++
 
 tags
-: [Computer Science]({{< relref "2020-05-31--15-29-21Z--computer_science" >}})
+: [Computer Science]({{<relref "2020-05-31--15-29-21Z--computer_science.md#" >}})
 
 Related content: <https://www.khanacademy.org/computing/computer-science/informationtheory/info-theory/>
 
@@ -39,6 +39,7 @@ drawings, each would contain the same number of bits though in different
 
 `Key contents: entropy; density, information`
 
+
 ## What is the density of a bit? {#what-is-the-density-of-a-bit}
 
 Bit density measures how many bits can be stored in some area or volume. As far
@@ -60,6 +61,7 @@ is about 1 KB / 624 cm^2 = 0.0016 KB / cm^2. But a microSD card has an area of
 about 1.65 cm^2 so its bit density is about 64 GB / 1.65 cm^2 = 38.8 GB / cm^2.
 So, by this rough calculation the bit density of a microSD card is about
 24,250,000 times greater than that of a sheet of paper.
+
 
 ## <span class="org-todo todo CURRENT">CURRENT</span> Measuring information {#measuring-information}
 

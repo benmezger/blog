@@ -8,4 +8,4 @@ bookCollapseSection = true
 +++
 
 Tags
-: [Emacs]({{< relref "2020-06-04--11-36-43Z--emacs" >}}) [Programming]({{< relref "2020-05-31--15-33-23Z--programming" >}})
+: [Emacs]({{<relref "2020-06-04--11-36-43Z--emacs.md#" >}}) [Programming]({{<relref "2020-05-31--15-33-23Z--programming.md#" >}})

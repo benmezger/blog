@@ -10,7 +10,7 @@ bookCollapseSection = true
 +++
 
 tags
-: [Operating Systems]({{< relref "2020-05-31--15-29-38Z--operating_systems" >}})
+: [Operating Systems]({{<relref "2020-05-31--15-29-38Z--operating_systems.md#" >}})
 
 Another awesome list of available Operating System. This is an ongoing list and
 gets updated from time to time.

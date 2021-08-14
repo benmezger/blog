@@ -10,7 +10,7 @@ bookCollapseSection = true
 +++
 
 tags
-: [Programming]({{< relref "2020-05-31--15-33-23Z--programming" >}}) [Software Engineering]({{< relref "2020-06-23--12-50-55Z--software_engineering" >}})
+: [Programming]({{<relref "2020-05-31--15-33-23Z--programming.md#" >}}) [Software Engineering]({{<relref "2020-06-23--12-50-55Z--software_engineering.md#" >}})
 
 The following scripts changes all repository commits from an specific author to
 a new author. This is specially handy if you mess up your git config at

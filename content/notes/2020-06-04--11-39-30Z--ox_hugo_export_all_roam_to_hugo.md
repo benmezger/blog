@@ -10,7 +10,7 @@ bookCollapseSection = true
 +++
 
 tags
-: [Emacs]({{< relref "2020-06-04--11-36-43Z--emacs" >}}) [Org-mode]({{< relref "2020-06-04--11-35-15Z--org_mode" >}}) [Org-roam]({{< relref "2020-06-04--11-51-18Z--org_roam" >}})
+: [Emacs]({{<relref "2020-06-04--11-36-43Z--emacs.md#" >}}) [Org-mode]({{<relref "2020-06-04--11-35-15Z--org_mode.md#" >}}) [Org-roam]({{<relref "2020-06-04--11-51-18Z--org_roam.md#" >}})
 
 Export all org-roam files to Hugo markdown (this might take some time)
 

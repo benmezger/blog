@@ -10,7 +10,8 @@ bookCollapseSection = true
 +++
 
 tags
-: [Politics]({{< relref "2020-06-02--11-52-08Z--politics" >}})
+: [Politics]({{<relref "2020-06-02--11-52-08Z--politics.md#" >}})
+
 
 ## READING The Communist Manifesto {#reading-the-communist-manifesto}
 
@@ -20,7 +21,7 @@ tags
 </div>
 
 | Headline                | Time     |
-| ----------------------- | -------- |
+|-------------------------|----------|
 | **Total time**          | **2:36** |
 | The Communist Manifesto | 2:36     |
 

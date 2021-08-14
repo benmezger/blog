@@ -9,9 +9,9 @@ draft = false
 bookCollapseSection = true
 +++
 
-- <https://github.com/jmoiron/sqlx>
-- <https://pg.uptrace.dev/guide/>
-- <https://github.com/go-pg/pg>
+-   <https://github.com/jmoiron/sqlx>
+-   <https://pg.uptrace.dev/guide/>
+-   <https://github.com/go-pg/pg>
 
 Entered on <span class="timestamp-wrapper"><span class="timestamp">[2020-05-27 Wed 21:36]</span></span>
 
