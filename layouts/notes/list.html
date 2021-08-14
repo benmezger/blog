@@ -1,17 +1,27 @@
 {{ define "main" }}
-  <h1>Personal roam notes</h1>
+  <h1>Notes</h1>
   <p>These are personal <i>org-roam</i> notes. I tend to make notes during the
     day, and the ones I feel that are interesting I publish them here.
   </p>
   </br>
-  {{ range sort (.Paginator 50).Pages }}
-    <li style="padding: 3px;">
-      <a
-        data-toggle={{ partialCached "docs/post-meta" . }}
-        href="{{ .RelPermalink }}">{{ .Title }}
-      </a> <i>(modified at {{ .Lastmod.Format "January 2, 2006" }})</i>
-    </li>
-  {{ end }}
+  <section>
+    {{ range sort (.Paginator 50).Pages }}
+    <div>
+      <li style="padding: 3px; position:relative;">
+        <a
+          data-toggle={{ partialCached "docs/post-meta" . }}
+          href="{{ .RelPermalink }}">
+          <time {{ printf `datetime="%s"` (.Date.Format "02-01-2006T15:04:05Z07:00") | safeHTMLAttr }}>
+            {{ .Date.Format "02-01-2006" }}
+          </time>
+          <span> &mdash; </span>
+          {{ .Title }}
+        </a>
+        <i style="color: rgba(255, 255, 255, 0.30);">modified in {{ .Lastmod.Format "January 2, 2006" }})</i>
+      </li>
+      {{ end }}
+    </div>
+  </section>
 
   {{ template "_internal/pagination.html" . }}
 {{ end }}
