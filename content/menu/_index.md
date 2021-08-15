@@ -7,7 +7,6 @@ draft = false
 headless = true
 +++
 
--   [Blog](/posts)
 -   [Notes](/notes)
 -   [Contact](/contact)
 -   [RSS](/index.xml)
