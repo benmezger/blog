@@ -10,10 +10,10 @@ bookCollapseSection = true
 +++
 
 tags
-: [Org-mode]({{< relref "2020-06-04--11-35-15Z--org_mode" >}}) [Emacs]({{< relref "2020-06-04--11-36-43Z--emacs" >}}) [Org-roam]({{< relref "2020-06-04--11-51-18Z--org_roam" >}})
+: [Org-mode]({{<relref "2020-06-04--11-35-15Z--org_mode.md#" >}}) [Emacs]({{<relref "2020-06-04--11-36-43Z--emacs.md#" >}}) [Org-roam]({{<relref "2020-06-04--11-51-18Z--org_roam.md#" >}})
 
 > ❗️\*Note:\* This no longer applies (probably due to an upstream update). See the
-> following note for another approach: [Export org-roam backlinks with Gohugo]({{< relref "2021-03-07--17-40-57Z--export_org_roam_backlinks_with_gohugo" >}})
+> following note for another approach: [Export org-roam backlinks with Gohugo]({{<relref "2021-03-07--17-40-57Z--export_org_roam_backlinks_with_gohugo.md#" >}})
 
 Insert roam backlinks URL when exporting orgmode to HTML
 

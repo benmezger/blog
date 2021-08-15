@@ -10,7 +10,7 @@ bookCollapseSection = true
 +++
 
 tags
-: [Python]({{< relref "2020-05-31--16-04-33Z--python" >}}) [Programming]({{< relref "2020-05-31--15-33-23Z--programming" >}})
+: [Python]({{<relref "2020-05-31--16-04-33Z--python.md#" >}}) [Programming]({{<relref "2020-05-31--15-33-23Z--programming.md#" >}})
 
 Python's [tempfile](https://docs.python.org/3/library/tempfile.html) standard library is pretty neat when we need to create a
 temporary file and/or directories. Instead of having a much of code like this:
@@ -47,10 +47,10 @@ print(create_file().name)
 ```
 
 ```text
-<tempfile._TemporaryFileWrapper object at 0x101e6f6d0>
-/var/folders/0r/yp7g7w9n4mxdyr2zfttl58_w0000gp/T/tmpqsuit8j1
-<tempfile._TemporaryFileWrapper object at 0x101e91880>
-/var/folders/0r/yp7g7w9n4mxdyr2zfttl58_w0000gp/T/tmpks2cpqsj
+<tempfile._TemporaryFileWrapper object at 0x10d358d00>
+/var/folders/gf/7vcrg3d57pn8j_30zvkz94x00000gn/T/tmpg4_lmd3v
+<tempfile._TemporaryFileWrapper object at 0x10d2e15b0>
+/var/folders/gf/7vcrg3d57pn8j_30zvkz94x00000gn/T/tmpg09tmp6u
 ```
 
 [NamedTemporaryFile](https://docs.python.org/3/library/tempfile.html#tempfile.NamedTemporaryFile) returns a file-like object that can be used as a temporary
@@ -80,9 +80,9 @@ print(create_file(suffix=".csv", prefix="hello-world").name)
 ```
 
 ```text
-<tempfile._TemporaryFileWrapper object at 0x10ce29f10>
-/var/folders/0r/yp7g7w9n4mxdyr2zfttl58_w0000gp/T/tmpfiledy39zlfu.csv
-/var/folders/0r/yp7g7w9n4mxdyr2zfttl58_w0000gp/T/hello-world8g3tjjat.csv
+<tempfile._TemporaryFileWrapper object at 0x10b890070>
+/var/folders/gf/7vcrg3d57pn8j_30zvkz94x00000gn/T/tmpfile88948l8x.csv
+/var/folders/gf/7vcrg3d57pn8j_30zvkz94x00000gn/T/hello-world6kxjwpm5.csv
 ```
 
 With `TemporaryFile` it returns a `TextIOWrapper`:

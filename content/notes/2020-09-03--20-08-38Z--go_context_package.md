@@ -10,9 +10,10 @@ bookCollapseSection = true
 +++
 
 tags
-: [Programming]({{< relref "2020-05-31--15-33-23Z--programming" >}}) [Go Programming]({{< relref "2020-05-31--15-31-36Z--go_programming" >}})
+: [Programming]({{<relref "2020-05-31--15-33-23Z--programming.md#" >}}) [Go Programming]({{<relref "2020-05-31--15-31-36Z--go_programming.md#" >}})
+
 
 ## Keywords {#keywords}
 
-- Cancellation: is when you are requesting some services, and you cancel this request
-- Propagation: means that if we asked someone for a service then you tell that person to cancel
+-   Cancellation: is when you are requesting some services, and you cancel this request
+-   Propagation: means that if we asked someone for a service then you tell that person to cancel

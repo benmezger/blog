@@ -10,7 +10,7 @@ bookCollapseSection = true
 +++
 
 | Artists                            |
-| ---------------------------------- |
+|------------------------------------|
 | Lana Del Rey                       |
 | Slipknot                           |
 | CocoRosie                          |

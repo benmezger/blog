@@ -10,7 +10,8 @@ bookCollapseSection = true
 +++
 
 tags
-: [Programming]({{< relref "2020-05-31--15-33-23Z--programming" >}}) [Computer Science]({{< relref "2020-05-31--15-29-21Z--computer_science" >}}) [Computer Architecture]({{< relref "2020-05-31--16-01-33Z--computer_architecture" >}})
+: [Programming]({{<relref "2020-05-31--15-33-23Z--programming.md#" >}}) [Computer Science]({{<relref "2020-05-31--15-29-21Z--computer_science.md#" >}}) [Computer Architecture]({{<relref "2020-05-31--16-01-33Z--computer_architecture.md#" >}})
+
 
 ## READING The Pragmatic Programmer: From Journeyman to Master {#reading-the-pragmatic-programmer-from-journeyman-to-master}
 
@@ -20,7 +21,7 @@ tags
 </div>
 
 | Headline                          | Time      |
-| --------------------------------- | --------- |
+|-----------------------------------|-----------|
 | **Total time**                    | **10:04** |
 | The Pragmatic Programmer: From... | 10:04     |
 

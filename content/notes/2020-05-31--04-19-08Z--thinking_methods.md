@@ -10,7 +10,7 @@ bookCollapseSection = true
 +++
 
 tags
-: [Learning]({{< relref "2020-05-31--04-23-42Z--learning" >}}) [Mindset]({{< relref "2020-05-31--04-24-34Z--mindset" >}}) [Mental models]({{< relref "2020-05-31--04-30-47Z--mental_models" >}})
+: [Learning]({{<relref "2020-05-31--04-23-42Z--learning.md#" >}}) [Mindset]({{<relref "2020-05-31--04-24-34Z--mindset.md#" >}}) [Mental models]({{<relref "2020-05-31--04-30-47Z--mental_models.md#" >}})
 
 Thinking methods are techniques where we can get better at solving complex
 problems and having a clearer view of the problem. It allows us to thought
@@ -20,12 +20,12 @@ problems into sub-problems so we can better view reality.
 
 **Prevents failure from interacting with reality**
 
-<a id="org02431eb"></a>
+<a id="org38525bc"></a>
 
 {{< figure src="/imgs/thinking-methods.jpg" caption="Figure 1: Mindmap of thinking methods" >}}
 
 Related pages:
 
-- [Mental models]({{< relref "2020-05-31--04-30-47Z--mental_models" >}})
-- [Mindset]({{< relref "2020-05-31--04-24-34Z--mindset" >}})
-- [Socratic questioning]({{< relref "2020-05-31--13-16-44Z--socratic_questioning" >}})
+-   [Mental models]({{<relref "2020-05-31--04-30-47Z--mental_models.md#" >}})
+-   [Mindset]({{<relref "2020-05-31--04-24-34Z--mindset.md#" >}})
+-   [Socratic questioning]({{<relref "2020-05-31--13-16-44Z--socratic_questioning.md#" >}})

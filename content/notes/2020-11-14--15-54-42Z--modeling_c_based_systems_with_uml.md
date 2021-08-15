@@ -21,11 +21,11 @@ more complex, designers have been searching for new methodologies to manage
 these complexities and allowing higher productivity. Due to the exclusivity of
 UML for OOP, it makes it difficult for functional programmers to integrate UML
 concepts into the modeling because the transformation of many UML concepts to C
-is difficult and confusing ([Wang 2009](#org2dc4562)).
+is difficult and confusing ([Wang 2009](#org3821b71)).
 
 The problem when integrating UML tools into modeling a embedded system happens
 because programmers require to two different ways of thinking: (i) OO way and
-(ii) functional oriented way. ([Wang 2009](#org2dc4562)) presents a set of mapping rules
+(ii) functional oriented way. ([Wang 2009](#org3821b71)) presents a set of mapping rules
 on which allows UML to be applied in modeling embedded system.
 
 
@@ -85,7 +85,7 @@ State-chart UML approaches.
 
 A C-language software is a function oriented design with header files, function
 files, local and global variables, flow charts, state diagram and etc. Due to
-UML having no direct support for C-language, ([Wang 2009](#org2dc4562)) does not cover
+UML having no direct support for C-language, ([Wang 2009](#org3821b71)) does not cover
 all the aspects of the code, but rather replaces or transforms some of the
 feature.
 
@@ -105,4 +105,4 @@ feature.
 
 ## Bibliography {#bibliography}
 
-<a id="org2dc4562"></a>Wang, Guoping. 2009. “Modeling c-Based Embedded System Using UML Design.” In _2009 International Conference on Mechatronics and Automation_, 2973–77. <https://doi.org/10.1109/ICMA.2009.5246023>.
+<a id="org3821b71"></a>Wang, Guoping. 2009. “Modeling c-Based Embedded System Using UML Design.” In _2009 International Conference on Mechatronics and Automation_, 2973–77. <https://doi.org/10.1109/ICMA.2009.5246023>.

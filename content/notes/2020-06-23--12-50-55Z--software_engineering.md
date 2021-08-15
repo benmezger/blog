@@ -10,4 +10,4 @@ bookCollapseSection = true
 +++
 
 tags
-: [Programming]({{< relref "2020-05-31--15-33-23Z--programming" >}}) [Computer Science]({{< relref "2020-05-31--15-29-21Z--computer_science" >}})
+: [Programming]({{<relref "2020-05-31--15-33-23Z--programming.md#" >}}) [Computer Science]({{<relref "2020-05-31--15-29-21Z--computer_science.md#" >}})
