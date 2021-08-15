@@ -13,3 +13,10 @@ command = "hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL"
 [context.develop.environment]
 HUGO_VERSION = "0.74.3"
 HUGO_ENABLEGITINFO = "true"
+
+[[redirects]]
+  from = "/posts"
+  to = "/notes"
+  status = 301
+  force = true
+  query = {path = ":path"}
