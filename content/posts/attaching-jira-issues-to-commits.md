@@ -4,6 +4,7 @@ author = ["Ben Mezger"]
 date = 2020-05-24T02:39:00-03:00
 publishDate = 2020-05-24
 tags = ["git", "projects"]
+categories = ["blog"]
 draft = false
 +++
 

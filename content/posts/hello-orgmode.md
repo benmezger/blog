@@ -4,7 +4,7 @@ author = ["Ben Mezger"]
 date = 2020-04-23T00:00:00-03:00
 publishDate = 2020-04-25T00:00:00-03:00
 tags = ["emacs", "orgmode"]
-categories = ["web"]
+categories = ["blog", "web"]
 type = "post"
 draft = false
 +++

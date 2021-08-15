@@ -4,7 +4,7 @@ author = ["Ben Mezger"]
 date = 2017-10-30T21:59:00-02:00
 publishDate = 2017-10-30
 tags = ["git", "security"]
-categories = ["web"]
+categories = ["blog", "web"]
 draft = false
 +++
 
@@ -24,7 +24,7 @@ logs, versions, tags, configs, previous revisions and so on.
 Not only some developers/sys-admins clone the repository in their server, but
 they also point their web-server to that directory. _Not only that_, they also
 sometimes change the source to set some configurations files with sensitive
-information (email/password, and so on).
+informations (email/password, and so on).
 
 If the web-server is pointing to the git repository and has directory listing
 enabled, we could download the `.git` using `wget=/=curl` recursively, then
@@ -33,7 +33,6 @@ simply checkout a master and voilà.
 For example, say <https://seds.nl/.git> exists, containing all the objects of this
 blog, we could simply run `wget --mirror -I .git https://seds.nl/.git` to
 download the repository.
-
 
 ## How to find exposed git repositories {#how-to-find-exposed-git-repositories}
 
@@ -56,11 +55,10 @@ inclusion on the page ([source](https://edu.google.com/coursebuilder/courses/psw
 
 Let&rsquo;s see.
 
-{{< figure src="/imgs/google-intext-query_censored.jpg" >}}
+{{< figure src="/assets/imgs/google-intext-query_censored.jpg" >}}
 
 Holy sh1t. That&rsquo;s ~89,900 results from Google. Can you imagine how much
 sensitive information there must be?
-
 
 ## How to fix this {#how-to-fix-this}
 
@@ -68,7 +66,6 @@ Well, first of all, find a better way to getting your source code to a remote
 server and simply pointing your web-server to that directory. If you don&rsquo;t feel
 like finding a better way, or just want to keep things simple, here is what you
 need to do.
-
 
 ### Nginx {#nginx}
 
@@ -79,7 +76,6 @@ Add the following telling Nginx to deny any request to a `.git` directory:
       deny all;
   }
 ```
-
 
 ### Apache {#apache}
 

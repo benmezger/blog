@@ -4,6 +4,7 @@ author = ["Ben Mezger"]
 date = 2020-05-07T18:59:00-03:00
 publishDate = 2020-05-07
 tags = ["python"]
+categories = ["blog"]
 draft = false
 +++
 
@@ -70,7 +71,7 @@ def patch_http(
 ```
 
 This decorator decorates functions in which `requests` is used. It allows us to
-use a custom logger, log level, and log\_hook function if required. `log_wrapper`
+use a custom logger, log level, and log_hook function if required. `log_wrapper`
 creates 3 dummy attributes: `func` which holds the address of the caller, the
 logger, and the log level.
 The `log_hook` requires some hacking, as we might want to use it without the
