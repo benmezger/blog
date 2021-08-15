@@ -15,8 +15,7 @@ HUGO_VERSION = "0.74.3"
 HUGO_ENABLEGITINFO = "true"
 
 [[redirects]]
-  from = "/posts"
-  to = "/notes"
+  from = "/posts/*"
+  to = "/notes/:splat"
   status = 301
   force = true
-  query = {path = ":path"}
