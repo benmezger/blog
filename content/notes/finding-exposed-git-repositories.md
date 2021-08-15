@@ -3,6 +3,7 @@ title = "Finding exposed .git repositories"
 author = ["Ben Mezger"]
 date = 2017-10-30T21:59:00-02:00
 publishDate = 2017-10-30
+aliases = ["/posts/finding-exposed-git-repositories/"]
 tags = ["git", "security"]
 categories = ["web"]
 draft = false

@@ -3,6 +3,7 @@ title = "Automating and testing dotfiles"
 author = ["Ben Mezger"]
 date = 2020-08-09T13:06:00-03:00
 publishDate = 2020-08-09
+aliases = ["/posts/automating-and-testing-dotfiles/"]
 tags = ["dotfiles", "config", "testing", "ci"]
 draft = false
 summary = """

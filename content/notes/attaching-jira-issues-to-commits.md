@@ -3,6 +3,7 @@ title = "Attaching Jira issues to commit"
 author = ["Ben Mezger"]
 date = 2020-05-24T02:39:00-03:00
 publishDate = 2020-05-24
+aliases = ["/posts/attaching-jira-issues-to-commits/"]
 tags = ["git", "projects"]
 draft = false
 +++

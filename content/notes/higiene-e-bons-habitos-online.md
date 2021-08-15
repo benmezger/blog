@@ -3,6 +3,7 @@ title = "Higiene e bons hábitos online"
 author = ["Ben Mezger"]
 date = 2016-12-12T19:28:00-02:00
 publishDate = 2016-12-12
+aliases = ["/posts/higiene-e-bons-habitos-online/"]
 tags = ["private", "guide", "services"]
 draft = false
 +++

@@ -3,6 +3,7 @@ title = "Mantendo sua privacidade"
 author = ["Ben Mezger"]
 date = 2016-12-11T19:20:00-02:00
 publishDate = 2016-12-11
+aliases = ["/posts/mantendo-sua-privacidade-online/"]
 tags = ["private", "guide", "services"]
 draft = false
 +++

@@ -3,6 +3,7 @@ title = "Patching requests HTTP hooks with custom arguments"
 author = ["Ben Mezger"]
 date = 2020-05-07T18:59:00-03:00
 publishDate = 2020-05-07
+aliases = ["/posts/http-hooks-with-custom-arguments/"]
 tags = ["python"]
 draft = false
 +++

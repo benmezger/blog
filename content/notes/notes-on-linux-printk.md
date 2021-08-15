@@ -3,6 +3,7 @@ title = "Notes on Linux's printk"
 author = ["Ben Mezger"]
 date = 2017-03-09T22:26:00-03:00
 publishDate = 2017-03-09
+aliases = ["/posts/notes-on-linux-printk/"]
 draft = false
 +++
 
