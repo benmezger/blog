@@ -13,6 +13,8 @@ echo "Removing public/"
 rm -rf public/
 
 git clone https://github.com/benmezger/benmezger.github.io.git public
+rm -rf public/*
+
 hugo --gc --minify --config gh_config.yaml
 
 # Add newly created/updated files
