@@ -11,16 +11,16 @@
         <a
           data-toggle={{ partialCached "docs/post-meta" . }}
           href="{{ .RelPermalink }}">
-          <time {{ printf `datetime="%s"` (.Date.Format "02-01-2006T15:04:05Z07:00") | safeHTMLAttr }}>
-            {{ .Date.Format "02-01-2006" }}
+          <time class="w3-tag"
+                {{- printf `datetime="%s"` (.Date.Format "02-01-2006T15:04:05Z07:00") | safeHTMLAttr -}}>
+            {{- .Date.Format "02 01 2006" -}}
           </time>
-          <span> &mdash; </span>
-          {{ .Title }}
+          {{- .Title -}}
         </a>
-        <i style="color: rgba(255, 255, 255, 0.30);">modified in {{ .Lastmod.Format "January 2, 2006" }})</i>
+        <i style="color: rgba(255, 255, 255, 0.30);">modified in {{- .Lastmod.Format "January 2, 2006" -}})</i>
       </li>
-      {{ end }}
     </div>
+    {{ end }}
   </section>
 
   {{ template "_internal/pagination.html" . }}
