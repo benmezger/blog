@@ -17,7 +17,10 @@
           </time>
           {{- .Title -}}
         </a>
-        <i style="color: rgba(255, 255, 255, 0.30);">modified in {{- .Lastmod.Format "January 2, 2006" -}})</i>
+        <i
+          style="color: rgba(255, 255, 255, 0.30);">
+          modified in {{ .Lastmod.Format "January 2, 2006" -}})
+        </i>
       </li>
     </div>
     {{ end }}
