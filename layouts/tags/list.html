@@ -1,0 +1,31 @@
+{{ define "main" }}
+  <h1>Tags</h1>
+  <section>
+    {{ range sort (.Paginator 50).Pages }}
+    <div>
+      <li style="padding: 3px; position:relative;">
+        <a
+          data-toggle={{ partialCached "docs/post-meta" . }}
+          href="{{ .RelPermalink }}">
+          <time class="w3-tag"
+                {{- printf `datetime="%s"` (.Date.Format "02-01-2006T15:04:05Z07:00") | safeHTMLAttr -}}>
+            {{- .Date.Format "02 01 2006" -}}
+          </time>
+          <span>» </span>
+          {{- .Title -}}
+        </a>
+        <i
+          style="color: rgba(255, 255, 255, 0.30);">
+          modified in {{ .Lastmod.Format "January 2, 2006" -}})
+        </i>
+      </li>
+    </div>
+    {{ end }}
+  </section>
+
+  {{ template "_internal/pagination.html" . }}
+{{ end }}
+
+{{ define "toc" }}
+  {{ partialCached "docs/taxonomy" . }}
+{{ end }}
