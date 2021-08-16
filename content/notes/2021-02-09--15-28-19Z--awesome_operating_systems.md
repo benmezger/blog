@@ -9,8 +9,11 @@ draft = false
 bookCollapseSection = true
 +++
 
-tags
-: [Operating Systems]({{<relref "2020-05-31--15-29-38Z--operating_systems.md#" >}})
+-   Related pages
+    -   [Operating Systems]({{<relref "2020-05-31--15-29-38Z--operating_systems.md#" >}})
+    -   [Computer Architecture]({{<relref "2020-05-31--16-01-33Z--computer_architecture.md#" >}})
+
+---
 
 Another awesome list of available Operating System. This is an ongoing list and
 gets updated from time to time.

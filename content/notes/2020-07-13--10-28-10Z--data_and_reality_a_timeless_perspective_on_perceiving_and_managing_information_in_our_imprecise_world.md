@@ -9,8 +9,11 @@ draft = false
 bookCollapseSection = true
 +++
 
-tags
-: [Database]({{<relref "2020-06-21--06-24-39Z--database.md#" >}}) [Computer Science]({{<relref "2020-05-31--15-29-21Z--computer_science.md#" >}})
+-   Related pages
+    -   [Database]({{<relref "2020-06-21--06-24-39Z--database.md#" >}})
+    -   [Computer Science]({{<relref "2020-05-31--15-29-21Z--computer_science.md#" >}})
+
+---
 
 
 ## READING Data and Reality: A Timeless Perspective on Perceiving and Managing Information in Our Imprecise World {#reading-data-and-reality-a-timeless-perspective-on-perceiving-and-managing-information-in-our-imprecise-world}

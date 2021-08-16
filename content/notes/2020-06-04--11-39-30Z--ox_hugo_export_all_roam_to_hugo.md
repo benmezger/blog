@@ -9,8 +9,13 @@ draft = false
 bookCollapseSection = true
 +++
 
-tags
-: [Emacs]({{<relref "2020-06-04--11-36-43Z--emacs.md#" >}}) [Org-mode]({{<relref "2020-06-04--11-35-15Z--org_mode.md#" >}}) [Org-roam]({{<relref "2020-06-04--11-51-18Z--org_roam.md#" >}})
+-   Related pages
+    -   [Emacs]({{<relref "2020-06-04--11-36-43Z--emacs.md#" >}})
+    -   [Org-mode]({{<relref "2020-06-04--11-35-15Z--org_mode.md#" >}})
+    -   [Org-roam]({{<relref "2020-06-04--11-51-18Z--org_roam.md#" >}})
+    -   [Export org-roam backlinks with Gohugo]({{<relref "2021-03-07--17-40-57Z--export_org_roam_backlinks_with_gohugo.md#" >}})
+
+---
 
 Export all org-roam files to Hugo markdown (this might take some time)
 

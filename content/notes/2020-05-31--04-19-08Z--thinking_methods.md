@@ -20,7 +20,7 @@ problems into sub-problems so we can better view reality.
 
 **Prevents failure from interacting with reality**
 
-<a id="org38525bc"></a>
+<a id="org004d60a"></a>
 
 {{< figure src="/imgs/thinking-methods.jpg" caption="Figure 1: Mindmap of thinking methods" >}}
 

@@ -8,8 +8,13 @@ draft = false
 bookCollapseSection = true
 +++
 
-tags
-: [Go Programming]({{<relref "2020-05-31--15-31-36Z--go_programming.md#" >}}) [Programming]({{<relref "2020-05-31--15-33-23Z--programming.md#" >}})
+-   Related pages
+    -   [Go Programming]({{<relref "2020-05-31--15-31-36Z--go_programming.md#" >}})
+    -   [Programming]({{<relref "2020-05-31--15-33-23Z--programming.md#" >}})
+    -   [Go Context package]({{<relref "2020-09-03--20-08-38Z--go_context_package.md#" >}})
+    -   [Go interfaces]({{<relref "2020-06-22--23-26-51Z--go_interfaces.md#" >}})
+
+---
 
 For an operand x of type T, the address operation &x generates a pointer of
 type \*T to x. The operand must be addressable, that is, either a variable,

@@ -9,6 +9,11 @@ draft = false
 bookCollapseSection = true
 +++
 
+-   Related pages
+    -   [Go Programming]({{<relref "2020-05-31--15-31-36Z--go_programming.md#" >}})
+
+---
+
 -   <https://github.com/jmoiron/sqlx>
 -   <https://pg.uptrace.dev/guide/>
 -   <https://github.com/go-pg/pg>

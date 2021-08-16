@@ -9,8 +9,10 @@ draft = false
 bookCollapseSection = true
 +++
 
-tags
-: [Emacs]({{<relref "2020-06-04--11-36-43Z--emacs.md#" >}})
+-   Related pages
+    -   [Emacs]({{<relref "2020-06-04--11-36-43Z--emacs.md#" >}})
+
+---
 
 Emacs macros allows us to record sequence of keyboard keystrokes, mouse actions,
 menu actions that is bound to an Emacs command. It allows us to record these

@@ -9,8 +9,13 @@ draft = false
 bookCollapseSection = true
 +++
 
-tags
-: [Math]({{<relref "2020-05-31--16-06-38Z--math.md#" >}}) [Computer Science]({{<relref "2020-05-31--15-29-21Z--computer_science.md#" >}}) [Computer Architecture]({{<relref "2020-05-31--16-01-33Z--computer_architecture.md#" >}})
+-   Related pages
+    -   [Math]({{<relref "2020-05-31--16-06-38Z--math.md#" >}})
+    -   [Computer Science]({{<relref "2020-05-31--15-29-21Z--computer_science.md#" >}})
+    -   [Computer Architecture]({{<relref "2020-05-31--16-01-33Z--computer_architecture.md#" >}})
+    -   [Bit shifting]({{<relref "2020-11-21--17-52-36Z--bit_shifting.md#" >}})
+
+---
 
 The `b` before the code blocks mean binary number, to avoid confusion
 

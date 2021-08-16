@@ -9,8 +9,12 @@ draft = false
 bookCollapseSection = true
 +++
 
-tags
-: [Go Programming]({{<relref "2020-05-31--15-31-36Z--go_programming.md#" >}}) [Programming]({{<relref "2020-05-31--15-33-23Z--programming.md#" >}}) [Code snippets]({{<relref "2020-05-31--17-28-55Z--code_snippets.md#" >}})
+-   Related pages
+    -   [Go Programming]({{<relref "2020-05-31--15-31-36Z--go_programming.md#" >}})
+    -   [Programming]({{<relref "2020-05-31--15-33-23Z--programming.md#" >}})
+    -   [Code snippets]({{<relref "2020-05-31--17-28-55Z--code_snippets.md#" >}})
+
+---
 
 The following code reads a specific `struct` Tag by name.
 

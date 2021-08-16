@@ -9,8 +9,12 @@ draft = false
 bookCollapseSection = true
 +++
 
-tags
-: [Emacs]({{<relref "2020-06-04--11-36-43Z--emacs.md#" >}}) [Programming]({{<relref "2020-05-31--15-33-23Z--programming.md#" >}})
+-   Related pages
+    -   [Emacs]({{<relref "2020-06-04--11-36-43Z--emacs.md#" >}})
+    -   [Programming]({{<relref "2020-05-31--15-33-23Z--programming.md#" >}})
+    -   [Using macros in Emacs]({{<relref "2020-07-29--11-51-34Z--using_macros_in_emacs.md#" >}})
+
+---
 
 I had to search and replace many files in a git repository, for some reason
 `dired-do-find-regexp-and-replace`, but I found using `counsel-git-grep` with

@@ -9,8 +9,11 @@ draft = false
 bookCollapseSection = true
 +++
 
-tags
-: [Computer Science]({{<relref "2020-05-31--15-29-21Z--computer_science.md#" >}}) [Operating Systems]({{<relref "2020-05-31--15-29-38Z--operating_systems.md#" >}})
+-   Related pages
+    -   [Computer Science]({{<relref "2020-05-31--15-29-21Z--computer_science.md#" >}})
+    -   [Operating Systems]({{<relref "2020-05-31--15-29-38Z--operating_systems.md#" >}})
+
+---
 
 
 ## READING Operating Systems: Internals and Design Principles (9th Edition) {#reading-operating-systems-internals-and-design-principles--9th-edition}

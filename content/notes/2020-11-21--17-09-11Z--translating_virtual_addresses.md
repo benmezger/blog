@@ -9,8 +9,11 @@ draft = false
 bookCollapseSection = true
 +++
 
-tags
-: [Computer Architecture]({{<relref "2020-05-31--16-01-33Z--computer_architecture.md#" >}}) [Operating Systems]({{<relref "2020-05-31--15-29-38Z--operating_systems.md#" >}})
+-   Related pages
+    -   [Computer Architecture]({{<relref "2020-05-31--16-01-33Z--computer_architecture.md#" >}})
+    -   [Operating Systems]({{<relref "2020-05-31--15-29-38Z--operating_systems.md#" >}})
+
+---
 
 Translating virtual address space in [RISCV]({{<relref "2020-05-31--15-37-29Z--riscv.md#" >}}) in Sv39
 

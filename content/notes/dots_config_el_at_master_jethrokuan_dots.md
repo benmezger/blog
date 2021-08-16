@@ -7,6 +7,13 @@ draft = false
 bookCollapseSection = true
 +++
 
+-   Related pages
+    -   [Org-roam export backlinks on Hugo]({{<relref "2020-06-04--11-29-02Z--org_roam_export_backlinks_on_hugo.md#" >}})
+    -   [Export org-roam backlinks with Gohugo]({{<relref "2021-03-07--17-40-57Z--export_org_roam_backlinks_with_gohugo.md#" >}})
+    -   [Emacs]({{<relref "2020-06-04--11-36-43Z--emacs.md#" >}})
+
+---
+
 Source: <https://github.com/jethrokuan/dots/blob/0064ea2aab667f115a14ce48292731db46302c53/.doom.d/config.el#L488>
 
 The following exports all roam files to Hugo and includes backlinks

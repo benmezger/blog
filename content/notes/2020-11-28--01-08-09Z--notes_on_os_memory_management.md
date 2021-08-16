@@ -9,8 +9,11 @@ draft = false
 bookCollapseSection = true
 +++
 
-tags
-: [Operating Systems]({{<relref "2020-05-31--15-29-38Z--operating_systems.md#" >}})
+-   Related pages
+    -   [Operating Systems]({{<relref "2020-05-31--15-29-38Z--operating_systems.md#" >}})
+    -   [Computer Science]({{<relref "2020-05-31--15-29-21Z--computer_science.md#" >}})
+
+---
 
 
 ## Memory management requirements {#memory-management-requirements}

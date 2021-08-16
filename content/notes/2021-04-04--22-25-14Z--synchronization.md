@@ -9,10 +9,16 @@ draft = false
 bookCollapseSection = true
 +++
 
-tags
-: [Operating Systems]({{<relref "2020-05-31--15-29-38Z--operating_systems.md#" >}}) [Programming]({{<relref "2020-05-31--15-33-23Z--programming.md#" >}}) [Computer Science]({{<relref "2020-05-31--15-29-21Z--computer_science.md#" >}})
+-   Related pages
+    -   [Operating Systems]({{<relref "2020-05-31--15-29-38Z--operating_systems.md#" >}})
+    -   [Programming]({{<relref "2020-05-31--15-33-23Z--programming.md#" >}})
+    -   [Computer Science]({{<relref "2020-05-31--15-29-21Z--computer_science.md#" >}})
+    -   [Software Engineering]({{<relref "2020-06-23--12-50-55Z--software_engineering.md#" >}})
+    -   [Computer Architecture]({{<relref "2020-05-31--16-01-33Z--computer_architecture.md#" >}})
 
-Notes from the Little book of Semaphores ([Downey 2008](#org4e05482)).
+---
+
+Notes from the Little book of Semaphores ([Downey 2008](#org084c5e4)).
 
 
 ## Shared variables {#shared-variables}
@@ -82,4 +88,4 @@ a2 < b1_
 
 ## Bibliography {#bibliography}
 
-<a id="org4e05482"></a>Downey, Allen. 2008. _The Little Book of Semaphores_. Vol. 2. Green Tea Press. <https://github.com/AllenDowney/LittleBookOfSemaphores>.
+<a id="org084c5e4"></a>Downey, Allen. 2008. _The Little Book of Semaphores_. Vol. 2. Green Tea Press. <https://github.com/AllenDowney/LittleBookOfSemaphores>.

@@ -9,8 +9,12 @@ draft = false
 bookCollapseSection = true
 +++
 
-tags
-: [RISCV]({{<relref "2020-05-31--15-37-29Z--riscv.md#" >}}) [Computer Architecture]({{<relref "2020-05-31--16-01-33Z--computer_architecture.md#" >}})
+-   Related pages
+    -   [RISCV]({{<relref "2020-05-31--15-37-29Z--riscv.md#" >}})
+    -   [Computer Architecture]({{<relref "2020-05-31--16-01-33Z--computer_architecture.md#" >}})
+    -   [RISC-V Instruction Format]({{<relref "2021-08-13--22-28-40Z--risc_v_instruction_format.md#" >}})
+
+---
 
 Notes on [RISC-V CPU HARD IP Cores enter SoC FPGAs](https://ieeechicago.org/event/ieee-chicago-rockford-consultants-network-risc-v-cpu-hard-ip-cores-enter-soc-fpgas-virtual-meeting/) presentation
 

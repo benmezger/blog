@@ -9,8 +9,10 @@ draft = false
 bookCollapseSection = true
 +++
 
-tags
-: [Politics]({{<relref "2020-06-02--11-52-08Z--politics.md#" >}})
+-   Related paged
+    -   [Politics]({{<relref "2020-06-02--11-52-08Z--politics.md#" >}})
+
+----
 
 
 ## <span class="timestamp-wrapper"><span class="timestamp">&lt;2020-04-01 Wed 22:23&gt;</span></span> {#}

@@ -9,8 +9,11 @@ draft = false
 bookCollapseSection = true
 +++
 
-tags
-: [Computer Science]({{<relref "2020-05-31--15-29-21Z--computer_science.md#" >}})
+-   Related pages
+    -   [Computer Science]({{<relref "2020-05-31--15-29-21Z--computer_science.md#" >}})
+    -   [Compiler]({{<relref "2020-05-31--16-03-15Z--compiler.md#" >}})
+
+---
 
 Related content: <https://www.khanacademy.org/computing/computer-science/informationtheory/info-theory/>
 
