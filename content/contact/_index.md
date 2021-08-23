@@ -2,7 +2,7 @@
 title = "Contact"
 author = ["Ben Mezger"]
 date = 2020-04-23T00:00:00-03:00
-lastmod = 2021-08-15T13:06:09-03:00
+lastmod = 2021-08-22T23:48:29-03:00
 draft = false
 bookToc = false
 bookComments = false
@@ -21,3 +21,4 @@ You can contact me at the following addresses/services.
 | irc.darkscience.net | seds                                                |                                                         |
 | irc.libera.chat     | seds                                                |                                                         |
 | irc.oftc.net        | seds                                                |                                                         |
+| allmylinks          | [benmezger](https://links.seds.nl)                  |                                                         |
