@@ -2,7 +2,7 @@
 title = "Hi, there"
 author = ["Ben Mezger"]
 date = 2020-04-23T00:00:00-03:00
-lastmod = 2021-08-15T13:06:08-03:00
+lastmod = 2021-08-22T23:52:06-03:00
 draft = false
 bookToc = false
 bookComments = false
@@ -36,4 +36,4 @@ If you want to know more about my professional career, you can get my CV
 
 </div>
 
-[^fn:1]: Friends normally call me Ben Mezger
+[^fn:1]: You can call me Ben too!
