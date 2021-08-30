@@ -115,6 +115,14 @@ computing, personal area networks, smart buildings, and smart meters.
     Kernel C library is dynamically linked. Chai from Hebrew for "living " - "חי"
 
 
+### Monolithic kernel {#monolithic-kernel}
+
+-   [bootOS](https://github.com/nanochess/bootOS):  bootOS is a monolithic operating system that fits in one boot sector.
+    It's able to load, execute, and save programs. Also keeps a filesystem. It can
+    work with any floppy disk size starting at 180K. It's compatible with 8088
+    (the original IBM PC).
+
+
 ## References {#references}
 
 -   [OSdev project list](https://wiki.osdev.org/Projects)
