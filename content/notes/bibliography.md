@@ -12,9 +12,12 @@ bookCollapseSection = true
 Some of these bibliographies I've been reading for my research and some I find it
 interesting to keep around my library.
 
+
 ## Operating Systems {#operating-systems}
 
+
 ### Introductory {#introductory}
+
 
 #### Modern Operating Systems {#modern-operating-systems}
 
@@ -57,6 +60,7 @@ interesting to keep around my library.
 
 {{< /details >}}
 
+
 #### Operating Systems: Internals and Design Principle {#operating-systems-internals-and-design-principle}
 
 {{< details "Bibtex" >}}
@@ -80,6 +84,7 @@ interesting to keep around my library.
 
 {{< /details >}}
 
+
 #### Operating Systems Design and Implementation (3rd Edition) {#operating-systems-design-and-implementation--3rd-edition}
 
 {{< details "Bibtex" >}}
@@ -97,7 +102,9 @@ interesting to keep around my library.
 
 {{< /details >}}
 
+
 ### RTOS {#rtos}
+
 
 #### Operating Systems for Low-End Devices in the Internet of Things: A Survey {#operating-systems-for-low-end-devices-in-the-internet-of-things-a-survey}
 
@@ -143,7 +150,9 @@ interesting to keep around my library.
 
 {{< /details >}}
 
+
 ### Synchronization {#synchronization}
+
 
 #### Little book of semaphores {#little-book-of-semaphores}
 
@@ -163,9 +172,71 @@ interesting to keep around my library.
 
 {{< /details >}}
 
+
 ## Computer Architecture {#computer-architecture}
 
+
+### Network-On-Chip (NoC) {#network-on-chip--noc}
+
+
+#### Redes-em-Chip: arquiteturas e modelos para avaliação de área e desempenho {#redes-em-chip-arquiteturas-e-modelos-para-avaliação-de-área-e-desempenho}
+
+{{< details "Bibtex" >}}
+
+```bibtex
+@phdthesis{RedesEmChipArquiteturasEmodelosParaAvaliacaoDeAreaEdesempenho,
+  author          = {Cesar Albenes Zeferino},
+  title           = {Redes-em-Chip: arquiteturas e modelos para avaliação de
+                  área e desempenho},
+  year            = 2003,
+  school          = {Universidade Federal do Rio Grande do Sul},
+  address         = {Porto Alegre, RS, Brasil},
+  abstract        = {Com o advento dos processos submicrônicos, a capacidade de
+                  integração de transistores tem atingido níveis que
+                  possibilitam a construção de um sistema completo em uma única
+                  pastilha de silício. Esses sistemas, denominados sistemas
+                  integrados, baseiam-se no reuso de blocos previamente
+                  projetados e verificados, os quais são chamados de núcleos ou
+                  blocos de propriedade intelectual. Os sistemas integrados
+                  atuais incluem algumas poucas dezenas de núcleos, os quais são
+                  interconectados por meio de arquiteturas de comunicação
+                  baseadas em estruturas dedicadas de canais ponto-a-ponto ou em
+                  estruturas reutilizáveis constituídas por canais multiponto,
+                  denominadas barramentos. Os futuros sistemas integrados irão
+                  incluir de dezenas a centenas de núcleos em um mesmo chip com
+                  até alguns bilhões de transistores, sendo que, para atender às
+                  pressões do mercado e amortizar os custos de projeto entre
+                  vários sistemas, é importante que todos os seus componentes
+                  sejam reutilizáveis, incluindo a arquitetura de comunicação.
+                  Das arquiteturas utilizadas atualmente, o barramento é a única
+                  que oferece reusabilidade. Porém, o seu desempenho em
+                  comunicação e o seu consumo de energia degradam com o
+                  crescimento do sistema. Para atender aos requisitos dos
+                  futuros sistemas integrados, uma nova alternativa de
+                  arquitetura de comunicação tem sido proposta na comunidade
+                  acadêmica. Essa arquitetura, denominada rede-em-chip,
+                  baseia-se nos conceitos utilizados nas redes de interconexão
+                  para computadores paralelos. Esta tese se situa nesse contexto
+                  e apresenta uma arquitetura de rede-em-chip e um conjunto de
+                  modelos para a avaliação de área e desempenho de arquiteturas
+                  de comunicação para sistemas integrados. A arquitetura
+                  apresentada é denominada SoCIN (System-on-Chip Interconnection
+                  Network) e apresenta como diferencial o fato de poder ser
+                  dimensionada de modo a atender a requisitos de custo e
+                  desempenho da aplicação alvo. Os modelos desenvolvidos
+                  permitem a estimativa em alto nível da área em silício e do
+                  desempenho de arquiteturas de comunicação do tipo barramento e
+                  rede-em-chip. São apresentados resultados que demonstram a
+                  efetividade das redes-em-chip e indicam as condições que
+                  definem a aplicabilidade das mesmas.},
+}
+```
+
+{{< /details >}}
+
+
 ### Fault tolerance {#fault-tolerance}
+
 
 #### Fault Tolerant Computer Architecture (Synthesis Lectures on Computer Architecture) {#fault-tolerant-computer-architecture--synthesis-lectures-on-computer-architecture}
 
@@ -199,6 +270,7 @@ interesting to keep around my library.
 
 {{< /details >}}
 
+
 #### Single event effects in aerospace {#single-event-effects-in-aerospace}
 
 {{< details "Bibtex" >}}
@@ -219,6 +291,7 @@ interesting to keep around my library.
 
 {{< /details >}}
 
+
 #### Overview of single event effects {#overview-of-single-event-effects}
 
 {{< details "Bibtex" >}}
@@ -235,6 +308,7 @@ interesting to keep around my library.
 ```
 
 {{< /details >}}
+
 
 #### Draft - Single Event Effects Specification {#draft-single-event-effects-specification}
 
@@ -254,6 +328,7 @@ interesting to keep around my library.
 
 {{< /details >}}
 
+
 #### Single event effects mitigation techniques report {#single-event-effects-mitigation-techniques-report}
 
 {{< details "Bibtex" >}}
@@ -270,6 +345,7 @@ interesting to keep around my library.
 ```
 
 {{< /details >}}
+
 
 #### Circuit Level Design Methods to Mitigate Soft Errors {#circuit-level-design-methods-to-mitigate-soft-errors}
 
@@ -289,6 +365,7 @@ interesting to keep around my library.
 
 {{< /details >}}
 
+
 #### SWIFT: software implemented fault tolerance {#swift-software-implemented-fault-tolerance}
 
 {{< details "Bibtex" >}}
@@ -307,6 +384,7 @@ interesting to keep around my library.
 ```
 
 {{< /details >}}
+
 
 #### Applying Compiler-Automated Software Fault Tolerance to Multiple Processor Platforms {#applying-compiler-automated-software-fault-tolerance-to-multiple-processor-platforms}
 
@@ -328,6 +406,7 @@ interesting to keep around my library.
 ```
 
 {{< /details >}}
+
 
 #### CDFEDT: Comparison of Data Flow Error Detection Techniques in Embedded Systems: An Empirical Study {#cdfedt-comparison-of-data-flow-error-detection-techniques-in-embedded-systems-an-empirical-study}
 
@@ -376,7 +455,9 @@ interesting to keep around my library.
 
 {{< /details >}}
 
+
 ### Introductory {#introductory}
+
 
 #### Structured Computer Organization (5th Edition) {#structured-computer-organization--5th-edition}
 
@@ -394,6 +475,7 @@ interesting to keep around my library.
 ```
 
 {{< /details >}}
+
 
 #### Computer Organization and Design, Fifth Edition: The Hardware/Software Interface {#computer-organization-and-design-fifth-edition-the-hardware-software-interface}
 
@@ -446,6 +528,7 @@ interesting to keep around my library.
 
 {{< /details >}}
 
+
 #### Computer Organization and Architecture: Designing for Performance {#computer-organization-and-architecture-designing-for-performance}
 
 {{< details "Bibtex" >}}
@@ -480,7 +563,9 @@ interesting to keep around my library.
 
 {{< /details >}}
 
+
 ### RISC-V {#risc-v}
+
 
 #### The RISC-V Instruction Set Manual Volume II: Privileged Architecture Version v.20190608 {#the-risc-v-instruction-set-manual-volume-ii-privileged-architecture-version-v-dot-20190608}
 
@@ -499,6 +584,7 @@ interesting to keep around my library.
 ```
 
 {{< /details >}}
+
 
 #### The Case for RISC-V in Space {#the-case-for-risc-v-in-space}
 
@@ -541,6 +627,7 @@ interesting to keep around my library.
 ```
 
 {{< /details >}}
+
 
 #### The RISC-V Reader: An Open Architecture Atlas {#the-risc-v-reader-an-open-architecture-atlas}
 
@@ -600,6 +687,7 @@ interesting to keep around my library.
 
 {{< /details >}}
 
+
 #### The RISC-V Instruction Set Manual (2014) {#the-risc-v-instruction-set-manual--2014}
 
 {{< details "Bibtex" >}}
@@ -615,6 +703,7 @@ interesting to keep around my library.
 ```
 
 {{< /details >}}
+
 
 #### Computer Organization and Design RISC-V Edition: The Hardware Software Interface {#computer-organization-and-design-risc-v-edition-the-hardware-software-interface}
 
@@ -653,9 +742,12 @@ interesting to keep around my library.
 
 {{< /details >}}
 
+
 ## Software Engineering {#software-engineering}
 
+
 ### Embedded systems {#embedded-systems}
+
 
 #### Modeling C-based embedded system using UML design {#modeling-c-based-embedded-system-using-uml-design}
 
@@ -698,7 +790,9 @@ interesting to keep around my library.
 
 {{< /details >}}
 
+
 ### Fault tolerant {#fault-tolerant}
+
 
 #### Basic concepts and taxonomy of dependable and secure computing {#basic-concepts-and-taxonomy-of-dependable-and-secure-computing}
 
@@ -752,6 +846,7 @@ interesting to keep around my library.
 
 {{< /details >}}
 
+
 #### System structure for Software Fault Tolerance {#system-structure-for-software-fault-tolerance}
 
 {{< details "Bibtex" >}}
@@ -781,9 +876,12 @@ interesting to keep around my library.
 
 {{< /details >}}
 
+
 ## Mathematics {#mathematics}
 
+
 ### Binary {#binary}
+
 
 #### Bit Twiddling Hacks {#bit-twiddling-hacks}
 
@@ -800,6 +898,7 @@ interesting to keep around my library.
 
 {{< /details >}}
 
+
 #### Binary number representation {#binary-number-representation}
 
 {{< details "Bibtex" >}}
@@ -814,6 +913,7 @@ interesting to keep around my library.
 ```
 
 {{< /details >}}
+
 
 #### What are bitwise shift (bit-shift) operators and how do they work? {#what-are-bitwise-shift--bit-shift--operators-and-how-do-they-work}
 
