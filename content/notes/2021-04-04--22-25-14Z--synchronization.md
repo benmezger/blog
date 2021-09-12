@@ -18,7 +18,7 @@ bookCollapseSection = true
 
 ---
 
-Notes from the Little book of Semaphores ([Downey 2008](#org499677f)).
+Notes from the Little book of Semaphores ([Downey 2008](#org2f7a62c)).
 
 
 ## Shared variables {#shared-variables}
@@ -88,4 +88,4 @@ a2 < b1_
 
 ## Bibliography {#bibliography}
 
-<a id="org499677f"></a>Downey, Allen. 2008. _The Little Book of Semaphores_. Vol. 2. Green Tea Press. <https://github.com/AllenDowney/LittleBookOfSemaphores>.
+<a id="org2f7a62c"></a>Downey, Allen. 2008. _The Little Book of Semaphores_. Vol. 2. Green Tea Press. <https://github.com/AllenDowney/LittleBookOfSemaphores>.

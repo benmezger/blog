@@ -2,7 +2,8 @@
 title = "Locking Python scripts with flock"
 author = ["Ben Mezger"]
 date = 2021-08-22T01:42:00-03:00
-slug = "locking_python_scripts_with_flock"
+aliases = ["/notes/locking_python_scripts_with_flock"]
+slug = "locking-python-scripts-with-flock"
 tags = ["python", "programming"]
 type = "notes"
 draft = false

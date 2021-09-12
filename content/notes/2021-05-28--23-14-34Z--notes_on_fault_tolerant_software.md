@@ -17,9 +17,9 @@ tags
 -   Software-based fault tolerance must support appropriate redundancy for error
     detection and error recovery. Software redundancy is not a replication of
     programs but rather a redundancy of design
-    ([Randell 1975](#org9f39c12)).
+    ([Randell 1975](#org9e462e1)).
 
 
 ## Bibliography {#bibliography}
 
-<a id="org9f39c12"></a>Randell, Brian. 1975. “System Structure for Software Fault Tolerance.” _IEEE Transactions on Software Engineering_ SE-1 (2):220–32. <https://doi.org/10.1109/TSE.1975.6312842>.
+<a id="org9e462e1"></a>Randell, Brian. 1975. “System Structure for Software Fault Tolerance.” _IEEE Transactions on Software Engineering_ SE-1 (2):220–32. <https://doi.org/10.1109/TSE.1975.6312842>.
