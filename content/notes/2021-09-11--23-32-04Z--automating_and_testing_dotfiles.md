@@ -108,13 +108,13 @@ osx_verify_hostname("benmezger-ckl.local")
 
 ## Emacs org mode {#emacs-org-mode}
 
-I live in Emacs, this blog is written in [Org mode](https://orgmode.org/) and [Hugo](https://gohugo.io/), my snippets are
-stored in an org file and my code is written in Emacs. To ease my life, I
-decided to keep a [COMMAND.org](https://github.com/benmezger/dotfiles/blob/main/COMMANDS.org) file with general commands I might need when
-tinkering with my dotfiles. Org mode supports literate programming, so keeping a
-`COMMAND.org` file allows me to execute the commands in-buffer. I simply `C-c
-C-c` in the snippet and let org mode make it happen. This is nice when I am
-tinkering my dotfiles and I need to apply changes with Chezmoi, for example.
+~~I live in Emacs, this blog is written in [Org mode](https://orgmode.org/) and [Hugo](https://gohugo.io/), my snippets are~~
+~~stored in an org file and my code is written in Emacs. To ease my life, I~~
+~~decided to keep a COMMAND.org file with general commands I might need when~~
+~~tinkering with my dotfiles. Org mode supports literate programming, so keeping a~~
+~~`COMMAND.org` file allows me to execute the commands in-buffer. I simply =C-c~~
+~~C-c= in the snippet and let org mode make it happen. This is nice when I am~~
+~~tinkering my dotfiles and I need to apply changes with Chezmoi, for example.~~
 
 
 ## Conclusion {#conclusion}
