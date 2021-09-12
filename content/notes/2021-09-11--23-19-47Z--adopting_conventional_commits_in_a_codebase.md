@@ -2,6 +2,7 @@
 title = "Adopting conventional commits in a codebase"
 author = ["Ben Mezger"]
 date = 2021-09-16T00:00:00-03:00
+aliases = ["/posts/adopting-git-conventional-commits/"]
 slug = "adopting_conventional_commits_in_a_codebase"
 tags = ["git"]
 type = "notes"

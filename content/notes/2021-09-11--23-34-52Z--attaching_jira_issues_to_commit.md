@@ -2,6 +2,7 @@
 title = "Attaching Jira issues to commit"
 author = ["Ben Mezger"]
 date = 2020-05-24T02:39:00-03:00
+aliases = ["/posts/attaching-jira-issues-to-commits/"]
 slug = "attaching_jira_issues_to_commit"
 tags = ["git", "projects", "software"]
 type = "notes"

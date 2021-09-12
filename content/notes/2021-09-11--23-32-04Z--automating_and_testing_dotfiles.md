@@ -2,6 +2,7 @@
 title = "Automating and testing dotfiles"
 author = ["Ben Mezger"]
 date = 2020-08-09T13:06:00-03:00
+aliases = ["/posts/automating-and-testing-dotfiles/"]
 slug = "automating_and_testing_dotfiles"
 tags = ["dotfiles", "chezmoi", "testing"]
 type = "notes"
