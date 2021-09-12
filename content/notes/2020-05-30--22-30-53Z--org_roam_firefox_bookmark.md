@@ -12,7 +12,7 @@ bookCollapseSection = true
 tags
 : [Org-mode]({{<relref "2020-06-04--11-35-15Z--org_mode.md#" >}}) [Emacs]({{<relref "2020-06-04--11-36-43Z--emacs.md#" >}}) [Org-roam]({{<relref "2020-06-04--11-51-18Z--org_roam.md#" >}})
 
-[Org-roam](https://org-roam.readthedocs.io/en/master/roam%5Fprotocol/) has roam-protocol, which we can call throughout the system just like
+[Org-roam](https://www.orgroam.com/manual.html) has roam-protocol, which we can call throughout the system just like
 [Org-mode Firefox bookmarks]({{<relref "2020-05-30--22-22-20Z--org_mode_firefox_bookmarks.md#" >}}).
 
 `Org-roam` protocol supports specifying the roam template to use.
@@ -33,5 +33,3 @@ javascript:location.href =
 + '&title='
 + encodeURIComponent(document.title)
 ```
-
-Related link: <https://org-roam.readthedocs.io/en/master/roam%5Fprotocol/>
