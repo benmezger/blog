@@ -2,15 +2,22 @@
 title = "Attaching Jira issues to commit"
 author = ["Ben Mezger"]
 date = 2020-05-24T02:39:00-03:00
-publishDate = 2020-05-24
-aliases = ["/posts/attaching-jira-issues-to-commits/"]
-tags = ["git", "projects"]
+slug = "attaching_jira_issues_to_commit"
+tags = ["git", "projects", "software"]
+type = "notes"
 draft = false
+bookCollapseSection = true
 +++
+
+-   Related pages
+    -   [Git change commit author]({{<relref "2020-08-22--17-09-39Z--git_change_commit_author.md#" >}})
+    -   [Programming]({{<relref "2020-05-31--15-33-23Z--programming.md#" >}})
+
+---
 
 {{< expand TLDR >}}
 Dynamically attach Jira attributes to commit body using git-hook.
-Check the project&rsquo;s [README](https://github.com/benmezger/gjira/).
+Check the project's [README](https://github.com/benmezger/gjira/).
 {{< /expand >}}
 
 The place I work at requires Jira story ID and task ID attached to the commit
@@ -42,7 +49,7 @@ Jira task ID: {{ key }}
 {% if parent__key %}Jira story ID: {{ parent__key }}{% endif %}
 ```
 
-The fields are related to Jira&rsquo;s REST fields. Inner fields such as `parent.key`
+The fields are related to Jira's REST fields. Inner fields such as `parent.key`
 should replace the dot (`.`) with a double underscore (`__`).
 
 I named the project [GJira](https://github.com/benmezger/gjira/) , as of Git-Jira.

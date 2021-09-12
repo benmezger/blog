@@ -17,7 +17,7 @@ bookCollapseSection = true
 KPD election poster, 1932. The caption at the bottom reads _'An end to this
 system!'_.
 
-<a id="org89132eb"></a>
+<a id="org3f1d3f4"></a>
 
 {{< figure src="/imgs/1932-kpd.jpg" caption="Figure 1: KPD election poster, 1932. The caption at the bottom reads 'An end to this system!'." >}}
 

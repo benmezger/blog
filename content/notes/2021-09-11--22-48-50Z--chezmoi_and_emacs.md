@@ -11,6 +11,7 @@ bookCollapseSection = true
 
 -   Related pages
     -   [Emacs]({{<relref "2020-06-04--11-36-43Z--emacs.md#" >}})
+    -   [Automating and testing dotfiles]({{<relref "2021-09-11--23-32-04Z--automating_and_testing_dotfiles.md#" >}})
 
 ---
 

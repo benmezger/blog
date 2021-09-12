@@ -25,11 +25,11 @@ compared to ARM or x86 architectures. RISC-V provides three register operands
 at the same position in all formats, simplifying the decoding process. In
 addition, the specified registers to be read or written are always in the same
 place in all instructions, enabling register access to start before the
-instruction decoding phase ([Patterson and Waterman 2017](#org0249a69); [Waterman et al. 2014](#orgbe8c7e5)).
+instruction decoding phase ([Patterson and Waterman 2017](#orgde30437); [Waterman et al. 2014](#org88ceb44)).
 
 
 ## Bibliography {#bibliography}
 
-<a id="org0249a69"></a>Patterson, David, and Andrew Waterman. 2017. _The RISC-V Reader: An Open Architecture Atlas_. 1st ed. Strawberry Canyon.
+<a id="orgde30437"></a>Patterson, David, and Andrew Waterman. 2017. _The RISC-V Reader: An Open Architecture Atlas_. 1st ed. Strawberry Canyon.
 
-<a id="orgbe8c7e5"></a>Waterman, Andrew, Yunsup Lee, David A. Patterson, Krste Asanovic, Volume I User-level Isa, Andrew Waterman, Yunsup Lee, and David Patterson. 2014. “The RISC-V Instruction Set Manual.”
+<a id="org88ceb44"></a>Waterman, Andrew, Yunsup Lee, David A. Patterson, Krste Asanovic, Volume I User-level Isa, Andrew Waterman, Yunsup Lee, and David Patterson. 2014. “The RISC-V Instruction Set Manual.”

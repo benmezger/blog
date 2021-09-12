@@ -2,19 +2,25 @@
 title = "Automating and testing dotfiles"
 author = ["Ben Mezger"]
 date = 2020-08-09T13:06:00-03:00
-publishDate = 2020-08-09
-aliases = ["/posts/automating-and-testing-dotfiles/"]
-tags = ["dotfiles", "config", "testing", "ci"]
+slug = "automating_and_testing_dotfiles"
+tags = ["dotfiles", "chezmoi", "testing"]
+type = "notes"
 draft = false
+bookCollapseSection = true
 summary = """
 I run multiple Archlinux machines at home and an OSX machine for work, so I need
 to keep my system configuration in sync. This is how I do it. 
 """
 +++
 
+-   Related pages
+    -   [Chezmoi and Emacs]({{<relref "2021-09-11--22-48-50Z--chezmoi_and_emacs.md#" >}})
+
+---
+
 I run multiple Archlinux machines at home and an OSX machine for work, so I need
 to keep my system configuration in sync. I have a lot of applications tinkered
-for my workflow — I don&rsquo;t want to switch computers and have to reconfigure
+for my workflow — I don't want to switch computers and have to reconfigure
 something every time I change in another machine. `stow` or a `bash` script
 could allow us to manage files, but they are limited when a specific
 non-scripting configuration requires different settings for a specific machine.
@@ -75,7 +81,7 @@ with the dependencies or my configuration.
 With this dotfile structure, I can easily write test scripts for asserting if
 files were correctly copied, packages installed, etc. For example, I could write
 a Python script which asserts if files are correctly in place, I could then set
-this script to run after Ansible did it&rsquo;s job.
+this script to run after Ansible did it's job.
 
 ```python
 import pathlib
@@ -112,7 +118,7 @@ tinkering my dotfiles and I need to apply changes with Chezmoi, for example.
 
 ## Conclusion {#conclusion}
 
-System configuration is important for a stable workflow, as we don&rsquo;t want to
+System configuration is important for a stable workflow, as we don't want to
 change much when switching machines, Ansible allows us to keep multiple
 installations up to date and Chezmoi allows handling these configurations file
 properly. Keeping your dotfiles in a CI sounds overwhelming, however, it does
