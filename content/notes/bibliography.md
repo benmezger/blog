@@ -235,6 +235,144 @@ interesting to keep around my library.
 {{< /details >}}
 
 
+#### Principles and Practices of Interconnection Network {#principles-and-practices-of-interconnection-network}
+
+{{< details "Bibtex" >}}
+
+```bibtex
+@book{principelsAndPracticesOfInterconnectionNetworks,
+  author          = {Dally, William James and Towles, Brian Patrick},
+  title           = {Principles and Practices of Interconnection Networks},
+  year            = 2004,
+  isbn            = 9780080497808,
+  publisher       = {Morgan Kaufmann Publishers Inc.},
+  address         = {San Francisco, CA, USA},
+  abstract        = {One of the greatest challenges faced by designers of
+                  digital systems is optimizing the communication and
+                  interconnection between system components. Interconnection
+                  networks offer an attractive and economical solution to this
+                  communication crisis and are fast becoming pervasive in
+                  digital systems. Current trends suggest that this
+                  communication bottleneck will be even more problematic when
+                  designing future generations of machines. Consequently, the
+                  anatomy of an interconnection network router and science of
+                  interconnection network design will only grow in importance in
+                  the coming years. This book offers a detailed and
+                  comprehensive presentation of the basic principles of
+                  interconnection network design, clearly illustrating them with
+                  numerous examples, chapter exercises, and case studies. It
+                  incorporates hardware-level descriptions of concepts, allowing
+                  a designer to see all the steps of the process from abstract
+                  design to concrete implementation. ·Case studies throughout
+                  the book draw on extensive author experience in designing
+                  interconnection networks over a period of more than twenty
+                  years, providing real world examples of what works, and what
+                  doesn't. ·Tightly couples concepts with implementation costs
+                  to facilitate a deeper understanding of the tradeoffs in the
+                  design of a practical network. ·A set of examples and
+                  exercises in every chapter help the reader to fully understand
+                  all the implications of every design decision. Table of
+                  Contents Chapter 1 Introduction to Interconnection Networks
+                  1.1 Three Questions About Interconnection Networks 1.2 Uses of
+                  Interconnection Networks 1.3 Network Basics 1.4 History 1.5
+                  Organization of this Book Chapter 2 A Simple Interconnection
+                  Network 2.1 Network Specifications and Constraints 2.2
+                  Topology 2.3 Routing 2.4 Flow Control 2.5 Router Design 2.6
+                  Performance Analysis 2.7 Exercises Chapter 3 Topology Basics
+                  3.1 Nomenclature 3.2 Traffic Patterns 3.3 Performance 3.4
+                  Packaging Cost 3.5 Case Study: The SGI Origin 2000 3.6
+                  Bibliographic Notes 3.7 Exercises Chapter 4 Butterfly Networks
+                  4.1 The Structure of Butterfly Networks 4.2 Isomorphic
+                  Butterflies 4.3 Performance and Packaging Cost 4.4 Path
+                  Diversity and Extra Stages 4.5 Case Study: The BBN Butterfly
+                  4.6 Bibliographic Notes 4.7 Exercises Chapter 5 Torus Networks
+                  5.1 The Structure of Torus Networks 5.2 Performance 5.3
+                  Building Mesh and Torus Networks 5.4 Express Cubes 5.5 Case
+                  Study: The MIT J-Machine 5.6 Bibliographic Notes 5.7 Exercises
+                  Chapter 6 Non-Blocking Networks 6.1 Non-Blocking vs.
+                  Non-Interfering Networks 6.2 Crossbar Networks 6.3 Clos
+                  Networks 6.4 Benes Networks 6.5 Sorting Networks 6.6 Case
+                  Study: The Velio VC2002 (Zeus) Grooming Switch 6.7
+                  Bibliographic Notes 6.8 Exercises Chapter 7 Slicing and Dicing
+                  7.1 Concentrators and Distributors 7.2 Slicing and Dicing 7.3
+                  Slicing Multistage Networks 7.4 Case Study: Bit Slicing in the
+                  Tiny Tera 7.5 Bibliographic Notes 7.6 Exercises Chapter 8
+                  Routing Basics 8.1 A Routing Example 8.2 Taxonomy of Routing
+                  Algorithms 8.3 The Routing Relation 8.4 Deterministic Routing
+                  8.5 Case Study: Dimension-Order Routing in the Cray T3D 8.6
+                  Bibliographic Notes 8.7 Exercises Chapter 9 Oblivious Routing
+                  9.1 Valiant's Randomized Routing Algorithm 9.2 Minimal
+                  Oblivious Routing 9.3 Load-Balanced Oblivious Routing 9.4
+                  Analysis of Oblivious Routing 9.5 Case Study: Oblivious
+                  Routing in the Avici Terabit Switch Router(TSR) 9.6
+                  Bibliographic Notes 9.7 Exercises Chapter 10 Adaptive Routing
+                  10.1 Adaptive Routing Basics 10.2 Minimal Adaptive Routing
+                  10.3 Fully Adaptive Routing 10.4 Load-Balanced Adaptive
+                  Routing 10.5 Search-Based Routing 10.6 Case Study: Adaptive
+                  Routing in the Thinking Machines CM-5 10.7 Bibliographic Notes
+                  10.8 Exercises Chapter 11 Routing Mechanics 11.1 Table-Based
+                  Routing 11.2 Algorithmic Routing 11.3 Case Study: Oblivious
+                  Source Routing in the IBM Vulcan Network 11.4 Bibliographic
+                  Notes 11.5 Exercises Chapter 12 Flow Control Basics 12.1
+                  Resources and Allocation Units 12.2 Bufferless Flow Control
+                  12.3 Circuit Switching 12.4 Bibliographic Notes 12.5 Exercises
+                  Chapter 13 Buffered Flow Control 13.1 Packet-Buffer Flow
+                  Control 13.2 Flit-Buffer Flow Control 13.3 Buffer Management
+                  and Backpressure 13.4 Flit-Reservation Flow Control 13.5
+                  Bibliographic Notes 13.6 Exercises Chapter 14 Deadlock and
+                  Livelock 14.1 Deadlock 14.2 Deadlock Avoidance 14.3 Adaptive
+                  Routing 14.4 Deadlock Recovery 14.5 Livelock 14.6 Case Study:
+                  Deadlock Avoidance in the Cray T3E 14.7 Bibliographic Notes
+                  14.8 Exercises Chapter 15 Quality of Service 15.1 Service
+                  Classes and Service Contracts 15.2 Burstiness and Network
+                  Delays 15.3 Implementation of Guaranteed Services 15.4
+                  Implementation of Best-Effort Services 15.5 Separation of
+                  Resources 15.6 Case Study: ATM Service Classes 15.7 Case
+                  Study: Virtual Networks in the Avici TSR 15.8 Bibliographic
+                  Notes 15.9 Exercises Chapter 16 Router Architecture 16.1 Basic
+                  Router Architecture 16.2 Stalls 16.3 Closing the Loop with
+                  Credits 16.4 Reallocating a Channel 16.5 Speculation and
+                  Lookahead 16.6 Flit and Credit Encoding 16.7 Case Study: The
+                  Alpha 21364 Router 16.8 Bibliographic Notes 16.9 Exercises
+                  Chapter 17 Router Datapath Components 17.1 Input Buffer
+                  Organization 17.2 Switches 17.3 Output Organization 17.4 Case
+                  Study: The Datapath of the IBM Colony Router 17.5
+                  Bibliographic Notes 17.6 Exercises Chapter 18 Arbitration 18.1
+                  Arbitration Timing 18.2 Fairness 18.3 Fixed Priority Arbiter
+                  18.4 Variable Priority Iterative Arbiters 18.5 Matrix Arbiter
+                  18.6 Queuing Arbiter 18.7 Exercises Chapter 19 Allocation 19.1
+                  Representations 19.2 Exact Algorithms 19.3 Separable
+                  Allocators 19.4 Wavefront Allocator 19.5 Incremental vs. Batch
+                  Allocation 19.6 Multistage Allocation 19.7 Performance of
+                  Allocators 19.8 Case Study: The Tiny Tera Allocator 19.9
+                  Bibliographic Notes 19.10 Exercises Chapter 20 Network
+                  Interfaces 20.1 Processor-Network Interface 20.2 Shared-Memory
+                  Interface 20.3 Line-Fabric Interface 20.4 Case Study: The MIT
+                  M-Machine Network Interface 20.5 Bibliographic Notes 20.6
+                  Exercises Chapter 21 Error Control 411 21.1 Know Thy Enemy:
+                  Failure Modes and Fault Models 21.2 The Error Control Process:
+                  Detection, Containment, and Recovery 21.3 Link Level Error
+                  Control 21.4 Router Error Control 21.5 Network-Level Error
+                  Control 21.6 End-to-end Error Control 21.7 Bibliographic Notes
+                  21.8 Exercises Chapter 22 Buses 22.1 Bus Basics 22.2 Bus
+                  Arbitration 22.3 High Performance Bus Protocol 22.4 From Buses
+                  to Networks 22.5 Case Study: The PCI Bus 22.6 Bibliographic
+                  Notes 22.7 Exercises Chapter 23 Performance Analysis 23.1
+                  Measures of Interconnection Network Performance 23.2 Analysis
+                  23.3 Validation 23.4 Case Study: Efficiency and Loss in the
+                  BBN Monarch Network 23.5 Bibliographic Notes 23.6 Exercises
+                  Chapter 24 Simulation 24.1 Levels of Detail 24.2 Network
+                  Workloads 24.3 Simulation Measurements 24.4 Simulator Design
+                  24.5 Bibliographic Notes 24.6 Exercises Chapter 25 Simulation
+                  Examples 495 25.1 Routing 25.2 Flow Control Performance 25.3
+                  Fault Tolerance Appendix A Nomenclature Appendix B Glossary
+                  Appendix C Network Simulator}
+}
+```
+
+{{< /details >}}
+
+
 ### Fault tolerance {#fault-tolerance}
 
 
