@@ -103,7 +103,7 @@ helps let subclasses override methods without breaking intraclass method calls.
 
 ****What about testing?****
 
-Now things make much easier when we want to test a doubled underscore
+Now things are much easier when we want to test a doubled underscore
 method/property: use the `_classname_name` attribute of the object:
 
 ```python
@@ -126,8 +126,8 @@ assert acc._Account__name == "Anonymous" # pass
 ****Cython****
 
 Python seems to define the mangling object in the [`pycore_compile.h`](https://github.com/python/cpython/blob/bb3e0c240bc60fe08d332ff5955d54197f79751c/Include/internal/pycore%5Fcompile.h#L26) header and
-implement it in the [`compile.c`](https://github.com/python/cpython/blob/c2f1e953371c25f6c42b599ba3d8797effbb503e/Python/compile.c#L353) file, enabling us to access through a the
-[`ctype`](https://docs.python.org/3/library/ctypes.html) library like so:
+implement it in the [`compile.c`](https://github.com/python/cpython/blob/c2f1e953371c25f6c42b599ba3d8797effbb503e/Python/compile.c#L353) file, enabling us to access through the [`ctype`](https://docs.python.org/3/library/ctypes.html)
+library like so:
 
 ```python
 from ctypes import pythonapi, py_object
