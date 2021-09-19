@@ -122,3 +122,24 @@ acc = Account()
 assert acc.name() == "Anonymous" # passes
 assert acc._Account__name == "Anonymous" # pass
 ```
+
+****Cython****
+
+Python seems to define the mangling object in the [`pycore_compile.h`](https://github.com/python/cpython/blob/bb3e0c240bc60fe08d332ff5955d54197f79751c/Include/internal/pycore%5Fcompile.h#L26) header and
+implement it in the [`compile.c`](https://github.com/python/cpython/blob/c2f1e953371c25f6c42b599ba3d8797effbb503e/Python/compile.c#L353) file, enabling us to access through a the
+[`ctype`](https://docs.python.org/3/library/ctypes.html) library like so:
+
+```python
+from ctypes import pythonapi, py_object
+py_mangle = pythonapi._Py_Mangle
+py_mangle.argtypes = py_object, py_object
+py_mangle.restype = py_object
+
+print(py_mangle('MyClass', '__privmethod'))
+```
+
+```text
+_MyClass__privmethod
+```
+
+Further, the symbol lookup seems to happen in the [`symtable_lookup`](https://github.com/python/cpython/blob/054e9c84ac7c394941bba3ea1829d14dce1243fc/Python/symtable.c#L1016) function.
