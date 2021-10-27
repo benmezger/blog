@@ -10,4 +10,4 @@ headless = true
 -   [Notes](/notes)
 -   [Contact](/contact)
 -   [RSS](/index.xml)
--   [AllMyLinks](https://links.seds.nl/)
+-   [All my links](https://links.seds.nl/)
