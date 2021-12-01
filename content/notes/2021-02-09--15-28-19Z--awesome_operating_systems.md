@@ -61,7 +61,8 @@ gets updated from time to time.
 ### Microkernel {#microkernel}
 
 -   [Contiki-NG](https://github.com/contiki-ng/contiki-ng): Contiki-NG is an open-source, cross-platform operating system for
-    Next-Generation IoT devices. It focuses on dependable (secure and reliable) low-power communication and standard protocols, such as IPv6/6LoWPAN, 6TiSCH,
+    Next-Generation IoT devices. It focuses on dependable (secure and reliable)
+    low-power communication and standard protocols, such as IPv6/6LoWPAN, 6TiSCH,
     RPL, and CoAP. Contiki-NG comes with extensive documentation, tutorials, a
     roadmap, release cycle, and well-defined development flow for smooth
     integration of community contributions.
@@ -74,6 +75,15 @@ gets updated from time to time.
 -   [μT-Kernel 3.0](https://github.com/tron-forum/mtkernel%5F3): Real-time OS for Small-scale Embedded Systems and IoT Edge
     nodes. It is compliant with IEEE Standard 2050-2018 and has high compatibility
     with [μT-Kernel 2.0](https://www.tron.org/download/index.php?route=product/category&path=50).
+-   [Hubris](https://github.com/oxidecomputer/hubris): Hubris is a microcontroller operating environment designed for
+    deeply-embedded systems with reliability requirements. Its design was
+    initially proposed in RFD41, but has evolved considerably since then. Hubris
+    provides preemptive multitasking, memory isolation between separately-compiled
+    components, the ability to isolate crashing drivers and restart them without
+    affecting the rest of the system, and flexible inter-component messaging that
+    eliminates the need for most syscalls — in about 2000 lines of Rust. The
+    Hubris debugger, Humility, allows us to walk up to a running system and
+    inspect the interaction of all tasks, or capture a dump for offline debugging.
 
 
 ### Monolithic {#monolithic}
@@ -121,6 +131,16 @@ computing, personal area networks, smart buildings, and smart meters.
     It's able to load, execute, and save programs. Also keeps a filesystem. It can
     work with any floppy disk size starting at 180K. It's compatible with 8088
     (the original IBM PC).
+
+
+### Network OS {#network-os}
+
+-   [Junos OS](https://www.juniper.net/us/en/products/network-operating-system/junos-os.html): Junos® OS automates network operations with streamlined precision,
+    furthers operational efficiency, and frees up valuable time and resources for
+    top-line growth opportunities. Built for reliability, security, and
+    flexibility, Junos OS runs many of the world’s most sophisticated network
+    deployments, giving operators an advantage over those who run competing
+    network operating systems.
 
 
 ## References {#references}
