@@ -1,31 +1,23 @@
 +++
 title = "Hi, there"
 author = ["Ben Mezger"]
-date = 2020-04-23T00:00:00-03:00
-lastmod = 2021-11-28T12:19:03-03:00
+date = 2020-04-23T00:00:00+00:00
+lastmod = 2022-03-19T21:26:07+00:00
 draft = false
 bookToc = false
 bookComments = false
 +++
 
-My name is Benjamin Mezger[^fn:1], and I am one of the countless software
-engineers lost in a world of code and numbers. I have worked with a diverse
-number of technologies – from operating system development to web development.
-This experience with several computing abstractions has taught me how to quickly
-adapt, learn and contribute to different project environments. I have an
-interest in backend development, computer architecture, and operating systems.
+_Howdy_!
 
-I am doing my Master&rsquo;s degree at the University of Vale do Itajaí, investigating
-fault-tolerant software at the operating system level on RISC-V architectures.
+I am Benjamin Mezger, but everyone started calling me Ben at some point in life.
+I am one of the countless software engineers lost in a world of code, numbers,
+and countries — yes, not only code and numbers but also countries. Countries
+because ever since I was born, I&rsquo;ve moved and had to learn multiple languages to
+communicate with my friends and family. Maybe that&rsquo;s why I am a software
+engineer because computers have different ways of communicating.
 
-I tend to reflect when asked, &ldquo;where are you from&rdquo; because it&rsquo;s a long and
-confusing story. But here is a _TL;DR_: I was born in Milan, I have Brazillian,
-Dutch, and German citizenship, but I&rsquo;m not Italian due to Jus Sanguinis. I moved
-and lived in Italy, Portugal, United Kingdom, Channel Islands, The Netherlands,
-and Brazil.
-
-If you want to know more about my professional career, you can get my CV
-[here](/files/Benjamin_Mezger_CV.pdf) or the short version [here](/files/Benjamin_Mezger_CV_short.pdf).
+Talking about life and code, check my [/notes](/notes) section for some of my writings.
 
 <style>.org-center { margin-left: auto; margin-right: auto; text-align: center; }</style>
 
@@ -35,5 +27,3 @@ If you want to know more about my professional career, you can get my CV
 {{< figure src="/imgs/me.png" caption="Figure 1: This is me in black and white" width="400px" >}}
 
 </div>
-
-[^fn:1]: You can call me Ben too!
