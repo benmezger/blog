@@ -35,4 +35,4 @@ params:
   BookSearch: true
   BookRepo: https://github.com/benmezger/blog
   BookEditPath: edit/main
-  BookTheme: auto
+  BookTheme: 'dark'
