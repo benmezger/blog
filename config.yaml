@@ -36,3 +36,4 @@ params:
   BookRepo: https://github.com/benmezger/blog
   BookEditPath: edit/main
   BookTheme: 'dark'
+  CommentTheme: 'github-dark'
