@@ -7,7 +7,7 @@
   </p>
   </br>
   <section>
-    {{ range sort (.Paginator 50).Pages }}
+    {{ range sort (.Paginator 50).Pages.ByLastmod.Reverse }}
     <div>
       <li style="padding: 3px; position:relative;">
         <a
