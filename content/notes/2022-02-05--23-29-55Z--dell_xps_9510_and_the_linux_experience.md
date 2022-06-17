@@ -102,7 +102,7 @@ I haven't tried to get it working yet, but I don't think it will work from what 
 ~~I haven't managed to get it working. It seems it needs some configuration in the~~
 ~~BIOS, but regardless, it did not work.~~
 
-_Update <span class="timestamp-wrapper"><span class="timestamp">&lt;2022-06-17 Fri&gt;</span></span>_
+**Update <span class="timestamp-wrapper"><span class="timestamp">&lt;2022-06-17 Fri&gt;</span></span>**:
 Turns out I needed to enable the `resume` hook in my `initramfs`, append a
 line to my grub configuration and systemd's sleep configuration [[0084195](https://github.com/benmezger/etc/commit/0084195e500acb1e483fb5a6e7fea40e75a3ef3a)].
 
