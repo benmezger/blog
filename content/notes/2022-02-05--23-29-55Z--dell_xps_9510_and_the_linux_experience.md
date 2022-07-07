@@ -200,6 +200,6 @@ I haven't tried to get it working yet, but I don't think it will work from what 
 
 **Update <span class="timestamp-wrapper"><span class="timestamp">&lt;2022-06-17 Fri&gt;</span></span>**:
 Turns out I needed to enable the `resume` hook in my `initramfs`, append a
-line to my grub configuration and systemd's sleep configuration [[0084195](https://github.com/benmezger/etc/commit/0084195e500acb1e483fb5a6e7fea40e75a3ef3a)].
+line to my grub configuration and systemd's sleep configuration [[gist](https://gist.github.com/benmezger/fd5a424bb4a2a8649107989dd62dbea0)].
 
 I will keep this updated as time goes by.
