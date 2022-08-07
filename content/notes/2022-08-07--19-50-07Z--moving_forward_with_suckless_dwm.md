@@ -18,6 +18,8 @@ I decided to give [suckless dwm](https://dwm.suckless.org/) another chance and s
 
 I've been using [qtile](http://www.qtile.org/) till now, but with multiple monitors, qtile seemed not to work well. I've tried getting a unique qtile's `GroupBox` for each screen to have 1-9 workspaces, but no luck. Maybe there is a way to fix this, but after a few tries, I gave up and took a chance at hearing my subconscious to give dwm another try.
 
+My dwm changes is version controlled [here](https://github.com/benmezger/dwm.git).
+
 The dwm patches I've applied were:
 
 ```text
