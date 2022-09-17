@@ -11,7 +11,7 @@ serve:
 export-orgs:
 	emacs \
 		--batch \
-		-l ~/.emacs.d/init.el \
+		-l "~/.doom.d/init.el" \
 		-l "$(ROOT_DIR)/org_to_hugo.el" \
 		--eval "(benmezger/org-roam-export-all)"
 
