@@ -5,6 +5,7 @@ media_folder: static/imgs
 public_folder: /imgs
 collections:
   - name: "notes"
+    preview_path: notes/{{slug}}
     label: "Notes"
     folder: "/content/notes"
     create: true
@@ -12,6 +13,7 @@ collections:
     editor:
       preview: false
     fields:
+      - { label: "Body", name: "body", widget: "markdown", required: true }
       - { label: "Title", name: "title", widget: "string", required: true }
       - {
           label: "Publish Date",
@@ -31,4 +33,3 @@ collections:
           required: true,
           default: true,
         }
-      - { label: "Body", name: "body", widget: "markdown", required: true }
