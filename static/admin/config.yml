@@ -3,6 +3,7 @@ backend:
   branch: main
 media_folder: static/imgs
 public_folder: /imgs
+show_preview_links: true
 collections:
   - name: "notes"
     preview_path: notes/{{slug}}
@@ -11,7 +12,7 @@ collections:
     create: true
     slug: "{{year}}-{{month}}-{{day}}--{{hour}}-{{minute}}-{{second}}Z--{{slug}}"
     editor:
-      preview: false
+      preview: true
     fields:
       - { label: "Body", name: "body", widget: "markdown", required: true }
       - { label: "Title", name: "title", widget: "string", required: true }
