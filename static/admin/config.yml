@@ -52,3 +52,12 @@ collections:
         fields:
           - { label: "Body", name: "body", widget: "markdown", required: true }
           - { label: "Title", name: "title", widget: "string", required: true }
+  - name: "contact"
+    label: "Contact"
+    files:
+      - name: contact
+        label: "Contact"
+        file: content/contact/_index.md
+        fields:
+          - { label: "Body", name: "body", widget: "markdown", required: true }
+          - { label: "Title", name: "title", widget: "string", required: true }
