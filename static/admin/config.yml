@@ -34,3 +34,12 @@ collections:
           required: true,
           default: true,
         }
+  - name: "index"
+    label: "Index"
+    files:
+      - name: index
+        label: "Index"
+        file: content/_index.md
+        fields:
+          - { label: "Body", name: "body", widget: "markdown", required: true }
+          - { label: "Title", name: "title", widget: "string", required: true }
