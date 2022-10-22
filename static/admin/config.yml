@@ -43,3 +43,12 @@ collections:
         fields:
           - { label: "Body", name: "body", widget: "markdown", required: true }
           - { label: "Title", name: "title", widget: "string", required: true }
+  - name: "menu"
+    label: "Menu"
+    files:
+      - name: menu
+        label: "Menu"
+        file: content/menu/_index.md
+        fields:
+          - { label: "Body", name: "body", widget: "markdown", required: true }
+          - { label: "Title", name: "title", widget: "string", required: true }
