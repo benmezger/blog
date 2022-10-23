@@ -1,7 +1,7 @@
 CC = hugo
 PORT ?= 1313
 ROOT_DIR := $(shell dirname $(realpath $(firstword $(MAKEFILE_LIST))))
-ORG_DIR := "$(HOME)/workspace/org"
+ORG_DIR := "$(HOME)/workspace/org/roam"
 ORG_FILES = $(shell find $(ORG_DIR) -type f -name '*.org')
 
 s: serve
