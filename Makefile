@@ -1,19 +1,22 @@
 CC = hugo
 PORT ?= 1313
 ROOT_DIR := $(shell dirname $(realpath $(firstword $(MAKEFILE_LIST))))
+ORG_DIR := "$(HOME)/workspace/org"
+ORG_FILES = $(shell find $(ORG_DIR) -type f -name '*.org')
 
 s: serve
-o: export-orgs
+e: export
+d: deploy
+
+export: $(ORG_FILES)
+	for file in $^; do \
+		echo "Running doomscript for $${file}"; \
+		doomscript $(HOME)/.doom.d/bin/org2blog "$${file}"; \
+	done
 
 serve:
 	$(CC) serve --port $(PORT)
 
-export-orgs:
-	emacs \
-		--batch \
-		-l "~/.doom.d/init.el" \
-		-l "$(ROOT_DIR)/org_to_hugo.el" \
-		--eval "(benmezger/org-roam-export-all)"
-
 deploy:
 	./deploy.sh
+
