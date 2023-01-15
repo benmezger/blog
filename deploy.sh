@@ -35,4 +35,7 @@ else
 	printf "No changes detected.\n"
 fi
 
-git push -f -q https://"$GITHUB_TOKEN"@github.com/benmezger/benmezger.github.io.git master
+git push \
+	-f -q \
+	https://oauth2:"$GITHUB_TOKEN"@github.com/benmezger/benmezger.github.io.git \
+	master
