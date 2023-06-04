@@ -92,6 +92,34 @@ Info:
 lspci
 ```
 
+```text
+00:00.0 Host bridge: Intel Corporation 11th Gen Core Processor Host Bridge/DRAM Registers (rev 05)
+00:01.0 PCI bridge: Intel Corporation 11th Gen Core Processor PCIe Controller #1 (rev 05)
+00:01.2 PCI bridge: Intel Corporation Device 9a07 (rev 05)
+00:02.0 VGA compatible controller: Intel Corporation TigerLake-H GT1 [UHD Graphics] (rev 01)
+00:04.0 Signal processing controller: Intel Corporation TigerLake-LP Dynamic Tuning Processor Participant (rev 05)
+00:07.0 PCI bridge: Intel Corporation Tiger Lake-H Thunderbolt 4 PCI Express Root Port #2 (rev 05)
+00:07.3 PCI bridge: Intel Corporation Tiger Lake-H Thunderbolt 4 PCI Express Root Port #3 (rev 05)
+00:0a.0 Signal processing controller: Intel Corporation Tigerlake Telemetry Aggregator Driver (rev 01)
+00:0d.0 USB controller: Intel Corporation Tiger Lake-H Thunderbolt 4 USB Controller (rev 05)
+00:0d.3 USB controller: Intel Corporation Tiger Lake-H Thunderbolt 4 NHI #1 (rev 05)
+00:12.0 Serial controller: Intel Corporation Tiger Lake-H Integrated Sensor Hub (rev 11)
+00:14.0 USB controller: Intel Corporation Tiger Lake-H USB 3.2 Gen 2x1 xHCI Host Controller (rev 11)
+00:14.2 RAM memory: Intel Corporation Tiger Lake-H Shared SRAM (rev 11)
+00:14.3 Network controller: Intel Corporation Tiger Lake PCH CNVi WiFi (rev 11)
+00:15.0 Serial bus controller: Intel Corporation Tiger Lake-H Serial IO I2C Controller #0 (rev 11)
+00:15.1 Serial bus controller: Intel Corporation Tiger Lake-H Serial IO I2C Controller #1 (rev 11)
+00:16.0 Communication controller: Intel Corporation Tiger Lake-H Management Engine Interface (rev 11)
+00:1c.0 PCI bridge: Intel Corporation Device 43be (rev 11)
+00:1f.0 ISA bridge: Intel Corporation Device 4389 (rev 11)
+00:1f.3 Audio device: Intel Corporation Tiger Lake-H HD Audio Controller (rev 11)
+00:1f.4 SMBus: Intel Corporation Tiger Lake-H SMBus Controller (rev 11)
+00:1f.5 Serial bus controller: Intel Corporation Tiger Lake-H SPI Controller (rev 11)
+01:00.0 3D controller: NVIDIA Corporation GA107M [GeForce RTX 3050 Ti Mobile] (rev a1)
+02:00.0 Non-Volatile memory controller: Samsung Electronics Co Ltd NVMe SSD Controller PM9A1/PM9A3/980PRO
+75:00.0 Unassigned class [ff00]: Realtek Semiconductor Co., Ltd. RTS5260 PCI Express Card Reader (rev 01)
+```
+
 ```nil
 0000:00:00.0 Host bridge: Intel Corporation 11th Gen Core Processor Host Bridge/DRAM Registers (rev 05)
 0000:00:01.0 PCI bridge: Intel Corporation 11th Gen Core Processor PCIe Controller #1 (rev 05)
@@ -186,6 +214,13 @@ Working out of the box.
 
 Works well with `synaptics`, but much better with `libinput`. You can get
 `libinput-gestures` to set up a smooth gesture functionality.
+
+**Update <span class="timestamp-wrapper"><span class="timestamp">&lt;2023-06-04 Sun&gt;</span></span>**:
+Turns out that from time-to-time the touchpad started lagging. This is a known
+[issue](https://wiki.archlinux.org/title/Dell%5FXPS%5F15%5F(9510)#Touchpad%5Flag) and I've fixed it by following [this](https://gitlab.freedesktop.org/libinput/libinput/-/issues/618#note%5F1379374) guide to downgrade the touchpad firmware
+to `0x000c`.
+
+[Touchpad firmware 0c for XPS 9510](/files/FWUpdate_v1.0.3.0_DellMUP_Fv0C_Trial_04_ZPE.zip)
 
 
 ## Fingerprint {#fingerprint}
