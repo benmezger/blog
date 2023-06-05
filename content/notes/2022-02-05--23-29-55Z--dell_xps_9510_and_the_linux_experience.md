@@ -217,7 +217,7 @@ Working out of the box.
 Works well with `synaptics`, but much better with `libinput`. You can get
 `libinput-gestures` to set up asmooth gesture functionality.
 
-**Update <span class="timestamp-wrapper"><span class="timestamp">&lt;2023-06-05 Mon&gt;</span></span>**:
+**Update <span class="timestamp-wrapper"><span class="timestamp">&lt;2023-06-05 Mon&gt;</span></span>**: <br />
 Turns out that from time-to-time the touchpad started lagging. This is a known
 [issue](https://wiki.archlinux.org/title/Dell%5FXPS%5F15%5F(9510)#Touchpad%5Flag) and I've fixed it by following [this](https://gitlab.freedesktop.org/libinput/libinput/-/issues/618#note%5F1379374) guide to downgrade the touchpad
 firmware to `0x000c`.
@@ -238,7 +238,7 @@ I haven't tried to get it working yet, but I don't think it will work from what 
 ~~I haven't managed to get it working. It seems it needs some configuration in the~~
 ~~BIOS, but regardless, it did not work.~~
 
-**Update <span class="timestamp-wrapper"><span class="timestamp">&lt;2022-06-17 Fri&gt;</span></span>**:
+**Update <span class="timestamp-wrapper"><span class="timestamp">&lt;2022-06-17 Fri&gt;</span></span>**: <br />
 Turns out I needed to enable the `resume` hook in my `initramfs`, append a
 line to my grub configuration and systemd's sleep configuration [[gist](https://gist.github.com/benmezger/fd5a424bb4a2a8649107989dd62dbea0)].
 
