@@ -144,7 +144,7 @@ The Intel i915 with NVidia disabled worked out of the box with one issue.
 -   Suddenly, Alacritty's window turns black, as if it's completely unresponsive.
     I've tried running with `vblank_mode` set but no luck.
 
-**Update <span class="timestamp-wrapper"><span class="timestamp">&lt;2023-06-06 Tue&gt;</span></span>**:
+**Update <span class="timestamp-wrapper"><span class="timestamp">&lt;2023-06-06 Tue&gt;</span></span>**: <br />
 I noticed a few `i915 0000:00:02.0: [drm] *ERROR* Unexpected DE Misc interrupt`
 popping up from time to time in `dmesg`, so I made a few configurations, which
 seemed to have fixed the error (and the frozen issue!).
