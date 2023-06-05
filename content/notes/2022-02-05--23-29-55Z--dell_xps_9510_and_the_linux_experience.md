@@ -142,7 +142,33 @@ Works out of the box with Archlinux
 The Intel i915 with NVidia disabled worked out of the box with one issue.
 
 -   Suddenly, Alacritty's window turns black, as if it's completely unresponsive.
-    I've tried running with `vblank_mode` set but no luck either
+    I've tried running with `vblank_mode` set but no luck.
+
+**Update <span class="timestamp-wrapper"><span class="timestamp">&lt;2023-06-06 Tue&gt;</span></span>**:
+I noticed a few `i915 0000:00:02.0: [drm] *ERROR* Unexpected DE Misc interrupt`
+popping up from time to time in `dmesg`, so I made a few configurations, which
+seemed to have fixed the error (and the frozen issue!).
+
+In `/etc/mkinitcpio.conf`, add `i925` to `MODULES`.
+
+```nil
+MODULES=(... i925)
+```
+
+Then run `mkinitcpio -p <whatever-kernel-you-have>`.
+
+Create or edit `/etc/X11/xorg.conf`, with the following device. I [think](https://wiki.archlinux.org/title/intel%5Fgraphics#Xorg%5Fconfiguration) you can
+also create a `/etc/X11/xorg.conf.d/20-intel.conf` and add it there instead, but
+I didn't do that.
+
+```nil
+Section "Device"
+  Identifier "Intel Graphics"
+  Driver "intel"
+EndSection
+```
+
+Reboot.
 
 
 ### Modesetting {#modesetting}
@@ -154,8 +180,12 @@ none found yet).
 ### NVidia GeForce RTX 3050 Ti Mobile {#nvidia-geforce-rtx-3050-ti-mobile}
 
 Works out of the box with the `nvidia` driver from Archlinux's official
-repository. I have tried \`bumblebee\` out, but no luck getting the hybrid (Intel
+repository. I have tried `bumblebee` out, but no luck getting the hybrid (Intel
 and NVidia) to work along.
+
+**Update <span class="timestamp-wrapper"><span class="timestamp">&lt;2023-06-06 Tue&gt;</span></span>**: <br />
+I tried Linux Mint for a few days and the hybrid mode (intel or nvidia) worked
+out of the box.
 
 
 ## Bluetooth {#bluetooth}
@@ -185,7 +215,7 @@ Working out of the box.
 ## Touchpad {#touchpad}
 
 Works well with `synaptics`, but much better with `libinput`. You can get
-`libinput-gestures` to set up a smooth gesture functionality.
+`libinput-gestures` to set up asmooth gesture functionality.
 
 **Update <span class="timestamp-wrapper"><span class="timestamp">&lt;2023-06-05 Mon&gt;</span></span>**:
 Turns out that from time-to-time the touchpad started lagging. This is a known
