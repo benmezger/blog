@@ -81,9 +81,9 @@ a2 < b1_
 
 ---
 
-1.  _a1 < a2 < a1_ or _a1 < a2_
-2.  _b1 < a2 < b1_ or _b1 < a2_
-3.  Yes, _b1 < a2 < a1_
+1.  _b1 < a1 < a2_
+2.  _a1 < b1 < a2_
+3.  No, _b1 < a2 < a1_ is the only but because instructions within a thread are sequential, _a1_ must come before _a2_.
 
 
 ## Bibliography {#bibliography}
