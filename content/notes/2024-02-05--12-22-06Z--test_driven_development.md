@@ -14,6 +14,9 @@ bookCollapseSection = true
 
 ---
 
+Below are notes/tests I made during my reading session of the [Test Driven
+Development: By Example](https://www.amazon.com/Test-Driven-Development-Kent-Beck/dp/0321146530) book, by Kent Beck.
+
 
 ## Chapter 1 {#chapter-1}
 
@@ -63,13 +66,6 @@ for k, v in globals().items():
         print(f"{k} passed!")
 ```
 
-```text
-Running test_multiplication
-test_multiplication passed!
-Running test_equality
-test_equality passed!
-```
-
 
 ## Chapter 2 {#chapter-2}
 
@@ -98,8 +94,8 @@ class DollarV2:
     def __init__(self, amount: int):
         self.amount = amount
 
-    def times(self, multipler: int) -> None:
-        return Dollar(self.amount * multipler)
+    def times(self, multipler: int) -> "DollarV2":
+        return DollarV2(self.amount * multipler)
 ```
 
 ```python
@@ -121,10 +117,12 @@ for k, v in globals().items():
 ```
 
 ```text
-Running test_multiplication
-test_multiplication passed!
 Running test_equality
 test_equality passed!
+Running test_times
+test_times failed with AttributeError
+Running test_multiplication
+test_multiplication passed!
 ```
 
 With this modification, we now removed the **dollar side effect**, which we had
@@ -167,8 +165,8 @@ class DollarV3:
     def __init__(self, amount: int):
         self.amount = amount
 
-    def times(self, multipler: int) -> None:
-        return Dollar(self.amount * multipler)
+    def times(self, multipler: int) -> "DollarV3":
+        return DollarV3(self.amount * multipler)
 
     def __eq__(self, value: "DollarV3") -> bool:
         return True
@@ -182,27 +180,113 @@ def test_equality():
 ```
 
 ```python
-for k, v in globals().items():
-    if k.startswith("test_"):
-        print(f"Running {k}")
-        try:
-            v()
-            print(f"{k} passed!")
-        except Exception as err:
-            print(f"{k} failed with {err.__class__.__name__}")
+def run_tests():
+    for k, v in globals().items():
+        if k.startswith("test_"):
+            print(f"Running {k}")
+            try:
+                v()
+                print(f"{k} passed!")
+            except Exception as err:
+                print(f"{k} failed with {err.__class__.__name__}")
 ```
 
-```text
-Running test_multiplication
-test_multiplication passed!
-Running test_equality
-test_equality passed!
+```python
+run_tests()
 ```
 
 Now the bar is green again, but we hardcoded `True` in our `__eq__` method.
 
 
-### <span class="org-todo todo TODO">TODO</span> Triangulation {#triangulation}
+### <span class="org-todo done DONE">DONE</span> Triangulation {#triangulation}
+
+_Triangualation_ is a weird concept that took me some minutes to understand the
+reason behind it. The idea behind is simple: we only generalize the code when we
+have two examples or more (_i.e._ assertions). When we then demand a more
+general solution, **then we generalize**.
+
+```python
+def test_equality():
+    assert DollarV3(5) == DollarV3(5)
+    assert DollarV3(5) != DollarV3(6)
+
+run_tests()
+```
+
+Our last assertion failed because we've hardcoded `True` as the return type.
+The second assertion is our triangulation. At this point, we can move forward
+with generalization.
+
+```python
+class DollarV4(DollarV3):
+    def __eq__(self, value: "DollarV3") -> bool:
+        return self.amount == value.amount
+```
+
+```python
+def test_equality():
+    a = DollarV4(5)
+    b = DollarV4(6)
+    assert DollarV4(5) == DollarV4(5)
+    assert DollarV4(5) != DollarV4(6)
+
+run_tests()
+```
+
+And voila!
+
+```text
+Running test_equality
+test_equality passed!
+```
+
+In practice, what we are actually doing is using two assertions to drive the
+generalization of the code. Triangulation provides us a way to think about the
+problem from a different direction.
+
+
+## Chapter 4 {#chapter-4}
+
+This chapter is straightforward. The problem is that our `amount` is public.
+Anyone can change, and we don't want to allow tests to access it. What happens
+if we delete that variable and move it somewhere else? We will have to update
+the test. Lets refactor it.
+
+```python
+class DollarV5:
+    _amount: int
+
+    def __init__(self, amount: int):
+        self._amount = amount
+
+    def times(self, multipler: int) -> "DollarV5":
+        return DollarV5(self._amount * multipler)
+
+    def __eq__(self, value: "DollarV5") -> bool:
+        return self._amount == value.amount
+```
+
+We should keep `__eq__` as is. Yes, this will break our next test, but its fine
+for now.
+
+```python
+def test_times():
+    five = DollarV5(5)
+    assert five.times(2) == DollarV5(10)
+
+run_tests()
+```
+
+Aaaaaand it broke. It says `AttributeError` because it could not find `amount`
+attribute when making the comparison against the `value` passed.
+
+```text
+Running test_times
+test_times failed with AttributeError
+```
+
+
+## <span class="org-todo todo TODO">TODO</span> Chapter 5 {#chapter-5}
 
 
 ## References {#references}
