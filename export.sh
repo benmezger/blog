@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
 
 org_directory="$HOME/workspace/org/roam/"
 
