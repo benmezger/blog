@@ -18,11 +18,7 @@ I use orgmode to write my posts and export it to Hugo's Markdown format
 ** Org to Hugo
 Run the following to generate all roam files to Hugo.
 #+BEGIN_SRC shell
-emacs \
-	--batch \
-	-l ~/.emacs.d/init.el \
-	-l /Users/seds/workspace/blog/org_to_hugo.el \
-	--eval "(benmezger/org-roam-export-all)"
+bash export.sh
 #+END_SRC
 
 * Deploying
