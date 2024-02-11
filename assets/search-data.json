@@ -3,7 +3,6 @@
 {{- $pages = where $pages "Params.booksearchexclude" "!=" true -}}
 {{/* Remove until we know why it does not work, see https://github.com/alex-shpak/hugo-book/issues/528 */}}
 {{/*- $pages = where $pages "Content" "not in" (slice nil "") -*/}}
-{{- $pages = where $pages "Content" "!=" "" -}}
 
 {{ range $index, $page := $pages }}
 {{ if gt $index 0}},{{end}} {
