@@ -1,7 +1,7 @@
 +++
 title = "Attaching Jira issues to commit"
 author = ["Ben Mezger"]
-date = 2020-05-24T02:39:00
+date = 2020-05-24T02:39:00+02:00
 aliases = ["/posts/attaching-jira-issues-to-commits/"]
 slug = "attaching-jira-issues-to-commits"
 tags = ["git", "projects", "software"]
@@ -16,10 +16,9 @@ bookCollapseSection = true
 
 ---
 
-{{< expand TLDR >}}
-Dynamically attach Jira attributes to commit body using git-hook.
-Check the project's [README](https://github.com/benmezger/gjira/).
-{{< /expand >}}
+{{< details TLDR >}}
+Dynamically attach Jira attributes to commit body using git-hook. Check the project's [README](https://github.com/benmezger/gjira/).
+{{< /details >}}
 
 The place I work at requires Jira story ID and task ID attached to the commit
 body. Initially, I was attaching the ID to the commit body manually, by checking
