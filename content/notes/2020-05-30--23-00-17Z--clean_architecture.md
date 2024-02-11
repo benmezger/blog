@@ -1,9 +1,10 @@
 +++
 title = "Clean architecture"
 author = ["Ben Mezger"]
-date = 2020-05-30T20:00:00-03:00
+date = 2020-05-30T20:00:00
 slug = "clean-architecture"
 tags = ["reading", "books"]
+categories = ["books"]
 type = "notes"
 draft = false
 bookCollapseSection = true

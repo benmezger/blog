@@ -1,7 +1,7 @@
 +++
 title = "Notes on OS memory management"
 author = ["Ben Mezger"]
-date = 2020-11-27T22:08:00-03:00
+date = 2020-11-27T22:08:00
 slug = "notes_on_os_memory_management"
 tags = ["os", "mmu"]
 type = "notes"

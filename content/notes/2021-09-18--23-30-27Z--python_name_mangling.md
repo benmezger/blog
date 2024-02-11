@@ -1,7 +1,7 @@
 +++
 title = "Python's name mangling"
 author = ["Ben Mezger"]
-date = 2021-09-18T20:30:00-03:00
+date = 2021-09-18T20:30:00
 slug = "python_name_mangling"
 tags = ["testing", "python"]
 type = "notes"
@@ -55,6 +55,10 @@ acc = Account()
 
 print(acc.name())
 print(acc.__name)
+```
+
+```text
+Anonymous
 ```
 
 ```python
@@ -136,10 +140,6 @@ py_mangle.argtypes = py_object, py_object
 py_mangle.restype = py_object
 
 print(py_mangle('MyClass', '__privmethod'))
-```
-
-```text
-_MyClass__privmethod
 ```
 
 Further, the symbol lookup seems to happen in the [`symtable_lookup`](https://github.com/python/cpython/blob/054e9c84ac7c394941bba3ea1829d14dce1243fc/Python/symtable.c#L1016) function.

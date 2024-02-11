@@ -1,7 +1,7 @@
 +++
 title = "Operating Systems"
 author = ["Ben Mezger"]
-date = 2020-05-31T12:29:00-03:00
+date = 2020-05-31T12:29:00
 slug = "operating-systems"
 tags = ["operating-systems", "cs"]
 type = "notes"

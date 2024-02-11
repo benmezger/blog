@@ -1,7 +1,7 @@
 +++
 title = "Chezmoi and Emacs"
 author = ["Ben Mezger"]
-date = 2021-09-11T19:48:00-03:00
+date = 2021-09-11T19:48:00
 slug = "chezmoi-and-emacs"
 tags = ["emacs", "dotfiles"]
 type = "notes"

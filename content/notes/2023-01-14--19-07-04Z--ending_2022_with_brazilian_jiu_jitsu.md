@@ -1,7 +1,7 @@
 +++
 title = "Ending 2022 with Brazilian Jiu-Jitsu"
 author = ["Ben Mezger"]
-date = 2023-01-14T20:07:00+01:00
+date = 2023-01-14T20:07:00
 slug = "ending_2022_with_brazilian_jiu_jitsu"
 tags = ["sports"]
 type = "notes"
@@ -29,21 +29,21 @@ from a new bruise.
 
 <--->
 
-<a id="orgc35b0a1"></a>
+<a id="orgc55a139"></a>
 
 {{< figure src="/imgs/right-hand.png" caption="Figure 2: Right hand" >}}
 
 {{< /columns >}}
 {{< columns >}}
 
-{{< figure src="/imgs/left-arm.png" caption="Figure 1: Left arm" >}}
+{{< figure src="/imgs/left-arm.png" caption="Figure 3: Left arm" >}}
 
 <--->
 
-{{< figure src="/imgs/right-arm.png" caption="Figure 1: Right arm" >}}
+{{< figure src="/imgs/right-arm.png" caption="Figure 4: Right arm" >}}
 
 <--->
 
-{{< figure src="/imgs/left-biceps.png" caption="Figure 1: Left biceps" >}}
+{{< figure src="/imgs/left-biceps.png" caption="Figure 5: Left biceps" >}}
 
 {{< /columns >}}

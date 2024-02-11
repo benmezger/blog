@@ -1,7 +1,7 @@
 +++
 title = "Go Context package"
 author = ["Ben Mezger"]
-date = 2020-09-03T17:08:00-03:00
+date = 2020-09-03T17:08:00
 slug = "go_context_package"
 tags = ["go", "programming"]
 type = "notes"

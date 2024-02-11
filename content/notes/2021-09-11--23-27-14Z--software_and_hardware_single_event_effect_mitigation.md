@@ -1,7 +1,7 @@
 +++
 title = "Software and Hardware Single Event Effect mitigation"
 author = ["Ben Mezger"]
-date = 2021-02-06T15:28:00-03:00
+date = 2021-02-06T15:28:00
 aliases = ["/posts/see-hardware-and-software-mitigation/"]
 slug = "software-and-hardware-single-event-effect-mitigation"
 tags = ["software", "see", "fault", "hardware"]
@@ -35,7 +35,7 @@ rays or alpha particles. These charges may, for example, temporarily
 change memory contents or commands in a given instruction stream. The
 effects of radiation regarding space-borne electronic systems may
 penetrate sensitive nodes in these devices and affect its system
-functions and behavior ([Petersen, n.d.](#orgb68793e)).
+functions and behavior <Petersen2011SingleEventEfefctsInAerospace>.
 
 The first satellite inconsistency was first reported in 1975, by D.
 Binder _et. al_ on SEU in flip-flops. In 1978, the first SEU was first
@@ -43,12 +43,12 @@ observed on earth by alpha particles, caused by packaging material in a
 chip and eventually affecting the ram. In 1979, the first report on SEU
 due to comic rays was published, and in 1992, the first destructive see
 was observed in a memory on a space operating resource satellite
-([Buchner 2015](#org578de95)).
+<buchner2015overview>.
 
 The phenomenon of see arises when a single energetic particle penetrates
 these sensitive nodes, causing glitches to the electronic system or
 catastrophic failures at the circuit level
-([Petersen, n.d.](#orgb68793e)). With a variety of possible see,
+<Petersen2011SingleEventEfefctsInAerospace>. With a variety of possible see,
 they can either be transient, permanent, or intermittent.
 
 Faults that may affect the system during its lifetime can be classified
@@ -57,19 +57,19 @@ natural faults, caused by natural phenomena without human interaction;
 (ii) human-made faults, resulted by human interaction such as production
 defects; (iii) transient faults, presented within a bounded time-frame; and
 (iv) permanent faults, given within a continuous time-frame
-([Avizienis et al. 2004](#org7037b39)). This paper aims at
+<avizienis2004ConceptsOfSecureComputing>. This paper aims at
 reviewing transient fault mitigation.
 
 During the system operation, natural faults can be either internal, due
 to the natural process of physical deterioration, or external, due to
 the natural process that happens outside the system boundaries and may
-cause hardware interference ([Avizienis et al. 2004](#org7037b39)).
+cause hardware interference <avizienis2004ConceptsOfSecureComputing>.
 
 In fault-tolerant architecture, a fault is a physical defect, such as a
 broken transistor. These faults may manifest themselves as an error,
 such that having a bit 0 in place of a bit 1, or by not manifesting
 itself as an error. An error can be masked or can result in a
-user-visible failure ([Sorin 2009](#org5b2935a)).
+user-visible failure <Sorin2009FaultTolerantComputerArchitecture>.
 
 A fault and/or error does not necessarily become an error and/or a
 fault, respectively. This can be mitigated by masking the system at the
@@ -79,35 +79,35 @@ it depends on which instruction the error will impact. Errors that
 propagate to the application level may not be impacted by an error
 either, as the error may affect an unused memory location by the
 application and never gets triggered
-([Sorin 2009](#org5b2935a)).
+<Sorin2009FaultTolerantComputerArchitecture>.
 
 A transient fault may occur once and not persist across the system,
 these are often referred to as _soft error_ or as SEU. Permanent faults
 are often called _hard fault_, and persists when the fault occurs and
 may manifest itself as a repeated error. An intermittent fault occurs
 repeatedly but not over the same place in the system
-([Sorin 2009](#org5b2935a)).
+<Sorin2009FaultTolerantComputerArchitecture>.
 
 Radiation device hardening and see fault tolerance approaches have been taken to
 mitigate these issues when they arise
-([Petersen, n.d.](#orgb68793e)), however, the mitigation
+<Petersen2011SingleEventEfefctsInAerospace>, however, the mitigation
 approaches are dependent on their fault duration, as tolerating a transient
 fault requires no self-repair due to its non-persistence. Fault tolerance
 schemes may treat intermittent faults as either transient or permanent,
 depending on how often they occur in the system
-([Sorin 2009](#org5b2935a)).
+<Sorin2009FaultTolerantComputerArchitecture>.
 
 Due to the many physical phenomena that may lead to a fault, a variety
 of techniques are available for mitigating these issues according to the
 environment they run. Due to the transient high-energy particles, cosmic
 rays may produce alpha particles or even electromagnetic interference
 from outside sources, generating transient faults to the devices
-([Petersen, n.d.](#orgb68793e)).
+<Petersen2011SingleEventEfefctsInAerospace>.
 
 The effects of the fault may change a value of a cell or transistor
 output. Due to the one-time disruption, the error will vanish once the
 cell or transistor's output is overwritten.
-([Sorin 2009](#org5b2935a)) categorizes permanent
+<Sorin2009FaultTolerantComputerArchitecture> categorizes permanent
 phenomena into three categories: (i) permanent wear-out, making a
 processor fail due to several physical issues such as thermal cycling
 and mechanical stress; (ii) fabrication defects, by manufacturing chips
@@ -118,17 +118,17 @@ devices.
 
 This work aims at characterizing the types of see and the state-of-the-art that
 has been accomplished to mitigate these issues at the circuit- and
-software-level. The rest of the paper is organized as follows: section [2](#orgbb507d7) gives a
+software-level. The rest of the paper is organized as follows: section [2](#orge734cd8) gives a
 brief background over the types of see and how they may affect the system, among
-with fault metrics and types of errors, section [3](#org1bc07f3) present some techniques for
-mitigating single events at the circuit level, section [4](#org171a183) refers to
-software-based approaches for single event mitigation. Finally, section [5](#orgd3c5609)
+with fault metrics and types of errors, section [3](#org808d52e) present some techniques for
+mitigating single events at the circuit level, section [4](#org3b8d425) refers to
+software-based approaches for single event mitigation. Finally, section [5](#orga6e33a2)
 provides final conclusions.
 
 
 ## Background {#background}
 
-<a id="orgbb507d7"></a>
+<a id="orge734cd8"></a>
 With the decrease of dimension size of transistors, wires, and smaller chips,
 the tendency to transient and permanent faults are much higher, as the dimension
 of the chip may impact the temperature directly. Given Moore's law increase the
@@ -136,7 +136,7 @@ number of transistors per chip, more opportunities arise for faults in the field
 of application and manufacturing. The complexity of processor design increases
 the likelihood of design bugs during production, which may bring permanent
 faults to the processor during execution time
-([Sorin 2009](#org5b2935a)). This section overviews the
+<Sorin2009FaultTolerantComputerArchitecture>. This section overviews the
 types of SEE and how they arise during the life-type of a system.
 
 
@@ -149,11 +149,11 @@ be collected in the device's electrodes. The ion produces an electric pulse that
 may appear to the device as if it should respond and eventually causing a
 failure. High energy protons can also be a cause of failure, as a proton may
 have a nuclear reaction in the silicon device
-([Petersen, n.d.](#orgb68793e)).
+<Petersen2011SingleEventEfefctsInAerospace>.
 
 SEE has a variety of possible effects, each of which is important, as they cause
 malfunctioning of devices in space ionizing radiation environment
-([Petersen, n.d.](#orgb68793e)). These SEE is illustrated in
+<Petersen2011SingleEventEfefctsInAerospace>. These SEE is illustrated in
 Table [1](#table--table:types-of-see) with their respective description.
 
 <a id="table--table:types-of-see"></a>
@@ -177,7 +177,7 @@ Table [1](#table--table:types-of-see) with their respective description.
 
 Fault tolerance solution requires experiments to test a hypothesis or compare
 with previous works and knowing which errors may apply within the system.
-([Sorin 2009](#org5b2935a)) covers several important metrics
+<Sorin2009FaultTolerantComputerArchitecture> covers several important metrics
 on fault tolerance systems, those including (i) the availability of the system,
 by verifying the system is functioning correctly at a specific time; and (ii)
 reliability, is the probability that the system has been functioning correctly
@@ -191,25 +191,25 @@ fault tolerance since the processor cannot tolerate a problem it is not aware
 of. Redundancy is fundamental to error detection, as it helps the processor
 detect when a given error occurs. There are three classes of redundancy,
 spatial, temporal and information redundancy
-([Sorin 2009](#org5b2935a)).
+<Sorin2009FaultTolerantComputerArchitecture>.
 
 Spatial redundancy adds redundant hardware to the system. The DMR is a simple
 form of spatial redundancy, which provides error detection by using a voter
 system, which then receives the output of all modules and checks for any error
-([Sorin 2009](#org5b2935a)).
+<Sorin2009FaultTolerantComputerArchitecture>.
 
 Temporal redundancy may perform redundant operations, by requiring a unit to
 operate twice and finally compare the results. Temporal redundancy doubles the
 amount of time for each operation. However, in comparison to Spatial redundancy,
 there is no extra hardware or power cost involved. For reducing performance
 cost, some schemes may use pipelining to hide the latency of a redundant
-operation ([Sorin 2009](#org5b2935a)).
+operation <Sorin2009FaultTolerantComputerArchitecture>.
 
 Finally, information redundancy detects when a datum has been affected by adding
 bits to it. Schemes such as EDC can be used for such redundancy, for example, by
 adding a parity bit to a data word and convert into a codeword. The parity
 scheme is popular, due to its simplicity and inexpensive implementation
-([Sorin 2009](#org5b2935a)).
+<Sorin2009FaultTolerantComputerArchitecture>.
 
 
 ### Error recovery {#error-recovery}
@@ -217,30 +217,30 @@ scheme is popular, due to its simplicity and inexpensive implementation
 Error detection is enough for providing safety to the system, but not recovering
 from the error. By recovering from the error, it hides the effect of the error
 from the end-user and allows the system to resume operation
-([Sorin 2009](#org5b2935a)). Two primary approaches to error
+<Sorin2009FaultTolerantComputerArchitecture>. Two primary approaches to error
 recovering is FER and BER.
 
 FER corrects the error without having to revert to a previous state. FER can be
 implemented through physical, temporal, and information means of redundancy. In
 fer, if a specific amount of redundancy is required to determine if an error has
 occurred, then additional redundancy is required to correct the error
-([Sorin 2009](#org5b2935a)).
+<Sorin2009FaultTolerantComputerArchitecture>.
 
 BER restores the state of the system to a previously known good state, known as
 recovery point on single-core systems and recovery-line on multi-core systems.
 The system architect should think through what state it should be saved for
 recovery, where and when to deallocate, the algorithm, and what to do after the
-system has been restored ([Sorin 2009](#org5b2935a)).
+system has been restored <Sorin2009FaultTolerantComputerArchitecture>.
 
 
 ## Hardware Mitigation {#hardware-mitigation}
 
-<a id="org1bc07f3"></a>
+<a id="org808d52e"></a>
 
 
 ### Soft errors {#soft-errors}
 
-([Reis et al. 2020](#org07f33e3)) explores four single transient mitigation
+<reis2020CircutLevelDesignmethods> explores four single transient mitigation
 by evaluating four techniques that can be applied at the circuit level. These
 techniques are covered in the next sub-sections.
 
@@ -250,7 +250,7 @@ techniques are covered in the next sub-sections.
 In high noise applications, the st works as a replacement for the internal
 inverter of a circuit. The st has a higher dependency over a source-gate voltage
 of its P1 and N1 transistors, resulting in an enhanced robustness over a VTC
-deviation ([Reis et al. 2020](#org07f33e3)).
+deviation <reis2020CircutLevelDesignmethods>.
 
 
 #### Decoupling Cells {#decoupling-cells}
@@ -259,7 +259,7 @@ By connecting capacity elements to the most exposed nodes, one can mitigate
 transient effects. The use of decoupling cells increases the total capacity in
 the output of a node of the NAND2 gate, resulting in a decrease of critical
 charge required to produce a single transient pulse, which by effect improves
-signal degradation ([Reis et al. 2020](#org07f33e3)).
+signal degradation <reis2020CircutLevelDesignmethods>.
 
 
 #### Sleep Transistors {#sleep-transistors}
@@ -270,7 +270,7 @@ consumption. Sleep transistors act as a supply-voltage regulator. When a sleep
 transistor is in active mode, it improves the process variability of a typical
 logic gate connection to the ground rail by acting as a voltage regulator. While
 in standby, the sleep transistor disconnects the virtual ground from the
-physical ground ([Reis et al. 2020](#org07f33e3)).
+physical ground <reis2020CircutLevelDesignmethods>.
 
 
 #### Transistor Reordering {#transistor-reordering}
@@ -282,19 +282,19 @@ transistor reordering swaps the electrical and physical characteristics of the
 logic cells, resulting in susceptibility to soft errors. The robustness of
 complex gates where can be improved up to 8% by using this approach and can be
 favorable to improve single effect stability of circuits without including area
-penalty in complex gates ([Reis et al. 2020](#org07f33e3)).
+penalty in complex gates <reis2020CircutLevelDesignmethods>.
 
 
 ## Software Mitigation {#software-mitigation}
 
-<a id="org171a183"></a>
+<a id="org3b8d425"></a>
 Software approaches can also be used for hardware errors. The primary interest
 of using a software redundancy is that it brings no hardware cost and requires
 no hardware modification. The software approach may provide good coverage of
 possible errors and can be easily tested comparing to hardware approaches. The
 cost of software redundancy may be significant, as performance may be lost
 depending on the core model and software workload, as instruction duplication
-requires more processing ([Sorin 2009](#org5b2935a)). The
+requires more processing <Sorin2009FaultTolerantComputerArchitecture>. The
 following presents some solutions for software-based mitigation
 
 
@@ -310,12 +310,12 @@ such as SWIFT, VAR3+, CDB, and SEDSR.
 
 EDDI consists of inserting redundant instructions and instructions that also
 compares the results produced by the original instruction and the redundant
-instructions ([Sorin 2009](#org5b2935a)). The SWIFT scheme
-by ([Reis et al. 2005](#org5b36822))} improved upon EDDI by combining with the control
+instructions <Sorin2009FaultTolerantComputerArchitecture>. The SWIFT scheme
+by <reis2005SwitfSoftware>} improved upon EDDI by combining with the control
 flow checking and optimizing the performance by reducing the number of
 comparison instructions.
 
-([James et al. 2019](#orgdb27f2c)) provides a tool named coast, which provides an automated
+<james2019applying> provides a tool named coast, which provides an automated
 compiler modification of software to insert a dual- or triple-modular
 redundancy. The approach adds data flow protection to user-provided programs. By
 default, the tool replicates all compute operations and memory loads/stores.
@@ -333,7 +333,7 @@ increase in MWTF.
 EDDDDI is a full code duplication technique, where all instructions in a block
 are duplicated. Comparison instructions are placed after each original and
 duplicated instruction in each block to compare their results
-([Thati et al. 2018](#orgdf6f8d3)).
+<thati2018ComparisonOfDataFlowError>.
 
 
 #### Overhead reduction {#overhead-reduction}
@@ -341,7 +341,7 @@ duplicated instruction in each block to compare their results
 In a VAR3 technique, all instructions in a block, except for branch and store
 instructions are duplicated. The comparison instructions have to be placed
 before load, store, and branch instructions to compare the results
-([Thati et al. 2018](#orgdf6f8d3)).
+<thati2018ComparisonOfDataFlowError>.
 
 
 #### Critical block duplication {#critical-block-duplication}
@@ -349,19 +349,19 @@ before load, store, and branch instructions to compare the results
 In CBD technique, critical blocks have to be identified in the control flow
 graph. Any block which has the highest number of fan-outs in the control flow
 graph is considered a critical block. If any mismatch of results is detected, an
-error is reported ([Thati et al. 2018](#orgdf6f8d3)).
+error is reported <thati2018ComparisonOfDataFlowError>.
 
 
 ### Soft error detection using software redundancy {#soft-error-detection-using-software-redundancy}
 
 SEDSR in an extended version of DBD, however, comparison instructions have to be
 added after the original and duplicated instruction in each identified block for
-comparing results ([Thati et al. 2018](#orgdf6f8d3)).
+comparing results <thati2018ComparisonOfDataFlowError>.
 
 
 ## Conclusions {#conclusions}
 
-<a id="orgd3c5609"></a>
+<a id="orga6e33a2"></a>
 With the continuous trend of smaller chip sizes, the tendency of transient and
 permanent faults are much higher. This paper sought to characterize the types of
 SEE and how they affect a system according to the environment, and what metrics
@@ -376,22 +376,3 @@ alternative in comparison to hardware alternatives.
 ## Download {#download}
 
 Download the PDF version of this file [here](/files/Single_Event_Effect_Benjamin_Mezger_PGMICRO.pdf).
-
-
-## Bibliography {#bibliography}
-
-<a id="org7037b39"></a>Avizienis, A., J. -. Laprie, B. Randell, and C. Landwehr. 2004. “Basic Concepts and Taxonomy of Dependable and Secure Computing.” _IEEE Transactions on Dependable and Secure Computing_ 1 (1):11–33. <https://doi.org/10.1109/TDSC.2004.2>.
-
-<a id="org578de95"></a>Buchner, S. 2015. _Overview of Single Event Effects_. _Proc. 11th Int. School Effects Radiation Embedded Syst. Space Appl.(SERESSA)_.
-
-<a id="orgdb27f2c"></a>James, Benjamin, Heather Quinn, Michael Wirthlin, and Jeffrey Goeders. 2019. “Applying Compiler-Automated Software Fault Tolerance to Multiple Processor Platforms.” _IEEE Transactions on Nuclear Science_ 67 (1). IEEE:321–27.
-
-<a id="orgb68793e"></a>Petersen, Edward. n.d. _Single Event Effects in Aerospace / Edward Petersen._ _Single Event Effects in Aerospace_. Piscataway, N.J.? IEEE Press.
-
-<a id="org5b36822"></a>Reis, G. A., J. Chang, N. Vachharajani, R. Rangan, and D. I. August. 2005. “SWIFT: Software Implemented Fault Tolerance.” In _International Symposium on Code Generation and Optimization_, 243–54. <https://doi.org/10.1109/CGO.2005.34>.
-
-<a id="org07f33e3"></a>Reis, R., C. Meinhardt, A. L. Zimpeck, L. H. Brendler, and L. Moraes. 2020. “Circuit Level Design Methods to Mitigate Soft Errors.” In _2020 IEEE Latin-American Test Symposium (LATS)_, 1–3. <https://doi.org/10.1109/LATS49555.2020.9093683>.
-
-<a id="org5b2935a"></a>Sorin, Daniel J. 2009. _Fault Tolerant Computer Architecture_. Morgan and Claypool Publishers.
-
-<a id="orgdf6f8d3"></a>Thati, Venu Babu, Jens Vankeirsbilck, Niels Penneman, Davy Pissoort, and Jeroen Boydens. 2018. “CDFEDT: Comparison of Data Flow Error Detection Techniques in Embedded Systems: An Empirical Study.” In _Proceedings of the 13th International Conference on Availability, Reliability and Security_. ARES 2018. New York, NY, USA: Association for Computing Machinery. <https://doi.org/10.1145/3230833.3230854>.

@@ -1,7 +1,7 @@
 +++
 title = "Technical challenge checklist"
 author = ["Ben Mezger"]
-date = 2020-10-16T07:43:00-03:00
+date = 2020-10-16T07:43:00
 slug = "technical_challenge_checklist"
 tags = ["programming", "checklist"]
 type = "notes"

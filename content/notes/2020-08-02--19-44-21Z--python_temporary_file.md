@@ -1,7 +1,7 @@
 +++
 title = "Python temporary file"
 author = ["Ben Mezger"]
-date = 2020-08-02T16:44:00-03:00
+date = 2020-08-02T16:44:00
 slug = "python_temporary_file"
 tags = ["python", "programming", "libs"]
 type = "notes"
@@ -47,10 +47,10 @@ print(create_file().name)
 ```
 
 ```text
-<tempfile._TemporaryFileWrapper object at 0x10d173d30>
-/var/folders/gf/7vcrg3d57pn8j_30zvkz94x00000gn/T/tmphxf3mze8
-<tempfile._TemporaryFileWrapper object at 0x10d1b1130>
-/var/folders/gf/7vcrg3d57pn8j_30zvkz94x00000gn/T/tmpsz20r_u3
+<tempfile._TemporaryFileWrapper object at 0x1025b3d10>
+/var/folders/hx/ld063wqn10g7090nkfj7jkj80000gn/T/tmprjkyct75
+<tempfile._TemporaryFileWrapper object at 0x102510dd0>
+/var/folders/hx/ld063wqn10g7090nkfj7jkj80000gn/T/tmpbk2ciu6k
 ```
 
 [NamedTemporaryFile](https://docs.python.org/3/library/tempfile.html#tempfile.NamedTemporaryFile) returns a file-like object that can be used as a temporary
@@ -80,9 +80,9 @@ print(create_file(suffix=".csv", prefix="hello-world").name)
 ```
 
 ```text
-<tempfile._TemporaryFileWrapper object at 0x10df3d0a0>
-/var/folders/gf/7vcrg3d57pn8j_30zvkz94x00000gn/T/tmpfilei92azs5a.csv
-/var/folders/gf/7vcrg3d57pn8j_30zvkz94x00000gn/T/hello-worlduk8_07f5.csv
+<tempfile._TemporaryFileWrapper object at 0x104db3e10>
+/var/folders/hx/ld063wqn10g7090nkfj7jkj80000gn/T/tmpfile1ercgq16.csv
+/var/folders/hx/ld063wqn10g7090nkfj7jkj80000gn/T/hello-worldgm4b0uc_.csv
 ```
 
 With `TemporaryFile` it returns a `TextIOWrapper`:
@@ -104,6 +104,6 @@ print(create_file(suffix=".csv", prefix="hello-world").name)
 ```
 
 ```text
-<_io.TextIOWrapper name=6 mode='w' encoding='utf-8'>
-6
+<_io.TextIOWrapper name=3 mode='w' encoding='utf-8'>
+3
 ```

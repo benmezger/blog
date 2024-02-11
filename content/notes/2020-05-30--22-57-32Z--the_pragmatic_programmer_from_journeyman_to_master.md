@@ -1,9 +1,10 @@
 +++
 title = "The Pragmatic programmer: from journeyman to master"
 author = ["Ben Mezger"]
-date = 2020-05-30T19:57:00-03:00
+date = 2020-05-30T19:57:00
 slug = "the-pragmatic-programmer"
 tags = ["reading", "books"]
+categories = ["books"]
 type = "notes"
 draft = false
 bookCollapseSection = true
@@ -29,8 +30,8 @@ bookCollapseSection = true
 | **Total time**                    | **10:04** |
 | The Pragmatic Programmer: From... | 10:04     |
 
-:BOOK_CATEGORY: Computer science, software architecture, software engineering
-:BOOK_AUTHORS: Andy Hunt, David Thomas
-:START_DATE: <span class="timestamp-wrapper"><span class="timestamp">&lt;2020-05-25 Mon&gt;</span></span>
-:END_DATE: nil
+:BOOK\_CATEGORY: Computer science, software architecture, software engineering
+:BOOK\_AUTHORS: Andy Hunt, David Thomas
+:START\_DATE: <span class="timestamp-wrapper"><span class="timestamp">&lt;2020-05-25 Mon&gt;</span></span>
+:END\_DATE: nil
 :URL: <https://www.amazon.com/Pragmatic-Programmer-Journeyman-Master/dp/020161622X>

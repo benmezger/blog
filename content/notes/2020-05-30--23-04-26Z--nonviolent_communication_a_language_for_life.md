@@ -1,9 +1,10 @@
 +++
 title = "Nonviolent communication: A language for life"
 author = ["Ben Mezger"]
-date = 2020-05-30T20:04:00-03:00
+date = 2020-05-30T20:04:00
 slug = "non-violent-communication"
 tags = ["read", "books"]
+categories = ["books"]
 type = "notes"
 draft = false
 bookCollapseSection = true
@@ -31,8 +32,8 @@ bookCollapseSection = true
 
 CLOSED: <span class="timestamp-wrapper"><span class="timestamp">[2020-05-14 Thu 09:18]</span></span>
 
-:BOOK_CATEGORY: psychology
-:BOOK_AUTHORS: Marshall B. Rosenberg
-:START_DATE: <span class="timestamp-wrapper"><span class="timestamp">&lt;2020-04-14 Tue&gt;</span></span>
-:END_DATE: <span class="timestamp-wrapper"><span class="timestamp">&lt;2020-05-14 Thu&gt;</span></span>
+:BOOK\_CATEGORY: psychology
+:BOOK\_AUTHORS: Marshall B. Rosenberg
+:START\_DATE: <span class="timestamp-wrapper"><span class="timestamp">&lt;2020-04-14 Tue&gt;</span></span>
+:END\_DATE: <span class="timestamp-wrapper"><span class="timestamp">&lt;2020-05-14 Thu&gt;</span></span>
 :URL: <https://www.goodreads.com/book/show/560861.Non%5FViolent%5FCommunication>

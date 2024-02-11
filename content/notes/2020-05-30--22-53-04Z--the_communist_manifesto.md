@@ -1,9 +1,10 @@
 +++
 title = "The Communist Manifesto"
 author = ["Ben Mezger"]
-date = 2020-05-30T19:53:00-03:00
+date = 2020-05-30T19:53:00
 slug = "communist-manifesto"
 tags = ["books", "reading"]
+categories = ["books"]
 type = "notes"
 draft = false
 bookCollapseSection = true
@@ -25,8 +26,8 @@ tags
 | **Total time**          | **2:36** |
 | The Communist Manifesto | 2:36     |
 
-:BOOK_CATEGORY: politics
-:BOOK_AUTHORS: Karl Marx, Friedrich Engels
-:START_DATE: <span class="timestamp-wrapper"><span class="timestamp">&lt;2020-05-25 Mon&gt;</span></span>
-:END_DATE: nil
+:BOOK\_CATEGORY: politics
+:BOOK\_AUTHORS: Karl Marx, Friedrich Engels
+:START\_DATE: <span class="timestamp-wrapper"><span class="timestamp">&lt;2020-05-25 Mon&gt;</span></span>
+:END\_DATE: nil
 :URL: <https://www.amazon.com/Communist-Manifesto-Karl-Marx/dp/1508475660>

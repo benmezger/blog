@@ -1,7 +1,7 @@
 +++
 title = "Test driven development"
 author = ["Ben Mezger"]
-date = 2024-02-05T13:22:00+01:00
+date = 2024-02-05T13:22:00
 slug = "test_driven_development"
 tags = ["tdd"]
 type = "notes"

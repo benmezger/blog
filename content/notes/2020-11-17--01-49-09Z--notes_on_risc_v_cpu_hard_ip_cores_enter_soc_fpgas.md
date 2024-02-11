@@ -1,7 +1,7 @@
 +++
 title = "Notes on RISC-V CPU HARD IP Cores enter SoC FPGAs"
 author = ["Ben Mezger"]
-date = 2020-11-16T22:49:00-03:00
+date = 2020-11-16T22:49:00
 slug = "notes_on_risc_v_cpu_hard_ip_cores_enter_soc_fpgas"
 tags = ["riscv", "computer", "architecture"]
 type = "notes"

@@ -1,9 +1,10 @@
 +++
 title = "Data and Reality: A Timeless Perspective on Perceiving and Managing Information in Our Imprecise World"
 author = ["Ben Mezger"]
-date = 2020-07-13T07:28:00-03:00
+date = 2020-07-13T07:28:00
 slug = "data_and_reality_a_timeless_perspective_on_perceiving_and_managing_information_in_our_imprecise_world"
 tags = ["reading", "books", "database"]
+categories = ["books"]
 type = "notes"
 draft = false
 bookCollapseSection = true
@@ -28,8 +29,8 @@ bookCollapseSection = true
 | **Total time**                  | **1:01** |
 | Data and Reality: A Timeless... | 1:01     |
 
-:BOOK_CATEGORY: Database, software architecture, software engineering
-:BOOK_AUTHORS: William Kent
-:START_DATE:<span class="timestamp-wrapper"><span class="timestamp">&lt;2020-07-12 Sun&gt;</span></span>
-:END_DATE: nil
+:BOOK\_CATEGORY: Database, software architecture, software engineering
+:BOOK\_AUTHORS: William Kent
+:START\_DATE:<span class="timestamp-wrapper"><span class="timestamp">&lt;2020-07-12 Sun&gt;</span></span>
+:END\_DATE: nil
 :URL: <https://www.goodreads.com/book/show/19305264-data-and-reality>

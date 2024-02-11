@@ -1,7 +1,7 @@
 +++
 title = "Automating and testing dotfiles"
 author = ["Ben Mezger"]
-date = 2020-08-09T13:06:00-03:00
+date = 2020-08-09T13:06:00
 aliases = ["/posts/automating-and-testing-dotfiles/"]
 slug = "automating-and-testing-dotfiles"
 tags = ["dotfiles", "chezmoi", "testing"]
@@ -103,6 +103,12 @@ def osx_verify_hostname(hostname):
 
 osx_verify_copied_files()
 osx_verify_hostname("benmezger-ckl.local")
+```
+
+```text
+Checking if /Users/benmezger/.zshrc exists
+Checking if /Users/benmezger/.zshenv exists
+Verifying if hostname 'benmezger-ckl.local' is set
 ```
 
 

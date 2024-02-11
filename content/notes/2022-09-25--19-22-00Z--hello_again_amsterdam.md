@@ -1,7 +1,7 @@
 +++
 title = "Hello again, Amsterdam"
 author = ["Ben Mezger"]
-date = 2022-09-25T21:22:00+02:00
+date = 2022-09-25T21:22:00
 slug = "hello_again_amsterdam"
 tags = ["personal"]
 type = "notes"

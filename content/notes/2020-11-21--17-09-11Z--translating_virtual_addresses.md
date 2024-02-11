@@ -1,7 +1,7 @@
 +++
 title = "Translating Virtual addresses"
 author = ["Ben Mezger"]
-date = 2020-11-21T14:09:00-03:00
+date = 2020-11-21T14:09:00
 slug = "translating_virtual_addresses"
 tags = ["os", "architecture"]
 type = "notes"

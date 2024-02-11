@@ -1,9 +1,10 @@
 +++
 title = "Na batalha contra o coronavirus, faltam lideres a humanidade"
 author = ["Ben Mezger"]
-date = 2020-05-30T20:06:00-03:00
+date = 2020-05-30T20:06:00
 slug = "na-batalha-contra-o-coronavirus"
 tags = ["politics", "read", "books"]
+categories = ["books", "notes"]
 type = "notes"
 draft = false
 bookCollapseSection = true

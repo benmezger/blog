@@ -1,7 +1,7 @@
 +++
 title = "Go binary search tree"
 author = ["Ben Mezger"]
-date = 2020-09-07T18:52:00-03:00
+date = 2020-09-07T18:52:00
 slug = "go_binary_search_tree"
 tags = ["go", "algorithms", "programming"]
 type = "notes"

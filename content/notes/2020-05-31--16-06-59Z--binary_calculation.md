@@ -1,7 +1,7 @@
 +++
 title = "Binary calculation"
 author = ["Ben Mezger"]
-date = 2020-05-31T13:06:00-03:00
+date = 2020-05-31T13:06:00
 slug = "binary-calculation"
 tags = ["math", "cs"]
 type = "notes"

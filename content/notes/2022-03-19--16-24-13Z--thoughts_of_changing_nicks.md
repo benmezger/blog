@@ -1,7 +1,7 @@
 +++
 title = "Thoughts of changing nicks"
 author = ["Ben Mezger"]
-date = 2022-03-19T16:24:00+00:00
+date = 2022-03-19T16:24:00
 slug = "thoughts_of_changing_nicks"
 tags = ["me"]
 type = "notes"

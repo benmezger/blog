@@ -1,7 +1,7 @@
 +++
 title = "Using macros in Emacs"
 author = ["Ben Mezger"]
-date = 2020-07-29T08:51:00-03:00
+date = 2020-07-29T08:51:00
 slug = "using_macros_in_emacs"
 tags = ["emacs"]
 type = "notes"

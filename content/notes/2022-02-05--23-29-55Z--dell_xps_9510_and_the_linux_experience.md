@@ -1,7 +1,7 @@
 +++
 title = "Dell XPS 9510 and the linux experience"
 author = ["Ben Mezger"]
-date = 2022-02-06T00:29:00+01:00
+date = 2022-02-06T00:29:00
 slug = "dell_xps_9510_and_the_linux_experience"
 tags = ["linux"]
 type = "notes"

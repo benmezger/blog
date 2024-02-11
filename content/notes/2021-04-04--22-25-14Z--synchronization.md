@@ -1,7 +1,7 @@
 +++
 title = "Synchronization"
 author = ["Ben Mezger"]
-date = 2021-04-04T19:25:00-03:00
+date = 2021-04-04T19:25:00
 slug = "synchronization"
 tags = ["os", "osdev", "programming", "synchronization"]
 type = "notes"
@@ -18,7 +18,7 @@ bookCollapseSection = true
 
 ---
 
-Notes from the Little book of Semaphores ([Downey 2008](#org2f7a62c)).
+Notes from the Little book of Semaphores <LittleBookOfSemaphores>.
 
 
 ## Shared variables {#shared-variables}
@@ -84,8 +84,3 @@ a2 < b1_
 1.  _a1 < a2 < a1_ or _a1 < a2_
 2.  _b1 < a2 < b1_ or _b1 < a2_
 3.  Yes, _b1 < a2 < a1_
-
-
-## Bibliography {#bibliography}
-
-<a id="org2f7a62c"></a>Downey, Allen. 2008. _The Little Book of Semaphores_. Vol. 2. Green Tea Press. <https://github.com/AllenDowney/LittleBookOfSemaphores>.

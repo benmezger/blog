@@ -1,7 +1,7 @@
 +++
 title = "Emacs - Search and replacing versioned controled files"
 author = ["Ben Mezger"]
-date = 2020-09-26T01:53:00-03:00
+date = 2020-09-26T01:53:00
 slug = "emacs_search_and_replacing_versioned_controled_files"
 tags = ["emacs"]
 type = "notes"

@@ -1,7 +1,7 @@
 +++
 title = "Moving forward with suckless dwm"
 author = ["Ben Mezger"]
-date = 2022-08-07T21:50:00+02:00
+date = 2022-08-07T21:50:00
 slug = "moving_forward_with_suckless_dwm"
 tags = ["linux"]
 type = "notes"

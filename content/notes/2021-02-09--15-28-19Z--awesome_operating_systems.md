@@ -1,7 +1,7 @@
 +++
 title = "Awesome Operating Systems"
 author = ["Ben Mezger"]
-date = 2021-02-09T12:28:00-03:00
+date = 2021-02-09T12:28:00
 slug = "awesome_operating_systems"
 tags = ["os"]
 type = "notes"

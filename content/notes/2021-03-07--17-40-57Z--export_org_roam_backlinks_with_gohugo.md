@@ -1,7 +1,7 @@
 +++
 title = "Export org-roam backlinks with Gohugo"
 author = ["Ben Mezger"]
-date = 2021-03-07T14:40:00-03:00
+date = 2021-03-07T14:40:00
 slug = "export_org_roam_backlinks_with_gohugo"
 tags = ["emacs", "orgroam", "orgmode"]
 type = "notes"

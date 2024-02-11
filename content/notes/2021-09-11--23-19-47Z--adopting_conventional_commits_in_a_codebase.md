@@ -1,7 +1,7 @@
 +++
 title = "Adopting conventional commits in a codebase"
 author = ["Ben Mezger"]
-date = 2020-09-16T00:00:00-03:00
+date = 2020-09-16T00:00:00
 aliases = ["/posts/adopting-git-conventional-commits/"]
 slug = "adopting-git-conventional-commits"
 tags = ["git"]

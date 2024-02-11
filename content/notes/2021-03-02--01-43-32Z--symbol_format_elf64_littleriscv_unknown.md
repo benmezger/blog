@@ -1,7 +1,7 @@
 +++
 title = "Symbol format 'elf64-littleriscv' unknown"
 author = ["Ben Mezger"]
-date = 2021-03-01T22:43:00-03:00
+date = 2021-03-01T22:43:00
 slug = "symbol_format_elf64_littleriscv_unknown"
 tags = ["riscv", "compilers"]
 type = "notes"

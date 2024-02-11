@@ -1,7 +1,7 @@
 +++
 title = "Handling database migration with Pytest and SQLAlchemy"
 author = ["Ben Mezger"]
-date = 2021-09-24T21:01:00-03:00
+date = 2021-09-24T21:01:00
 slug = "handling_database_migration_with_pytest_and_sqlalchemy"
 tags = ["python", "testing", "programming"]
 type = "notes"
@@ -191,3 +191,17 @@ def test_create_users(db_session):
 
 ...
 ```
+
+
+## Update <span class="timestamp-wrapper"><span class="timestamp">&lt;2021-09-30 Thu&gt;</span></span> {#update}
+
+I forgot to mention that ideally, you would handle `TestingSessionLocal` as a
+normal SQLAlchemy's `Session` and have different application configurations when
+running tests. In Django, you could manage this as different settings:
+`app/settings.py` for production and `app/testing_settings.py`. The reason I
+needed to add this hacky part had to do with the codebase I was working on. The
+codebase was not structured with the unit test in consideration and was going
+through some major refactors to improve, so I initially had to hack a little bit
+to get things to work well at the beginning.
+
+Fortunately, the refactoring is going well, and we don't need this hack anymore.

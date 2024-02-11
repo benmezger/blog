@@ -1,7 +1,7 @@
 +++
 title = "Org-roam Firefox bookmark"
 author = ["Ben Mezger"]
-date = 2020-05-30T19:30:00-03:00
+date = 2020-05-30T19:30:00
 slug = "org-roam-firefox-bookmark"
 tags = ["emacs", "orgmode", "roam", "firefox"]
 type = "notes"

@@ -1,7 +1,7 @@
 +++
 title = "Git change commit author"
 author = ["Ben Mezger"]
-date = 2020-08-22T14:09:00-03:00
+date = 2020-08-22T14:09:00
 slug = "git_change_commit_author"
 tags = ["git"]
 type = "notes"
