@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-org_directory="$HOME/workspace/org/public/roam/"
+org_directory="$HOME/workspace/org/roam/"
 
 # Check if directory is provided
 if [ -z "$org_directory" ]; then
