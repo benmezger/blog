@@ -1,7 +1,7 @@
 +++
 title = "Symbol format 'elf64-littleriscv' unknown"
 author = ["Ben Mezger"]
-date = 2021-03-01T22:43:00
+date = 2021-03-01T22:43:00+01:00
 slug = "symbol_format_elf64_littleriscv_unknown"
 tags = ["riscv", "compilers"]
 type = "notes"
@@ -34,7 +34,7 @@ correct from the output)?
 ~~It seems that I **did not** configure RISC-V's toolchain with `=--enable-multilib`~~
 ~~flag. The following solved the issue:~~
 
-{{< details "RISC-V toolchain compilation flags" >}}
+{{% details "RISC-V toolchain compilation flags" %}}
 
 ```shell
 ./configure \
@@ -45,7 +45,7 @@ correct from the output)?
 make -j8
 ```
 
-{{</details >}}
+{{%/details %}}
 
 ~~One more hour wasted at compiling everything again.~~
 
@@ -64,4 +64,4 @@ Fun fact: The error message `I'm sorry, Dave, I can't do that.`, comes from a
 scene of A Space Odyssey (1968). It seems to have been [committed](https://sourceware.org/git/?p=binutils-gdb.git;a=blob;f=gdb/symfile.c;h=31aa1e22fc7fc07764d41b5bf6a3638fb89f6f07;hb=bd5635a1e2b38ee8432fcdaa6456079191375277#l577) in 28 March
 1991, by K. Richard Pixley.
 
-{{< youtube 97b6FfQbibM >}}
+{{% youtube 97b6FfQbibM %}}

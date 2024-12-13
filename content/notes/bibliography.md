@@ -1,7 +1,7 @@
 +++
 title = "Bibliography"
 author = ["Ben Mezger"]
-date = 2020-11-21T00:04:00-03:00
+date = 2020-11-21T00:04:00+01:00
 slug = "bibliography"
 tags = ["research", "bibliography"]
 type = "notes"
@@ -21,7 +21,7 @@ interesting to keep around my library.
 
 #### Modern Operating Systems {#modern-operating-systems}
 
-{{< details "Bibtex" >}}
+{{% details "Bibtex" %}}
 
 ```bibtex
 @book{tanenbaum2014ModenOS,
@@ -58,12 +58,12 @@ interesting to keep around my library.
 }
 ```
 
-{{< /details >}}
+{{% /details %}}
 
 
 #### Operating Systems: Internals and Design Principle {#operating-systems-internals-and-design-principle}
 
-{{< details "Bibtex" >}}
+{{% details "Bibtex" %}}
 
 ```bibtex
 @book{stallings2018OperatingSysInternalAndDesign,
@@ -82,12 +82,12 @@ interesting to keep around my library.
 }
 ```
 
-{{< /details >}}
+{{% /details %}}
 
 
 #### Operating Systems Design and Implementation (3rd Edition) {#operating-systems-design-and-implementation--3rd-edition}
 
-{{< details "Bibtex" >}}
+{{% details "Bibtex" %}}
 
 ```bibtex
 @book{tanenbaum2005OperatingSysImplementation,
@@ -100,7 +100,7 @@ interesting to keep around my library.
 }
 ```
 
-{{< /details >}}
+{{% /details %}}
 
 
 ### RTOS {#rtos}
@@ -108,7 +108,7 @@ interesting to keep around my library.
 
 #### Operating Systems for Low-End Devices in the Internet of Things: A Survey {#operating-systems-for-low-end-devices-in-the-internet-of-things-a-survey}
 
-{{< details "Bibtex" >}}
+{{% details "Bibtex" %}}
 
 ```bibtex
 @article{Hahm2015OSForLowEndDevice,
@@ -148,7 +148,7 @@ interesting to keep around my library.
 }
 ```
 
-{{< /details >}}
+{{% /details %}}
 
 
 ### Synchronization {#synchronization}
@@ -156,7 +156,7 @@ interesting to keep around my library.
 
 #### Little book of semaphores {#little-book-of-semaphores}
 
-{{< details "Bibtex" >}}
+{{% details "Bibtex" %}}
 
 ```bibtex
 @book{LittleBookOfSemaphores,
@@ -170,7 +170,7 @@ interesting to keep around my library.
 }
 ```
 
-{{< /details >}}
+{{% /details %}}
 
 
 ## Computer Architecture {#computer-architecture}
@@ -181,7 +181,7 @@ interesting to keep around my library.
 
 #### Redes-em-Chip: arquiteturas e modelos para avaliação de área e desempenho {#redes-em-chip-arquiteturas-e-modelos-para-avaliação-de-área-e-desempenho}
 
-{{< details "Bibtex" >}}
+{{% details "Bibtex" %}}
 
 ```bibtex
 @phdthesis{RedesEmChipArquiteturasEmodelosParaAvaliacaoDeAreaEdesempenho,
@@ -232,12 +232,12 @@ interesting to keep around my library.
 }
 ```
 
-{{< /details >}}
+{{% /details %}}
 
 
 #### Principles and Practices of Interconnection Network {#principles-and-practices-of-interconnection-network}
 
-{{< details "Bibtex" >}}
+{{% details "Bibtex" %}}
 
 ```bibtex
 @book{principelsAndPracticesOfInterconnectionNetworks,
@@ -370,7 +370,7 @@ interesting to keep around my library.
 }
 ```
 
-{{< /details >}}
+{{% /details %}}
 
 
 ### Fault tolerance {#fault-tolerance}
@@ -378,7 +378,7 @@ interesting to keep around my library.
 
 #### Fault Tolerant Computer Architecture (Synthesis Lectures on Computer Architecture) {#fault-tolerant-computer-architecture--synthesis-lectures-on-computer-architecture}
 
-{{< details "Bibtex" >}}
+{{% details "Bibtex" %}}
 
 ```bibtex
 @book{Sorin2009FaultTolerantComputerArchitecture,
@@ -406,12 +406,12 @@ interesting to keep around my library.
 }
 ```
 
-{{< /details >}}
+{{% /details %}}
 
 
 #### Single event effects in aerospace {#single-event-effects-in-aerospace}
 
-{{< details "Bibtex" >}}
+{{% details "Bibtex" %}}
 
 ```bibtex
 @book{Petersen2011SingleEventEfefctsInAerospace,
@@ -427,12 +427,12 @@ interesting to keep around my library.
 }
 ```
 
-{{< /details >}}
+{{% /details %}}
 
 
 #### Overview of single event effects {#overview-of-single-event-effects}
 
-{{< details "Bibtex" >}}
+{{% details "Bibtex" %}}
 
 ```bibtex
 @book{buchner2015overview,
@@ -445,12 +445,12 @@ interesting to keep around my library.
 }
 ```
 
-{{< /details >}}
+{{% /details %}}
 
 
 #### Draft - Single Event Effects Specification {#draft-single-event-effects-specification}
 
-{{< details "Bibtex" >}}
+{{% details "Bibtex" %}}
 
 ```bibtex
 @online{NASARadEff,
@@ -464,12 +464,12 @@ interesting to keep around my library.
 }
 ```
 
-{{< /details >}}
+{{% /details %}}
 
 
 #### Single event effects mitigation techniques report {#single-event-effects-mitigation-techniques-report}
 
-{{< details "Bibtex" >}}
+{{% details "Bibtex" %}}
 
 ```bibtex
 @article{mutuel2016single,
@@ -482,12 +482,12 @@ interesting to keep around my library.
 }
 ```
 
-{{< /details >}}
+{{% /details %}}
 
 
 #### Circuit Level Design Methods to Mitigate Soft Errors {#circuit-level-design-methods-to-mitigate-soft-errors}
 
-{{< details "Bibtex" >}}
+{{% details "Bibtex" %}}
 
 ```bibtex
 @inproceedings{reis2020CircutLevelDesignmethods,
@@ -501,12 +501,12 @@ interesting to keep around my library.
 }
 ```
 
-{{< /details >}}
+{{% /details %}}
 
 
 #### SWIFT: software implemented fault tolerance {#swift-software-implemented-fault-tolerance}
 
-{{< details "Bibtex" >}}
+{{% details "Bibtex" %}}
 
 ```bibtex
 @INPROCEEDINGS{reis2005SwitfSoftware,
@@ -521,12 +521,12 @@ interesting to keep around my library.
 }
 ```
 
-{{< /details >}}
+{{% /details %}}
 
 
 #### Applying Compiler-Automated Software Fault Tolerance to Multiple Processor Platforms {#applying-compiler-automated-software-fault-tolerance-to-multiple-processor-platforms}
 
-{{< details "Bibtex" >}}
+{{% details "Bibtex" %}}
 
 ```bibtex
 @article{james2019applying,
@@ -543,12 +543,12 @@ interesting to keep around my library.
 }
 ```
 
-{{< /details >}}
+{{% /details %}}
 
 
 #### CDFEDT: Comparison of Data Flow Error Detection Techniques in Embedded Systems: An Empirical Study {#cdfedt-comparison-of-data-flow-error-detection-techniques-in-embedded-systems-an-empirical-study}
 
-{{< details "Bibtex" >}}
+{{% details "Bibtex" %}}
 
 ```bibtex
 @inproceedings{thati2018ComparisonOfDataFlowError,
@@ -591,7 +591,7 @@ interesting to keep around my library.
 }
 ```
 
-{{< /details >}}
+{{% /details %}}
 
 
 ### Introductory {#introductory}
@@ -599,7 +599,7 @@ interesting to keep around my library.
 
 #### Structured Computer Organization (5th Edition) {#structured-computer-organization--5th-edition}
 
-{{< details "Bibtex" >}}
+{{% details "Bibtex" %}}
 
 ```bibtex
 @book{tanenbaum2005structuredorg,
@@ -612,12 +612,12 @@ interesting to keep around my library.
 }
 ```
 
-{{< /details >}}
+{{% /details %}}
 
 
 #### Computer Organization and Design, Fifth Edition: The Hardware/Software Interface {#computer-organization-and-design-fifth-edition-the-hardware-software-interface}
 
-{{< details "Bibtex" >}}
+{{% details "Bibtex" %}}
 
 ```bibtex
 @book{patterson2013ComputerOrg,
@@ -664,12 +664,12 @@ interesting to keep around my library.
 }
 ```
 
-{{< /details >}}
+{{% /details %}}
 
 
 #### Computer Organization and Architecture: Designing for Performance {#computer-organization-and-architecture-designing-for-performance}
 
-{{< details "Bibtex" >}}
+{{% details "Bibtex" %}}
 
 ```bibtex
 @book{stallings2009ComputerOrgPerf,
@@ -699,7 +699,7 @@ interesting to keep around my library.
 }
 ```
 
-{{< /details >}}
+{{% /details %}}
 
 
 ### RISC-V {#risc-v}
@@ -707,7 +707,7 @@ interesting to keep around my library.
 
 #### The RISC-V Instruction Set Manual Volume II: Privileged Architecture Version v.20190608 {#the-risc-v-instruction-set-manual-volume-ii-privileged-architecture-version-v-dot-20190608}
 
-{{< details "Bibtex" >}}
+{{% details "Bibtex" %}}
 
 ```bibtex
 @techreport{riscv2019PrivilegeArchitecture,
@@ -721,12 +721,12 @@ interesting to keep around my library.
 }
 ```
 
-{{< /details >}}
+{{% /details %}}
 
 
 #### The Case for RISC-V in Space {#the-case-for-risc-v-in-space}
 
-{{< details "Bibtex" >}}
+{{% details "Bibtex" %}}
 
 ```bibtex
 @inproceedings{ottavi2019TheCaseForRiscvInSpace,
@@ -764,12 +764,12 @@ interesting to keep around my library.
 }
 ```
 
-{{< /details >}}
+{{% /details %}}
 
 
 #### The RISC-V Reader: An Open Architecture Atlas {#the-risc-v-reader-an-open-architecture-atlas}
 
-{{< details "Bibtex" >}}
+{{% details "Bibtex" %}}
 
 ```bibtex
 @book{patterson2017RiscvAtlas,
@@ -823,12 +823,12 @@ interesting to keep around my library.
 }
 ```
 
-{{< /details >}}
+{{% /details %}}
 
 
 #### The RISC-V Instruction Set Manual (2014) {#the-risc-v-instruction-set-manual--2014}
 
-{{< details "Bibtex" >}}
+{{% details "Bibtex" %}}
 
 ```bibtex
 @misc{Waterman14therisc-v,
@@ -840,12 +840,12 @@ interesting to keep around my library.
 }
 ```
 
-{{< /details >}}
+{{% /details %}}
 
 
 #### Computer Organization and Design RISC-V Edition: The Hardware Software Interface {#computer-organization-and-design-risc-v-edition-the-hardware-software-interface}
 
-{{< details "Bibtex" >}}
+{{% details "Bibtex" %}}
 
 ```bibtex
 @book{patterson2017ComputerOrgRiscvEdition,
@@ -878,7 +878,7 @@ interesting to keep around my library.
 }
 ```
 
-{{< /details >}}
+{{% /details %}}
 
 
 ## Software Engineering {#software-engineering}
@@ -889,7 +889,7 @@ interesting to keep around my library.
 
 #### Modeling C-based embedded system using UML design {#modeling-c-based-embedded-system-using-uml-design}
 
-{{< details "Bibtex" >}}
+{{% details "Bibtex" %}}
 
 ```bibtex
 @inproceedings{wang2009modeling,
@@ -926,7 +926,7 @@ interesting to keep around my library.
 }
 ```
 
-{{< /details >}}
+{{% /details %}}
 
 
 ### Fault tolerant {#fault-tolerant}
@@ -934,7 +934,7 @@ interesting to keep around my library.
 
 #### Basic concepts and taxonomy of dependable and secure computing {#basic-concepts-and-taxonomy-of-dependable-and-secure-computing}
 
-{{< details "Bibtex" >}}
+{{% details "Bibtex" %}}
 
 ```bibtex
 @article{avizienis2004ConceptsOfSecureComputing,
@@ -982,12 +982,12 @@ interesting to keep around my library.
 }
 ```
 
-{{< /details >}}
+{{% /details %}}
 
 
 #### System structure for Software Fault Tolerance {#system-structure-for-software-fault-tolerance}
 
-{{< details "Bibtex" >}}
+{{% details "Bibtex" %}}
 
 ```bibtex
 @ARTICLE{RandellSysStructureForSoftwareFaultTolerance,
@@ -1012,7 +1012,7 @@ interesting to keep around my library.
 }
 ```
 
-{{< /details >}}
+{{% /details %}}
 
 
 ## Mathematics {#mathematics}
@@ -1023,7 +1023,7 @@ interesting to keep around my library.
 
 #### Bit Twiddling Hacks {#bit-twiddling-hacks}
 
-{{< details "Bibtex" >}}
+{{% details "Bibtex" %}}
 
 ```bibtex
 @misc{sean2005BitTwiddlingHacks,
@@ -1034,12 +1034,12 @@ interesting to keep around my library.
 }
 ```
 
-{{< /details >}}
+{{% /details %}}
 
 
 #### Binary number representation {#binary-number-representation}
 
-{{< details "Bibtex" >}}
+{{% details "Bibtex" %}}
 
 ```bibtex
 @misc{binaryNumberRepresentation,
@@ -1050,12 +1050,12 @@ interesting to keep around my library.
 }
 ```
 
-{{< /details >}}
+{{% /details %}}
 
 
 #### What are bitwise shift (bit-shift) operators and how do they work? {#what-are-bitwise-shift--bit-shift--operators-and-how-do-they-work}
 
-{{< details "Bibtex" >}}
+{{% details "Bibtex" %}}
 
 ```bibtex
 @misc{derekpark2008WhatAreBitwiseShift,
@@ -1071,4 +1071,187 @@ interesting to keep around my library.
 }
 ```
 
-{{< /details >}}
+{{% /details %}}
+
+
+## Database {#database}
+
+
+### SQL databases v. NoSQL databases {#sql-databases-v-dot-nosql-databases}
+
+{{% details "Bibtex" %}}
+
+```bibtex
+@article{stonerbraker2020SQLDatabasesvNoSQLDatabases,
+  author          = {Stonebraker, Michael},
+  title           = {SQL Databases v. NoSQL Databases},
+  year            = 2010,
+  issue_date      = {April 2010},
+  publisher       = {Association for Computing Machinery},
+  address         = {New York, NY, USA},
+  volume          = 53,
+  number          = 4,
+  issn            = {0001-0782},
+  url             = {https://doi.org/10.1145/1721654.1721659},
+  doi             = {10.1145/1721654.1721659},
+  abstract        = {The Communications Web site, http://cacm.acm.org, features
+                  more than a dozen bloggers in the BLOG@CACM community. In each
+                  issue of Communications, we'll publish excerpts from selected
+                  posts.twitterFollow us on Twitter at
+                  http://twitter.com/blogCACMMichael Stonebraker considers
+                  several performance arguments in favor of NoSQL
+                  databases---and finds them insufficient.},
+  journal         = {Commun. ACM},
+  month           = apr,
+  pages           = {10–11},
+  numpages        = 2
+}
+```
+
+{{% /details %}}
+
+
+## Algorithms {#algorithms}
+
+
+### Lock-Free Red-Black Trees Using CAS {#lock-free-red-black-trees-using-cas}
+
+{{% details "Bibtex" %}}
+
+```bibtex
+@inproceedings{Kim2011LockFreeRT,
+  title={Lock-Free Red-Black Trees Using CAS},
+  author={Jong Ho Kim and Helen Cameron and Peter C. J. Graham},
+  year={2011}
+}
+```
+
+{{% /details %}}
+
+
+### Parallel algorithms for red–black trees {#parallel-algorithms-for-red-black-trees}
+
+{{% details "Bibtex" %}}
+
+```bibtex
+@article{park2001ParallelAlgorithms,
+  title           = {Parallel algorithms for red–black trees},
+  journal         = {Theoretical Computer Science},
+  volume          = 262,
+  number          = 1,
+  pages           = {415-435},
+  year            = 2001,
+  issn            = {0304-3975},
+  doi             = {https://doi.org/10.1016/S0304-3975(00)00287-5},
+  url             = {https://www.sciencedirect.com/science/article/pii/S0304397500002875},
+  author          = {Heejin Park and Kunsoo Park},
+  keywords        = {Red–black trees, Balanced search trees, Parallel
+                  algorithms, Dictionary operations},
+  abstract        = {We present parallel algorithms for the following four
+                  operations on red–black trees: construction, search,
+                  insertion, and deletion. Our parallel algorithm for
+                  constructing a red–black tree from a sorted list of n items
+                  runs in O(1) time with n processors on the CRCW PRAM and runs
+                  in O(loglogn) time with n/loglogn processors on the EREW PRAM.
+                  Our construction algorithm does not require the assumptions
+                  that previous construction algorithms used. Each of our
+                  parallel algorithms for search, insertion, and deletion in
+                  red–black trees runs in O(logn+logk) time with k processors on
+                  the EREW PRAM, where k is the number of unsorted items to
+                  search for, insert, or delete and n is the number of nodes in
+                  a red–black tree.}
+}
+
+```
+
+{{% /details %}}
+
+
+### Introduction to algorithms {#introduction-to-algorithms}
+
+{{% details "Bibtex" %}}
+
+```bibtex
+@book{introToAlgorithms2009,
+  author          = {Cormen, Thomas H. and Leiserson, Charles E. and Rivest,
+                  Ronald L. and Stein, Clifford},
+  title           = {Introduction to Algorithms, Third Edition},
+  year            = 2009,
+  isbn            = 0262033844,
+  publisher       = {The MIT Press},
+  edition         = {3rd},
+  abstract        = {If you had to buy just one text on algorithms, Introduction
+                  to Algorithms is a magnificent choice. The book begins by
+                  considering the mathematical foundations of the analysis of
+                  algorithms and maintains this mathematical rigor throughout
+                  the work. The tools developed in these opening sections are
+                  then applied to sorting, data structures, graphs, and a
+                  variety of selected algorithms including computational
+                  geometry, string algorithms, parallel models of computation,
+                  fast Fourier transforms (FFTs), and more. This book's strength
+                  lies in its encyclopedic range, clear exposition, and powerful
+                  analysis. Pseudo-code explanation of the algorithms coupled
+                  with proof of their accuracy makes this book is a great
+                  resource on the basic tools used to analyze the performance of
+                  algorithms.}
+}
+```
+
+{{% /details %}}
+
+
+### Toward a Unique Representation for AVL and Red-Black Trees {#toward-a-unique-representation-for-avl-and-red-black-trees}
+
+{{% details "Bibtex" %}}
+
+```bibtex
+@article{BOUNIF2019,
+  title           = {{Toward a Unique Representation for AVL and Red-Black
+                  Trees}},
+  journal         = {{Computaci\~A\textthreesuperiorn y Sistemas}},
+  author          = {Bounif, Lynda AND Zegour, Djamel Eddine},
+  ISSN            = {1405-5546},
+  language        = {en},
+  URL             = {http://www.scielo.org.mx/scielo.php?script=sci_arttext&pid=S1405-55462019000200435&nrm=iso},
+  volume          = 23,
+  year            = 2019,
+  month           = 06,
+  pages           = {435 - 450},
+  publisher       = {scielomx},
+  crossref        = {10.13053/cys-23-2-2840},
+}
+```
+
+{{% /details %}}
+
+
+### Problemas Dinâmicos de Coleta e Entrega Com Janelas de Tempo {#problemas-dinâmicos-de-coleta-e-entrega-com-janelas-de-tempo}
+
+{{% details "Bibtex" %}}
+
+```bibtex
+@inproceedings{problemasDinamicosDeColetaEEntregaComJanelasDeTempo,
+  author          = {Eccel, Renan and Carlson, Rodrigo},
+  year            = 2019,
+  month           = 11,
+  title           = {PROBLEMAS DINÂMICOS DE COLETA E ENTREGA COM JANELAS DE
+                  TEMPO: ANÁLISE DAS INSTÂNCIAS DE BENCHMARK}
+}
+```
+
+{{% /details %}}
+
+
+### Concurrent, lock-free insertion in red-black trees {#concurrent-lock-free-insertion-in-red-black-trees}
+
+{{% details "Bibtex" %}}
+
+```bibtex
+@article{ma2004concurrent,
+  title           = {Concurrent, lock-free insertion in red-black trees},
+  author          = {Ma, Jianwen},
+  year            = 2004
+}
+```
+
+{{% /details %}}

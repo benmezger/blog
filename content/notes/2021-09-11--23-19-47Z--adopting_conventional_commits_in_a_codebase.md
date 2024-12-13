@@ -1,7 +1,7 @@
 +++
 title = "Adopting conventional commits in a codebase"
 author = ["Ben Mezger"]
-date = 2020-09-16T00:00:00
+date = 2020-09-16T00:00:00+02:00
 aliases = ["/posts/adopting-git-conventional-commits/"]
 slug = "adopting-git-conventional-commits"
 tags = ["git"]
@@ -58,7 +58,7 @@ cd02e93 * Feat: Add MMU Page table support
 
 You could parse these messages and generate a changelog like so:
 
-{{< details Changelog>}}
+{{% details Changelog%}}
 
 ```text
 # Change Log
@@ -84,7 +84,7 @@ You could parse these messages and generate a changelog like so:
 * Add MMU documentation
 ```
 
-{{< /details >}}
+{{% /details %}}
 
 The problem with this approach is that commits are generally too technical and
 software-development-focussed. Take the `fix` commit: "_take entries..._" as an
@@ -94,7 +94,7 @@ user's perspective, this means nothing.
 Changelogs should be written by a human and not by software. Take a look at this
 alternative changelog:
 
-{{< details Changelog>}}
+{{% details Changelog%}}
 
 ```text
 # Change Log
@@ -119,7 +119,7 @@ alternative changelog:
 * Add documentation related to the new MMU component
 ```
 
-{{</ details >}}
+{{%/ details %}}
 
 The previous example is more user-friendly. As a user, I am now aware that there
 were two main features: the kernel now displays heap information on boot, and

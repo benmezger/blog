@@ -16,9 +16,9 @@ bookCollapseSection = true
 
 ---
 
-{{< details TLDR >}}
+{{% details TLDR %}}
 Dynamically attach Jira attributes to commit body using git-hook. Check the project's [README](https://github.com/benmezger/gjira/).
-{{< /details >}}
+{{% /details %}}
 
 The place I work at requires Jira story ID and task ID attached to the commit
 body. Initially, I was attaching the ID to the commit body manually, by checking

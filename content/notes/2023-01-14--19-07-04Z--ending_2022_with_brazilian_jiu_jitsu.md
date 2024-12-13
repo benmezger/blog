@@ -1,7 +1,7 @@
 +++
 title = "Ending 2022 with Brazilian Jiu-Jitsu"
 author = ["Ben Mezger"]
-date = 2023-01-14T20:07:00
+date = 2023-01-14T20:07:00+01:00
 slug = "ending_2022_with_brazilian_jiu_jitsu"
 tags = ["sports"]
 type = "notes"
@@ -23,18 +23,18 @@ anxiety and learn a martial art.
 Until now, I have been enjoying my experience in BJJ and recovering every day
 from a new bruise.
 
-{{< columns >}}
+{{% columns %}}
 
 {{< figure src="/imgs/left-hand.png" caption="Figure 1: Left hand" >}}
 
 <--->
 
-<a id="orgc55a139"></a>
+<a id="org5d1ee38"></a>
 
 {{< figure src="/imgs/right-hand.png" caption="Figure 2: Right hand" >}}
 
-{{< /columns >}}
-{{< columns >}}
+{{% /columns %}}
+{{% columns %}}
 
 {{< figure src="/imgs/left-arm.png" caption="Figure 3: Left arm" >}}
 
@@ -46,4 +46,4 @@ from a new bruise.
 
 {{< figure src="/imgs/left-biceps.png" caption="Figure 5: Left biceps" >}}
 
-{{< /columns >}}
+{{% /columns %}}

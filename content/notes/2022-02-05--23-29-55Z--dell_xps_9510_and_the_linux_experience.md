@@ -9,10 +9,10 @@ draft = false
 bookCollapseSection = true
 +++
 
-{{< hint "danger" >}}
+{{% hint "danger" %}}
 ****I do not own this notebook anymore.****
 I recently sold this notebook, so I am unaware of any recent improvements/updates.
-{{< /hint >}}
+{{% /hint %}}
 
 I've recently decided to migrate back to Linux after some years of using a
 MacBook. I haven't distanced myself from Linux while using the Mac, as I
