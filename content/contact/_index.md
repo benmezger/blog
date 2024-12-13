@@ -2,7 +2,7 @@
 title = "Contact"
 author = ["Ben Mezger"]
 date = 2020-04-23T00:00:00+02:00
-lastmod = 2024-12-13T08:59:01+01:00
+lastmod = 2024-12-13T09:07:12+01:00
 draft = false
 bookToc = false
 bookComments = false
@@ -22,6 +22,7 @@ You can contact me at the following addresses/services.
 | irc.libera.chat     | seds                                                         |                                                               |
 | irc.oftc.net        | seds                                                         |                                                               |
 | keyoxide.org        | [benmezger](https://keyoxide.org/me@benmezger.nl)            | Online identity verification                                  |
+| keybase             | [seds](https://keybase.io/seds)                              |                                                               |
 
 My crypto addresses are:
 
