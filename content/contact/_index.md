@@ -2,7 +2,7 @@
 title = "Contact"
 author = ["Ben Mezger"]
 date = 2020-04-23T00:00:00+02:00
-lastmod = 2024-12-13T10:36:15+01:00
+lastmod = 2024-12-13T12:43:02+01:00
 draft = false
 bookToc = false
 bookComments = false
@@ -35,7 +35,7 @@ My crypto addresses are:
 
 My PGP public key:
 
-{{< details PGP >}}
+{{% details "PGP key" %}}
 
 ```text
 -----BEGIN PGP PUBLIC KEY BLOCK-----
@@ -198,4 +198,4 @@ fwwrZSGU1mZXvOic4G+FErMF8eDiXIzlczf1cuM+qbK29NEFxnPG/6Mm
 -----END PGP PUBLIC KEY BLOCK-----
 ```
 
-{{< /details >}}
+{{% /details %}}
