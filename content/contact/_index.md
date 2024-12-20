@@ -2,7 +2,7 @@
 title = "Contact"
 author = ["Ben Mezger"]
 date = 2020-04-23T00:00:00+02:00
-lastmod = 2024-12-13T12:43:02+01:00
+lastmod = 2024-12-21T00:20:00+01:00
 draft = false
 bookToc = false
 bookComments = false
@@ -26,12 +26,12 @@ You can contact me at the following addresses/services.
 
 My crypto addresses are:
 
-| Crypto       | Address                                                 |
-|--------------|---------------------------------------------------------|
-| Bitcoin      | 3M3F1ZViNW848rMN5eQqwi2uxUov5Sh15C                      |
-| Ethereum     | 0xA4667DEef1912cfcEE1a4C7155e8681AB1B0bc4a              |
-| Bitcoin Cash | 1FCVCkJ4aMjmxfWZfjtiWuZg61Vei31A3j                      |
-| XRP          | rw2ciyaNshpHe7bCHo4bRWq6pqqynnWKQg (_memo: 3512707241_) |
+| Crypto       | Address                                                     |
+|--------------|-------------------------------------------------------------|
+| Bitcoin      | `3M3F1ZViNW848rMN5eQqwi2uxUov5Sh15C`                        |
+| Ethereum     | `0xA4667DEef1912cfcEE1a4C7155e8681AB1B0bc4a`                |
+| Bitcoin Cash | `1FCVCkJ4aMjmxfWZfjtiWuZg61Vei31A3j`                        |
+| XRP          | `rw2ciyaNshpHe7bCHo4bRWq6pqqynnWKQg` (_memo:_ `3512707241`) |
 
 My PGP public key:
 
