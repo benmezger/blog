@@ -1,7 +1,7 @@
 +++
 title = "Automating and testing dotfiles"
 author = ["Ben Mezger"]
-date = 2020-08-09T13:06:00
+date = 2020-08-09T13:06:00+02:00
 aliases = ["/posts/automating-and-testing-dotfiles/"]
 slug = "automating-and-testing-dotfiles"
 tags = ["dotfiles", "chezmoi", "testing"]
@@ -18,6 +18,10 @@ to keep my system configuration in sync. This is how I do it.
     -   [Chezmoi and Emacs]({{<relref "2021-09-11--22-48-50Z--chezmoi_and_emacs.md#" >}})
 
 ---
+
+{{% hint "warning" %}}
+I no longer use this approach. See [My journey in managing dotfiles]({{<relref "2025-02-02--16-22-22Z--my_journey_in_managing_dotfiles.md#" >}})
+{{% /hint %}}
 
 I run multiple Archlinux machines at home and an OSX machine for work, so I need
 to keep my system configuration in sync. I have a lot of applications tinkered
@@ -106,9 +110,8 @@ osx_verify_hostname("benmezger-ckl.local")
 ```
 
 ```text
-Checking if /Users/benmezger/.zshrc exists
-Checking if /Users/benmezger/.zshenv exists
-Verifying if hostname 'benmezger-ckl.local' is set
+Checking if /home/seds/.zshrc exists
+Checking if /home/seds/.zshenv exists
 ```
 
 
