@@ -2,7 +2,7 @@
 title = "Contact"
 author = ["Ben Mezger"]
 date = 2020-04-23T00:00:00+02:00
-lastmod = 2025-01-25T01:26:05+01:00
+lastmod = 2025-02-16T16:14:22+01:00
 draft = false
 bookToc = false
 bookComments = false
@@ -199,3 +199,5 @@ fwwrZSGU1mZXvOic4G+FErMF8eDiXIzlczf1cuM+qbK29NEFxnPG/6Mm
 ```
 
 {{% /details %}}
+
+Alternatively, you can book a call with me [here](https://app.reclaim.ai/m/benmezger/book).
