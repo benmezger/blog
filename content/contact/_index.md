@@ -2,7 +2,7 @@
 title = "Contact"
 author = ["Ben Mezger"]
 date = 2020-04-23T00:00:00+02:00
-lastmod = 2025-02-16T16:14:22+01:00
+lastmod = 2025-03-15T02:26:50+01:00
 draft = false
 bookToc = false
 bookComments = false
@@ -201,3 +201,18 @@ fwwrZSGU1mZXvOic4G+FErMF8eDiXIzlczf1cuM+qbK29NEFxnPG/6Mm
 {{% /details %}}
 
 Alternatively, you can book a call with me [here](https://app.reclaim.ai/m/benmezger/book).
+
+<style>.org-center { margin-left: auto; margin-right: auto; text-align: center; }</style>
+
+<div class="org-center">
+  <div></div>
+
+<iframe
+    src="https://github.com/sponsors/benmezger/card"
+    title="Sponsor benmezger"
+    height="100"
+    width="600"
+    style="border: 0;">
+</iframe>
+
+</div>
