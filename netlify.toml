@@ -7,13 +7,6 @@ HUGO_VERSION = "v0.148.2"
 HUGO_ENV = "production"
 HUGO_ENABLEGITINFO = "true"
 
-[context.develop]
-command = "hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL"
-
-[context.develop.environment]
-HUGO_VERSION = "0.139.3"
-HUGO_ENABLEGITINFO = "true"
-
 [[redirects]]
   from = "/posts/*"
   to = "/notes/:splat"
