@@ -2,7 +2,7 @@
 title = "Ben Mezger"
 author = ["Ben Mezger"]
 date = 2020-04-23T00:00:00+02:00
-lastmod = 2025-07-15T20:42:02+02:00
+lastmod = 2025-08-15T21:22:55+02:00
 draft = false
 bookToc = false
 bookComments = false
@@ -10,15 +10,13 @@ bookComments = false
 
 `Hello world`,
 
-I am Benjamin Mezger, but at some point everyone started calling me Ben, so
-stick with what you prefer. I am one of the countless software engineers lost in
-a world of code and numbers. I enjoy designing software systems that meet
-business requirements and can be easily extended and maintained.
+I am Benjamin Mezger (or Ben), a software engineer based in Amsterdam with a
+Master&rsquo;s degree in Computer Science. I design software systems that meet
+business requirements and are robust and maintainable in the long term.
 
-I live in Amsterdam and I have a Master&rsquo;s degree in Applied Computing,
-emphasizing Fault Tolerant mitigation in space systems. My technical interests
-span across resilient system design, microservice architecture, distributed
-systems, observability, system tooling, programming languages and UNIX.
+My technical interests span across resilient system design, microservice
+architecture, distributed systems, observability, system tooling, programming
+languages and UNIX.
 
 I&rsquo;ve lived in different countries with different material conditions and
 cultures, which has broadened my perspective and helped me adapt quickly to
