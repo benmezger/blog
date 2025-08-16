@@ -1,0 +1,9 @@
+<div class="flex align-center justify-between">
+  <h3>{{ partial "docs/title" . }}</h3>
+
+  <label for="toc-control">
+    {{ if partial "docs/toc-show" . }}
+    <img src="{{ "svg/toc.svg" | relURL }}" class="book-icon" alt="Table of Contents" />
+    {{ end }}
+  </label>
+</div>
