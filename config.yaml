@@ -6,7 +6,7 @@ enableRobotsTXT: true
 disqusShortname: benmezger
 googleAnalytics: G-7VNN5HP47Z
 
-enableGitInfo: 1
+enableGitInfo: true
 enableEmoji: true
 
 # Needed for mermaid/katex shortcodes
@@ -31,8 +31,8 @@ params:
   BookServiceWorker: true
   BookToC: true
   BookSearch: true
-  BookRepo: https://github.com/benmezger/blog
-  BookEditPath: edit/main
+  BookLastChangeLink: 'https://github.com/benmezger/blog/commit/{{ .GitInfo.Hash }}'
+  BookEditLink: 'https://github.com/benmezger/blog/edit/main/{{ .Path }}'
   BookTheme: "dark"
   CommentTheme: "github-dark"
 
