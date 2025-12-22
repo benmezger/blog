@@ -39,7 +39,7 @@ like a map of where each functionality of these protocols lie.
     1.  **Application**: HTTP, HTTPS, FTP, gRPC, Websockets, etc.
     2.  **Presentation**: SSL/TLS, MIME, JPEG, GIF, etc.
     3.  **Session**: RPC, SCP, SOCKS,
-    4.  **Transport**: TPC/UDP, etc.
+    4.  **Transport**: TCP/UDP, etc.
     5.  **Network**: IPv4, IPv6, etc.
     6.  **Data link**: Point-to-Point Protocol, Mac Address
     7.  **Physical**: Wires, WiFi, Binary, etc.
@@ -62,7 +62,7 @@ Response: 7..1
 ### IPv4 (Internet Protocol Version 4) {#ipv4--internet-protocol-version-4}
 
 -   Oldest version and most used protocol
--   32-bit address format -- allows 4.3 bilion addresses of IPs
+-   32-bit address format -- allows 4.3 billion addresses of IPs
 -   Lack of IPv4 IPs available
 -   Private IP allocation
 -   NAT (Network Address Translation)
@@ -238,7 +238,7 @@ seds.nl.		120	IN	RRSIG	A 13 2 120 20251221151738 20251219131738 34505 seds.nl. H
     -   Discovery
     -   Offer
     -   Request
-    -   Acknowlegment
+    -   Acknowledgment
 
 {{< figure src="/imgs/dhcp.jpg" >}}
 
@@ -280,7 +280,7 @@ seds.nl.		120	IN	RRSIG	A 13 2 120 20251221151738 20251219131738 34505 seds.nl. H
 
 -   Started by Google
 -   New updates to the protocol
--   Sustituites TCP for UDP
+-   Substitutes TCP for UDP
 -   Latency, security and efficiency when transfering data
 -   Reduces latency and handshake
 -   Improves multiplexing
