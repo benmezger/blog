@@ -47,7 +47,7 @@ bookCollapseSection = true
 -   ACID
 -   Strong reference integrity
 -   Transaction model
--   Focusses on integrity and durability
+-   Focuses on integrity and durability
 -   Attributes that they can relate to each other (FKs, etc)
 -   Examples are:
     -   PostgreSQL
@@ -111,7 +111,7 @@ bookCollapseSection = true
 -   Data needs to be reconstructible
     -   Focuses on non-durable data
 -   Useful for data that doesn't change much, caching, etc
--   Trade-off of now having the most updated value
+-   Trade-off of not having the most updated value
 -   Important data is generally not stored in these databases
 -   Examples are:
     -   MemcachedDB
@@ -146,7 +146,7 @@ bookCollapseSection = true
 
 -   When discussing distributed systems, the choice of level of consistency of
     data is an important factor
--   Knowing when to choose eventual consistency of strong consistency can either
+-   Knowing when to choose eventual consistency or strong consistency can either
     elevate the scalability of the system, as well as generate scalability
     problems. Race-conditions problem, data loss, high-throughput reads/writes,
     data durability, etc.
@@ -195,7 +195,7 @@ bookCollapseSection = true
     -   Etc.
 
 
-## <span class="org-todo todo TODO">TODO</span> Data Models {#data-models}
+## Data Models {#data-models}
 
 
 ### Tuple (Row-Oriented) {#tuple--row-oriented}
@@ -206,18 +206,149 @@ bookCollapseSection = true
     -   Page size
 -   Low latency per row
 -   Groups attributes of the same entity physically in the same block
-
-
-### Column-Oriented {#column-oriented}
+-   We join different tables to query a particular data
 
 
 ### Documents {#documents}
 
+-   Flexible schemas
+-   Autonomous entities
+-   Not much rigid field verification
+-   JSON/BSON
+-   Inverted indexing
+-   Full-Text search
+-   Allows changing schema without complex migration
+-   No relationship such as Row-Oriented
+    -   Normally, the JSON contains all the needed data (i.e. single schema)
+-   Examples of usage is to represent a product catalog, log aggregation, etc.
+
+
+### Column-Oriented {#column-oriented}
+
+-   Contigous columns
+    -   Instead of being row (such as SQL), where the whole row is stored in a
+        block, Column-Oriented is the same, but columns. So instead of a row such as
+        `(Ben, 31, Amsterdam)` being sequentially stored, just the column is stored
+        near each other.
+-   Compression
+-   Analytics, Big Data, Data Warehouse
+-   Helps analyse a large amount of the same data, such as optimized queries on
+    top of the same attribute
+-   Heavy Scans of specific values
+-   Examples of such DB:
+    -   ClickHouse
+    -   Amazon Redshift
+    -   Google BigQuery
+    -   SnowFlake
+    -   MariaDB ColumnStore
+-   Row-Oriented is useful when we need to retrieve the whole entity,
+    and Column-Oriented is useful for when we need to perform analytical or math
+    operation on top of the same attribute (column), regardless of the amount of
+    rows we have.
+
+{{< figure src="/imgs/column-oriented-db.png" >}}
+
 
 ### Wide-Column {#wide-column}
+
+-   Family of column per row
+-   Flexible schema per row
+-   Each row can have its own set of columns
+-   Aggregated by family of column
+-   Efficient for data that varies
+-   Efficient for distributed data
+-   Eventual Consistency
+-   Supports atomicity and joins
+-   Examples:
+    -   Cassandra
+    -   ScyllaDB
+    -   HBase
+    -   DynamoDB
+    -   CosmosDB
 
 
 ### Key-Value {#key-value}
 
+-   Direct lookup
+-   Parity hashing
+-   Key (unique identifier)
+-   Value (unstructured)
+-   Strings, numbers, booleans, JSON and Blobs
+-   Easy to query and indexing
+-   Examples:
+    -   Redis
+    -   Memcached
+    -   Aerospike
+    -   Etcd
+    -   ZooKeeper
+
 
 ### Graphs {#graphs}
+
+-   Relationship of data is as important as the data itself
+-   Nodes (entity)
+-   Edges (relationship)
+-   Useful for recommendation feature
+-   Unstructured model
+-   Examples include:
+    -   Neo4j
+    -   CosmosDB
+    -   OrientDB
+    -   ArangoDB
+    -   Neptune
+
+
+## <span class="org-todo todo TODO">TODO</span> Indexing {#indexing}
+
+-   The way the DB engine manages the storage and the indexing of that data, it
+    impacts the performance
+-   Without indexing, even for a simple query, it would have to scan the whole
+    database to find that data
+-   Indexing is how the DB stores and queries the data
+-   Concepts of: Page Size, Column Index, LSM-Tree, B-Tree, Hashing, Inverted
+    Index
+
+
+### Page Size {#page-size}
+
+-   Organized blocks of fixed size (4kb, 8kb, etc) -- configurable
+    -   If we store data, that is indexed by the date, we store each row
+        sequentially in a page, until we reach that page limit, then we proceed to
+        another page
+    -   If we are indexing by date, these blocks will be stored near each other
+-   Block are rows (Tuple-Oriented) -- Generally SQL databases
+-   Large pages: reduces read I/O operations in large objects
+    -   If we have a large set of data, larger page sizes reduces the need of the
+        engine having to open and close different pages to read the data
+    -   Increase the cost of data transfer
+    -   Bad for simple queries, as we need to open a large page to query something
+        simple
+    -
+-   Smaller pages: Lower reads in irrelevant data on simple queries
+    -   Increases I/O operations
+    -   Minimizes opening large pages to query
+-   For example, if we need to aggregate a lot of data in a table, larger pages
+    might be better, if our data has smaller entities, straightforward queries,
+    smaller pages might be better
+-   Databases that uses page sizes are:
+    -   MySQL
+    -   PostgreSQL
+    -   Oracle databases
+    -   Apache Cassandra
+
+
+### Column-base Indexing {#column-base-indexing}
+
+-   Contigous segments of columns
+-   Each column is stored in a segment
+-   Compressed through a lookup table
+-   High performance for aggregation
+-   Reduces I/O with compression
+-   Searches for specific attributes
+-   Analytics workflow
+-   Data compression is more efficient when we have less data diversity
+-   Examples are:
+    -   Amazon Redshift
+    -   BigQuery
+    -   SnowFlake
+    -   DuckDB
