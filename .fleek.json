@@ -1,9 +1,0 @@
-{
-  "build": {
-    "image": "benmezger/blog",
-    "publicDir": "public",
-    "environment": {
-      "HUGO_CONF": "ipfs_config.yaml"
-    }
-  }
-}
