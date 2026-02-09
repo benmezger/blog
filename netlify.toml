@@ -13,6 +13,13 @@ HUGO_ENABLEGITINFO = "true"
   status = 301
   force = true
 
+[[redirects]]
+  from = "/notes/org_mode_cv_template"
+  to = "/notes/reproducible_orgmode_cv_template"
+  status = 301
+  force = true
+
+
 [[plugins]]
   package = "@netlify/plugin-lighthouse"
 

@@ -2,7 +2,7 @@
 title = "A reproducible Org-Mode CV template"
 author = ["Ben Mezger"]
 date = 2026-02-08T14:27:00+01:00
-slug = "org_mode_cv_template"
+slug = "reproducible_orgmode_cv_template"
 tags = ["org-mode", "cv", "template"]
 type = "notes"
 draft = false
