@@ -35,6 +35,7 @@ params:
   BookEditLink: 'https://github.com/benmezger/blog/edit/main/{{ .Path }}'
   BookTheme: "dark"
   CommentTheme: "github-dark"
+  BookIcon: "menu"
 
 menu:
   before:
