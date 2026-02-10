@@ -7,7 +7,7 @@
 
   <label for="toc-control">
     {{ if partial "docs/toc-show" . }}
-    <img src="{{ "icons/toc.svg" | relURL }}" class="book-icon" alt="Table of Contents" />
+    <img src="{{ partial "docs/icon" "toc" }}" class="book-icon" alt="{{ partial "docs/text/i18n" "Table of Contents" }}" />
     {{ end }}
   </label>
 </div>
