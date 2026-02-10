@@ -23,11 +23,10 @@ I’ve reached a point where the [template](https://github.com/benmezger/orgmode
 publicly. Here is a PDF with generated placeholder data:
 
 <iframe
-    src="https://drive.google.com/viewerng/viewer?embedded=true&url=https://seds.nl/files/John_Doe_cv.pdf#toolbar=0&scrollbar=0"
-    frameBorder="0"
-    scrolling="auto"
-    height="100%"
-    width="100%"
+  src="https://seds.nl/files/John_Doe_cv.pdf"
+  width="100%"
+  height="600px"
+  style="border: none;"
 ></iframe>
 
 Back in time, I hired a service to help me design and prepare my CV to make it
