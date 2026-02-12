@@ -22,12 +22,7 @@ For several years, I’ve been using org-mode to keep my CV up to date. I think
 I’ve reached a point where the [template](https://github.com/benmezger/orgmode-cv.git) is good enough to be worth sharing
 publicly. Here is a PDF with generated placeholder data:
 
-<iframe
-  src="https://seds.nl/files/John_Doe_cv.pdf"
-  width="100%"
-  height="600px"
-  style="border: none;"
-></iframe>
+{{% pdf src="/files/John_Doe_cv.pdf" %}}
 
 Back in time, I hired a service to help me design and prepare my CV to make it
 look better and more professional. Engineers are bad at writing CVs that are
