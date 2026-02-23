@@ -12,14 +12,20 @@ bookCollapseSection = true
 {{% hint "info" %}}
 _I spent the weekend improving my Org-mode/LaTeX CV template and decided it was_
 _worth sharing publicly. Its modular, searchable, and designed for_
-_reproducibility. I’ve made it easy to maintain and updated the structure to be_
+_reproducibility. I've made it easy to maintain and updated the structure to be_
 _as ATS-friendly as possible._
+{{% /hint %}}
+
+{{% hint "caution" %}}
+_I used AI to help document this. I tend to spend more time building than
+writing about what I built, so it was useful to have something that could map
+the full picture._
 {{% /hint %}}
 
 ---
 
-For several years, I’ve been using org-mode to keep my CV up to date. I think
-I’ve reached a point where the [template](https://github.com/benmezger/orgmode-cv.git) is good enough to be worth sharing
+For several years, I've been using org-mode to keep my CV up to date. I think
+I've reached a point where the [template](https://github.com/benmezger/orgmode-cv.git) is good enough to be worth sharing
 publicly. Here is a PDF with generated placeholder data:
 
 {{% pdf src="/files/John_Doe_cv.pdf" %}}
@@ -46,18 +52,19 @@ content, while `cv.org` holds the content specific to that CV.
 cv/
 ├── basecv.org         # Base template: macros, shared content
 ├── cv.org             # CV variant
+├── cv-export-init.el  # Export logic: LaTeX class, filters, headline handler
 ├── custom.cls         # LaTeX class
-└── .dir-locals.el     # Emacs glue: export filters & headline handlers
+└── .dir-locals.el     # Emacs glue: loads cv-export-init.el, auto-export hooks
 ```
 
 Furthermore, I designed the LaTeX template to be as machine-readable as possible
-so ATS can read without much hiccups. The PDF generation is fully reproducible;
+so ATS can read without much hiccups. The PDF generation is fully reproducible,
 if the content remains unchanged, the build process will yield an identical
 file. Consequently, there is no need to commit a new PDF if no content updates
 have been made.
 
 To get started with this template, begin by editing `cv.org`. As you progress,
-you will eventually need to update `setup.org` as well.
+you will eventually need to update `basecv.org` as well.
 
 
 ## How Files Connect {#how-files-connect}
@@ -71,8 +78,9 @@ Each CV variant inherits from `basecv.org` using the `#+SETUPFILE` directive:
 #+SETUPFILE: basecv.org
 ```
 
-This pulls in the latex class declaration and macros like `{{{introduction}}}`,
-`{{{position(...)}}}`, and `{{{strengths(...)}}}`.
+This pulls in the LaTeX class declaration, the `#+SUMMARY:` keyword, and the
+`{{{new-page}}}` macro. Properties, not macros, drive all structural LaTeX
+output (see [Key Properties](#key-properties)).
 
 
 ### Shared sections {#shared-sections}
@@ -91,25 +99,26 @@ them across multiple CV variants.
 
 ### The `.dir-locals.el` {#the-dot-dir-locals-dot-el}
 
-This is where the magic happens. The `.dir-locals.el` file configures Emacs to
-handle the custom export process.
+The `.dir-locals.el` is intentionally thin. Its sole job is to load
+`cv-export-init.el` (for both interactive and async export), register the
+`benmezger/cv-export-pdfs` interactive command, and set up auto-export hooks.
+
+Saving `cv.org` or `basecv.org` triggers an automatic async PDF export. Saving
+`custom.cls` does the same via a `latex-mode` hook.
 
 
-#### Adding Custom Export Keywords {#adding-custom-export-keywords}
+### The `cv-export-init.el` {#the-cv-export-init-dot-el}
 
-```elisp
-(dolist (opt '((:tagline "TAGLINE" nil nil t)
-               (:summary "SUMMARY" nil nil t)))
-  (add-to-list 'org-export-options-alist opt))
-```
-
-This makes `#+TAGLINE:` and `#+SUMMARY:` valid file-level options that can be
-used in the org files.
+This file contains all export logic and is loaded by both the interactive Emacs
+session (via `.dir-locals.el`) and the async export subprocess. It registers the
+`custom` LaTeX class, defines the `#+TAGLINE:` and `#+SUMMARY:` file-level
+keywords, and installs the preamble filter and headline advice.
 
 
-#### Injecting Keywords into LaTeX Preamble {#injecting-keywords-into-latex-preamble}
+#### Injecting keywords into the LaTeX preamble {#injecting-keywords-into-the-latex-preamble}
 
-The `cv-latex-insert-preamble` filter converts org keywords to LaTeX commands:
+The `cv-latex-insert-preamble` filter converts org keywords to LaTeX commands
+inserted just before `\begin{document}`:
 
 ```org
 #+TAGLINE: Software Engineering - Clean Code
@@ -118,34 +127,43 @@ The `cv-latex-insert-preamble` filter converts org keywords to LaTeX commands:
 
 becomes:
 
+`\cvtagline` and `\cvsummary` store their values and `\introduction` (triggered by
+`:OPENER: t`) renders them both in the body (see below).
 
-#### Custom Headline Handler {#custom-headline-handler}
 
-The `cv-org-latex-headline` function reads org properties and transforms
-headlines into LaTeX commands:
+#### Custom headline handler {#custom-headline-handler}
 
-| Property           | LaTeX Output                               |
+The headline handler reads properties and emits the appropriate LaTeX,
+short-circuiting the default `\section{}` rendering where needed:
+
+| Property           | LaTeX output                               |
 |--------------------|--------------------------------------------|
-| `:POSITION:`       | `\position{Role}{COMPANY}{Location}{Date}` |
 | `:CV_LOCATION:`    | `\heading` + `\contactinfo{...}`           |
+| `:POSITION:`       | `\position{Role}{Company}{Location}{Date}` |
+| `:PRIOR_HEADING:`  | `\priorheading`                            |
+| `:HIGHLIGHT: t`    | Bold title with colon, inline format       |
 | `:PRIOR_POSITION:` | `\priorposition{...}`                      |
-| `:HIGHLIGHT: t`    | Bold title with colon format               |
+| `:OPENER: t`       | Prepends `\introduction` to section body   |
+
+Headlines matching none of the above fall through to the standard org-latex
+transcoder.
 
 
 ## Key Properties {#key-properties}
 
 
-### Contact Header {#contact-header}
+### Contact header {#contact-header}
 
-The header section in `basecv.org` uses properties to define contact information:
+The header section in `basecv.org` uses properties to define contact
+information, which `\contactinfo` renders as a two-column block:
 
 ```org
 * Header
 :PROPERTIES:
 :CUSTOM_ID: header
-:CV_LOCATION: Berlin, Germany
-:CV_PHONE: 0491701234567
-:CV_PHONE_DISPLAY: +49 170 1234567
+:CV_LOCATION: Amsterdam, Netherlands
+:CV_PHONE: 31612345678
+:CV_PHONE_DISPLAY: +31 6 12 345 678
 :CV_EMAIL: john.doe@example.com
 :CV_USERNAME: johndoe
 :CV_WEBSITE: https://johndoe.dev
@@ -153,7 +171,27 @@ The header section in `basecv.org` uses properties to define contact information
 ```
 
 
-### Job Positions {#job-positions}
+### Introduction opener {#introduction-opener}
+
+Set `:OPENER: t` on the introduction headline to automatically render the
+`\introduction` block (tagline + summary sentence) before the body text. No
+macro call needed:
+
+```org
+* Senior Software Engineer
+:PROPERTIES:
+:CUSTOM_ID: introduction
+:OPENER: t
+:END:
+
+*Software engineer* with over ten years of experience...
+```
+
+`\introduction` reads the `\cvtagline` and `\cvsummary` values stored by the
+preamble filter and renders them centered above the body paragraph.
+
+
+### Job positions {#job-positions}
 
 Each job entry uses properties to structure the position details:
 
@@ -178,20 +216,25 @@ This is defined in `custom.cls` as the `cvdescription` environment using
 `tcolorbox`.
 
 
-### Prior Positions {#prior-positions}
+### Prior positions {#prior-positions}
 
-Older positions use `:PRIOR_POSITION:` for more compact rendering:
+Older positions use `:PRIOR_POSITION:` for compact rendering with no
+description block. The enclosing heading uses `:PRIOR_HEADING: t` to emit the
+"Prior Engagement:" label:
 
 ```org
-** TECHSTART
+* Prior Engagement
 :PROPERTIES:
-:PRIOR_POSITION: Software Developer
-:LOCATION: Germany, Munich
-:DATE: Aug 2014 - June 2015
+:PRIOR_HEADING: t
+:END:
+
+** Coolblue
+:PROPERTIES:
+:PRIOR_POSITION: Junior Software Developer
+:LOCATION: Netherlands, Rotterdam
+:DATE: June 2012 - August 2013
 :END:
 ```
-
-In general, prior positions have no descriptions.
 
 
 ## Special Tags {#special-tags}
@@ -201,24 +244,69 @@ In general, prior positions have no descriptions.
 | `:ignore:`   | Export content but hide the headline (requires ox-extra) |
 | `:noexport:` | Skip entire section during export                        |
 
-The `:ignore:` tag is particularly useful for including content without the
-headline itself appearing in the output. This is enabled by `ox-extra`:
+The `:ignore:` tag is particularly useful for including shared sections without
+their headlines appearing in the output. It is enabled via `ox-extra` in
+`cv-export-init.el`.
 
-```elisp
-(require 'ox-extra)
-(ox-extras-activate '(ignore-headlines))
-```
+
+## The `custom.cls` {#the-custom-dot-cls}
+
+
+### Reproducible builds {#reproducible-builds}
+
+The class suppresses all date and toolchain metadata from the PDF (creation
+date, modification date, PTEX info, trailer ID, and compression) so that
+identical content always produces a bit-for-bit identical file. `hyperref` date
+fields are also cleared. This means the PDF can be committed to git and a diff
+will only show real content changes.
+
+
+### ATS readability {#ats-readability}
+
+The class enables glyph-to-unicode mapping so text copied from the PDF (by a
+human or an ATS parser) maps to proper Unicode characters.
+
+
+### Custom commands {#custom-commands}
+
+| Command                                        | Purpose                                       |
+|------------------------------------------------|-----------------------------------------------|
+| `\heading`                                     | Renders the large centered author name        |
+| `\contactinfo{loc}{ph}{phd}{email}{user}{web}` | Two-column contact block                      |
+| `\introduction`                                | Renders tagline + summary sentence            |
+| `\position{role}{co}{loc}{date}`               | Job position header row                       |
+| `\priorheading`                                | "Prior Engagement:" label row                 |
+| `\priorposition{role}{co}{loc}{date}`          | Compact prior position row                    |
+| `\lastupdate`                                  | "Last Updated on \today" (auto at end of doc) |
+
+`#+TITLE` is intentionally suppressed; it is only used for PDF metadata via
+`#+AUTHOR` and `hyperref`.
+
+
+### Environments {#environments}
+
+`cvdescription`
+: A full-width `tcolorbox` with a light gray background used
+    for role summary paragraphs.
+
+`strengthstable`
+: A `tabularx` wrapper pre-configured with three equal
+    columns for the strengths/skills snapshot table.
 
 
 ## The Export Flow {#the-export-flow}
 
 1.  Open `cv.org`
-2.  Emacs loads `.dir-locals.el`, activating all customizations
-3.  Export with `C-c C-e l p`:
+2.  Emacs loads `.dir-locals.el`, which loads `cv-export-init.el`, registering
+    the LaTeX class, export keywords, preamble filter, and headline advice
+3.  Export with `C-c C-e l p` (or save the file for auto-export):
     -   `#+INCLUDE` pulls shared content from `basecv.org`
-    -   Macros expand to LaTeX commands
-    -   Properties transform headlines into `\position{}` etc.
-    -   `custom.cls` styles everything
+    -   `#+TAGLINE:` / `#+SUMMARY:` are injected as `\cvtagline{}` / `\cvsummary{}`
+        before `\begin{document}`
+    -   Headlines with `:OPENER: t` have `\introduction` prepended to their body
+    -   Headlines with `:POSITION:`, `:PRIOR_POSITION:` etc. are rendered as the
+        corresponding LaTeX commands
+    -   `custom.cls` styles everything and appends `\lastupdate` automatically
 
 {{% hint "warning" %}}
 _Make sure you have `pdflatex` installed, along with the LaTeX dependencies._
