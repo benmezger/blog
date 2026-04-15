@@ -10,9 +10,9 @@ bookCollapseSection = true
 +++
 
 -   Related pages
-    -   [System Design - Network]({{<relref "2025-12-20--11-05-22Z--system_design_network.md#" >}})
-    -   [System Design - RAID and Storage]({{<relref "2025-12-20--14-59-27Z--system_design_raid_and_storage.md#" >}})
-    -   [System Design - CAP theorem, ACID, BASE and PACELC]({{<relref "2025-12-22--17-16-20Z--system_design_cap_theorem_acid_base_and_pacelc.md#" >}})
+    -   [System Design - Network]({{< relref "2025-12-20--11-05-22Z--system_design_network.md" >}})
+    -   [System Design - RAID and Storage]({{< relref "2025-12-20--14-59-27Z--system_design_raid_and_storage.md" >}})
+    -   [System Design - CAP theorem, ACID, BASE and PACELC]({{< relref "2025-12-22--17-16-20Z--system_design_cap_theorem_acid_base_and_pacelc.md" >}})
 
 ---
 
@@ -165,7 +165,7 @@ bookCollapseSection = true
 -   Write latency
 -   More reliability
 -   Atomicity and transactions
--   Consistent state -> consistent state
+-   Consistent state -&gt; consistent state
 -   Flow of synchronous commits
 -   Critical and atomic operations
 -   Examples of databases are:
@@ -298,7 +298,7 @@ bookCollapseSection = true
     -   Neptune
 
 
-## <span class="org-todo todo TODO">TODO</span> Indexing {#indexing}
+## <span class="org-todo done DONE">DONE</span> Indexing {#indexing}
 
 -   The way the DB engine manages the storage and the indexing of that data, it
     impacts the performance
@@ -352,3 +352,82 @@ bookCollapseSection = true
     -   BigQuery
     -   SnowFlake
     -   DuckDB
+
+
+### LSM-Trees (Log-Structured Merge-Tree) {#lsm-trees--log-structured-merge-tree}
+
+-   Optimized for intensive write operations
+-   Low latency of ack
+-   Memtable (RAM) -&gt; SSTables (Disk)
+-   Append-Only, Tomstones and compaction
+-   Sequential writes extremely fast -- Fire and Forget
+-   Generally no in-place update
+
+App makes a write request -&gt; MemTable -&gt; Flush to disk -&gt; SSTables
+
+Ideal for when you need to trace financial transactions, audit requirements,
+etc.
+
+Example are:
+
+-   Cassandra
+-   Apache HBase
+-   Victoria Metrics
+-   Elasticsearch
+
+**Eventual consistency**
+
+
+### B-Tree Indexing {#b-tree-indexing}
+
+-   Multi-Way balanced tree
+-   A node is stored in disk blocks
+-   Search, insertion and removal is of \\(O(\log\_n)\\)
+-   Standard in SQL databases
+-   Disk access is optimized through minimum depth
+-   Range queries
+-   System only loads the disk blocks (pages) necessariry to iterate from the root
+    node up until the key node
+-   Example DBs include PostgreSQL, SQL Server, MySQL, SQLite, etc.
+
+
+### Indexing through hashing {#indexing-through-hashing}
+
+-   Exact-matches
+-   Direct and instant search
+-   Coalition is handled through chaining
+-   Hash bucket (i.e. Hashtable)
+-   Ideal for exact keys
+-   Examples include: PostgreSQL, Redis, Memcached, ValKey, MySQL, etc.
+
+
+### Inverted indexes {#inverted-indexes}
+
+-   Standard tokens
+-   Full-text search
+-   Large-scale search of text types
+-   Allows searching for long text and values through simple terms
+-   Maps the term for the documents where they are located
+-   Examples include: ElasticSearch, MongoDB and Apache Lucene
+
+
+## Write-Intensive example {#write-intensive-example}
+
+Where there are more writes than read operation.
+
+-   We can use an append-only DB
+-   Asynchronous replication
+-   Eventual consistency
+-   LSM-Trees
+-   Write through memory
+-   Non-blocking disk
+
+
+## Read-Intensive example {#read-intensive-example}
+
+Where there are more read than write operation.
+
+-   Read replicas
+-   Cache layer
+-   CQRS for optimization
+-   Distributed read
