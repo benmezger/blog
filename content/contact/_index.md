@@ -2,7 +2,7 @@
 title = "Contact"
 author = ["Ben Mezger"]
 date = 2020-04-23T00:00:00+02:00
-lastmod = 2026-04-18T23:15:52+02:00
+lastmod = 2026-04-18T23:21:12+02:00
 draft = false
 bookToc = false
 bookComments = false
@@ -1044,6 +1044,6 @@ ZkfnLnxW5/fBycvuheTzyn+RPcs=
 -----END PGP PUBLIC KEY BLOCK-----
 ```
 
-{&lbrace;% /details %&rbrace;}
+{{% /details %}}
 
 Alternatively, you can book a call with me [here](https://calendar.app.google/CNfdPnY9nunkJL2K7).
