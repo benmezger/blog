@@ -1,7 +1,7 @@
 +++
 title = "Notes on RISC-V CPU HARD IP Cores enter SoC FPGAs"
 author = ["Ben Mezger"]
-date = 2020-11-16T22:49:00
+date = 2020-11-16T22:49:00+01:00
 slug = "notes_on_risc_v_cpu_hard_ip_cores_enter_soc_fpgas"
 tags = ["riscv", "computer", "architecture"]
 type = "notes"
@@ -10,9 +10,9 @@ bookCollapseSection = true
 +++
 
 -   Related pages
-    -   [RISCV]({{<relref "2020-05-31--15-37-29Z--riscv.md#" >}})
-    -   [Computer Architecture]({{<relref "2020-05-31--16-01-33Z--computer_architecture.md#" >}})
-    -   [RISC-V Instruction Format]({{<relref "2021-08-13--22-28-40Z--risc_v_instruction_format.md#" >}})
+    -   [RISCV]({{< relref "2020-05-31--15-37-29Z--riscv.md" >}})
+    -   [Computer Architecture]({{< relref "2020-05-31--16-01-33Z--computer_architecture.md" >}})
+    -   [RISC-V Instruction Format]({{< relref "2021-08-13--22-28-40Z--risc_v_instruction_format.md" >}})
 
 ---
 
@@ -25,7 +25,7 @@ Notes on [RISC-V CPU HARD IP Cores enter SoC FPGAs](https://ieeechicago.org/even
     innovation
 
 
-## PolarFire SoC - RISC-V enabled innocation platform {#polarfire-soc-risc-v-enabled-innocation-platform}
+## PolarFire SoC - RISC-V enabled innocation platform <span class="tag"><span class="ATTACH">ATTACH</span></span> {#polarfire-soc-risc-v-enabled-innocation-platform}
 
 -   Mixed critically RTOS + Linux support
 -   Defence grade security

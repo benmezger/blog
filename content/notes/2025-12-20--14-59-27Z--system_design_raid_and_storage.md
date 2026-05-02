@@ -10,7 +10,7 @@ bookCollapseSection = true
 +++
 
 -   Related pages
-    -   [System Design - Network]({{<relref "2025-12-20--11-05-22Z--system_design_network.md#" >}})
+    -   [System Design - Network]({{< relref "2025-12-20--11-05-22Z--system_design_network.md" >}})
 
 ---
 

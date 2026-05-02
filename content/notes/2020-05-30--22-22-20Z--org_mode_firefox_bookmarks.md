@@ -1,7 +1,7 @@
 +++
 title = "Org-mode Firefox bookmarks"
 author = ["Ben Mezger"]
-date = 2020-05-30T19:22:00
+date = 2020-05-30T19:22:00+02:00
 slug = "orgmode-firefox-bookmark"
 tags = ["emacs", "orgmode", "firefox"]
 type = "notes"
@@ -10,7 +10,7 @@ bookCollapseSection = true
 +++
 
 tags
-: [Org-mode]({{<relref "2020-06-04--11-35-15Z--org_mode.md#" >}}) [Emacs]({{<relref "2020-06-04--11-36-43Z--emacs.md#" >}})
+: [Org-mode]({{< relref "2020-06-04--11-35-15Z--org_mode.md" >}}) [Emacs]({{< relref "2020-06-04--11-36-43Z--emacs.md" >}})
 
 Add the following scripts to call org-capture from Firefox
 

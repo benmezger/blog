@@ -11,13 +11,15 @@ bookCollapseSection = true
 +++
 
 -   Related pages
-    -   [Git change commit author]({{<relref "2020-08-22--17-09-39Z--git_change_commit_author.md#" >}})
-    -   [Programming]({{<relref "2020-05-31--15-33-23Z--programming.md#" >}})
+    -   [Git change commit author]({{< relref "2020-08-22--17-09-39Z--git_change_commit_author.md" >}})
+    -   [Programming]({{< relref "2020-05-31--15-33-23Z--programming.md" >}})
 
 ---
 
 {{% details TLDR %}}
+
 Dynamically attach Jira attributes to commit body using git-hook. Check the project's [README](https://github.com/benmezger/gjira/).
+
 {{% /details %}}
 
 The place I work at requires Jira story ID and task ID attached to the commit

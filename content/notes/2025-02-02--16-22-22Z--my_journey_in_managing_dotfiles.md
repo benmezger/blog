@@ -10,9 +10,9 @@ bookCollapseSection = true
 +++
 
 -   Related pages
-    -   [Automating and testing dotfiles]({{<relref "2021-09-11--23-32-04Z--automating_and_testing_dotfiles.md#" >}})
-    -   [NixOS important commands]({{<relref "2025-02-02--12-08-34Z--nixos_important_commands.md#" >}})
-    -   [Chezmoi and Emacs]({{<relref "2021-09-11--22-48-50Z--chezmoi_and_emacs.md#" >}})
+    -   [Automating and testing dotfiles]({{< relref "2021-09-11--23-32-04Z--automating_and_testing_dotfiles.md" >}})
+    -   [NixOS important commands]({{< relref "2025-02-02--12-08-34Z--nixos_important_commands.md" >}})
+    -   [Chezmoi and Emacs]({{< relref "2021-09-11--22-48-50Z--chezmoi_and_emacs.md" >}})
 
 ---
 
@@ -105,8 +105,10 @@ Ansible configuration to make it work.
 -   Maintaining duplicate files with slight differences.
 
 {{% hint "info" %}}
+
 _At some point, I stopped distro-hopping and settled on Arch Linux and macOS_,
 _so the burden of updating my Bash scripts to different systems reduced._
+
 {{% /hint %}}
 
 
@@ -129,9 +131,11 @@ second repository. Additionally, testing and ensuring everything worked out of
 the box was time-consuming
 
 {{% hint "warning" %}}
+
 The issues I experienced with Arch Linux were not inherent to Arch itself but
 rather stemmed from the nature of a non-reproducible system. I would have faced
 these issues in any non-reproducible Linux distribution.
+
 {{% /hint %}}
 
 
@@ -147,8 +151,10 @@ applications, and easily recover from mistakes. I am sure once I have to do a
 reinstall, things will work exactly how it worked on my previous system.
 
 {{% hint "info" %}}
+
 I had easy access to recovery on Arch Linux using `btrfs` and snapshots, but
 that still required maintaining my Bash scripts to configure everything.
+
 {{% /hint %}}
 
 NixOS also made me realize I could configure parts of my system that I had never
@@ -190,7 +196,6 @@ closer.
 <style>.org-center { margin-left: auto; margin-right: auto; text-align: center; }</style>
 
 <div class="org-center">
-  <div></div>
 
 <div
     class="github-card"

@@ -10,8 +10,8 @@ bookCollapseSection = true
 +++
 
 -   Related pages
-    -   [System Design - RAID and Storage]({{<relref "2025-12-20--14-59-27Z--system_design_raid_and_storage.md#" >}})
-    -   [System Design - Network]({{<relref "2025-12-20--11-05-22Z--system_design_network.md#" >}})
+    -   [System Design - RAID and Storage]({{< relref "2025-12-20--14-59-27Z--system_design_raid_and_storage.md" >}})
+    -   [System Design - Network]({{< relref "2025-12-20--11-05-22Z--system_design_network.md" >}})
 
 ---
 

@@ -10,7 +10,7 @@ bookCollapseSection = true
 +++
 
 -   Related pages
-    -   [Software Engineering]({{<relref "2020-06-23--12-50-55Z--software_engineering.md#" >}})
+    -   [Software Engineering]({{< relref "2020-06-23--12-50-55Z--software_engineering.md" >}})
 
 ---
 
@@ -34,4 +34,4 @@ the task that the software system performs has grown dramatically, faster than
 hardware due to the fast-paced high technology development (Catelani et al.
 2011).
 
--- <Zhu2022SoftwareReliabilityModelingAndMethods>
+-- cite:Zhu2022SoftwareReliabilityModelingAndMethods

@@ -1,7 +1,7 @@
 +++
 title = "List Foreign key constrants defined in a database"
 author = ["Ben Mezger"]
-date = 2020-06-21T03:20:00
+date = 2020-06-21T03:20:00+02:00
 slug = "list_foreign_key_constrants_defined_in_a_database"
 tags = ["sql", "programming", "database"]
 type = "notes"
@@ -10,7 +10,7 @@ bookCollapseSection = true
 +++
 
 tags
-: [Programming]({{<relref "2020-05-31--15-33-23Z--programming.md#" >}}) [Code snippets]({{<relref "2020-05-31--17-28-55Z--code_snippets.md#" >}}) [Postgres]({{<relref "2020-06-21--06-22-46Z--postgres.md#" >}}) [Postgres]({{<relref "2020-06-21--06-22-46Z--postgres.md#" >}})
+: [Programming]({{< relref "2020-05-31--15-33-23Z--programming.md" >}}) [Code snippets]({{< relref "2020-05-31--17-28-55Z--code_snippets.md" >}}) [Postgres]({{< relref "2020-06-21--06-22-46Z--postgres.md" >}}) [Postgres]({{< relref "2020-06-21--06-22-46Z--postgres.md" >}})
 
 View foreign key constrants defined in all databases
 

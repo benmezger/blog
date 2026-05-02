@@ -10,7 +10,7 @@ bookCollapseSection = true
 +++
 
 -   Related pages
-    -   [Test driven development]({{<relref "2024-02-05--12-22-06Z--test_driven_development.md#" >}})
+    -   [Test driven development]({{< relref "2024-02-05--12-22-06Z--test_driven_development.md" >}})
 
 ---
 
@@ -49,4 +49,9 @@ def test_multiplication():
     d = Dollar(5)
     d.times(2)
     assert d.amount == 10
+```
+
+```text
+Running test_multiplication
+test_multiplication passed!
 ```

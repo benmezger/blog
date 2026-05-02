@@ -1,7 +1,7 @@
 +++
 title = "Notes on OS memory management"
 author = ["Ben Mezger"]
-date = 2020-11-27T22:08:00
+date = 2020-11-27T22:08:00+01:00
 slug = "notes_on_os_memory_management"
 tags = ["os", "mmu"]
 type = "notes"
@@ -10,8 +10,8 @@ bookCollapseSection = true
 +++
 
 -   Related pages
-    -   [Operating Systems]({{<relref "2020-05-31--15-29-38Z--operating_systems.md#" >}})
-    -   [Computer Science]({{<relref "2020-05-31--15-29-21Z--computer_science.md#" >}})
+    -   [Operating Systems]({{< relref "2020-05-31--15-29-38Z--operating_systems.md" >}})
+    -   [Computer Science]({{< relref "2020-05-31--15-29-21Z--computer_science.md" >}})
 
 ---
 

@@ -1,7 +1,7 @@
 +++
 title = "Git change commit author"
 author = ["Ben Mezger"]
-date = 2020-08-22T14:09:00
+date = 2020-08-22T14:09:00+02:00
 slug = "git_change_commit_author"
 tags = ["git"]
 type = "notes"
@@ -10,7 +10,7 @@ bookCollapseSection = true
 +++
 
 tags
-: [Programming]({{<relref "2020-05-31--15-33-23Z--programming.md#" >}}) [Software Engineering]({{<relref "2020-06-23--12-50-55Z--software_engineering.md#" >}})
+: [Programming]({{< relref "2020-05-31--15-33-23Z--programming.md" >}}) [Software Engineering]({{< relref "2020-06-23--12-50-55Z--software_engineering.md" >}})
 
 The following scripts changes all repository commits from an specific author to
 a new author. This is specially handy if you mess up your git config at

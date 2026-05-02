@@ -1,7 +1,7 @@
 +++
 title = "Information Theory"
 author = ["Ben Mezger"]
-date = 2020-05-30T16:14:00
+date = 2020-05-30T16:14:00+02:00
 slug = "information_theory"
 tags = ["computing", "theory", "information", "studies"]
 type = "notes"
@@ -10,8 +10,8 @@ bookCollapseSection = true
 +++
 
 -   Related pages
-    -   [Computer Science]({{<relref "2020-05-31--15-29-21Z--computer_science.md#" >}})
-    -   [Compiler]({{<relref "2020-05-31--16-03-15Z--compiler.md#" >}})
+    -   [Computer Science]({{< relref "2020-05-31--15-29-21Z--computer_science.md" >}})
+    -   [Compiler]({{< relref "2020-05-31--16-03-15Z--compiler.md" >}})
 
 ---
 
@@ -85,21 +85,21 @@ package main
 import "fmt"
 
 func alphabet(c chan string){
-	letters := "abcdefghijklmnopqrstunwxyz"
-	for _, l := range letters {
-		c <- string(l)
-	}
+        letters := "abcdefghijklmnopqrstunwxyz"
+        for _, l := range letters {
+                c <- string(l)
+        }
 
 }
 
 func main(){
-	fmt.Println("HERE")
-	letters := make(chan string, 26)
-	alphabet(letters)
+        fmt.Println("HERE")
+        letters := make(chan string, 26)
+        alphabet(letters)
 
-	for l := range(letters){
-		fmt.Println(l)
-	}
+        for l := range(letters){
+                fmt.Println(l)
+        }
 }
 
 ```

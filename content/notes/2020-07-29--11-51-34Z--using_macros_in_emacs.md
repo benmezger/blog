@@ -1,7 +1,7 @@
 +++
 title = "Using macros in Emacs"
 author = ["Ben Mezger"]
-date = 2020-07-29T08:51:00
+date = 2020-07-29T08:51:00+02:00
 slug = "using_macros_in_emacs"
 tags = ["emacs"]
 type = "notes"
@@ -10,7 +10,7 @@ bookCollapseSection = true
 +++
 
 -   Related pages
-    -   [Emacs]({{<relref "2020-06-04--11-36-43Z--emacs.md#" >}})
+    -   [Emacs]({{< relref "2020-06-04--11-36-43Z--emacs.md" >}})
 
 ---
 
@@ -55,5 +55,5 @@ keyboard macro to each of the lines of a region
 
 -   [EmacsWiki - Keyboard macros](https://www.emacswiki.org/emacs/KeyboardMacros)
 -   [elmacro - Shows keyboard macros or latest interactive commands as emacs lisp](https://github.com/Silex/elmacro)
--   [GNU Emacs - Keyboard Macros](https://www.gnu.org/software/emacs/manual/html%5Fnode/emacs/Keyboard-Macros.html)
+-   [GNU Emacs - Keyboard Macros](https://www.gnu.org/software/emacs/manual/html_node/emacs/Keyboard-Macros.html)
 -   [Emacs keyboard macros (info)](<(info "(emacs) Keyboard macros")>)

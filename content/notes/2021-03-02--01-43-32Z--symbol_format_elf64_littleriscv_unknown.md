@@ -10,7 +10,7 @@ bookCollapseSection = true
 +++
 
 tags
-: [RISCV]({{<relref "2020-05-31--15-37-29Z--riscv.md#" >}}) [Compiler]({{<relref "2020-05-31--16-03-15Z--compiler.md#" >}})
+: [RISCV]({{< relref "2020-05-31--15-37-29Z--riscv.md" >}}) [Compiler]({{< relref "2020-05-31--16-03-15Z--compiler.md" >}})
 
 After an hour of compiling RISC-V's [toolchain](https://github.com/riscv/riscv-gnu-toolchain), I ran `riscv64-unknown-elf-gdb`
 remotely against my Rust kernel running in Qemu. This happened.
@@ -38,10 +38,10 @@ correct from the output)?
 
 ```shell
 ./configure \
-	--prefix=$HOME/workspace/opt/riscv64 \
-	--with-arch=rv64imac \
-	--with-abi=lp64 \
-	--enable-multilib
+        --prefix=$HOME/workspace/opt/riscv64 \
+        --with-arch=rv64imac \
+        --with-abi=lp64 \
+        --enable-multilib
 make -j8
 ```
 
@@ -50,7 +50,7 @@ make -j8
 ~~One more hour wasted at compiling everything again.~~
 
 ~~❗ **️Update:** This didn't work. I ended up downloading RISC-V's OSX pre-compiled~~
-~~toolchain from their [website](https://static.dev.sifive.com/dev-tools/riscv64-unknown-elf-gcc-8.3.0-2020.04.0-x86%5F64-apple-darwin.tar.gz). I need to find free time to figure out what flag I~~
+~~toolchain from their [website](https://static.dev.sifive.com/dev-tools/riscv64-unknown-elf-gcc-8.3.0-2020.04.0-x86_64-apple-darwin.tar.gz). I need to find free time to figure out what flag I~~
 ~~am missing.~~
 
 ❗ **️Update:** This issue got addressed in [GDB's upstream](https://github.com/bminor/binutils-gdb/commit/b413232211bf7c7754095b017f27774d70646489), but for some reason

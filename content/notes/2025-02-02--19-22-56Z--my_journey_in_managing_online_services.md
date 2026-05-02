@@ -10,7 +10,7 @@ bookCollapseSection = true
 +++
 
 -   Related pages
-    -   [My journey in managing dotfiles]({{<relref "2025-02-02--16-22-22Z--my_journey_in_managing_dotfiles.md#" >}})
+    -   [My journey in managing dotfiles]({{< relref "2025-02-02--16-22-22Z--my_journey_in_managing_dotfiles.md" >}})
 
 ---
 

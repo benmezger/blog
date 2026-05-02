@@ -15,12 +15,14 @@ to keep my system configuration in sync. This is how I do it.
 +++
 
 -   Related pages
-    -   [Chezmoi and Emacs]({{<relref "2021-09-11--22-48-50Z--chezmoi_and_emacs.md#" >}})
+    -   [Chezmoi and Emacs]({{< relref "2021-09-11--22-48-50Z--chezmoi_and_emacs.md" >}})
 
 ---
 
 {{% hint "warning" %}}
-I no longer use this approach. See [My journey in managing dotfiles]({{<relref "2025-02-02--16-22-22Z--my_journey_in_managing_dotfiles.md#" >}})
+
+I no longer use this approach. See [My journey in managing dotfiles]({{< relref "2025-02-02--16-22-22Z--my_journey_in_managing_dotfiles.md" >}})
+
 {{% /hint %}}
 
 I run multiple Archlinux machines at home and an OSX machine for work, so I need
@@ -110,8 +112,9 @@ osx_verify_hostname("benmezger-ckl.local")
 ```
 
 ```text
-Checking if /home/seds/.zshrc exists
-Checking if /home/seds/.zshenv exists
+Checking if /Users/benmezger/.zshrc exists
+Checking if /Users/benmezger/.zshenv exists
+Verifying if hostname 'benmezger-ckl.local' is set
 ```
 
 
@@ -138,7 +141,6 @@ and you will know when something bad happened.
 <style>.org-center { margin-left: auto; margin-right: auto; text-align: center; }</style>
 
 <div class="org-center">
-  <div></div>
 
 <div
     class="github-card"

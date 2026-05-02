@@ -1,7 +1,7 @@
 +++
 title = "Org-roam Firefox bookmark"
 author = ["Ben Mezger"]
-date = 2020-05-30T19:30:00
+date = 2020-05-30T19:30:00+02:00
 slug = "org-roam-firefox-bookmark"
 tags = ["emacs", "orgmode", "roam", "firefox"]
 type = "notes"
@@ -10,10 +10,10 @@ bookCollapseSection = true
 +++
 
 tags
-: [Org-mode]({{<relref "2020-06-04--11-35-15Z--org_mode.md#" >}}) [Emacs]({{<relref "2020-06-04--11-36-43Z--emacs.md#" >}}) [Org-roam]({{<relref "2020-06-04--11-51-18Z--org_roam.md#" >}})
+: [Org-mode]({{< relref "2020-06-04--11-35-15Z--org_mode.md" >}}) [Emacs]({{< relref "2020-06-04--11-36-43Z--emacs.md" >}}) [Org-roam]({{< relref "2020-06-04--11-51-18Z--org_roam.md" >}})
 
 [Org-roam](https://www.orgroam.com/manual.html) has roam-protocol, which we can call throughout the system just like
-[Org-mode Firefox bookmarks]({{<relref "2020-05-30--22-22-20Z--org_mode_firefox_bookmarks.md#" >}}).
+[Org-mode Firefox bookmarks]({{< relref "2020-05-30--22-22-20Z--org_mode_firefox_bookmarks.md" >}}).
 
 `Org-roam` protocol supports specifying the roam template to use.
 Template is the `template` key for a template in org-roam-capture-ref-templates.
@@ -24,7 +24,7 @@ These templates should contain a `#+ROAM_KEY: ${ref}` in it.
 
 ## `Roam-ref` protocol {#roam-ref-protocol}
 
-Find and creates from with a specific ROAM\_KEY
+Find and creates from with a specific ROAM_KEY
 
 ```js
 javascript:location.href =

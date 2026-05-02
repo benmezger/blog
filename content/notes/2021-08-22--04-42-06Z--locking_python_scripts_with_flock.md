@@ -1,7 +1,7 @@
 +++
 title = "Locking Python scripts with flock"
 author = ["Ben Mezger"]
-date = 2021-08-22T01:42:00
+date = 2021-08-22T01:42:00+02:00
 aliases = ["/notes/locking_python_scripts_with_flock"]
 slug = "locking-python-scripts-with-flock"
 tags = ["python", "programming"]
@@ -11,9 +11,9 @@ bookCollapseSection = true
 +++
 
 -   Related pages
-    -   [Python]({{<relref "2020-05-31--16-04-33Z--python.md#" >}})
-    -   [Python temporary file]({{<relref "2020-08-02--19-44-21Z--python_temporary_file.md#" >}})
-    -   [Synchronization]({{<relref "2021-04-04--22-25-14Z--synchronization.md#" >}})
+    -   [Python]({{< relref "2020-05-31--16-04-33Z--python.md" >}})
+    -   [Python temporary file]({{< relref "2020-08-02--19-44-21Z--python_temporary_file.md" >}})
+    -   [Synchronization]({{< relref "2021-04-04--22-25-14Z--synchronization.md" >}})
 
 ---
 
@@ -54,9 +54,8 @@ DESCRIPTION
         The third form uses an open file by its file descriptor number. See the
         examples below for how that can be used.
 ```
-
 <div class="src-block-caption">
-  <span class="src-block-number">Code Snippet 1</span>:
+  <span class="src-block-number">Code Snippet 1:</span>
   From Archlinux's <a href="https://man.archlinux.org/man/flock.1.en">manpage</a>
 </div>
 
@@ -89,9 +88,8 @@ fcntl.flock(fd, operation)
 
         Raises an auditing event fcntl.flock with arguments fd, operation.
 ```
-
 <div class="src-block-caption">
-  <span class="src-block-number">Code Snippet 2</span>:
+  <span class="src-block-number">Code Snippet 2:</span>
   <a href="https://docs.python.org/3/library/fcntl.html#fcntl.flock">Python's</a> <code>flock</code> interface
 </div>
 
@@ -161,5 +159,5 @@ lock_release(lockfile)
 
 Definitely there is lots of improvements points. We could for example create a
 `class` for the lock file and implement `__exit__` and `__enter__` for context
-management. But the [task](https://github.com/benmezger/dotfiles/blob/main/dot%5Fbin/executable%5Fsyncmail.tmpl) I needed was simple: run `mbsync`, then sync `mu4e`
+management. But the [task](https://github.com/benmezger/dotfiles/blob/main/dot_bin/executable_syncmail.tmpl) I needed was simple: run `mbsync`, then sync `mu4e`
 with `emacsclient` or with `mu`.

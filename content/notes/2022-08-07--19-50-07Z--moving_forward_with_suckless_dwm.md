@@ -1,7 +1,7 @@
 +++
 title = "Moving forward with suckless dwm"
 author = ["Ben Mezger"]
-date = 2022-08-07T21:50:00
+date = 2022-08-07T21:50:00+02:00
 slug = "moving_forward_with_suckless_dwm"
 tags = ["linux"]
 type = "notes"
@@ -10,7 +10,7 @@ bookCollapseSection = true
 +++
 
 -   Related pages
-    -   [Dell XPS 9510 and the linux experience]({{<relref "2022-02-05--23-29-55Z--dell_xps_9510_and_the_linux_experience.md#" >}})
+    -   [Dell XPS 9510 and the linux experience]({{< relref "2022-02-05--23-29-55Z--dell_xps_9510_and_the_linux_experience.md" >}})
 
 ---
 

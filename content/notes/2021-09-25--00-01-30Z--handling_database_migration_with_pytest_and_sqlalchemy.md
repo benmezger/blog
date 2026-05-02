@@ -1,7 +1,7 @@
 +++
 title = "Handling database migration with Pytest and SQLAlchemy"
 author = ["Ben Mezger"]
-date = 2021-09-24T21:01:00
+date = 2021-09-24T21:01:00+02:00
 slug = "handling_database_migration_with_pytest_and_sqlalchemy"
 tags = ["python", "testing", "programming"]
 type = "notes"
@@ -10,8 +10,8 @@ bookCollapseSection = true
 +++
 
 -   Related pages
-    -   [Python]({{<relref "2020-05-31--16-04-33Z--python.md#" >}})
-    -   [Python's name mangling]({{<relref "2021-09-18--23-30-27Z--python_name_mangling.md#" >}})
+    -   [Python]({{< relref "2020-05-31--16-04-33Z--python.md" >}})
+    -   [Python's name mangling]({{< relref "2021-09-18--23-30-27Z--python_name_mangling.md" >}})
 
 ---
 

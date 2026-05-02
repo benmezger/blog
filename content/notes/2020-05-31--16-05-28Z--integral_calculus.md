@@ -10,7 +10,7 @@ bookCollapseSection = true
 +++
 
 tags
-: [Math]({{<relref "2020-05-31--16-06-38Z--math.md#" >}})
+: [Math]({{< relref "2020-05-31--16-06-38Z--math.md" >}})
 
 > These are the two ways we commonly think about definite integrals: they describe
 > an accumulation of a quantity, so the entire definite integral gives us the net
@@ -20,7 +20,7 @@ tags
 ## Why Integral Calculus {#why-integral-calculus}
 
 Figure represents 2 graphs of `y = cos(x)`. Let's say we would
-like to calculate the area of {{%katex%}} x\_1 {{%/katex%}}. We could calculate
+like to calculate the area of {{%katex%}} x_1 {{%/katex%}}. We could calculate
 the area by aproximation, for example, Graph B is filled with the area we would
 like to calculate, so we could divide this area by equal sections of
 \\(\Delta x\_n\\) from `a` to `b` rectangles, then we could calculate the area of
@@ -53,7 +53,7 @@ plot f(x) fs solid 0.3 lc rgb '#A3001E'
 unset multiplot
 ```
 
-<a id="org5806f50"></a>
+<a id="figure--fig:cos-graph"></a>
 
 {{< figure src="/imgs/graph-example.png" >}}
 

@@ -10,7 +10,7 @@ bookCollapseSection = true
 +++
 
 -   Related pages
-    -   [A reproducible Org-Mode CV template]({{<relref "2026-02-08--13-27-28Z--org_mode_cv_template.md#" >}})
+    -   [A reproducible Org-Mode CV template]({{< relref "2026-02-08--13-27-28Z--org_mode_cv_template.md" >}})
 
 ---
 
@@ -24,7 +24,7 @@ nowadays due to AI. A lot of recruiters are using AI to triage many CVs they
 receive, so you have to make sure you pass through this automated triage, that
 means having a parsable and well linked content is important.
 
-Although my CV structure has diverged a little from what I provided [here]({{<relref "2026-02-08--13-27-28Z--org_mode_cv_template.md#" >}}), I've
+Although my CV structure has diverged a little from what I provided [here]({{< relref "2026-02-08--13-27-28Z--org_mode_cv_template.md" >}}), I've
 noticed that I did not have any tests to make sure I haven't missed any detail
 when updating the CV. I wanted to ensure:
 
@@ -106,7 +106,7 @@ The CV consists of the following files:
 2. Read all bullet points under each job position in both CV variants for typos
    and grammatical errors.
 3. Check for consistent tense: all bullet points should use past tense, except
-   for the current position (`:DATE:` ending in `Current`) which should use
+   for the current position (`:END_DATE:` value of `Current`) which should use
    present or past consistently across both CVs.
 
 ### Position consistency between CVs
@@ -115,13 +115,15 @@ Both the **General CV** and the **Python CV** contain duplicated job entries for
 the same companies. To check consistency:
 
 1. Read both CV variants in `cv.org` and collect every job headline that has a
-   `:POSITION:` property, along with its `:DATE:` and `:LOCATION:` values.
+   `:POSITION:` property, along with its `:START_DATE:`, `:END_DATE:`, and
+   `:LOCATION:` values.
 2. The set of companies must be identical between the two variants — flag any
    company present in one but missing from the other.
 3. For each company that appears in both variants, verify these properties match
    exactly:
    - `:POSITION:` — job title
-   - `:DATE:` — date range
+   - `:START_DATE:` — start date
+   - `:END_DATE:` — end date
    - `:LOCATION:` — location string
 
 If any field differs between the two variants for the same company, flag it as
@@ -133,20 +135,22 @@ Check that metrics, claims, and accomplishments are consistent across sections.
 Do not rely on hardcoded values — derive everything from the files at check
 time:
 
-1. For each highlight in `basecv.org` (under `* Highlights`), note the company
-   it references (`:COMPANY:` property) and any specific metrics or claims in
-   its prose. Then find the matching job entry for that company in both CV
-   variants and verify those same metrics and claims appear in the bullet
-   points. Flag any highlight claim that is absent from or contradicted by the
-   corresponding job bullets.
+1. For each CV variant, collect only the highlights actually included via
+   `#+INCLUDE` under its `Career Highlights` heading. For each included
+   highlight, note the company it references (`:COMPANY:` property) and any
+   specific metrics or claims in its prose. Then find the matching job entry
+   for that company in that CV variant and verify those same metrics and claims
+   appear in the bullet points. Flag any included highlight claim that is absent
+   from or contradicted by the corresponding job bullets. Highlights present in
+   `basecv.org` but not included by any CV variant do not need to be checked.
 2. For each CV introduction (the `:OPENER:` heading in each variant), note any
    domain claims (e.g. "AI", "fintech") and years-of-experience claims. Verify
    each domain is traceable to at least one job entry in that CV variant. Verify
    any years-of-experience figure is consistent with the earliest job `:DATE:`
    in that CV and today's date.
-3. Check that no metric (percentage, count, time saving, etc.) appears in a
-   highlight with a different value than it does in the corresponding job
-   bullets across either CV variant.
+3. Check that no metric (percentage, count, time saving, etc.) appears in an
+   included highlight with a different value than it does in the corresponding
+   job bullets across either CV variant.
 
 ### Org-mode structure
 
@@ -168,7 +172,7 @@ time:
    include a different subset — that is fine — but no variant should reference a
    highlight that does not exist in `basecv.org`.
 3. Verify every job headline in both CVs has all required properties:
-   `:POSITION:`, `:LOCATION:`, `:DATE:`.
+   `:POSITION:`, `:LOCATION:`, `:START_DATE:`, `:END_DATE:`.
 4. Verify every `:LOCATION:` value in both `cv.org` (`:POSITION:` entries) and
    `basecv.org` (`:POSITION:`, `:PRIOR_POSITION:` entries) conforms to the
    three-part format: `Country, City/State, Mode` where `Mode` is exactly one of
@@ -189,10 +193,10 @@ time:
 2. For consecutive job entries, compare the end date of one with the start date
    of the next. Flag any gap longer than three months as something to review —
    it may be intentional but should be verified.
-3. Verify all `:DATE:` values in both `cv.org` and `basecv.org` use a consistent
-   format: `Month YYYY - Month YYYY` or `Month YYYY - Current`, where month is
-   the full name (e.g. `August`, not `Aug`). Flag any abbreviated month or
-   year-only date.
+3. Verify all `:START_DATE:` and `:END_DATE:` values in both `cv.org` and
+   `basecv.org` use a consistent format: `Month YYYY` for `:START_DATE:`, and
+   `Month YYYY` or `Current` for `:END_DATE:`, where month is the full name
+   (e.g. `August`, not `Aug`). Flag any abbreviated month or year-only date.
 
 ### Export properties coherence
 
@@ -201,7 +205,7 @@ time:
    seniority title evolves.
 2. For each CV variant, verify that every technology listed in
    `:EXPORT_KEYWORDS:` appears somewhere in the CV body (job bullets,
-   `cvdescription` blocks, or Technical Acumen). Flag any keyword with no
+   `#+BEGIN_QUOTE` blocks, or Technical Acumen). Flag any keyword with no
    supporting mention.
 
 ### Strengths Snapshots grid
@@ -227,8 +231,8 @@ should be fully inert.
 ### Unclosed Org blocks
 
 Scan both `cv.org` and `basecv.org` for every `#+BEGIN_X` directive and verify a
-matching `#+END_X` follows in the same file. A missing `#+END_cvdescription` or
-similar will silently corrupt the LaTeX output. Flag any unpaired block.
+matching `#+END_X` follows in the same file. A missing `#+END_QUOTE` or similar
+will silently corrupt the LaTeX output. Flag any unpaired block.
 
 ### No TODO or placeholder in active content
 

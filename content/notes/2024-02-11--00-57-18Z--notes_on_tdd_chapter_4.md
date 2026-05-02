@@ -10,7 +10,7 @@ bookCollapseSection = true
 +++
 
 -   Related pages
-    -   [Test driven development]({{<relref "2024-02-05--12-22-06Z--test_driven_development.md#" >}})
+    -   [Test driven development]({{< relref "2024-02-05--12-22-06Z--test_driven_development.md" >}})
 
 ---
 

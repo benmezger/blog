@@ -1,7 +1,7 @@
 +++
 title = "Translating Virtual addresses"
 author = ["Ben Mezger"]
-date = 2020-11-21T14:09:00
+date = 2020-11-21T14:09:00+01:00
 slug = "translating_virtual_addresses"
 tags = ["os", "architecture"]
 type = "notes"
@@ -10,12 +10,12 @@ bookCollapseSection = true
 +++
 
 -   Related pages
-    -   [Computer Architecture]({{<relref "2020-05-31--16-01-33Z--computer_architecture.md#" >}})
-    -   [Operating Systems]({{<relref "2020-05-31--15-29-38Z--operating_systems.md#" >}})
+    -   [Computer Architecture]({{< relref "2020-05-31--16-01-33Z--computer_architecture.md" >}})
+    -   [Operating Systems]({{< relref "2020-05-31--15-29-38Z--operating_systems.md" >}})
 
 ---
 
-Translating virtual address space in [RISCV]({{<relref "2020-05-31--15-37-29Z--riscv.md#" >}}) in Sv39
+Translating virtual address space in [RISCV]({{< relref "2020-05-31--15-37-29Z--riscv.md" >}}) in Sv39
 
 Virtual address: `0x7d_beef_cafe`
 Virtual address in binary: `0b0111_1101_1011_1110_1110_1111_1100_1010_1111_1110`

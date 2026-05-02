@@ -1,7 +1,7 @@
 +++
 title = "Binary calculation"
 author = ["Ben Mezger"]
-date = 2020-05-31T13:06:00
+date = 2020-05-31T13:06:00+02:00
 slug = "binary-calculation"
 tags = ["math", "cs"]
 type = "notes"
@@ -10,10 +10,10 @@ bookCollapseSection = true
 +++
 
 -   Related pages
-    -   [Math]({{<relref "2020-05-31--16-06-38Z--math.md#" >}})
-    -   [Computer Science]({{<relref "2020-05-31--15-29-21Z--computer_science.md#" >}})
-    -   [Computer Architecture]({{<relref "2020-05-31--16-01-33Z--computer_architecture.md#" >}})
-    -   [Bit shifting]({{<relref "2020-11-21--17-52-36Z--bit_shifting.md#" >}})
+    -   [Math]({{< relref "2020-05-31--16-06-38Z--math.md" >}})
+    -   [Computer Science]({{< relref "2020-05-31--15-29-21Z--computer_science.md" >}})
+    -   [Computer Architecture]({{< relref "2020-05-31--16-01-33Z--computer_architecture.md" >}})
+    -   [Bit shifting]({{< relref "2020-11-21--17-52-36Z--bit_shifting.md" >}})
 
 ---
 

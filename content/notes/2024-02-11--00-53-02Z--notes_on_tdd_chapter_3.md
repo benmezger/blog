@@ -10,7 +10,7 @@ bookCollapseSection = true
 +++
 
 -   Related pages
-    -   [Test driven development]({{<relref "2024-02-05--12-22-06Z--test_driven_development.md#" >}})
+    -   [Test driven development]({{< relref "2024-02-05--12-22-06Z--test_driven_development.md" >}})
 
 ---
 
@@ -108,5 +108,5 @@ problem from a different direction.
 
 ## References {#references}
 
-1.  [Aliasing](https://en.wikipedia.org/wiki/Aliasing%5F(computing))
-2.  [Value Object](https://en.wikipedia.org/wiki/Value%5Fobject)
+1.  [Aliasing](https://en.wikipedia.org/wiki/Aliasing_(computing))
+2.  [Value Object](https://en.wikipedia.org/wiki/Value_object)

@@ -10,8 +10,10 @@ bookCollapseSection = true
 +++
 
 {{% hint "danger" %}}
+
 ****I do not own this notebook anymore.****
 I recently sold this notebook, so I am unaware of any recent improvements/updates.
+
 {{% /hint %}}
 
 I've recently decided to migrate back to Linux after some years of using a
@@ -162,7 +164,7 @@ MODULES=(... i925)
 
 Then run `mkinitcpio -p <whatever-kernel-you-have>`.
 
-Create or edit `/etc/X11/xorg.conf`, with the following device. I [think](https://wiki.archlinux.org/title/intel%5Fgraphics#Xorg%5Fconfiguration) you can
+Create or edit `/etc/X11/xorg.conf`, with the following device. I [think](https://wiki.archlinux.org/title/intel_graphics#Xorg_configuration) you can
 also create a `/etc/X11/xorg.conf.d/20-intel.conf` and add it there instead, but
 I didn't do that.
 

@@ -1,7 +1,7 @@
 +++
 title = "Personal git workflow"
 author = ["Ben Mezger"]
-date = 2020-08-04T11:06:00
+date = 2020-08-04T11:06:00+02:00
 slug = "personal_git_workflow"
 tags = ["git", "workflow"]
 type = "notes"
@@ -10,7 +10,7 @@ bookCollapseSection = true
 +++
 
 tags
-: Git [Programming]({{<relref "2020-05-31--15-33-23Z--programming.md#" >}}) Workflow
+: Git [Programming]({{< relref "2020-05-31--15-33-23Z--programming.md" >}}) Workflow
 
 As of today, this is currently my git flow for most of my projects.
 

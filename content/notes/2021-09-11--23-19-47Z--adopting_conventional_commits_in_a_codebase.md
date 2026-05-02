@@ -15,7 +15,7 @@ codebases; in fact, they can annoy more than they can help in some situations.
 +++
 
 -   Related pages
-    -   [Git change commit author]({{<relref "2020-08-22--17-09-39Z--git_change_commit_author.md#" >}})
+    -   [Git change commit author]({{< relref "2020-08-22--17-09-39Z--git_change_commit_author.md" >}})
 
 ---
 

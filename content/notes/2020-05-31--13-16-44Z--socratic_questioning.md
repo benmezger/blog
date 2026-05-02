@@ -1,7 +1,7 @@
 +++
 title = "Socratic questioning"
 author = ["Ben Mezger"]
-date = 2020-05-31T10:16:00
+date = 2020-05-31T10:16:00+02:00
 slug = "socratic-questioning"
 tags = ["socratic", "mindset", "models"]
 type = "notes"
@@ -10,9 +10,9 @@ bookCollapseSection = true
 +++
 
 tags
-: [Thinking methods]({{<relref "2020-05-31--04-19-08Z--thinking_methods.md#" >}}) [Mindset]({{<relref "2020-05-31--04-24-34Z--mindset.md#" >}}) [Mental models]({{<relref "2020-05-31--04-30-47Z--mental_models.md#" >}}) [Learning]({{<relref "2020-05-31--04-23-42Z--learning.md#" >}})
+: [Thinking methods]({{< relref "2020-05-31--04-19-08Z--thinking_methods.md" >}}) [Mindset]({{< relref "2020-05-31--04-24-34Z--mindset.md" >}}) [Mental models]({{< relref "2020-05-31--04-30-47Z--mental_models.md" >}}) [Learning]({{< relref "2020-05-31--04-23-42Z--learning.md" >}})
 
-Socratic questioning is one of many [Mental models]({{<relref "2020-05-31--04-30-47Z--mental_models.md#" >}}) allows us to pursue thoughts
+Socratic questioning is one of many [Mental models]({{< relref "2020-05-31--04-30-47Z--mental_models.md" >}}) allows us to pursue thoughts
 in many directions and establish first principles through strict analysis. It
 allows us to establish truth and separate knowledge from ignorance by reveling
 underlying assumptions. The method allows us to explore complex ideas and find

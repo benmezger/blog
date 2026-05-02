@@ -1,7 +1,7 @@
 +++
 title = "Interesting Golang libraries"
 author = ["Ben Mezger"]
-date = 2020-05-30T20:33:00
+date = 2020-05-30T20:33:00+02:00
 slug = "interesting-golang-libraries"
 tags = ["go", "programming"]
 type = "notes"
@@ -10,7 +10,7 @@ bookCollapseSection = true
 +++
 
 -   Related pages
-    -   [Go Programming]({{<relref "2020-05-31--15-31-36Z--go_programming.md#" >}})
+    -   [Go Programming]({{< relref "2020-05-31--15-31-36Z--go_programming.md" >}})
 
 ---
 

@@ -1,7 +1,7 @@
 +++
 title = "Go binary search tree"
 author = ["Ben Mezger"]
-date = 2020-09-07T18:52:00
+date = 2020-09-07T18:52:00+02:00
 slug = "go_binary_search_tree"
 tags = ["go", "algorithms", "programming"]
 type = "notes"
@@ -10,7 +10,7 @@ bookCollapseSection = true
 +++
 
 tags
-: [Go Programming]({{<relref "2020-05-31--15-31-36Z--go_programming.md#" >}}) [Software Engineering]({{<relref "2020-06-23--12-50-55Z--software_engineering.md#" >}})
+: [Go Programming]({{< relref "2020-05-31--15-31-36Z--go_programming.md" >}}) [Software Engineering]({{< relref "2020-06-23--12-50-55Z--software_engineering.md" >}})
 
 
 ## Requirements {#requirements}

@@ -1,7 +1,7 @@
 +++
 title = "Operating Systems"
 author = ["Ben Mezger"]
-date = 2020-05-31T12:29:00
+date = 2020-05-31T12:29:00+02:00
 slug = "operating-systems"
 tags = ["operating-systems", "cs"]
 type = "notes"
@@ -10,9 +10,9 @@ bookCollapseSection = true
 +++
 
 -   Related pages
-    -   [Thesis]({{<relref "2020-05-31--15-35-57Z--thesis.md#" >}})
-    -   [Computer Science]({{<relref "2020-05-31--15-29-21Z--computer_science.md#" >}})
-    -   [Computer Architecture]({{<relref "2020-05-31--16-01-33Z--computer_architecture.md#" >}})
+    -   [Thesis]({{< relref "2020-05-31--15-35-57Z--thesis.md" >}})
+    -   [Computer Science]({{< relref "2020-05-31--15-29-21Z--computer_science.md" >}})
+    -   [Computer Architecture]({{< relref "2020-05-31--16-01-33Z--computer_architecture.md" >}})
 
 ---
 
@@ -23,7 +23,7 @@ The OSKit is a framework and a set of [34 component libraries](https://www.cs.ut
 oriented to operating systems, together with extensive documentation. By
 providing in a modular way not only most of the infrastructure "grunge"
 needed by an OS, but also many higher-level components, the OSKit's goal
-is to lower the barrier to entry to OS R&D and to lower its costs. The
+is to lower the barrier to entry to OS R&amp;D and to lower its costs. The
 OSKit makes it vastly easier to create a new OS, port an existing OS to
 the x86 (or in the future, to other architectures supported by the
 OSkit), or enhance an OS to support a wider range of devices, file
@@ -32,7 +32,7 @@ works well for constructing OS-related programs, such as boot loaders or
 OS-level servers atop a microkernel
 
 
-## Memory management {#memory-management}
+## Memory management <span class="tag"><span class="memory">memory</span><span class="osdev">osdev</span><span class="architecture">architecture</span></span> {#memory-management}
 
 
 ### Parkinson's law {#parkinson-s-law}
@@ -207,7 +207,7 @@ one program may interfere with the other
 #### Direct memory address to access a real location in RAM {#direct-memory-address-to-access-a-real-location-in-ram}
 
 
-## Code {#code}
+## Code <span class="tag"><span class="snippets">snippets</span></span> {#code}
 
 
 ### Linux trap handler {#linux-trap-handler}

@@ -1,7 +1,7 @@
 +++
 title = "Chezmoi and Emacs"
 author = ["Ben Mezger"]
-date = 2021-09-11T19:48:00
+date = 2021-09-11T19:48:00+02:00
 slug = "chezmoi-and-emacs"
 tags = ["emacs", "dotfiles"]
 type = "notes"
@@ -10,8 +10,8 @@ bookCollapseSection = true
 +++
 
 -   Related pages
-    -   [Emacs]({{<relref "2020-06-04--11-36-43Z--emacs.md#" >}})
-    -   [Automating and testing dotfiles]({{<relref "2021-09-11--23-32-04Z--automating_and_testing_dotfiles.md#" >}})
+    -   [Emacs]({{< relref "2020-06-04--11-36-43Z--emacs.md" >}})
+    -   [Automating and testing dotfiles]({{< relref "2021-09-11--23-32-04Z--automating_and_testing_dotfiles.md" >}})
 
 ---
 

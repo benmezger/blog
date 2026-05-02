@@ -1,7 +1,7 @@
 +++
 title = "Ox-hugo export all roam to Hugo"
 author = ["Ben Mezger"]
-date = 2020-06-04T08:39:00
+date = 2020-06-04T08:39:00+02:00
 slug = "ox_hugo_export_all_roam_to_hugo"
 tags = ["emacs", "orgmode", "hugo", "orgroam", "roam"]
 type = "notes"
@@ -10,10 +10,10 @@ bookCollapseSection = true
 +++
 
 -   Related pages
-    -   [Emacs]({{<relref "2020-06-04--11-36-43Z--emacs.md#" >}})
-    -   [Org-mode]({{<relref "2020-06-04--11-35-15Z--org_mode.md#" >}})
-    -   [Org-roam]({{<relref "2020-06-04--11-51-18Z--org_roam.md#" >}})
-    -   [Export org-roam backlinks with Gohugo]({{<relref "2021-03-07--17-40-57Z--export_org_roam_backlinks_with_gohugo.md#" >}})
+    -   [Emacs]({{< relref "2020-06-04--11-36-43Z--emacs.md" >}})
+    -   [Org-mode]({{< relref "2020-06-04--11-35-15Z--org_mode.md" >}})
+    -   [Org-roam]({{< relref "2020-06-04--11-51-18Z--org_roam.md" >}})
+    -   [Export org-roam backlinks with Gohugo]({{< relref "2021-03-07--17-40-57Z--export_org_roam_backlinks_with_gohugo.md" >}})
 
 ---
 

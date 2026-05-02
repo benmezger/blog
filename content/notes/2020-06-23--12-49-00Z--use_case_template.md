@@ -1,7 +1,7 @@
 +++
 title = "Use case template"
 author = ["Ben Mezger"]
-date = 2020-06-23T09:49:00
+date = 2020-06-23T09:49:00+02:00
 slug = "use_case_template"
 tags = ["programming", "methodology", "cs"]
 type = "notes"
@@ -10,7 +10,7 @@ bookCollapseSection = true
 +++
 
 tags
-: [Computer Science]({{<relref "2020-05-31--15-29-21Z--computer_science.md#" >}}) [Programming]({{<relref "2020-05-31--15-33-23Z--programming.md#" >}}) [Methodologies]({{<relref "2020-06-23--12-50-09Z--methodologies.md#" >}}) [Software Engineering]({{<relref "2020-06-23--12-50-55Z--software_engineering.md#" >}})
+: [Computer Science]({{< relref "2020-05-31--15-29-21Z--computer_science.md" >}}) [Programming]({{< relref "2020-05-31--15-33-23Z--programming.md" >}}) [Methodologies]({{< relref "2020-06-23--12-50-09Z--methodologies.md" >}}) [Software Engineering]({{< relref "2020-06-23--12-50-55Z--software_engineering.md" >}})
 
 The following is a requirements template developed by [Alistair Cockburn](https://heartofagile.com/alistair-cockburn/).
 This template may or may not have all or more fields related to the requirements
@@ -22,18 +22,18 @@ Recommended reading:
 
 ---
 
-| USE CASE **#N**       | _<The name of the goal as a short active verb phrase>_                     |
-|-----------------------|----------------------------------------------------------------------------|
-| Goal in context       | _<A longer statement of the goal in context if needed>_                    |
-| Scope                 | _<What system is being considered back box under design>_                  |
-| Level                 | _<one of: Summary, Primary task, Subfunction>_                             |
-| Preconditions         | _<what we expect is already the state of the world>_                       |
-| Success end condition | _<the state of the world upon successful completion>_                      |
-| Failed end condition  | _<the state of the world if goal abandoned>_                               |
-| Primary actor         | _<a role name for the primary actor, or description>_                      |
-| Trigger               | _<the action upon the system that starts the use case, may be time event>_ |
-| Priority              | _<how critical to your system/organization>_                               |
-| Frequency             | _<how often it is expected to happen>_                                     |
+| USE CASE **#N**       | _&lt;The name of the goal as a short active verb phrase&gt;_                     |
+|-----------------------|----------------------------------------------------------------------------------|
+| Goal in context       | _&lt;A longer statement of the goal in context if needed&gt;_                    |
+| Scope                 | _&lt;What system is being considered back box under design&gt;_                  |
+| Level                 | _&lt;one of: Summary, Primary task, Subfunction&gt;_                             |
+| Preconditions         | _&lt;what we expect is already the state of the world&gt;_                       |
+| Success end condition | _&lt;the state of the world upon successful completion&gt;_                      |
+| Failed end condition  | _&lt;the state of the world if goal abandoned&gt;_                               |
+| Primary actor         | _&lt;a role name for the primary actor, or description&gt;_                      |
+| Trigger               | _&lt;the action upon the system that starts the use case, may be time event&gt;_ |
+| Priority              | _&lt;how critical to your system/organization&gt;_                               |
+| Frequency             | _&lt;how often it is expected to happen&gt;_                                     |
 
 Usage example:
 

@@ -10,7 +10,7 @@ bookCollapseSection = true
 +++
 
 -   Related pages
-    -   [Test driven development]({{<relref "2024-02-05--12-22-06Z--test_driven_development.md#" >}})
+    -   [Test driven development]({{< relref "2024-02-05--12-22-06Z--test_driven_development.md" >}})
 
 ---
 
@@ -51,6 +51,11 @@ def test_multiplication():
     d = DollarV2(5)
     d_ten = d.times(2)
     assert d_ten.amount == 10
+```
+
+```text
+Running test_multiplication
+test_multiplication passed!
 ```
 
 With this modification, we now removed the **dollar side effect**, which we had

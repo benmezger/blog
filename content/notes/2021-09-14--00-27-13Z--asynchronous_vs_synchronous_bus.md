@@ -1,7 +1,7 @@
 +++
 title = "Asynchronous vs synchronous bus"
 author = ["Ben Mezger"]
-date = 2021-09-13T21:27:00
+date = 2021-09-13T21:27:00+02:00
 slug = "asynchronous_vs_synchronous_bus"
 tags = ["architecture", "cs"]
 type = "notes"
@@ -10,7 +10,7 @@ bookCollapseSection = true
 +++
 
 -   Related pages
-    -   [Computer Architecture]({{<relref "2020-05-31--16-01-33Z--computer_architecture.md#" >}})
+    -   [Computer Architecture]({{< relref "2020-05-31--16-01-33Z--computer_architecture.md" >}})
 
 ---
 
@@ -20,4 +20,4 @@ bookCollapseSection = true
 > signal, the receiver samples the data off the bus and asserts an acknowledge
 > signal Ack to indicate that the data transfer is complete. Upon receiving the
 > acknowledge signal, the transmitter turns its driver off, freeing the bus for
-> the next transfer <principelsAndPracticesOfInterconnectionNetworks>.
+> the next transfer cite:principelsAndPracticesOfInterconnectionNetworks.

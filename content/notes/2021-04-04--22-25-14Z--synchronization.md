@@ -1,7 +1,7 @@
 +++
 title = "Synchronization"
 author = ["Ben Mezger"]
-date = 2021-04-04T19:25:00
+date = 2021-04-04T19:25:00+02:00
 slug = "synchronization"
 tags = ["os", "osdev", "programming", "synchronization"]
 type = "notes"
@@ -10,15 +10,15 @@ bookCollapseSection = true
 +++
 
 -   Related pages
-    -   [Operating Systems]({{<relref "2020-05-31--15-29-38Z--operating_systems.md#" >}})
-    -   [Programming]({{<relref "2020-05-31--15-33-23Z--programming.md#" >}})
-    -   [Computer Science]({{<relref "2020-05-31--15-29-21Z--computer_science.md#" >}})
-    -   [Software Engineering]({{<relref "2020-06-23--12-50-55Z--software_engineering.md#" >}})
-    -   [Computer Architecture]({{<relref "2020-05-31--16-01-33Z--computer_architecture.md#" >}})
+    -   [Operating Systems]({{< relref "2020-05-31--15-29-38Z--operating_systems.md" >}})
+    -   [Programming]({{< relref "2020-05-31--15-33-23Z--programming.md" >}})
+    -   [Computer Science]({{< relref "2020-05-31--15-29-21Z--computer_science.md" >}})
+    -   [Software Engineering]({{< relref "2020-06-23--12-50-55Z--software_engineering.md" >}})
+    -   [Computer Architecture]({{< relref "2020-05-31--16-01-33Z--computer_architecture.md" >}})
 
 ---
 
-Notes from the Little book of Semaphores <LittleBookOfSemaphores>.
+Notes from the Little book of Semaphores cite:LittleBookOfSemaphores.
 
 
 ## Shared variables {#shared-variables}
@@ -72,8 +72,8 @@ Notes from the Little book of Semaphores <LittleBookOfSemaphores>.
     | 1 | x = 5    | x = 7    |
     | 2 | print(x) |          |
 
-For example, given thread A as `a` and thread B as `b`, we could have: _a1 <
-a2 < b1_
+For example, given thread A as `a` and thread B as `b`, we could have: _a1 &lt;
+a2 &lt; b1_
 
 1.  What path yields output 5 and final value 5?
 2.  What path yields output 7 and final value 7?
@@ -81,6 +81,6 @@ a2 < b1_
 
 ---
 
-1.  _a1 < a2 < a1_ or _a1 < a2_
-2.  _b1 < a2 < b1_ or _b1 < a2_
-3.  Yes, _b1 < a2 < a1_
+1.  _a1 &lt; a2 &lt; a1_ or _a1 &lt; a2_
+2.  _b1 &lt; a2 &lt; b1_ or _b1 &lt; a2_
+3.  Yes, _b1 &lt; a2 &lt; a1_

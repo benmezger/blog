@@ -10,16 +10,20 @@ bookCollapseSection = true
 +++
 
 {{% hint "info" %}}
+
 _I spent the weekend improving my Org-mode/LaTeX CV template and decided it was_
 _worth sharing publicly. Its modular, searchable, and designed for_
 _reproducibility. I've made it easy to maintain and updated the structure to be_
 _as ATS-friendly as possible._
+
 {{% /hint %}}
 
 {{% hint "caution" %}}
+
 _I used AI to help document this. I tend to spend more time building than
 writing about what I built, so it was useful to have something that could map
 the full picture._
+
 {{% /hint %}}
 
 ---
@@ -126,6 +130,11 @@ inserted just before `\begin{document}`:
 ```
 
 becomes:
+
+```latex
+\cvtagline{Software Engineering - Clean Code}
+\cvsummary{Driving Software Engineer...}
+```
 
 `\cvtagline` and `\cvsummary` store their values and `\introduction` (triggered by
 `:OPENER: t`) renders them both in the body (see below).
@@ -309,7 +318,9 @@ human or an ATS parser) maps to proper Unicode characters.
     -   `custom.cls` styles everything and appends `\lastupdate` automatically
 
 {{% hint "warning" %}}
+
 _Make sure you have `pdflatex` installed, along with the LaTeX dependencies._
+
 {{% /hint %}}
 
 This architecture allows maintaining one source of truth for shared content

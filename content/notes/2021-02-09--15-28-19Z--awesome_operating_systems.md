@@ -1,7 +1,7 @@
 +++
 title = "Awesome Operating Systems"
 author = ["Ben Mezger"]
-date = 2021-02-09T12:28:00
+date = 2021-02-09T12:28:00+01:00
 slug = "awesome_operating_systems"
 tags = ["os"]
 type = "notes"
@@ -10,8 +10,8 @@ bookCollapseSection = true
 +++
 
 -   Related pages
-    -   [Operating Systems]({{<relref "2020-05-31--15-29-38Z--operating_systems.md#" >}})
-    -   [Computer Architecture]({{<relref "2020-05-31--16-01-33Z--computer_architecture.md#" >}})
+    -   [Operating Systems]({{< relref "2020-05-31--15-29-38Z--operating_systems.md" >}})
+    -   [Computer Architecture]({{< relref "2020-05-31--16-01-33Z--computer_architecture.md" >}})
 
 ---
 
@@ -72,7 +72,7 @@ gets updated from time to time.
     systems with a focus on low-power wireless Internet of Things devices.
 -   [Mbed](https://os.mbed.com/): Mbed is a platform and operating system for internet-connected devices
     based on 32-bit ARM Cortex-M microcontrollers.
--   [μT-Kernel 3.0](https://github.com/tron-forum/mtkernel%5F3): Real-time OS for Small-scale Embedded Systems and IoT Edge
+-   [μT-Kernel 3.0](https://github.com/tron-forum/mtkernel_3): Real-time OS for Small-scale Embedded Systems and IoT Edge
     nodes. It is compliant with IEEE Standard 2050-2018 and has high compatibility
     with [μT-Kernel 2.0](https://www.tron.org/download/index.php?route=product/category&path=50).
 -   [Hubris](https://github.com/oxidecomputer/hubris): Hubris is a microcontroller operating environment designed for

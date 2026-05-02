@@ -1,7 +1,7 @@
 +++
 title = "Operating systems: Internals and design principles (9th edition)"
 author = ["Ben Mezger"]
-date = 2020-05-30T19:58:00
+date = 2020-05-30T19:58:00+02:00
 slug = "operating-systems"
 tags = ["reading", "books", "cs", "operating-systems"]
 categories = ["books"]
@@ -11,16 +11,16 @@ bookCollapseSection = true
 +++
 
 -   Related pages
-    -   [Computer Science]({{<relref "2020-05-31--15-29-21Z--computer_science.md#" >}})
-    -   [Operating Systems]({{<relref "2020-05-31--15-29-38Z--operating_systems.md#" >}})
+    -   [Computer Science]({{< relref "2020-05-31--15-29-21Z--computer_science.md" >}})
+    -   [Operating Systems]({{< relref "2020-05-31--15-29-38Z--operating_systems.md" >}})
 
 ---
 
 
-## READING Operating Systems: Internals and Design Principles (9th Edition) {#reading-operating-systems-internals-and-design-principles--9th-edition}
+## READING Operating Systems: Internals and Design Principles (9th Edition) <span class="tag"><span class="clock">clock</span></span> {#reading-operating-systems-internals-and-design-principles--9th-edition}
 
 <div class="table-caption">
-  <span class="table-number">Table 1</span>:
+  <span class="table-number">Table 1:</span>
   Clock summary at <span class="timestamp-wrapper"><span class="timestamp">[2020-06-06 Sat 03:47]</span></span>
 </div>
 

@@ -10,8 +10,8 @@ bookCollapseSection = true
 +++
 
 -   Related pages
-    -   [Software Engineering]({{<relref "2020-06-23--12-50-55Z--software_engineering.md#" >}})
-    -   [Laws of Program Evolution]({{<relref "2021-10-10--23-03-57Z--laws_of_program_evolution.md#" >}})
+    -   [Software Engineering]({{< relref "2020-06-23--12-50-55Z--software_engineering.md" >}})
+    -   [Laws of Program Evolution]({{< relref "2021-10-10--23-03-57Z--laws_of_program_evolution.md" >}})
 
 ---
 
@@ -33,10 +33,10 @@ Communications Commission found that the cause of service unavailable was an
 entirely preventable software error.
 
 The nonperformance and failures of software are expensive. A study carried by
-the National Institute of Standards & Technology in 2002 found that inadequate
+the National Institute of Standards &amp; Technology in 2002 found that inadequate
 infrastructures for fixing software bugs cost the U.S economy $59.5 billion
 every year. What about the global cost of fixing software bugs every year? This
 study also estimated that more than a third of software bugs could be eliminated
 by improving software testing scheduling and methodology (Tassey 2002).
 
--- <Zhu2022SoftwareReliabilityModelingAndMethods>
+-- cite:Zhu2022SoftwareReliabilityModelingAndMethods

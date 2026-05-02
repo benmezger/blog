@@ -1,7 +1,7 @@
 +++
 title = "Export org-roam backlinks with Gohugo"
 author = ["Ben Mezger"]
-date = 2021-03-07T14:40:00
+date = 2021-03-07T14:40:00+01:00
 slug = "export_org_roam_backlinks_with_gohugo"
 tags = ["emacs", "orgroam", "orgmode"]
 type = "notes"
@@ -10,9 +10,9 @@ bookCollapseSection = true
 +++
 
 tags
-: [Org-mode]({{<relref "2020-06-04--11-35-15Z--org_mode.md#" >}}) [Emacs]({{<relref "2020-06-04--11-36-43Z--emacs.md#" >}}) [Org-roam]({{<relref "2020-06-04--11-51-18Z--org_roam.md#" >}})
+: [Org-mode]({{< relref "2020-06-04--11-35-15Z--org_mode.md" >}}) [Emacs]({{< relref "2020-06-04--11-36-43Z--emacs.md" >}}) [Org-roam]({{< relref "2020-06-04--11-51-18Z--org_roam.md" >}})
 
-Since [Org-roam export backlinks on Hugo]({{<relref "2020-06-04--11-29-02Z--org_roam_export_backlinks_on_hugo.md#" >}}) no longer works, I found a solution
+Since [Org-roam export backlinks on Hugo]({{< relref "2020-06-04--11-29-02Z--org_roam_export_backlinks_on_hugo.md" >}}) no longer works, I found a solution
 to handle backlinks in Hugo itself.
 
 The following Hugo [partial template](https://gohugo.io/templates/partials/) will add backlinks to a note if any.
