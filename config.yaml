@@ -37,6 +37,8 @@ params:
   CommentTheme: "github-dark"
   BookIcon: "menu"
 
+copyright: '[© CC BY 4.0](https://creativecommons.org/licenses/by/4.0/legalcode)'
+
 menu:
   before:
     - name: Notes
