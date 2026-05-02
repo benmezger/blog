@@ -35,7 +35,7 @@ migration as I've done many times before. Why not another one?
 As my dotfiles started to grow, the more I could take advantage of what Chezmoi
 had to offer. For example, I can have multiple profiles by taking advantage of
 the [template](https://github.com/benmezger/dotfiles/tree/main/.chezmoitemplates) system. In my [`chezmoi.yaml`](https://github.com/benmezger/dotfiles/blob/03bd8967f6565ce87dbd6fe92b0a3f618b4bad45/.chezmoi.yaml.tmpl#LL1C6-L1C6), I created different profiles and
-based on that, I can [`chezmoiignore`](https://github.com/benmezger/dotfiles/blob/main/.chezmoiignore) files based on these conditions. This
+based on that, I can [`chezmoiignore`](https://github.com/benmezger/dotfiles/blob/main/chezmoi/.chezmoiignore) files based on these conditions. This
 allows me to install a lightweight version of my dotfiles on a remote server.
 
 Chezmoi can also help increase performance in `zsh` or `bash` configurations,
