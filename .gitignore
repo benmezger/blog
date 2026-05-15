@@ -2,3 +2,6 @@
 *.DS_Store
 *.lock
 public
+
+# Local Netlify folder
+.netlify

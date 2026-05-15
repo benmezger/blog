@@ -1,4 +1,25 @@
 baseURL: https://seds.nl/
+
+mediaTypes:
+  text/markdown:
+    suffixes:
+      - md
+
+outputFormats:
+  Markdown:
+    mediaType: "text/markdown"
+    baseName: "index"
+    isHTML: false
+    isPlainText: true
+    rel: "alternate"
+
+outputs:
+  page: ["HTML", "Markdown"]
+  home: ["HTML", "RSS", "Markdown"]
+  section: ["HTML", "RSS", "Markdown"]
+  taxonomy: ["HTML", "RSS", "Markdown"]
+  term: ["HTML", "RSS", "Markdown"]
+
 locale: en-us
 title: Ben Mezger
 theme: book
