@@ -1,8 +1,12 @@
 export default async (request, context) => {
   if (request.headers.get("x-md-internal")) return context.next();
 
-  const ua = request.headers.get("user-agent") ?? "";
   const url = new URL(request.url);
+  if (/\.(css|js|png|jpg|jpeg|gif|svg|ico|woff2?|xml|json|ttf|eot)$/i.test(url.pathname)) {
+    return context.next();
+  }
+
+  const ua = request.headers.get("user-agent") ?? "";
   let mdPath;
 
   if (url.pathname.endsWith(".md")) {
