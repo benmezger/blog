@@ -11,6 +11,15 @@
 </article>
 {{ end }}
 
+{{ define "footer" }}
+  {{ partial "docs/footer" . }}
+  {{ with .OutputFormats.Get "Markdown" }}
+  <div style="text-align: right; font-size: 0.85em;">
+    <a href="{{ .Permalink }}">view markdown</a>
+  </div>
+  {{ end }}
+{{ end }}
+
 {{ define "toc" }}
   {{ partial "docs/toc" . }}
 {{ end }}
