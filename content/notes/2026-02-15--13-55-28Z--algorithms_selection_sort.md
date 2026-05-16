@@ -14,13 +14,15 @@ bookCollapseSection = true
 
 ---
 
-&gt; [!info]
-&gt; This and the following posts, are all based on following books:
-&gt;
-&gt; + Introduction to Algorithms, by Thomas Cormen
-&gt; + Grokking Algorithms, by Aditya Bhargava
-&gt;
-&gt; As well as some online resources.
+{{% hint info %}}
+
+This and the following posts, are all based on following books:
+
+> Grokking Algorithms, by Aditya Bhargava
+
+As well as some online resources.
+
+{{% /hint %}}
 
 {{< katex />}}
 
