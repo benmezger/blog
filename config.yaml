@@ -19,6 +19,7 @@ outputs:
   section: ["HTML", "RSS", "Markdown"]
   taxonomy: ["HTML", "RSS", "Markdown"]
   term: ["HTML", "RSS", "Markdown"]
+  404: ["HTML", "Markdown"]
 
 locale: en-us
 title: Ben Mezger
