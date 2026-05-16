@@ -12,11 +12,6 @@ HUGO_ENABLEGITINFO = "true"
   function = "curl-markdown"
 
 [[redirects]]
-  from = "/*/index.md"
-  to = "/:splat/index.md"
-  status = 200
-
-[[redirects]]
   from = "/*.md"
   to = "/:splat/index.md"
   status = 200
