@@ -35,4 +35,4 @@ Notes on [RISC-V CPU HARD IP Cores enter SoC FPGAs](https://ieeechicago.org/even
     -   Can be made to be deterministic
     -   Not all L2 are deterministic
 
-{{< figure src="/imgs/polarfire-soc.png" >}}
+{{< figure src="/files/polarfire-soc.png" >}}

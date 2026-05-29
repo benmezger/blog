@@ -25,26 +25,26 @@ from a new bruise.
 
 {{% columns %}}
 
-{{< figure src="/imgs/left-hand.png" caption="<span class=\"figure-number\">Figure 1: </span>Left hand" >}}
+{{< figure src="/files/left-hand.png" caption="<span class=\"figure-number\">Figure 1: </span>Left hand" >}}
 
 &lt;---&gt;
 
 <a id="figure--fig:1932-kpd"></a>
 
-{{< figure src="/imgs/right-hand.png" caption="<span class=\"figure-number\">Figure 2: </span>Right hand" >}}
+{{< figure src="/files/right-hand.png" caption="<span class=\"figure-number\">Figure 2: </span>Right hand" >}}
 
 {{% /columns %}}
 
 {{% columns %}}
 
-{{< figure src="/imgs/left-arm.png" caption="<span class=\"figure-number\">Figure 3: </span>Left arm" >}}
+{{< figure src="/files/left-arm.png" caption="<span class=\"figure-number\">Figure 3: </span>Left arm" >}}
 
 &lt;---&gt;
 
-{{< figure src="/imgs/right-arm.png" caption="<span class=\"figure-number\">Figure 4: </span>Right arm" >}}
+{{< figure src="/files/right-arm.png" caption="<span class=\"figure-number\">Figure 4: </span>Right arm" >}}
 
 &lt;---&gt;
 
-{{< figure src="/imgs/left-biceps.png" caption="<span class=\"figure-number\">Figure 5: </span>Left biceps" >}}
+{{< figure src="/files/left-biceps.png" caption="<span class=\"figure-number\">Figure 5: </span>Left biceps" >}}
 
 {{% /columns %}}

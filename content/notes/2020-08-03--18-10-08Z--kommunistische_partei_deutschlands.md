@@ -19,7 +19,7 @@ system!'_.
 
 <a id="figure--fig:1932-kpd"></a>
 
-{{< figure src="/imgs/1932-kpd.jpg" caption="<span class=\"figure-number\">Figure 1: </span>KPD election poster, 1932. The caption at the bottom reads 'An end to this system!'." >}}
+{{< figure src="/files/1932-kpd.jpg" caption="<span class=\"figure-number\">Figure 1: </span>KPD election poster, 1932. The caption at the bottom reads 'An end to this system!'." >}}
 
 
 ## Related links {#related-links}

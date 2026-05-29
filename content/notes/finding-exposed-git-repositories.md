@@ -1,7 +1,7 @@
 +++
 title = "Finding exposed .git repositories"
 author = ["Ben Mezger"]
-date = 2017-10-30T21:59:00-02:00
+date = 2017-10-30T21:59:00+01:00
 publishDate = 2017-10-30
 aliases = ["/posts/finding-exposed-git-repositories/"]
 tags = ["git", "security"]
@@ -44,7 +44,7 @@ Just kidding.
 
 An easy way of finding websites which currently expose `.git` is using Google
 D0rks. If you are not familiar with Google D0rks, it&rsquo;s basically a few operators
-Google offers you to filter out a few queries. [Here](http://www.googleguide.com/advanced%5Foperators%5Freference.html) is a list of some of them.
+Google offers you to filter out a few queries. [Here](http://www.googleguide.com/advanced_operators_reference.html) is a list of some of them.
 The one we need is the `intext:` operator.
 
 ```text
@@ -53,11 +53,11 @@ intext:"Index of /.git"
 
 This query makes use of the `intext` operator. It allows us to ask Google to
 find all the pages that have a specific word in the body somewhere forcing
-inclusion on the page ([source](https://edu.google.com/coursebuilder/courses/pswg/1.2/assets/notes/Lesson3.5/Lesson3.5IntextandAdvancedSearch%5FText%5F.html)).
+inclusion on the page ([source](https://edu.google.com/coursebuilder/courses/pswg/1.2/assets/notes/Lesson3.5/Lesson3.5IntextandAdvancedSearch_Text_.html)).
 
 Let&rsquo;s see.
 
-{{< figure src="/imgs/google-intext-query_censored.jpg" >}}
+{{< figure src="/files/google-intext-query_censored.jpg" >}}
 
 Holy sh1t. That&rsquo;s ~89,900 results from Google. Can you imagine how much
 sensitive information there must be?
@@ -76,9 +76,9 @@ need to do.
 Add the following telling Nginx to deny any request to a `.git` directory:
 
 ```text
-  location ~ /.git/ {
-      deny all;
-  }
+location ~ /.git/ {
+    deny all;
+}
 ```
 
 
@@ -87,10 +87,10 @@ Add the following telling Nginx to deny any request to a `.git` directory:
 Add the following telling Apache to deny any request to a `.git` directory:
 
 ```text
-  <DirectoryMatch "^/.*/\.git/">
-      Order deny,allow
-      Deny from all
-  </Directory>
+<DirectoryMatch "^/.*/\.git/">
+    Order deny,allow
+    Deny from all
+</Directory>
 ```
 
 The only question that remains is: Is there anyway you could extract a `.git`

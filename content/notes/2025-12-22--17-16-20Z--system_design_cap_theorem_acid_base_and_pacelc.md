@@ -256,7 +256,7 @@ Notes on CAP theorem, ACID, BASE and PACELC regarding system design.
     Consistency (C)
 -   If there is no partition, we choose between Latency (L) and Consistency (C)
 
-{{< figure src="/imgs/PACELC-theorem-diagram.jpg" >}}
+{{< figure src="/files/PACELC-theorem-diagram.jpg" >}}
 
 -   Even on normal conditions, we have to make hard decisions
 -   More guarantee in exchange of response time

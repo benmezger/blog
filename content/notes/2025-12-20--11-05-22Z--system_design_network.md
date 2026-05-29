@@ -31,7 +31,7 @@ like a map of where each functionality of these protocols lie.
 -   Standardizes the functionality of these protocols
 -   7 abstraction layers
 
-    {{< figure src="/imgs/osi-model.png" >}}
+    {{< figure src="/files/osi-model.png" >}}
 
     Software engineers generally work with `Application`, `Presentation` and
     `Session` layers.
@@ -78,7 +78,7 @@ It's a strategy/pattern
 -   Allows multiple devices with private IPs to access the network through an
     unique IP
 
-    {{< figure src="/imgs/networking-nat.svg" >}}
+    {{< figure src="/files/networking-nat.svg" >}}
 
 
 ### IPv6 (Internet Protocol Version 6) {#ipv6--internet-protocol-version-6}
@@ -127,7 +127,7 @@ Transport protocol.
 -   _Three-way_ handshake
     -   SYN, SYN-ACK and ACK
 
-{{< figure src="/imgs/udp-tcp.jpg" >}}
+{{< figure src="/files/udp-tcp.jpg" >}}
 
 
 ## SSL/TLS {#ssl-tls}
@@ -169,7 +169,7 @@ Transport protocol.
 
 -   Responsible for knowing all the details of a domain
 
-{{< figure src="/imgs/root-dns.jpg" >}}
+{{< figure src="/files/root-dns.jpg" >}}
 
 
 ### Example {#example}
@@ -240,7 +240,7 @@ seds.nl.		120	IN	RRSIG	A 13 2 120 20251221151738 20251219131738 34505 seds.nl. H
     -   Request
     -   Acknowledgment
 
-{{< figure src="/imgs/dhcp.jpg" >}}
+{{< figure src="/files/dhcp.jpg" >}}
 
 
 ## HTTP/1, HTTP/2 and HTTP/3 Protocols {#http-1-http-2-and-http-3-protocols}
@@ -253,7 +253,7 @@ seds.nl.		120	IN	RRSIG	A 13 2 120 20251221151738 20251219131738 34505 seds.nl. H
 -   Body, headers, cookies, status code, etc.
 -   `HTTP/1.x`, `HTTP/2` and `HTTP/3`
 
-{{< figure src="/imgs/http-1-2-3.jpg" >}}
+{{< figure src="/files/http-1-2-3.jpg" >}}
 
 
 ### HTTP/1 {#http-1}

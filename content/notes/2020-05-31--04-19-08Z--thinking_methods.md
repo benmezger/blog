@@ -23,7 +23,7 @@ problems into sub-problems so we can better view reality.
 
 <a id="figure--fig:thinking-methods-mindmap"></a>
 
-{{< figure src="/imgs/thinking-methods.jpg" caption="<span class=\"figure-number\">Figure 1: </span>Mindmap of thinking methods" >}}
+{{< figure src="/files/thinking-methods.jpg" caption="<span class=\"figure-number\">Figure 1: </span>Mindmap of thinking methods" >}}
 
 Related pages:
 

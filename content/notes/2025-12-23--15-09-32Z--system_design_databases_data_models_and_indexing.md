@@ -246,7 +246,7 @@ bookCollapseSection = true
     operation on top of the same attribute (column), regardless of the amount of
     rows we have.
 
-{{< figure src="/imgs/column-oriented-db.png" >}}
+{{< figure src="/files/column-oriented-db.png" >}}
 
 
 ### Wide-Column {#wide-column}
