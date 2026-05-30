@@ -23,28 +23,22 @@ anxiety and learn a martial art.
 Until now, I have been enjoying my experience in BJJ and recovering every day
 from a new bruise.
 
-{{% columns %}}
+{{% columns ratio="1:1:1:1:1"  %}}
 
-{{< figure src="/files/left-hand.png" caption="<span class=\"figure-number\">Figure 1: </span>Left hand" >}}
+-   Left hand
+    ![](/files/left-hand.png)
 
-&lt;---&gt;
+-   Right hand
+    ![](/files/right-hand.png)
 
-<a id="figure--fig:1932-kpd"></a>
+-   Left arm
+    ![](/files/left-arm.png)
 
-{{< figure src="/files/right-hand.png" caption="<span class=\"figure-number\">Figure 2: </span>Right hand" >}}
+-   Right arm
+    ![](/files/right-arm.png)
 
-{{% /columns %}}
+-   Left biceps
 
-{{% columns %}}
-
-{{< figure src="/files/left-arm.png" caption="<span class=\"figure-number\">Figure 3: </span>Left arm" >}}
-
-&lt;---&gt;
-
-{{< figure src="/files/right-arm.png" caption="<span class=\"figure-number\">Figure 4: </span>Right arm" >}}
-
-&lt;---&gt;
-
-{{< figure src="/files/left-biceps.png" caption="<span class=\"figure-number\">Figure 5: </span>Left biceps" >}}
+    {{< figure src="/files/left-biceps.png" width="20%" >}}
 
 {{% /columns %}}
