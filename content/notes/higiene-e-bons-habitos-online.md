@@ -1,11 +1,14 @@
 +++
 title = "Higiene e bons hábitos online"
 author = ["Ben Mezger"]
-date = 2016-12-12T19:28:00-02:00
+date = 2016-12-12T09:54:00+01:00
 publishDate = 2016-12-12
 aliases = ["/posts/higiene-e-bons-habitos-online/"]
-tags = ["private", "guide", "services"]
+slug = "higiene-e-bons-habitos-online"
+tags = ["privacy", "guide"]
+type = "notes"
 draft = false
+bookCollapseSection = true
 +++
 
 > ❗️\*Observação:\* Esse guia provavelmente se encontra defasado
@@ -35,7 +38,7 @@ privacidade e segurança online.
 -   Use um [gerenciador](http://keepass.info/) de senhas.
     -   Use seu gerenciador de senhas para gerar senhas aleatórias.
     -   Não gere senhas aleátorias pela Internet.
-    -   Leia sobre [entropia de senhas](https://www.explainxkcd.com/wiki/index.php/936:%5FPassword%5FStrength) e sobre [escolhas](https://www.schneier.com/blog/archives/2014/03/choosing%5Fsecure%5F1.html) de uma senha segura.
+    -   Leia sobre [entropia de senhas](https://www.explainxkcd.com/wiki/index.php/936:_Password_Strength) e sobre [escolhas](https://www.schneier.com/blog/archives/2014/03/choosing_secure_1.html) de uma senha segura.
 
 -   Troque de senhas a cada 6 meses.
 -   Habilite [2FA](https://www.turnon2fa.com/) em **todos** os [serviços](https://twofactorauth.org/) que você usa.

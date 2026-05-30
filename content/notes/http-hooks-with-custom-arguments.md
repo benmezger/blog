@@ -1,16 +1,18 @@
 +++
 title = "Patching requests HTTP hooks with custom arguments"
 author = ["Ben Mezger"]
-date = 2020-05-07T18:59:00-03:00
+date = 2020-05-07T10:06:00+02:00
 publishDate = 2020-05-07
 aliases = ["/posts/http-hooks-with-custom-arguments/"]
 tags = ["python"]
+type = "notes"
 draft = false
+bookCollapseSection = true
 +++
 
 I am working on a project where we have lots of functions integrated with
 external APIs. Functions where HTTP requests get dispatched, we log the current
-caller&rsquo;s name, headers, and data (if any) in case we need to debug anything. For
+caller's name, headers, and data (if any) in case we need to debug anything. For
 example:
 
 ```python
@@ -34,7 +36,7 @@ def delete_external_services():
 So far so good, but it gets ugly when you have a bunch of functions logging HTTP
 one or multiple requests and responses.
 
-Python&rsquo;s `requests` has a [hook system](https://requests.readthedocs.io/en/master/user/advanced/#event-hooks) that allows us to manipulate portions of
+Python's `requests` has a [hook system](https://requests.readthedocs.io/en/master/user/advanced/#event-hooks) that allows us to manipulate portions of
 the request process or signal event handling. However, the hook is unable to
 receive a custom argument. `requests` requires hooks to have the current
 argument definition of: `def hook(response, *args, **kwargs)`, however, you are
@@ -71,7 +73,7 @@ def patch_http(
 ```
 
 This decorator decorates functions in which `requests` is used. It allows us to
-use a custom logger, log level, and log\_hook function if required. `log_wrapper`
+use a custom logger, log level, and log_hook function if required. `log_wrapper`
 creates 3 dummy attributes: `func` which holds the address of the caller, the
 logger, and the log level.
 The `log_hook` requires some hacking, as we might want to use it without the

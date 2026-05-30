@@ -1,12 +1,13 @@
 +++
 title = "Finding exposed .git repositories"
 author = ["Ben Mezger"]
-date = 2017-10-30T21:59:00+01:00
+date = 2017-10-30T10:12:00+01:00
 publishDate = 2017-10-30
 aliases = ["/posts/finding-exposed-git-repositories/"]
 tags = ["git", "security"]
-categories = ["web"]
+type = "notes"
 draft = false
+bookCollapseSection = true
 +++
 
 Developers use `git` to version control their source code. We all do, in fact,
@@ -36,14 +37,14 @@ blog, we could simply run `wget --mirror -I .git https://seds.nl/.git` to
 download the repository.
 
 
-## How to find exposed git repositories {#how-to-find-exposed-git-repositories}
+## How to find exposed git repositories <span class="tag"><span class="ATTACH">ATTACH</span></span> {#how-to-find-exposed-git-repositories}
 
 We can simply try out every URL we know by adding `/.git` at the end of the TLD.
 
 Just kidding.
 
 An easy way of finding websites which currently expose `.git` is using Google
-D0rks. If you are not familiar with Google D0rks, it&rsquo;s basically a few operators
+D0rks. If you are not familiar with Google D0rks, it's basically a few operators
 Google offers you to filter out a few queries. [Here](http://www.googleguide.com/advanced_operators_reference.html) is a list of some of them.
 The one we need is the `intext:` operator.
 
@@ -55,18 +56,18 @@ This query makes use of the `intext` operator. It allows us to ask Google to
 find all the pages that have a specific word in the body somewhere forcing
 inclusion on the page ([source](https://edu.google.com/coursebuilder/courses/pswg/1.2/assets/notes/Lesson3.5/Lesson3.5IntextandAdvancedSearch_Text_.html)).
 
-Let&rsquo;s see.
+Let's see.
 
 {{< figure src="/files/google-intext-query_censored.jpg" >}}
 
-Holy sh1t. That&rsquo;s ~89,900 results from Google. Can you imagine how much
+Holy sh1t. That's ~89,900 results from Google. Can you imagine how much
 sensitive information there must be?
 
 
 ## How to fix this {#how-to-fix-this}
 
 Well, first of all, find a better way to getting your source code to a remote
-server and simply pointing your web-server to that directory. If you don&rsquo;t feel
+server and simply pointing your web-server to that directory. If you don't feel
 like finding a better way, or just want to keep things simple, here is what you
 need to do.
 
@@ -94,5 +95,5 @@ Add the following telling Apache to deny any request to a `.git` directory:
 ```
 
 The only question that remains is: Is there anyway you could extract a `.git`
-from a web-server that has directory listing disabled? I haven&rsquo;t looked much
+from a web-server that has directory listing disabled? I haven't looked much
 into it, but I wonder if there is anyway we could use `git` against itself.

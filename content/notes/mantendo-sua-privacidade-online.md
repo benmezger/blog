@@ -1,11 +1,14 @@
 +++
-title = "Mantendo sua privacidade"
+title = "Mantendo a sua privacidade online"
 author = ["Ben Mezger"]
-date = 2016-12-11T19:20:00-02:00
+date = 2016-12-11T10:02:00+01:00
 publishDate = 2016-12-11
 aliases = ["/posts/mantendo-sua-privacidade-online/"]
-tags = ["private", "guide", "services"]
+slug = "mantendo-a-sua-privacidade-online"
+tags = ["privacy", "guide"]
+type = "notes"
 draft = false
+bookCollapseSection = true
 +++
 
 > ❗️\*Observação:\* Esse guia provavelmente se encontra defasado
@@ -23,7 +26,7 @@ arma contra sua privacidade e não estão no seu lado.
 No atual governo brasileiro (governo de Michel Temer), muitos protestos estão
 acontecendo, e a comunicação entre os manifestantes estão sendo cada vez mais
 vigiadas pela polícia/governo brasileiro (também por governos
-[externos](<https://en.wikipedia.org/wiki/Five%5FEyes>)), impossibilitando uma luta
+[externos](<https://en.wikipedia.org/wiki/Five_Eyes>)), impossibilitando uma luta
 ****democrática**** e sem interferência externa.
 
 Sabemos que cada vez mais, ativistas estão sendo oprimidos, censurados e
@@ -54,7 +57,7 @@ funcionar).
 
 ## Chat em tempo real {#chat-em-tempo-real}
 
--   [Signal](https://whispersystems.org/) &#x2013; Android/iOS/Google Chrome
+-   [Signal](https://whispersystems.org/) -- Android/iOS/Google Chrome
     -   Comunicação em grupo ou 1:1.
     -   Possibilita verificar a [privacidade](https://whispersystems.org/blog/safety-number-updates/) da sua conversa.
     -   Código do protocolo/aplicação se encontra [aqui](https://github.com/whispersystems/).
@@ -66,7 +69,7 @@ funcionar).
         -   O dia da última vez que você se conectou no serviço deles.
     -   Tem suporte para ligação criptográfada.
 
--   [Jabber](https://list.jabber.at/) + OTR/mpOTR &#x2013;
+-   [Jabber](https://list.jabber.at/) + OTR/mpOTR --
     Linux/BSD/Windows/Android/iOS
     -   Comunicação em grupo ou 1:1.
     -   Dificil de censurar, pois existem diferentes servidores disponiveis.
@@ -76,7 +79,7 @@ funcionar).
 
     -   Possui diferentes [clientes](https://otr.im/clients.html) para diferentes plataformas.
 
--   [Cryptocat](https://crypto.cat/) &#x2013; OSX/Windows/Linux
+-   [Cryptocat](https://crypto.cat/) -- OSX/Windows/Linux
     -   Código da criptografia/aplicação se encontra [aqui](https://github.com/cryptocat/cryptocat)
     -   **TODO** ~~Auditoria da criptografia usada foi feita na versão antiga.~~
     -   Overview da criptografia pode ser encontrado [aqui](https://crypto.cat/security.html).
@@ -84,7 +87,7 @@ funcionar).
     -   Não suporta (atualmente) conversa em grupo.
     -   Necessita apenas de um usuário + senha.
 
--   [Riot](https://riot.im/) &#x2013; Web/Android/iOS
+-   [Riot](https://riot.im/) -- Web/Android/iOS
     -   Comunicação em grupo ou 1:1.
     -   Utiliza o protocolo [matrix](http://matrix.org/).
     -   Encriptação _end-to-end_ usando o protocolo [Olm](https://matrix.org/docs/spec/olm.html) e [Megolm](https://matrix.org/docs/spec/megolm.html).
