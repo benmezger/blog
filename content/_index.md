@@ -2,7 +2,7 @@
 title = "Ben Mezger"
 author = ["Ben Mezger"]
 date = 2026-05-30T01:21:00+02:00
-lastmod = 2026-05-30T01:54:09+02:00
+lastmod = 2026-05-30T02:05:08+02:00
 draft = false
 bookToc = false
 bookComments = false
@@ -28,7 +28,7 @@ bookComments = false
     Occasionally, I write technical and non-technical notes at
     [/notes](/notes). There, I share some of my thoughts about the real world as I
     see. The content of this blog is fully written in Emacs Org Mode,
-    and I [export](https://github.com/benmezger/dotfiles/blob/main/chezmoi/dot_doom.d/bin/executable_org2blog) them to [Hugo](https://github.com/benmezger/blog).
+    and I export them to [Hugo](https://github.com/benmezger/blog).
 
 -   {{< figure src="/files/me.jpeg" width="80%" >}}
 
