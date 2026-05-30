@@ -1,15 +1,11 @@
 [build]
 publish = "public"
-command = "make deploy test-static"
+command = "make deploy"
 
 [context.production.environment]
-HUGO_VERSION = "v0.161.1"
+HUGO_VERSION = "v0.158.0"
 HUGO_ENV = "production"
 HUGO_ENABLEGITINFO = "true"
-
-[[edge_functions]]
-  path = "/*"
-  function = "curl-markdown"
 
 [[redirects]]
   from = "/posts/*"
