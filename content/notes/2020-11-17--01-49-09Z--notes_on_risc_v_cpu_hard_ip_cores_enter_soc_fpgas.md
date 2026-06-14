@@ -25,7 +25,7 @@ Notes on [RISC-V CPU HARD IP Cores enter SoC FPGAs](https://ieeechicago.org/even
     innovation
 
 
-## PolarFire SoC - RISC-V enabled innocation platform <span class="tag"><span class="ATTACH">ATTACH</span></span> {#polarfire-soc-risc-v-enabled-innocation-platform}
+## PolarFire SoC - RISC-V enabled innocation platform {#polarfire-soc-risc-v-enabled-innocation-platform}
 
 -   Mixed critically RTOS + Linux support
 -   Defence grade security

@@ -37,7 +37,7 @@ blog, we could simply run `wget --mirror -I .git https://seds.nl/.git` to
 download the repository.
 
 
-## How to find exposed git repositories <span class="tag"><span class="ATTACH">ATTACH</span></span> {#how-to-find-exposed-git-repositories}
+## How to find exposed git repositories {#how-to-find-exposed-git-repositories}
 
 We can simply try out every URL we know by adding `/.git` at the end of the TLD.
 
