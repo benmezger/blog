@@ -10,7 +10,6 @@ bookCollapseSection = true
 +++
 
 -   Related pages
-    -   [Thesis]({{< relref "2020-05-31--15-35-57Z--thesis.md" >}})
     -   [Computer Science]({{< relref "2020-05-31--15-29-21Z--computer_science.md" >}})
     -   [Computer Architecture]({{< relref "2020-05-31--16-01-33Z--computer_architecture.md" >}})
 
