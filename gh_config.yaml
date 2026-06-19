@@ -31,8 +31,23 @@ params:
   BookServiceWorker: true
   BookToC: true
   BookMenuBundle: /menu
-  BookSection: blog
+  BookSection: menu
   BookSearch: true
   BookRepo: https://github.com/benmezger/blog
   BookEditPath: edit/main
   BookTheme: auto
+
+menu:
+  before:
+    - name: Notes
+      url: /notes
+      weight: 1
+    - name: Contact
+      url: /contact
+      weight: 2
+    - name: RSS
+      url: /index.xml
+      weight: 3
+    - name: All my links
+      url: https://links.seds.nl
+      weight: 4

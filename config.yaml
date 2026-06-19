@@ -28,6 +28,7 @@ languages:
 #    weight: 1
 
 params:
+  BookSection: menu
   BookServiceWorker: true
   BookToC: true
   BookSearch: true
@@ -47,7 +48,6 @@ menu:
     - name: Contact
       url: /contact
       weight: 2
-  after:
     - name: RSS
       url: /index.xml
       weight: 3
