@@ -7,6 +7,7 @@ tags = ["sql", "programming", "database"]
 type = "notes"
 draft = false
 bookCollapseSection = true
+summary = "SQL query to list foreign key constraints in a database."
 +++
 
 tags

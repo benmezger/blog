@@ -7,6 +7,7 @@ tags = ["programming", "checklist"]
 type = "notes"
 draft = false
 bookCollapseSection = true
+summary = "Checklist for tackling technical coding challenges."
 +++
 
 tags

@@ -8,6 +8,7 @@ categories = ["books", "notes"]
 type = "notes"
 draft = false
 bookCollapseSection = true
+summary = "Notas sobre liderança e resposta à pandemia de coronavírus."
 +++
 
 -   Related paged

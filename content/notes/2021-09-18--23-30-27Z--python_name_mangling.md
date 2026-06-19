@@ -7,6 +7,7 @@ tags = ["testing", "python"]
 type = "notes"
 draft = false
 bookCollapseSection = true
+summary = "How Python's name mangling works for non-public API names."
 +++
 
 -   Related pages

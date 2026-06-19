@@ -7,6 +7,7 @@ tags = ["tdd", "python"]
 type = "notes"
 draft = false
 bookCollapseSection = true
+summary = "Chapter 3 notes on value objects from Kent Beck's TDD book."
 +++
 
 -   Related pages

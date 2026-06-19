@@ -7,6 +7,7 @@ tags = ["system-design", "caching"]
 type = "notes"
 draft = false
 bookCollapseSection = true
+summary = "Caching layers, eviction policies, and system design patterns."
 +++
 
 -   Related pages

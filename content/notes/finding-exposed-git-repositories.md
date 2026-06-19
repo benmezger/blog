@@ -8,6 +8,7 @@ tags = ["git", "security"]
 type = "notes"
 draft = false
 bookCollapseSection = true
+summary = "Finding publicly exposed .git directories on the internet."
 +++
 
 Developers use `git` to version control their source code. We all do, in fact,

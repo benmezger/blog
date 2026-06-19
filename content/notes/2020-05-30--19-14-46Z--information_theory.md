@@ -7,6 +7,7 @@ tags = ["computing", "theory", "information", "studies"]
 type = "notes"
 draft = false
 bookCollapseSection = true
+summary = "Notes on how humans encode and communicate information."
 +++
 
 -   Related pages

@@ -7,6 +7,7 @@ tags = ["cs", "software", "programming"]
 type = "notes"
 draft = false
 bookCollapseSection = true
+summary = "Index of software engineering topics and notes."
 +++
 
 tags

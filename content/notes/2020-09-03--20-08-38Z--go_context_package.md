@@ -7,6 +7,7 @@ tags = ["go", "programming"]
 type = "notes"
 draft = false
 bookCollapseSection = true
+summary = "Cancellation and propagation in Go's context package."
 +++
 
 tags

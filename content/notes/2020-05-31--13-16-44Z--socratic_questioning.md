@@ -7,6 +7,7 @@ tags = ["socratic", "mindset", "models"]
 type = "notes"
 draft = false
 bookCollapseSection = true
+summary = "Using Socratic questioning to establish first principles."
 +++
 
 tags

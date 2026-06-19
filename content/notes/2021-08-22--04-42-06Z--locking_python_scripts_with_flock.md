@@ -8,6 +8,7 @@ tags = ["python", "programming"]
 type = "notes"
 draft = false
 bookCollapseSection = true
+summary = "Preventing concurrent runs of Python scripts using flock."
 +++
 
 -   Related pages

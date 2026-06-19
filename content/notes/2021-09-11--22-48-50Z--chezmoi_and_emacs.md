@@ -7,6 +7,7 @@ tags = ["emacs", "dotfiles"]
 type = "notes"
 draft = false
 bookCollapseSection = true
+summary = "Integrating Chezmoi dotfile management with Emacs."
 +++
 
 -   Related pages

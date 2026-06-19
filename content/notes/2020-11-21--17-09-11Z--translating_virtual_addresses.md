@@ -7,6 +7,7 @@ tags = ["os", "architecture"]
 type = "notes"
 draft = false
 bookCollapseSection = true
+summary = "How virtual addresses are translated to physical addresses."
 +++
 
 -   Related pages

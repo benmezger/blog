@@ -8,10 +8,7 @@ tags = ["software", "see", "fault", "hardware"]
 type = "notes"
 draft = false
 bookCollapseSection = true
-summary = """
-This work aims at characterizing the types of see and the state-of-the-art that
-has been accomplished to mitigate these issues at the circuit- and software-level.
-"""
+summary = "Review of single event effects and circuit- and software-level mitigation."
 +++
 
 -   Related pages

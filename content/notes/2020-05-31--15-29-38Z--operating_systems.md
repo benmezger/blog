@@ -7,6 +7,7 @@ tags = ["operating-systems", "cs"]
 type = "notes"
 draft = false
 bookCollapseSection = true
+summary = "Notes and resources on operating systems."
 +++
 
 -   Related pages

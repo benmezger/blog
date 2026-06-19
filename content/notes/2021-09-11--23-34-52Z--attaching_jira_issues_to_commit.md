@@ -8,6 +8,7 @@ tags = ["git", "projects", "software"]
 type = "notes"
 draft = false
 bookCollapseSection = true
+summary = "Git hook to attach Jira issue IDs to commit messages."
 +++
 
 -   Related pages

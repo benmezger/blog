@@ -7,6 +7,7 @@ tags = ["tdd", "python"]
 type = "notes"
 draft = false
 bookCollapseSection = true
+summary = "Chapter 1 notes from Kent Beck's Test Driven Development."
 +++
 
 -   Related pages

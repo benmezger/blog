@@ -7,6 +7,7 @@ tags = ["nixos", "tools", "software"]
 type = "notes"
 draft = false
 bookCollapseSection = true
+summary = "Essential NixOS and Nix package management commands."
 +++
 
 After I distro hopped from Archlinux to NixOS, I've been having to learn the Nix ecosystem and package management commands. I've found the migration from Archlinux to NixOS OK, but I am still struggling remembering some important Nix commands.

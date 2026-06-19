@@ -6,6 +6,7 @@ tags = ["go", "programming"]
 type = "notes"
 draft = false
 bookCollapseSection = true
+summary = "Notes from the official Go programming language specification."
 +++
 
 -   Related pages

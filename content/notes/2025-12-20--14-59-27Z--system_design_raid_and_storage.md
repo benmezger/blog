@@ -7,6 +7,7 @@ tags = ["system-design", "storage"]
 type = "notes"
 draft = false
 bookCollapseSection = true
+summary = "Notes on RAID and storage architecture for system design."
 +++
 
 -   Related pages

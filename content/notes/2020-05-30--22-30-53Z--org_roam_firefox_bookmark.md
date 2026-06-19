@@ -7,6 +7,7 @@ tags = ["emacs", "orgmode", "roam", "firefox"]
 type = "notes"
 draft = false
 bookCollapseSection = true
+summary = "Using org-roam protocol bookmarks from Firefox."
 +++
 
 tags

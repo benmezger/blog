@@ -7,6 +7,7 @@ tags = ["emacs", "orgroam", "orgmode"]
 type = "notes"
 draft = false
 bookCollapseSection = true
+summary = "Exporting org-roam backlinks to Hugo with a custom pipeline."
 +++
 
 tags

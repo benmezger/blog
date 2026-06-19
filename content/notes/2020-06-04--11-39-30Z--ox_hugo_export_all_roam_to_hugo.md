@@ -7,6 +7,7 @@ tags = ["emacs", "orgmode", "hugo", "orgroam", "roam"]
 type = "notes"
 draft = false
 bookCollapseSection = true
+summary = "Emacs function to export all org-roam files to Hugo."
 +++
 
 -   Related pages

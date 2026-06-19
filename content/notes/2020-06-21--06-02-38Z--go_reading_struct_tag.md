@@ -7,6 +7,7 @@ tags = ["go", "programming"]
 type = "notes"
 draft = false
 bookCollapseSection = true
+summary = "Reading specific Go struct tags by name at runtime."
 +++
 
 -   Related pages

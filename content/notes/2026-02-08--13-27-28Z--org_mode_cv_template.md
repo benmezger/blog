@@ -7,6 +7,7 @@ tags = ["org-mode", "cv", "template"]
 type = "notes"
 draft = false
 bookCollapseSection = true
+summary = "A modular, reproducible Org-mode and LaTeX CV template."
 +++
 
 {{% hint "info" %}}

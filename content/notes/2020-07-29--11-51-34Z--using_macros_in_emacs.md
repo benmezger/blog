@@ -7,6 +7,7 @@ tags = ["emacs"]
 type = "notes"
 draft = false
 bookCollapseSection = true
+summary = "Recording and replaying keyboard sequences with Emacs macros."
 +++
 
 -   Related pages

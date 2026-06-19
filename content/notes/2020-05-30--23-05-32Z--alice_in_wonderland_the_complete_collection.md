@@ -8,6 +8,7 @@ categories = ["notes", "books"]
 type = "notes"
 draft = false
 bookCollapseSection = true
+summary = "Quotes and notes from Alice in Wonderland."
 +++
 
 ## <span class="timestamp-wrapper"><span class="timestamp">&lt;2020-03-07 Sat 03:33&gt;</span></span> {#2cb299}

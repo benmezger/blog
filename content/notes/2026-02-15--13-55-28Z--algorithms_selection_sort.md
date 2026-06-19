@@ -7,6 +7,7 @@ tags = ["algorithms"]
 type = "notes"
 draft = false
 bookCollapseSection = true
+summary = "Selection and insertion sort explained with complexity analysis."
 +++
 
 -   Related pages

@@ -8,6 +8,7 @@ categories = ["books"]
 type = "notes"
 draft = false
 bookCollapseSection = true
+summary = "Reading notes on The Great Mental Models."
 +++
 
 -   Related pages

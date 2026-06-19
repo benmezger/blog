@@ -7,6 +7,7 @@ tags = ["python", "testing", "programming"]
 type = "notes"
 draft = false
 bookCollapseSection = true
+summary = "Database migrations and fixtures with pytest and SQLAlchemy."
 +++
 
 -   Related pages

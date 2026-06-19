@@ -8,6 +8,7 @@ tags = ["python"]
 type = "notes"
 draft = false
 bookCollapseSection = true
+summary = "Monkey-patching Python requests hooks to log HTTP callers."
 +++
 
 I am working on a project where we have lots of functions integrated with

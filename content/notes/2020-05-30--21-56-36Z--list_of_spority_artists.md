@@ -7,6 +7,7 @@ tags = ["music"]
 type = "notes"
 draft = false
 bookCollapseSection = true
+summary = "Personal list of Spotify artists I listen to."
 +++
 
 | Artists                               |

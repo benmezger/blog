@@ -7,6 +7,7 @@ tags = ["tdd"]
 type = "notes"
 draft = false
 bookCollapseSection = true
+summary = "Index of test-driven development notes and reading."
 +++
 
 -   Related pages

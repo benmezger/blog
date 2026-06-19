@@ -7,6 +7,7 @@ tags = ["dotfiles"]
 type = "notes"
 draft = false
 bookCollapseSection = true
+summary = "Thoughts on managing dotfiles with Chezmoi over the years."
 +++
 
 -   Related pages

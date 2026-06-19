@@ -7,6 +7,7 @@ tags = ["algorithms"]
 type = "notes"
 draft = false
 bookCollapseSection = true
+summary = "Quicksort partitioning, performance, and implementation details."
 +++
 
 -   Related pages

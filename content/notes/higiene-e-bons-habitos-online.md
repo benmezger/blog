@@ -9,6 +9,7 @@ tags = ["privacy", "guide"]
 type = "notes"
 draft = false
 bookCollapseSection = true
+summary = "Bons hábitos de higiene digital para privacidade e segurança online."
 +++
 
 > ❗️\*Observação:\* Esse guia provavelmente se encontra defasado

@@ -7,6 +7,7 @@ tags = ["linux"]
 type = "notes"
 draft = false
 bookCollapseSection = true
+summary = "Switching to suckless dwm for multi-monitor tiling."
 +++
 
 -   Related pages

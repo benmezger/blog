@@ -7,6 +7,7 @@ tags = ["software"]
 type = "notes"
 draft = false
 bookCollapseSection = true
+summary = "Lehman's laws of program evolution and continuing change."
 +++
 
 -   Related pages

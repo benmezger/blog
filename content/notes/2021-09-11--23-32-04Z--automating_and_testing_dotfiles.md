@@ -8,10 +8,7 @@ tags = ["dotfiles", "chezmoi", "testing"]
 type = "notes"
 draft = false
 bookCollapseSection = true
-summary = """
-I run multiple Archlinux machines at home and an OSX machine for work, so I need
-to keep my system configuration in sync. This is how I do it. 
-"""
+summary = "Automating and testing dotfile setup across machines."
 +++
 
 -   Related pages

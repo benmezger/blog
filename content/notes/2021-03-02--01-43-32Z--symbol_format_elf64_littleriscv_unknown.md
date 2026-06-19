@@ -7,6 +7,7 @@ tags = ["riscv", "compilers"]
 type = "notes"
 draft = false
 bookCollapseSection = true
+summary = "Debugging unknown ELF64 RISC-V symbol format errors."
 +++
 
 tags

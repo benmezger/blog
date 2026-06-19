@@ -7,6 +7,7 @@ tags = ["python", "programming", "libs"]
 type = "notes"
 draft = false
 bookCollapseSection = true
+summary = "Creating temporary files and directories with Python's tempfile module."
 +++
 
 tags

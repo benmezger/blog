@@ -7,6 +7,7 @@ tags = ["history", "politics"]
 type = "notes"
 draft = false
 bookCollapseSection = true
+summary = "Notes on the Kommunistische Partei Deutschlands (KPD)."
 +++
 
 -   Related pages

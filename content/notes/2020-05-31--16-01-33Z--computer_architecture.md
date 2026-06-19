@@ -7,4 +7,5 @@ tags = ["cs", "architecture"]
 type = "notes"
 draft = false
 bookCollapseSection = true
+summary = "Index of computer architecture topics and notes."
 +++

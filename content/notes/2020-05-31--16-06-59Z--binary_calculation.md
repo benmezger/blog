@@ -7,6 +7,7 @@ tags = ["math", "cs"]
 type = "notes"
 draft = false
 bookCollapseSection = true
+summary = "How binary arithmetic and carry work."
 +++
 
 -   Related pages

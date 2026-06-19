@@ -7,6 +7,7 @@ tags = ["sports"]
 type = "notes"
 draft = false
 bookCollapseSection = true
+summary = "Starting Brazilian Jiu-Jitsu after COVID disrupted swimming."
 +++
 
 ... And starting 2023 with Brazilian Jiu-Jitsu (BJJ) as well. A few months

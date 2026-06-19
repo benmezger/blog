@@ -7,6 +7,7 @@ tags = ["system-design", "databases"]
 type = "notes"
 draft = false
 bookCollapseSection = true
+summary = "Database data models, indexing, and design trade-offs."
 +++
 
 -   Related pages

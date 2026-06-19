@@ -7,6 +7,7 @@ tags = ["automation", "software", "tools"]
 type = "notes"
 draft = false
 bookCollapseSection = true
+summary = "How I evolved dotfile management from scripts to NixOS."
 +++
 
 -   Related pages

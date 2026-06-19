@@ -7,6 +7,7 @@ tags = ["automation", "software", "terraform", "tools", "services"]
 type = "notes"
 draft = false
 bookCollapseSection = true
+summary = "Centralizing DNS, GitHub, and other online service configuration."
 +++
 
 -   Related pages

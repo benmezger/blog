@@ -7,6 +7,7 @@ tags = ["system-design", "data"]
 type = "notes"
 draft = false
 bookCollapseSection = true
+summary = "CAP theorem, ACID, BASE, and PACELC in distributed systems."
 +++
 
 -   Related pages

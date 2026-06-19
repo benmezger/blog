@@ -5,6 +5,7 @@ tags = ["emacs", "lisp"]
 type = "notes"
 draft = false
 bookCollapseSection = true
+summary = "Bookmark to a brief Emacs Lisp introduction for programmers."
 +++
 
 -   Related pages

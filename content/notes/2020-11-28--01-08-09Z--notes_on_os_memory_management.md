@@ -7,6 +7,7 @@ tags = ["os", "mmu"]
 type = "notes"
 draft = false
 bookCollapseSection = true
+summary = "Notes on operating system memory management concepts."
 +++
 
 -   Related pages

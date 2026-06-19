@@ -7,6 +7,7 @@ tags = ["emacs"]
 type = "notes"
 draft = false
 bookCollapseSection = true
+summary = "Search-and-replace across git-tracked files in Emacs."
 +++
 
 -   Related pages

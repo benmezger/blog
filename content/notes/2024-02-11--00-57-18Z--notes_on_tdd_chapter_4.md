@@ -7,6 +7,7 @@ tags = ["tdd", "python"]
 type = "notes"
 draft = false
 bookCollapseSection = true
+summary = "Chapter 4 notes on encapsulating amount from Kent Beck's TDD book."
 +++
 
 -   Related pages

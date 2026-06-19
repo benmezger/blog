@@ -7,6 +7,7 @@ tags = ["architecture", "cs"]
 type = "notes"
 draft = false
 bookCollapseSection = true
+summary = "Differences between asynchronous and synchronous computer buses."
 +++
 
 -   Related pages

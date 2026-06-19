@@ -7,6 +7,7 @@ tags = ["git"]
 type = "notes"
 draft = false
 bookCollapseSection = true
+summary = "Script to rewrite git commit authors across a repository."
 +++
 
 tags

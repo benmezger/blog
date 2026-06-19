@@ -7,6 +7,7 @@ tags = ["software", "fault-tolerance", "computer-science"]
 type = "notes"
 draft = false
 bookCollapseSection = true
+summary = "Notes on building fault-tolerant software systems."
 +++
 
 tags

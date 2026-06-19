@@ -7,6 +7,7 @@ tags = ["me"]
 type = "notes"
 draft = false
 bookCollapseSection = true
+summary = "Thoughts on changing my online nickname from seds."
 +++
 
 I've been thinking of changing my nick from `seds` to something else. The

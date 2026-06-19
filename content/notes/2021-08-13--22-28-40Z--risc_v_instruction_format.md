@@ -7,6 +7,7 @@ tags = ["riscv"]
 type = "notes"
 draft = false
 bookCollapseSection = true
+summary = "Overview of RISC-V instruction formats and encoding."
 +++
 
 -   Related pages

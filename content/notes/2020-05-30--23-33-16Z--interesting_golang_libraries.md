@@ -7,6 +7,7 @@ tags = ["go", "programming"]
 type = "notes"
 draft = false
 bookCollapseSection = true
+summary = "Curated list of useful Go libraries and tools."
 +++
 
 -   Related pages

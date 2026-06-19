@@ -7,6 +7,7 @@ tags = ["git", "workflow"]
 type = "notes"
 draft = false
 bookCollapseSection = true
+summary = "My personal git workflow and commit message conventions."
 +++
 
 tags

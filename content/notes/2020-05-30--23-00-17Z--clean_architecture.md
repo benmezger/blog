@@ -8,6 +8,7 @@ categories = ["books"]
 type = "notes"
 draft = false
 bookCollapseSection = true
+summary = "Reading notes on Clean Architecture by Robert C. Martin."
 +++
 
 -   Related pages

@@ -7,6 +7,7 @@ tags = ["os", "osdev", "programming", "synchronization"]
 type = "notes"
 draft = false
 bookCollapseSection = true
+summary = "Notes on synchronization primitives and concurrency."
 +++
 
 -   Related pages

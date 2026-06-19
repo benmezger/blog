@@ -7,6 +7,7 @@ tags = ["emacs", "orgmode", "firefox"]
 type = "notes"
 draft = false
 bookCollapseSection = true
+summary = "Firefox scripts to capture web pages into Org-mode."
 +++
 
 tags

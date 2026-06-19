@@ -5,6 +5,7 @@ tags = ["emacs", "roam", "lisp"]
 type = "notes"
 draft = false
 bookCollapseSection = true
+summary = "Reference to jethrokuan's org-roam Hugo export Emacs config."
 +++
 
 -   Related pages

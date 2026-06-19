@@ -7,6 +7,7 @@ tags = ["software", "failure"]
 type = "notes"
 draft = false
 bookCollapseSection = true
+summary = "Real-world consequences of software failures in critical systems."
 +++
 
 -   Related pages

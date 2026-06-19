@@ -7,6 +7,7 @@ tags = ["networking", "system-design"]
 type = "notes"
 draft = false
 bookCollapseSection = true
+summary = "Review of networking concepts and protocols for system design."
 +++
 
 Review of some computer networking concepts and architecture.

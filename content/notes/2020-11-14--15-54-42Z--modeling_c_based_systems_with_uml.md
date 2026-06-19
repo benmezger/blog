@@ -7,6 +7,7 @@ tags = ["programming", "c", "methodologies"]
 type = "notes"
 draft = false
 bookCollapseSection = true
+summary = "Modeling C-based embedded systems with UML."
 +++
 
 -   Related pages

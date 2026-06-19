@@ -7,6 +7,7 @@ tags = ["riscv", "computer", "architecture"]
 type = "notes"
 draft = false
 bookCollapseSection = true
+summary = "Notes on RISC-V hard IP cores entering SoC FPGAs."
 +++
 
 -   Related pages

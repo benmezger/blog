@@ -8,10 +8,7 @@ tags = ["git"]
 type = "notes"
 draft = false
 bookCollapseSection = true
-summary = """
-Recently, it came to my attention that conventional commits don't fit all
-codebases; in fact, they can annoy more than they can help in some situations.
-"""
+summary = "Adopting Conventional Commits in a project workflow."
 +++
 
 -   Related pages

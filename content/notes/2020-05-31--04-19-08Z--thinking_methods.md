@@ -8,6 +8,7 @@ categories = ["notes"]
 type = "notes"
 draft = false
 bookCollapseSection = true
+summary = "Techniques for clearer thinking and solving complex problems."
 +++
 
 tags

@@ -7,6 +7,7 @@ tags = ["programming", "methodology", "cs"]
 type = "notes"
 draft = false
 bookCollapseSection = true
+summary = "Software requirements and use case document template."
 +++
 
 tags

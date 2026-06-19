@@ -7,6 +7,7 @@ tags = ["algorithms"]
 type = "notes"
 draft = false
 bookCollapseSection = true
+summary = "How binary search works, why it is fast, and when to use it."
 +++
 
 {{% hint info %}}

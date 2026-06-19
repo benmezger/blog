@@ -8,6 +8,7 @@ tags = ["linux"]
 type = "notes"
 draft = false
 bookCollapseSection = true
+summary = "Notes on Linux kernel printk logging and internals."
 +++
 
 Some of the content might be incorrect, since I am still trying to understand it

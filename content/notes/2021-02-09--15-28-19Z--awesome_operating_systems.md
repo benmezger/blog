@@ -7,6 +7,7 @@ tags = ["os"]
 type = "notes"
 draft = false
 bookCollapseSection = true
+summary = "Curated list of awesome operating systems resources."
 +++
 
 -   Related pages

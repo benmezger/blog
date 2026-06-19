@@ -9,6 +9,7 @@ tags = ["privacy", "guide"]
 type = "notes"
 draft = false
 bookCollapseSection = true
+summary = "Coleção de guias e links sobre privacidade e segurança online."
 +++
 
 > ❗️\*Observação:\* Esse guia provavelmente se encontra defasado

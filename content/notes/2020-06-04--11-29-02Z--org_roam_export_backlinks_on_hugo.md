@@ -7,6 +7,7 @@ tags = ["orgmode", "emacs"]
 type = "notes"
 draft = false
 bookCollapseSection = true
+summary = "Legacy approach to exporting org-roam backlinks to Hugo."
 +++
 
 -   Related pages

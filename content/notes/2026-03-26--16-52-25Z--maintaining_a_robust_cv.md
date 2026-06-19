@@ -7,6 +7,7 @@ tags = ["cv", "ai", "orgmode"]
 type = "notes"
 draft = false
 bookCollapseSection = true
+summary = "Practices for keeping a well-structured, up-to-date CV."
 +++
 
 -   Related pages

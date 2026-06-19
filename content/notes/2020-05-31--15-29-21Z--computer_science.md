@@ -7,4 +7,5 @@ tags = ["cs"]
 type = "notes"
 draft = false
 bookCollapseSection = true
+summary = "Index of computer science topics and related notes."
 +++

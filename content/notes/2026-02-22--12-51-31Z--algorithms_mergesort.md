@@ -7,6 +7,7 @@ tags = ["algorithms"]
 type = "notes"
 draft = false
 bookCollapseSection = true
+summary = "Mergesort divide-and-conquer approach and stable sorting properties."
 +++
 
 -   Related pages

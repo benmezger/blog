@@ -7,6 +7,7 @@ tags = ["personal"]
 type = "notes"
 draft = false
 bookCollapseSection = true
+summary = "Moving back to Amsterdam after years abroad."
 +++
 
 After moving around the world, I've decided to strike again and move back to

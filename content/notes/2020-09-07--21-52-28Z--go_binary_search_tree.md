@@ -7,6 +7,7 @@ tags = ["go", "algorithms", "programming"]
 type = "notes"
 draft = false
 bookCollapseSection = true
+summary = "Implementing and understanding binary search trees in Go."
 +++
 
 tags

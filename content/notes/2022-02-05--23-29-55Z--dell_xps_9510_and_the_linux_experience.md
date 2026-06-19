@@ -7,6 +7,7 @@ tags = ["linux"]
 type = "notes"
 draft = false
 bookCollapseSection = true
+summary = "Running Linux on a Dell XPS 9510 notebook."
 +++
 
 {{% hint "danger" %}}
