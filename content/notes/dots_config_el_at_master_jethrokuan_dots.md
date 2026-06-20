@@ -1,6 +1,7 @@
 +++
 title = "dots/config.el at master · jethrokuan/dots"
 author = ["Ben Mezger"]
+date = 2020-06-06T00:00:00+02:00
 tags = ["emacs", "roam", "lisp"]
 type = "notes"
 draft = false

@@ -1,6 +1,7 @@
 +++
 title = "The Go Programming Language Specification - The Go Programming Language"
 author = ["Ben Mezger"]
+date = 2020-05-31T00:00:00+02:00
 slug = "the-go-programming-language-spec"
 tags = ["go", "programming"]
 type = "notes"

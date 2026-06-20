@@ -1,6 +1,7 @@
 +++
 title = "A brief introduction to Emacs Lisp for people with programming background | lgmoneda"
 author = ["Ben Mezger"]
+date = 2020-06-06T00:00:00+02:00
 tags = ["emacs", "lisp"]
 type = "notes"
 draft = false
