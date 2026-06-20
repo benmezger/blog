@@ -16,11 +16,8 @@ summary = "Automating and testing dotfile setup across machines."
 
 ---
 
-{{% hint "warning" %}}
-
-I no longer use this approach. See [My journey in managing dotfiles]({{< relref "2025-02-02--16-22-22Z--my_journey_in_managing_dotfiles.md" >}})
-
-{{% /hint %}}
+> [!WARNING]
+> I no longer use this approach. See [My journey in managing dotfiles]({{< relref "2025-02-02--16-22-22Z--my_journey_in_managing_dotfiles.md" >}})
 
 I run multiple Archlinux machines at home and an OSX machine for work, so I need
 to keep my system configuration in sync. I have a lot of applications tinkered

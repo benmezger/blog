@@ -10,22 +10,18 @@ bookCollapseSection = true
 summary = "A modular, reproducible Org-mode and LaTeX CV template."
 +++
 
-{{% hint "info" %}}
+> [!NOTE]
+> _I spent the weekend improving my Org-mode/LaTeX CV template and decided it was_
+> _worth sharing publicly. Its modular, searchable, and designed for_
+> _reproducibility. I've made it easy to maintain and updated the structure to be_
+> _as ATS-friendly as possible._
 
-_I spent the weekend improving my Org-mode/LaTeX CV template and decided it was_
-_worth sharing publicly. Its modular, searchable, and designed for_
-_reproducibility. I've made it easy to maintain and updated the structure to be_
-_as ATS-friendly as possible._
+<!--quoteend-->
 
-{{% /hint %}}
-
-{{% hint "caution" %}}
-
-_I used AI to help document this. I tend to spend more time building than
-writing about what I built, so it was useful to have something that could map
-the full picture._
-
-{{% /hint %}}
+> [!CAUTION]
+> _I used AI to help document this. I tend to spend more time building than
+> writing about what I built, so it was useful to have something that could map
+> the full picture._
 
 ---
 
@@ -318,11 +314,8 @@ human or an ATS parser) maps to proper Unicode characters.
         corresponding LaTeX commands
     -   `custom.cls` styles everything and appends `\lastupdate` automatically
 
-{{% hint "warning" %}}
-
-_Make sure you have `pdflatex` installed, along with the LaTeX dependencies._
-
-{{% /hint %}}
+> [!WARNING]
+> _Make sure you have `pdflatex` installed, along with the LaTeX dependencies._
 
 This architecture allows maintaining one source of truth for shared content
 while tailoring each CV variant's introduction, strengths, and emphasis for

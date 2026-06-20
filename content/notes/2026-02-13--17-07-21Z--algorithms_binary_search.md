@@ -10,15 +10,12 @@ bookCollapseSection = true
 summary = "How binary search works, why it is fast, and when to use it."
 +++
 
-{{% hint info %}}
-
-This and the following posts, are all based on following books:
-
-> Grokking Algorithms, by Aditya Bhargava
-
-As well as some online resources.
-
-{{% /hint %}}
+> [!NOTE]
+> This and the following posts, are all based on following books:
+>
+> > Grokking Algorithms, by Aditya Bhargava
+>
+> As well as some online resources.
 
 {{< katex />}}
 

@@ -105,12 +105,9 @@ Ansible configuration to make it work.
     configuration.
 -   Maintaining duplicate files with slight differences.
 
-{{% hint "info" %}}
-
-_At some point, I stopped distro-hopping and settled on Arch Linux and macOS_,
-_so the burden of updating my Bash scripts to different systems reduced._
-
-{{% /hint %}}
+> [!NOTE]
+> _At some point, I stopped distro-hopping and settled on Arch Linux and macOS_,
+> _so the burden of updating my Bash scripts to different systems reduced._
 
 
 ## Chezmoi entered the room {#chezmoi-entered-the-room}
@@ -131,13 +128,10 @@ dotfiles. Unfortunately, this meant maintaining both my Bash scripts and a
 second repository. Additionally, testing and ensuring everything worked out of
 the box was time-consuming
 
-{{% hint "warning" %}}
-
-The issues I experienced with Arch Linux were not inherent to Arch itself but
-rather stemmed from the nature of a non-reproducible system. I would have faced
-these issues in any non-reproducible Linux distribution.
-
-{{% /hint %}}
+> [!WARNING]
+> The issues I experienced with Arch Linux were not inherent to Arch itself but
+> rather stemmed from the nature of a non-reproducible system. I would have faced
+> these issues in any non-reproducible Linux distribution.
 
 
 ## Discovering NixOS {#discovering-nixos}
@@ -151,12 +145,9 @@ can manage both my home and system configurations, separate root and user
 applications, and easily recover from mistakes. I am sure once I have to do a
 reinstall, things will work exactly how it worked on my previous system.
 
-{{% hint "info" %}}
-
-I had easy access to recovery on Arch Linux using `btrfs` and snapshots, but
-that still required maintaining my Bash scripts to configure everything.
-
-{{% /hint %}}
+> [!NOTE]
+> I had easy access to recovery on Arch Linux using `btrfs` and snapshots, but
+> that still required maintaining my Bash scripts to configure everything.
 
 NixOS also made me realize I could configure parts of my system that I had never
 considered before, such as [unlocking LUKS via SSH](https://mynixos.com/nixpkgs/options/boot.initrd.network.ssh). I started using
