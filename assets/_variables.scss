@@ -13,15 +13,15 @@
   --gray-200: rgba(255, 255, 255, 0.2);
   --gray-500: rgba(255, 255, 255, 0.5);
 
-  @include accent("default", #64748b);
-  @include accent("note", #4486dd);
-  @include accent("tip", #3bad3b);
-  @include accent("important", #8144dd);
-  @include accent("warning", #f59e42);
-  @include accent("caution", #d84747);
+  --color-accent-default: #64748b;
+  --color-accent-note: #4486dd;
+  --color-accent-tip: #3bad3b;
+  --color-accent-important: #8144dd;
+  --color-accent-warning: #f59e42;
+  --color-accent-caution: #d84747;
 
   // Fallback for {{< hint >}} shortcodes
-  @include accent("info", #4486dd);
-  @include accent("success", #3bad3b);
-  @include accent("danger", #d84747);
+  --color-accent-info: #4486dd;
+  --color-accent-success: #3bad3b;
+  --color-accent-danger: #d84747;
 }
